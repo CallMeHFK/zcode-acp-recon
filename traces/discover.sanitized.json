@@ -1,0 +1,221 @@
+{
+ "metadata": {
+  "zcodeVersion": "0.17.1",
+  "runtimeVersion": "v24.20.0",
+  "os": "win32",
+  "arch": "x64",
+  "captureTimestamp": "2026-11-08T15:34:33.250Z",
+  "evidenceLevel": "observed",
+  "redactionVersion": "1",
+  "scenario": "discover"
+ },
+ "records": [
+  {
+   "id": 1,
+   "method": "session/create",
+   "params": {}
+  },
+  {
+   "method": "startup/storageState",
+   "params": {
+    "schemaVersion": 1,
+    "attemptId": "b5d56173-edf2-448c-972d-3d322cda278f",
+    "sequence": 1,
+    "databaseId": "14a7e77cdbb0fc7a0ce22603216f14cf44871306fe2243dd2dc46dabc7c120c3",
+    "databaseKind": "session",
+    "phase": "checking",
+    "elapsedMs": 0
+   }
+  },
+  {
+   "method": "startup/storageState",
+   "params": {
+    "schemaVersion": 1,
+    "attemptId": "b5d56173-edf2-448c-972d-3d322cda278f",
+    "sequence": 2,
+    "databaseId": "14a7e77cdbb0fc7a0ce22603216f14cf44871306fe2243dd2dc46dabc7c120c3",
+    "databaseKind": "session",
+    "phase": "checking",
+    "elapsedMs": 0
+   }
+  },
+  {
+   "method": "startup/storageState",
+   "params": {
+    "schemaVersion": 1,
+    "attemptId": "b5d56173-edf2-448c-972d-3d322cda278f",
+    "sequence": 3,
+    "databaseId": "14a7e77cdbb0fc7a0ce22603216f14cf44871306fe2243dd2dc46dabc7c120c3",
+    "databaseKind": "session",
+    "phase": "checking",
+    "migration": {
+     "kind": "none",
+     "executedCount": 0,
+     "committedCount": 0
+    },
+    "elapsedMs": 6
+   }
+  },
+  {
+   "method": "startup/storageState",
+   "params": {
+    "schemaVersion": 1,
+    "attemptId": "b5d56173-edf2-448c-972d-3d322cda278f",
+    "sequence": 4,
+    "databaseId": "14a7e77cdbb0fc7a0ce22603216f14cf44871306fe2243dd2dc46dabc7c120c3",
+    "databaseKind": "session",
+    "phase": "committing",
+    "migration": {
+     "kind": "none",
+     "executedCount": 0,
+     "committedCount": 0,
+     "lastAppliedMigrationId": "0024_session_database_identity"
+    },
+    "elapsedMs": 9
+   }
+  },
+  {
+   "method": "startup/storageState",
+   "params": {
+    "schemaVersion": 1,
+    "attemptId": "b5d56173-edf2-448c-972d-3d322cda278f",
+    "sequence": 5,
+    "databaseId": "14a7e77cdbb0fc7a0ce22603216f14cf44871306fe2243dd2dc46dabc7c120c3",
+    "databaseKind": "session",
+    "phase": "ready",
+    "migration": {
+     "kind": "none",
+     "executedCount": 0,
+     "committedCount": 0,
+     "lastAppliedMigrationId": "0024_session_database_identity"
+    },
+    "elapsedMs": 10
+   }
+  },
+  {
+   "error": {
+    "code": -32602,
+    "data": {
+     "name": "ZodError",
+     "message": "[\n  {\n    \"expected\": \"object\",\n    \"code\": \"invalid_type\",\n    \"path\": [\n      \"workspace\"\n    ],\n    \"message\": \"Invalid input: expected object, received undefined\"\n  }\n]"
+    },
+    "message": "Invalid params — workspace: Invalid input: expected object, received undefined"
+   },
+   "id": 1
+  },
+  {
+   "id": 2,
+   "method": "session/create",
+   "params": {
+    "workspace": {
+     "workspacePath": "C:\\Users\\Rt\\.zcode\\workspace\\draft-26e30bc0-b470-4d11-afa5-0072a7c3058e\\zcode-acp-recon\\traces\\workspace",
+     "workspaceKey": "workspace"
+    }
+   }
+  },
+  {
+   "method": "session/lifecycle/changed",
+   "params": {
+    "sessionId": "sess_9711dfb0-aeac-41f7-bd69-a59779e6a330",
+    "state": "starting",
+    "generation": 1,
+    "revision": 1,
+    "lastError": null
+   }
+  },
+  {
+   "id": "server-1",
+   "method": "session/requestRuntimePreferences",
+   "params": {
+    "sessionId": "sess_9711dfb0-aeac-41f7-bd69-a59779e6a330",
+    "scope": "runtime-materialization"
+   }
+  },
+  {
+   "id": "server-1",
+   "result": {}
+  },
+  {
+   "method": "session/lifecycle/changed",
+   "params": {
+    "sessionId": "sess_9711dfb0-aeac-41f7-bd69-a59779e6a330",
+    "state": "stopping",
+    "generation": 1,
+    "revision": 2,
+    "lastError": null
+   }
+  },
+  {
+   "method": "session/lifecycle/changed",
+   "params": {
+    "sessionId": "sess_9711dfb0-aeac-41f7-bd69-a59779e6a330",
+    "state": "unloaded",
+    "generation": 1,
+    "revision": 3,
+    "lastError": null
+   }
+  },
+  {
+   "method": "session/lifecycle/changed",
+   "params": {
+    "sessionId": "sess_9711dfb0-aeac-41f7-bd69-a59779e6a330",
+    "state": "unloaded",
+    "generation": 1,
+    "revision": 4,
+    "lastError": {
+     "operation": "ensureReady",
+     "code": "operationFailed",
+     "message": "[\n  {\n    \"expected\": \"boolean\",\n    \"code\": \"invalid_type\",\n    \"path\": [\n      \"nativeSearchEnhancementsEnabled\"\n    ],\n    \"message\": \"Invalid input: expected boolean, received undefined\"\n  }\n]"
+    }
+   }
+  },
+  {
+   "error": {
+    "code": -32603,
+    "data": {
+     "name": "ZodError",
+     "stack": "ZodError: [\n  {\n    \"expected\": \"boolean\",\n    \"code\": \"invalid_type\",\n    \"path\": [\n      \"nativeSearchEnhancementsEnabled\"\n    ],\n    \"message\": \"Invalid input: expected boolean, received undefined\"\n  }\n]\n    at jDt.resolveClientRequest (C:\\Program Files\\ZCode\\resources\\glm\\zcode.cjs:15540:114605)\n    at jDt.handleMessage (C:\\Program Files\\ZCode\\resources\\glm\\zcode.cjs:15540:100223)\n    at Object.handleMessage (C:\\Program Files\\ZCode\\resources\\glm\\zcode.cjs:15543:12997)\n    at BDt.handleMessage (C:\\Program Files\\ZCode\\resources\\glm\\zcode.cjs:15543:2797)\n    at BDt.dispatchLine (C:\\Program Files\\ZCode\\resources\\glm\\zcode.cjs:15543:1471)\n    at PassThrough.onData (C:\\Program Files\\ZCode\\resources\\glm\\zcode.cjs:15542:104)\n    at PassThrough.emit (node:events:514:28)\n    at addChunk (node:internal/streams/readable:567:12)\n    at readableAddChunkPushByteMode (node:internal/streams/readable:518:3)\n    at Readable.push (node:internal/streams/readable:398:5)"
+    },
+    "message": "[\n  {\n    \"expected\": \"boolean\",\n    \"code\": \"invalid_type\",\n    \"path\": [\n      \"nativeSearchEnhancementsEnabled\"\n    ],\n    \"message\": \"Invalid input: expected boolean, received undefined\"\n  }\n]"
+   },
+   "id": 2
+  },
+  {
+   "id": 3,
+   "method": "session/create",
+   "params": {
+    "workspacePath": "C:\\Users\\Rt\\.zcode\\workspace\\draft-26e30bc0-b470-4d11-afa5-0072a7c3058e\\zcode-acp-recon\\traces\\workspace",
+    "workspaceKey": "workspace"
+   }
+  },
+  {
+   "error": {
+    "code": -32602,
+    "data": {
+     "name": "ZodError",
+     "message": "[\n  {\n    \"expected\": \"object\",\n    \"code\": \"invalid_type\",\n    \"path\": [\n      \"workspace\"\n    ],\n    \"message\": \"Invalid input: expected object, received undefined\"\n  },\n  {\n    \"code\": \"unrecognized_keys\",\n    \"keys\": [\n      \"workspacePath\",\n      \"workspaceKey\"\n    ],\n    \"path\": [],\n    \"message\": \"Unrecognized keys: \\\"workspacePath\\\", \\\"workspaceKey\\\"\"\n  }\n]"
+    },
+    "message": "Invalid params — workspace: Invalid input: expected object, received undefined; (root): Unrecognized keys: \"workspacePath\", \"workspaceKey\""
+   },
+   "id": 3
+  },
+  {
+   "id": 4,
+   "method": "session/create",
+   "params": {
+    "cwd": "C:\\Users\\Rt\\.zcode\\workspace\\draft-26e30bc0-b470-4d11-afa5-0072a7c3058e\\zcode-acp-recon\\traces\\workspace"
+   }
+  },
+  {
+   "error": {
+    "code": -32602,
+    "data": {
+     "name": "ZodError",
+     "message": "[\n  {\n    \"expected\": \"object\",\n    \"code\": \"invalid_type\",\n    \"path\": [\n      \"workspace\"\n    ],\n    \"message\": \"Invalid input: expected object, received undefined\"\n  },\n  {\n    \"code\": \"unrecognized_keys\",\n    \"keys\": [\n      \"cwd\"\n    ],\n    \"path\": [],\n    \"message\": \"Unrecognized key: \\\"cwd\\\"\"\n  }\n]"
+    },
+    "message": "Invalid params — workspace: Invalid input: expected object, received undefined; (root): Unrecognized key: \"cwd\""
+   },
+   "id": 4
+  }
+ ]
+}

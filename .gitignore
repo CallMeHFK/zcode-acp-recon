@@ -1,0 +1,19 @@
+# 本地产物 / 凭据材料 —— 不入库
+traces/raw/
+*.log
+.env
+*.pem
+*.key
+credentials*
+
+# 依赖与构建
+node_modules/
+dist/
+
+# 工具状态
+.codebuddy/
+.claude/
+
+# 会话工具状态 / 一次性测试工作区（不入库）
+.mimosa/
+traces/workspace/

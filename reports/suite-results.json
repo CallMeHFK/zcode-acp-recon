@@ -1,0 +1,22 @@
+{
+  "disconnect": {
+    "turnStartedBeforeDisconnect": true,
+    "disconnectAfterMs": 1541,
+    "markerCreatedWhileDisconnected": false,
+    "projectionAfterReconnect": {
+      "status": "idle",
+      "turnCount": 0
+    },
+    "historyCount": 2,
+    "fourLayers": {
+      "rpcChannelClosed": true,
+      "backendTurnCompletedWhileDisconnected": "unknown",
+      "externalSideEffect": false,
+      "reconnectState": "idle"
+    },
+    "terminate": {
+      "mode": "graceful",
+      "gracefulStdinClose": true
+    }
+  }
+}

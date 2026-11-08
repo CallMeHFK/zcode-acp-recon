@@ -1,0 +1,41 @@
+{
+  "providerId": "account:bigmodel-start-plan",
+  "modelId": "GLM-5.3-Flash",
+  "steps": {
+    "create": {
+      "ok": true,
+      "sessionId": "sess_0c445a02-27c2-4074-b0b0-f8c71fbcbbbc",
+      "settings": "{\"mode\":{\"current\":\"build\"},\"model\":{\"available\":[]},\"permission\":{\"mode\":\"build\"},\"thoughtLevel\":{\"available\":[],\"enabled\":false}}"
+    },
+    "subscribe": {
+      "ok": true,
+      "eventSeq": 0
+    },
+    "modelWait": {
+      "timeoutAfterMs": 90324
+    },
+    "send": {
+      "ok": true,
+      "response": "{\"accepted\":true,\"sessionId\":\"sess_0c445a02-27c2-4074-b0b0-f8c71fbcbbbc\",\"stateRevision\":1}"
+    },
+    "turn": {
+      "type": "turn.failed",
+      "payload": "{\"error\":{\"type\":\"unknown_error\",\"attribution\":{\"retryable\":false,\"highspeedCardId\":null},\"code\":\"CONFIGURATION_ERROR\",\"message\":\"Select a model before continuing\",\"detail\":\"Model creation failed\",\"underlyingErrorMessage\":\"Select a model before continuing\",\"stack\":\"Error: Model creation failed\\n    at createCoreError (C:\\\\Program Files\\\\ZCode\\\\resources\\\\glm\\\\zcode.cjs:116:2685)\\n    at createTurnFailureError (C:\\\\Program Files\\\\ZCode\\\\resources\\\\glm\\\\zcode.cjs:2348:11928)\\n    at C:\\\\Program Files\\\\ZCode\\\\resources\\\\glm\\\\zcode.cjs:14739:5563\\n    at async $D.runRuntimeCommand (C:\\\\Program Files\\\\ZCode\\\\resources\\\\glm\\\\zcode.cjs:14683:30567)\\n    at async $D.drainRuntimeCommandQueue (C:\\\\Program Files\\\\ZCode\\\\resources\\\\glm\\\\zcode.cjs:14683:27849)\"},\"turnPhase\":\"model_creation\"}"
+    },
+    "messages": {
+      "count": 1,
+      "shape": "{\"messages\":[{\"info\":{\"role\":\"user\",\"time\":{\"created\":1794149543670},\"agent\":\"zcode-agent\",\"semantics\":{\"origin\":\"real_user\",\"kind\":\"user_prompt\",\"uiVisibility\":\"visible\",\"providerVisibility\":\"visible\",\"transcriptVisibility\":\"visible\"},\"anchor\":{\"turnId\":\"turn_b3816254-e33d-407e-9549-173c83c3552f\",\"origin\":\"realUser\"},\"tools\":{\"Agent\":true,\"AskUserQuestion\":true,\"Bash\":true,\"CronCreate\":true,\"CronDelete\":true,\"CronList\":true,\"CronUpdate\":true,\"Edit\":true,\"EnterPlanMode\":true,\"ExitPlanMode\":true,\"Read\":true,\"SendMessage\":true,\"Skill\":true,\"TaskOutput\":true,\"TaskStop\":true,\"TodoRead\":true,\"TodoW…(+550)"
+    }
+  },
+  "replyText": "",
+  "seq": {
+    "count": 5,
+    "first": 1,
+    "last": 5,
+    "continuous": true
+  },
+  "terminate": {
+    "mode": "graceful",
+    "gracefulStdinClose": true
+  }
+}

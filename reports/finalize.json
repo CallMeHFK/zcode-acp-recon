@@ -1,0 +1,162 @@
+{
+  "billing": {
+    "provider": "bigmodel",
+    "endpoint": "https://zcode.z.ai/api/v1/zcode-plan/billing/current",
+    "status": 200,
+    "bodyShape": {
+      "code": 0,
+      "msg": "",
+      "data": {
+        "server_time": 1794152071,
+        "plans": [
+          {
+            "user_plan_id": "upl_2118711139584593920",
+            "plan_id": "zcode-v3-start-plan-1106-wk",
+            "name": "ZCODE WEEKEND BUILD",
+            "description": "",
+            "priority": 101,
+            "status": "active",
+            "starts_at": 1793975074,
+            "ends_at": 1794186000,
+            "entitlements": [
+              {
+                "entitlement_id": "ent-zcode-v3-start-plan-1106-wk-1",
+                "show_name": "GLM-5.3-Flash",
+                "meter": "model_usage",
+                "unit_type": "token",
+                "capabilities": [
+                  "model:glm-5.3-flash"
+                ],
+                "grant_units": 500000000,
+                "period": "one_time",
+                "priority": 101,
+                "effective_at": 1793977200
+              }
+            ]
+          }
+        ]
+      },
+      "logid": "202611081534316edb8dbfdc28a11a56d4"
+    },
+    "ok": true
+  },
+  "coexistence": {
+    "dbNow": {
+      "sqlite": {
+        "size": 753664,
+        "mtime": "2026-11-08T15:31:35.200Z"
+      },
+      "wal": {
+        "size": 4136512,
+        "mtime": "2026-11-08T15:34:31.366Z"
+      },
+      "shm": {
+        "size": 32768,
+        "mtime": "2026-11-07T12:49:01.005Z"
+      }
+    },
+    "desktopAlive": true,
+    "sqliteBusyInLog": 0
+  },
+  "orphanProcesses": [],
+  "sanitized": {
+    "cancel": {
+      "records": 249,
+      "file": "traces\\cancel.sanitized.json"
+    },
+    "connectivity": {
+      "records": 11,
+      "file": "traces\\connectivity.sanitized.json"
+    },
+    "crash-reconnect": {
+      "records": 361,
+      "file": "traces\\crash-reconnect.sanitized.json"
+    },
+    "crash": {
+      "records": 57,
+      "file": "traces\\crash.sanitized.json"
+    },
+    "disconnect-probe": {
+      "records": 55,
+      "file": "traces\\disconnect-probe.sanitized.json"
+    },
+    "disconnect-reconnect": {
+      "records": 42,
+      "file": "traces\\disconnect-reconnect.sanitized.json"
+    },
+    "discover": {
+      "records": 19,
+      "file": "traces\\discover.sanitized.json"
+    },
+    "discover2": {
+      "records": 53,
+      "file": "traces\\discover2.sanitized.json"
+    },
+    "discover3-account-bigmodel-start-plan-glm-5.3-flash": {
+      "records": 227,
+      "file": "traces\\discover3-account-bigmodel-start-plan-glm-5.3-flash.sanitized.json"
+    },
+    "discover3-builtin-bigmodel-coding-plan-glm-5.3-flash": {
+      "records": 13,
+      "file": "traces\\discover3-builtin-bigmodel-coding-plan-glm-5.3-flash.sanitized.json"
+    },
+    "discover4": {
+      "records": 41,
+      "file": "traces\\discover4.sanitized.json"
+    },
+    "discover5": {
+      "records": 7,
+      "file": "traces\\discover5.sanitized.json"
+    },
+    "discover6": {
+      "records": 120,
+      "file": "traces\\discover6.sanitized.json"
+    },
+    "discover7": {
+      "records": 63,
+      "file": "traces\\discover7.sanitized.json"
+    },
+    "discover8": {
+      "records": 15,
+      "file": "traces\\discover8.sanitized.json"
+    },
+    "discover9": {
+      "records": 328,
+      "file": "traces\\discover9.sanitized.json"
+    },
+    "normal": {
+      "records": 203,
+      "file": "traces\\normal.sanitized.json"
+    },
+    "permission-allow": {
+      "records": 437,
+      "file": "traces\\permission-allow.sanitized.json"
+    },
+    "permission-deny": {
+      "records": 203,
+      "file": "traces\\permission-deny.sanitized.json"
+    },
+    "resume-force-reconnect": {
+      "records": 72,
+      "file": "traces\\resume-force-reconnect.sanitized.json"
+    },
+    "resume-force": {
+      "records": 95,
+      "file": "traces\\resume-force.sanitized.json"
+    },
+    "resume-graceful-reconnect": {
+      "records": 160,
+      "file": "traces\\resume-graceful-reconnect.sanitized.json"
+    },
+    "resume-graceful": {
+      "records": 243,
+      "file": "traces\\resume-graceful.sanitized.json"
+    }
+  },
+  "redaction": {
+    "scanCoverage": 1,
+    "scanErrors": [],
+    "totalRecords": 3074,
+    "scannedOk": 3074
+  }
+}

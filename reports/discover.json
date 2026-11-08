@@ -1,0 +1,44 @@
+{
+  "create": {
+    "ok": false
+  },
+  "subscribe": null,
+  "send": null,
+  "eventTypes": {
+    "startup/storageState": {
+      "method": "startup/storageState",
+      "paramsShape": "{\"schemaVersion\":1,\"attemptId\":\"b5d56173-edf2-448c-972d-3d322cda278f\",\"sequence\":1,\"databaseId\":\"14a7e77cdbb0fc7a0ce22603216f14cf44871306fe2243dd2dc46dabc7c120c3\",\"databaseKind\":\"session\",\"phase\":\"checking\",\"elapsedMs\":0}"
+    },
+    "session/lifecycle/changed": {
+      "method": "session/lifecycle/changed",
+      "paramsShape": "{\"sessionId\":\"sess_9711dfb0-aeac-41f7-bd69-a59779e6a330\",\"state\":\"starting\",\"generation\":1,\"revision\":1,\"lastError\":null}"
+    }
+  },
+  "turnEnd": null,
+  "errors": [
+    {
+      "step": "create",
+      "variant": "empty",
+      "error": "{\"code\":-32602,\"data\":{\"name\":\"ZodError\",\"message\":\"[\\n  {\\n    \\\"expected\\\": \\\"object\\\",\\n    \\\"code\\\": \\\"invalid_type\\\",\\n    \\\"path\\\": [\\n      \\\"workspace\\\"\\n    ],\\n    \\\"message\\\": \\\"Invalid input: expected object, received undefined\\\"\\n  }\\n]\"},\"message\":\"Invalid params — workspace: Invalid i…(+43)"
+    },
+    {
+      "step": "create",
+      "variant": "workspace-obj",
+      "error": "{\"code\":-32603,\"data\":{\"name\":\"ZodError\",\"stack\":\"ZodError: [\\n  {\\n    \\\"expected\\\": \\\"boolean\\\",\\n    \\\"code\\\": \\\"invalid_type\\\",\\n    \\\"path\\\": [\\n      \\\"nativeSearchEnhancementsEnabled\\\"\\n    ],\\n    \\\"message\\\": \\\"Invalid input: expected boolean, received undefined\\\"\\n  }\\n]\\n    at jDt.resolv…(+1018)"
+    },
+    {
+      "step": "create",
+      "variant": "workspace-flat",
+      "error": "{\"code\":-32602,\"data\":{\"name\":\"ZodError\",\"message\":\"[\\n  {\\n    \\\"expected\\\": \\\"object\\\",\\n    \\\"code\\\": \\\"invalid_type\\\",\\n    \\\"path\\\": [\\n      \\\"workspace\\\"\\n    ],\\n    \\\"message\\\": \\\"Invalid input: expected object, received undefined\\\"\\n  },\\n  {\\n    \\\"code\\\": \\\"unrecognized_keys\\\",\\n    \\\"ke…(+335)"
+    },
+    {
+      "step": "create",
+      "variant": "cwd",
+      "error": "{\"code\":-32602,\"data\":{\"name\":\"ZodError\",\"message\":\"[\\n  {\\n    \\\"expected\\\": \\\"object\\\",\\n    \\\"code\\\": \\\"invalid_type\\\",\\n    \\\"path\\\": [\\n      \\\"workspace\\\"\\n    ],\\n    \\\"message\\\": \\\"Invalid input: expected object, received undefined\\\"\\n  },\\n  {\\n    \\\"code\\\": \\\"unrecognized_keys\\\",\\n    \\\"ke…(+238)"
+    },
+    {
+      "step": "fatal",
+      "error": "{}"
+    }
+  ]
+}

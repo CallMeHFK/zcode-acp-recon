@@ -1,0 +1,313 @@
+{
+ "metadata": {
+  "zcodeVersion": "0.17.1",
+  "runtimeVersion": "v24.20.0",
+  "os": "win32",
+  "arch": "x64",
+  "captureTimestamp": "2026-11-08T15:34:33.250Z",
+  "evidenceLevel": "observed",
+  "redactionVersion": "1",
+  "scenario": "discover8"
+ },
+ "records": [
+  {
+   "id": 1,
+   "method": "provider/updateAccountConfig",
+   "params": {
+    "revision": "zcode-builtin:43:62412a2755b9b1081c23c18c1b68f18242d798b4f9ad832a1924213492110cb3",
+    "basedOnZCodeBuiltinRevision": "62412a2755b9b1081c23c18c1b68f18242d798b4f9ad832a1924213492110cb3",
+    "providers": {
+     "account:zai-individual-coding-plan": {
+      "access": {
+       "type": "zhipu-account",
+       "entitled": false
+      }
+     },
+     "account:zai-team-coding-plan": {
+      "access": {
+       "type": "zhipu-account",
+       "entitled": false
+      }
+     },
+     "account:zai-start-plan": {
+      "access": {
+       "type": "zhipu-account",
+       "entitled": false
+      }
+     },
+     "account:zai-offpeak-idle-plan": {
+      "access": {
+       "type": "zhipu-account",
+       "entitled": false
+      }
+     },
+     "account:zai-highspeed-card": {
+      "access": {
+       "type": "zhipu-account",
+       "entitled": false
+      }
+     },
+     "account:bigmodel-individual-coding-plan": {
+      "access": {
+       "type": "zhipu-account",
+       "entitled": false
+      }
+     },
+     "account:bigmodel-team-coding-plan": {
+      "access": {
+       "type": "zhipu-account",
+       "entitled": false
+      }
+     },
+     "account:bigmodel-start-plan": {
+      "access": {
+       "type": "zhipu-account",
+       "entitled": true
+      }
+     },
+     "account:bigmodel-offpeak-idle-plan": {
+      "access": {
+       "type": "zhipu-account",
+       "entitled": false
+      }
+     },
+     "account:bigmodel-highspeed-card": {
+      "access": {
+       "type": "zhipu-account",
+       "entitled": false
+      }
+     },
+     "builtin:bigmodel": {
+      "access": null
+     },
+     "builtin:zai": {
+      "access": null
+     }
+    },
+    "states": {
+     "account:zai-individual-coding-plan": {
+      "availability": "available",
+      "entitled": false
+     },
+     "account:zai-team-coding-plan": {
+      "availability": "available",
+      "entitled": false
+     },
+     "account:zai-start-plan": {
+      "availability": "available",
+      "entitled": false
+     },
+     "account:zai-offpeak-idle-plan": {
+      "availability": "available",
+      "entitled": false
+     },
+     "account:zai-highspeed-card": {
+      "availability": "available",
+      "entitled": false
+     },
+     "account:bigmodel-individual-coding-plan": {
+      "availability": "available",
+      "entitled": false
+     },
+     "account:bigmodel-team-coding-plan": {
+      "availability": "available",
+      "entitled": false
+     },
+     "account:bigmodel-start-plan": {
+      "availability": "available",
+      "entitled": true,
+      "current": true
+     },
+     "account:bigmodel-offpeak-idle-plan": {
+      "availability": "available",
+      "entitled": false
+     },
+     "account:bigmodel-highspeed-card": {
+      "availability": "available",
+      "entitled": false
+     },
+     "builtin:bigmodel": {
+      "availability": "available",
+      "entitled": false
+     },
+     "builtin:zai": {
+      "availability": "available",
+      "entitled": false
+     }
+    }
+   }
+  },
+  {
+   "method": "startup/storageState",
+   "params": {
+    "schemaVersion": 1,
+    "attemptId": "937ff93b-25e1-4401-ae52-ebf489ffa4ad",
+    "sequence": 1,
+    "databaseId": "14a7e77cdbb0fc7a0ce22603216f14cf44871306fe2243dd2dc46dabc7c120c3",
+    "databaseKind": "session",
+    "phase": "checking",
+    "elapsedMs": 0
+   }
+  },
+  {
+   "method": "startup/storageState",
+   "params": {
+    "schemaVersion": 1,
+    "attemptId": "937ff93b-25e1-4401-ae52-ebf489ffa4ad",
+    "sequence": 2,
+    "databaseId": "14a7e77cdbb0fc7a0ce22603216f14cf44871306fe2243dd2dc46dabc7c120c3",
+    "databaseKind": "session",
+    "phase": "checking",
+    "elapsedMs": 1
+   }
+  },
+  {
+   "method": "startup/storageState",
+   "params": {
+    "schemaVersion": 1,
+    "attemptId": "937ff93b-25e1-4401-ae52-ebf489ffa4ad",
+    "sequence": 3,
+    "databaseId": "14a7e77cdbb0fc7a0ce22603216f14cf44871306fe2243dd2dc46dabc7c120c3",
+    "databaseKind": "session",
+    "phase": "checking",
+    "migration": {
+     "kind": "none",
+     "executedCount": 0,
+     "committedCount": 0
+    },
+    "elapsedMs": 3
+   }
+  },
+  {
+   "method": "startup/storageState",
+   "params": {
+    "schemaVersion": 1,
+    "attemptId": "937ff93b-25e1-4401-ae52-ebf489ffa4ad",
+    "sequence": 4,
+    "databaseId": "14a7e77cdbb0fc7a0ce22603216f14cf44871306fe2243dd2dc46dabc7c120c3",
+    "databaseKind": "session",
+    "phase": "committing",
+    "migration": {
+     "kind": "none",
+     "executedCount": 0,
+     "committedCount": 0,
+     "lastAppliedMigrationId": "0024_session_database_identity"
+    },
+    "elapsedMs": 6
+   }
+  },
+  {
+   "method": "startup/storageState",
+   "params": {
+    "schemaVersion": 1,
+    "attemptId": "937ff93b-25e1-4401-ae52-ebf489ffa4ad",
+    "sequence": 5,
+    "databaseId": "14a7e77cdbb0fc7a0ce22603216f14cf44871306fe2243dd2dc46dabc7c120c3",
+    "databaseKind": "session",
+    "phase": "ready",
+    "migration": {
+     "kind": "none",
+     "executedCount": 0,
+     "committedCount": 0,
+     "lastAppliedMigrationId": "0024_session_database_identity"
+    },
+    "elapsedMs": 6
+   }
+  },
+  {
+   "id": 1,
+   "result": {
+    "receivedRevision": "zcode-builtin:43:62412a2755b9b1081c23c18c1b68f18242d798b4f9ad832a1924213492110cb3",
+    "providerCount": 12,
+    "status": "received"
+   }
+  },
+  {
+   "id": 2,
+   "method": "session/create",
+   "params": {
+    "workspace": {
+     "workspacePath": "C:\\Users\\Rt\\.zcode\\workspace\\draft-26e30bc0-b470-4d11-afa5-0072a7c3058e\\zcode-acp-recon\\traces\\workspace",
+     "workspaceKey": "workspace"
+    },
+    "model": {
+     "providerId": "account:bigmodel-start-plan",
+     "modelId": "GLM-5.3-Flash"
+    }
+   }
+  },
+  {
+   "method": "session/lifecycle/changed",
+   "params": {
+    "sessionId": "sess_99f04ab8-f7a6-408d-8236-c3ddf393773c",
+    "state": "starting",
+    "generation": 1,
+    "revision": 1,
+    "lastError": null
+   }
+  },
+  {
+   "id": "server-1",
+   "method": "session/requestRuntimePreferences",
+   "params": {
+    "sessionId": "sess_99f04ab8-f7a6-408d-8236-c3ddf393773c",
+    "scope": "runtime-materialization"
+   }
+  },
+  {
+   "id": "server-1",
+   "result": {
+    "nativeSearchEnhancementsEnabled": false,
+    "toolSearchMode": "off",
+    "memoryEnabled": false,
+    "askUserQuestionAutoResolutionEnabled": true,
+    "modelContextBudgetStrategy": "preflight-v1"
+   }
+  },
+  {
+   "method": "session/lifecycle/changed",
+   "params": {
+    "sessionId": "sess_99f04ab8-f7a6-408d-8236-c3ddf393773c",
+    "state": "stopping",
+    "generation": 1,
+    "revision": 2,
+    "lastError": null
+   }
+  },
+  {
+   "method": "session/lifecycle/changed",
+   "params": {
+    "sessionId": "sess_99f04ab8-f7a6-408d-8236-c3ddf393773c",
+    "state": "unloaded",
+    "generation": 1,
+    "revision": 3,
+    "lastError": null
+   }
+  },
+  {
+   "method": "session/lifecycle/changed",
+   "params": {
+    "sessionId": "sess_99f04ab8-f7a6-408d-8236-c3ddf393773c",
+    "state": "unloaded",
+    "generation": 1,
+    "revision": 4,
+    "lastError": {
+     "operation": "ensureReady",
+     "code": "operationFailed",
+     "message": "Provider Registry 中不存在 Model: account:bigmodel-start-plan/GLM-5.3-Flash"
+    }
+   }
+  },
+  {
+   "error": {
+    "code": -32603,
+    "data": {
+     "name": "Error",
+     "stack": "Error: Provider Registry 中不存在 Model: account:bigmodel-start-plan/GLM-5.3-Flash\n    at Object.setModel (C:\\Program Files\\ZCode\\resources\\glm\\zcode.cjs:14913:17686)\n    at C:\\Program Files\\ZCode\\resources\\glm\\zcode.cjs:15533:81142"
+    },
+    "message": "Provider Registry 中不存在 Model: account:bigmodel-start-plan/GLM-5.3-Flash"
+   },
+   "id": 2
+  }
+ ]
+}

@@ -1,0 +1,4704 @@
+{
+ "metadata": {
+  "zcodeVersion": "0.17.1",
+  "runtimeVersion": "v24.20.0",
+  "os": "win32",
+  "arch": "x64",
+  "captureTimestamp": "2026-11-08T15:34:33.250Z",
+  "evidenceLevel": "observed",
+  "redactionVersion": "1",
+  "scenario": "permission-deny"
+ },
+ "records": [
+  {
+   "id": 1,
+   "method": "provider/updateAccountConfig",
+   "params": {
+    "revision": "account:[\"zcode-builtin:43:c2702b2a39b013c1fbdf9b41e851cac82658c8bfe0300d6e65d2fec5a7085b59\",[{\"providerId\":\"account:zai-individual-coding-plan\",\"config\":{\"access\":{\"type\":\"zhipu-account\",\"entitled\":false}}},{\"providerId\":\"account:zai-team-coding-plan\",\"config\":{\"access\":{\"type\":\"zhipu-account\",\"entitled\":false}}},{\"providerId\":\"account:zai-start-plan\",\"config\":{\"access\":{\"type\":\"zhipu-account\",\"entitled\":false}}},{\"providerId\":\"account:zai-offpeak-idle-plan\",\"config\":{\"access\":{\"type\":\"zhipu-account\",\"entitled\":false}}},{\"providerId\":\"account:zai-highspeed-card\",\"config\":{\"access\":{\"type\":\"zhipu-account\",\"entitled\":false}}},{\"providerId\":\"account:bigmodel-individual-coding-plan\",\"config\":{\"access\":{\"type\":\"zhipu-account\",\"entitled\":false}}},{\"providerId\":\"account:bigmodel-team-coding-plan\",\"config\":{\"access\":{\"type\":\"zhipu-account\",\"entitled\":false}}},{\"providerId\":\"account:bigmodel-start-plan\",\"config\":{\"access\":{\"type\":\"zhipu-account\",\"entitled\":true},\"builtinModelIds\":[\"GLM-5.3-Flash\"]}},{\"providerId\":\"account:bigmodel-offpeak-idle-plan\",\"config\":{\"access\":{\"type\":\"zhipu-account\",\"entitled\":false}}},{\"providerId\":\"account:bigmodel-highspeed-card\",\"config\":{\"access\":{\"type\":\"zhipu-account\",\"entitled\":false}}}],{\"account:zai-individual-coding-plan\":{\"availability\":\"unavailable\",\"entitled\":false,\"current\":false,\"unavailableReason\":\"not-connected\"},\"account:zai-team-coding-plan\":{\"availability\":\"unavailable\",\"entitled\":false,\"current\":false,\"unavailableReason\":\"not-connected\"},\"account:zai-start-plan\":{\"availability\":\"unavailable\",\"entitled\":false,\"current\":false,\"unavailableReason\":\"not-connected\"},\"account:zai-offpeak-idle-plan\":{\"availability\":\"unavailable\",\"entitled\":false,\"current\":false,\"unavailableReason\":\"not-connected\"},\"account:zai-highspeed-card\":{\"availability\":\"unavailable\",\"entitled\":false,\"current\":false,\"unavailableReason\":\"not-connected\"},\"account:bigmodel-individual-coding-plan\":{\"availability\":\"unavailable\",\"entitled\":false,\"current\":false,\"unavailableReason\":\"not-entitled\"},\"account:bigmodel-team-coding-plan\":{\"availability\":\"unavailable\",\"entitled\":false,\"current\":false,\"unavailableReason\":\"not-entitled\"},\"account:bigmodel-start-plan\":{\"availability\":\"available\",\"entitled\":true,\"current\":true},\"account:bigmodel-offpeak-idle-plan\":{\"availability\":\"unavailable\",\"entitled\":false,\"current\":false,\"unavailableReason\":\"not-entitled\"},\"account:bigmodel-highspeed-card\":{\"availability\":\"unavailable\",\"entitled\":false,\"current\":false,\"unavailableReason\":\"not-entitled\"}}]",
+    "basedOnZCodeBuiltinRevision": "zcode-builtin:43:c2702b2a39b013c1fbdf9b41e851cac82658c8bfe0300d6e65d2fec5a7085b59",
+    "providers": {
+     "account:zai-individual-coding-plan": {
+      "access": {
+       "type": "zhipu-account",
+       "entitled": false
+      }
+     },
+     "account:zai-team-coding-plan": {
+      "access": {
+       "type": "zhipu-account",
+       "entitled": false
+      }
+     },
+     "account:zai-start-plan": {
+      "access": {
+       "type": "zhipu-account",
+       "entitled": false
+      }
+     },
+     "account:zai-offpeak-idle-plan": {
+      "access": {
+       "type": "zhipu-account",
+       "entitled": false
+      }
+     },
+     "account:zai-highspeed-card": {
+      "access": {
+       "type": "zhipu-account",
+       "entitled": false
+      }
+     },
+     "account:bigmodel-individual-coding-plan": {
+      "access": {
+       "type": "zhipu-account",
+       "entitled": false
+      }
+     },
+     "account:bigmodel-team-coding-plan": {
+      "access": {
+       "type": "zhipu-account",
+       "entitled": false
+      }
+     },
+     "account:bigmodel-start-plan": {
+      "access": {
+       "type": "zhipu-account",
+       "entitled": true
+      },
+      "builtinModelIds": [
+       "GLM-5.3-Flash"
+      ]
+     },
+     "account:bigmodel-offpeak-idle-plan": {
+      "access": {
+       "type": "zhipu-account",
+       "entitled": false
+      }
+     },
+     "account:bigmodel-highspeed-card": {
+      "access": {
+       "type": "zhipu-account",
+       "entitled": false
+      }
+     }
+    },
+    "states": {
+     "account:zai-individual-coding-plan": {
+      "availability": "unavailable",
+      "entitled": false,
+      "current": false,
+      "unavailableReason": "not-connected"
+     },
+     "account:zai-team-coding-plan": {
+      "availability": "unavailable",
+      "entitled": false,
+      "current": false,
+      "unavailableReason": "not-connected"
+     },
+     "account:zai-start-plan": {
+      "availability": "unavailable",
+      "entitled": false,
+      "current": false,
+      "unavailableReason": "not-connected"
+     },
+     "account:zai-offpeak-idle-plan": {
+      "availability": "unavailable",
+      "entitled": false,
+      "current": false,
+      "unavailableReason": "not-connected"
+     },
+     "account:zai-highspeed-card": {
+      "availability": "unavailable",
+      "entitled": false,
+      "current": false,
+      "unavailableReason": "not-connected"
+     },
+     "account:bigmodel-individual-coding-plan": {
+      "availability": "unavailable",
+      "entitled": false,
+      "current": false,
+      "unavailableReason": "not-entitled"
+     },
+     "account:bigmodel-team-coding-plan": {
+      "availability": "unavailable",
+      "entitled": false,
+      "current": false,
+      "unavailableReason": "not-entitled"
+     },
+     "account:bigmodel-start-plan": {
+      "availability": "available",
+      "entitled": true,
+      "current": true
+     },
+     "account:bigmodel-offpeak-idle-plan": {
+      "availability": "unavailable",
+      "entitled": false,
+      "current": false,
+      "unavailableReason": "not-entitled"
+     },
+     "account:bigmodel-highspeed-card": {
+      "availability": "unavailable",
+      "entitled": false,
+      "current": false,
+      "unavailableReason": "not-entitled"
+     }
+    }
+   }
+  },
+  {
+   "method": "startup/storageState",
+   "params": {
+    "schemaVersion": 1,
+    "attemptId": "67648d56-e25a-43f0-b40b-4b3ce922cb3a",
+    "sequence": 1,
+    "databaseId": "14a7e77cdbb0fc7a0ce22603216f14cf44871306fe2243dd2dc46dabc7c120c3",
+    "databaseKind": "session",
+    "phase": "checking",
+    "elapsedMs": 0
+   }
+  },
+  {
+   "method": "startup/storageState",
+   "params": {
+    "schemaVersion": 1,
+    "attemptId": "67648d56-e25a-43f0-b40b-4b3ce922cb3a",
+    "sequence": 2,
+    "databaseId": "14a7e77cdbb0fc7a0ce22603216f14cf44871306fe2243dd2dc46dabc7c120c3",
+    "databaseKind": "session",
+    "phase": "checking",
+    "elapsedMs": 0
+   }
+  },
+  {
+   "method": "startup/storageState",
+   "params": {
+    "schemaVersion": 1,
+    "attemptId": "67648d56-e25a-43f0-b40b-4b3ce922cb3a",
+    "sequence": 3,
+    "databaseId": "14a7e77cdbb0fc7a0ce22603216f14cf44871306fe2243dd2dc46dabc7c120c3",
+    "databaseKind": "session",
+    "phase": "checking",
+    "migration": {
+     "kind": "none",
+     "executedCount": 0,
+     "committedCount": 0
+    },
+    "elapsedMs": 5
+   }
+  },
+  {
+   "method": "startup/storageState",
+   "params": {
+    "schemaVersion": 1,
+    "attemptId": "67648d56-e25a-43f0-b40b-4b3ce922cb3a",
+    "sequence": 4,
+    "databaseId": "14a7e77cdbb0fc7a0ce22603216f14cf44871306fe2243dd2dc46dabc7c120c3",
+    "databaseKind": "session",
+    "phase": "committing",
+    "migration": {
+     "kind": "none",
+     "executedCount": 0,
+     "committedCount": 0,
+     "lastAppliedMigrationId": "0024_session_database_identity"
+    },
+    "elapsedMs": 8
+   }
+  },
+  {
+   "method": "startup/storageState",
+   "params": {
+    "schemaVersion": 1,
+    "attemptId": "67648d56-e25a-43f0-b40b-4b3ce922cb3a",
+    "sequence": 5,
+    "databaseId": "14a7e77cdbb0fc7a0ce22603216f14cf44871306fe2243dd2dc46dabc7c120c3",
+    "databaseKind": "session",
+    "phase": "ready",
+    "migration": {
+     "kind": "none",
+     "executedCount": 0,
+     "committedCount": 0,
+     "lastAppliedMigrationId": "0024_session_database_identity"
+    },
+    "elapsedMs": 9
+   }
+  },
+  {
+   "id": 1,
+   "result": {
+    "receivedRevision": "account:[\"zcode-builtin:43:c2702b2a39b013c1fbdf9b41e851cac82658c8bfe0300d6e65d2fec5a7085b59\",[{\"providerId\":\"account:zai-individual-coding-plan\",\"config\":{\"access\":{\"type\":\"zhipu-account\",\"entitled\":false}}},{\"providerId\":\"account:zai-team-coding-plan\",\"config\":{\"access\":{\"type\":\"zhipu-account\",\"entitled\":false}}},{\"providerId\":\"account:zai-start-plan\",\"config\":{\"access\":{\"type\":\"zhipu-account\",\"entitled\":false}}},{\"providerId\":\"account:zai-offpeak-idle-plan\",\"config\":{\"access\":{\"type\":\"zhipu-account\",\"entitled\":false}}},{\"providerId\":\"account:zai-highspeed-card\",\"config\":{\"access\":{\"type\":\"zhipu-account\",\"entitled\":false}}},{\"providerId\":\"account:bigmodel-individual-coding-plan\",\"config\":{\"access\":{\"type\":\"zhipu-account\",\"entitled\":false}}},{\"providerId\":\"account:bigmodel-team-coding-plan\",\"config\":{\"access\":{\"type\":\"zhipu-account\",\"entitled\":false}}},{\"providerId\":\"account:bigmodel-start-plan\",\"config\":{\"access\":{\"type\":\"zhipu-account\",\"entitled\":true},\"builtinModelIds\":[\"GLM-5.3-Flash\"]}},{\"providerId\":\"account:bigmodel-offpeak-idle-plan\",\"config\":{\"access\":{\"type\":\"zhipu-account\",\"entitled\":false}}},{\"providerId\":\"account:bigmodel-highspeed-card\",\"config\":{\"access\":{\"type\":\"zhipu-account\",\"entitled\":false}}}],{\"account:zai-individual-coding-plan\":{\"availability\":\"unavailable\",\"entitled\":false,\"current\":false,\"unavailableReason\":\"not-connected\"},\"account:zai-team-coding-plan\":{\"availability\":\"unavailable\",\"entitled\":false,\"current\":false,\"unavailableReason\":\"not-connected\"},\"account:zai-start-plan\":{\"availability\":\"unavailable\",\"entitled\":false,\"current\":false,\"unavailableReason\":\"not-connected\"},\"account:zai-offpeak-idle-plan\":{\"availability\":\"unavailable\",\"entitled\":false,\"current\":false,\"unavailableReason\":\"not-connected\"},\"account:zai-highspeed-card\":{\"availability\":\"unavailable\",\"entitled\":false,\"current\":false,\"unavailableReason\":\"not-connected\"},\"account:bigmodel-individual-coding-plan\":{\"availability\":\"unavailable\",\"entitled\":false,\"current\":false,\"unavailableReason\":\"not-entitled\"},\"account:bigmodel-team-coding-plan\":{\"availability\":\"unavailable\",\"entitled\":false,\"current\":false,\"unavailableReason\":\"not-entitled\"},\"account:bigmodel-start-plan\":{\"availability\":\"available\",\"entitled\":true,\"current\":true},\"account:bigmodel-offpeak-idle-plan\":{\"availability\":\"unavailable\",\"entitled\":false,\"current\":false,\"unavailableReason\":\"not-entitled\"},\"account:bigmodel-highspeed-card\":{\"availability\":\"unavailable\",\"entitled\":false,\"current\":false,\"unavailableReason\":\"not-entitled\"}}]",
+    "providerCount": 10,
+    "status": "received"
+   }
+  },
+  {
+   "id": 2,
+   "method": "session/create",
+   "params": {
+    "workspace": {
+     "workspacePath": "C:\\Users\\Rt\\.zcode\\workspace\\draft-26e30bc0-b470-4d11-afa5-0072a7c3058e\\zcode-acp-recon\\traces\\workspace",
+     "workspaceKey": "workspace"
+    },
+    "model": {
+     "providerId": "account:bigmodel-start-plan",
+     "modelId": "GLM-5.3-Flash",
+     "options": {
+      "reasoningLevel": "high"
+     }
+    }
+   }
+  },
+  {
+   "method": "session/lifecycle/changed",
+   "params": {
+    "sessionId": "sess_dffa09cd-f50a-45f8-a606-a3c2c65c9f9b",
+    "state": "starting",
+    "generation": 1,
+    "revision": 1,
+    "lastError": null
+   }
+  },
+  {
+   "id": "server-1",
+   "method": "session/requestRuntimePreferences",
+   "params": {
+    "sessionId": "sess_dffa09cd-f50a-45f8-a606-a3c2c65c9f9b",
+    "scope": "runtime-materialization"
+   }
+  },
+  {
+   "id": "server-1",
+   "result": {
+    "nativeSearchEnhancementsEnabled": false,
+    "toolSearchMode": "off",
+    "memoryEnabled": false,
+    "askUserQuestionAutoResolutionEnabled": true,
+    "modelContextBudgetStrategy": "preflight-v1"
+   }
+  },
+  {
+   "id": "server-2",
+   "method": "interaction/requestOfficialMcpAuthHeaders",
+   "params": {
+    "mcpKey": "image_search",
+    "pluginId": "image-search@zcode-plugins-official",
+    "requestId": "official-mcp-auth:1",
+    "targetOrigin": "https://zcode.z.ai/",
+    "workspace": {
+     "workspaceKey": "C:\\Users\\Rt\\.zcode\\workspace\\draft-26e30bc0-b470-4d11-afa5-0072a7c3058e\\zcode-acp-recon\\traces\\workspace",
+     "workspacePath": "C:\\Users\\Rt\\.zcode\\workspace\\draft-26e30bc0-b470-4d11-afa5-0072a7c3058e\\zcode-acp-recon\\traces\\workspace"
+    }
+   }
+  },
+  {
+   "id": "server-2",
+   "result": {}
+  },
+  {
+   "id": "server-3",
+   "method": "interaction/requestOfficialMcpAuthHeaders",
+   "params": {
+    "mcpKey": "sites",
+    "pluginId": "zcode-site@zcode-plugins-official",
+    "requestId": "official-mcp-auth:2",
+    "targetOrigin": "https://zcode.z.ai/",
+    "workspace": {
+     "workspaceKey": "C:\\Users\\Rt\\.zcode\\workspace\\draft-26e30bc0-b470-4d11-afa5-0072a7c3058e\\zcode-acp-recon\\traces\\workspace",
+     "workspacePath": "C:\\Users\\Rt\\.zcode\\workspace\\draft-26e30bc0-b470-4d11-afa5-0072a7c3058e\\zcode-acp-recon\\traces\\workspace"
+    }
+   }
+  },
+  {
+   "id": "server-3",
+   "result": {}
+  },
+  {
+   "id": "server-4",
+   "method": "interaction/requestOfficialMcpAuthHeaders",
+   "params": {
+    "mcpKey": "image_search",
+    "pluginId": "image-search@zcode-plugins-official",
+    "requestId": "official-mcp-auth:3",
+    "targetOrigin": "https://zcode.z.ai/",
+    "workspace": {
+     "workspaceKey": "C:\\Users\\Rt\\.zcode\\workspace\\draft-26e30bc0-b470-4d11-afa5-0072a7c3058e\\zcode-acp-recon\\traces\\workspace",
+     "workspacePath": "C:\\Users\\Rt\\.zcode\\workspace\\draft-26e30bc0-b470-4d11-afa5-0072a7c3058e\\zcode-acp-recon\\traces\\workspace"
+    }
+   }
+  },
+  {
+   "id": "server-4",
+   "result": {}
+  },
+  {
+   "method": "session/lifecycle/changed",
+   "params": {
+    "sessionId": "sess_dffa09cd-f50a-45f8-a606-a3c2c65c9f9b",
+    "state": "ready",
+    "generation": 1,
+    "revision": 2,
+    "lastError": null
+   }
+  },
+  {
+   "id": 2,
+   "result": {
+    "messages": [],
+    "projection": {
+     "activeToolCalls": [],
+     "backgroundJobs": [],
+     "contextUsed": 0,
+     "contextWindow": 200000,
+     "mode": "build",
+     "pendingPermissions": [],
+     "sessionId": "unknown",
+     "status": "idle",
+     "target": null,
+     "totalTokenCount": "<redacted>",
+     "turnCount": 0
+    },
+    "protocol": {
+     "name": "ZCode Protocol",
+     "version": 1
+    },
+    "runtime": {
+     "eventSeq": 0,
+     "pendingRequestIds": [],
+     "goalVerifications": [],
+     "goalVerificationTimeline": [],
+     "stateRevision": 1
+    },
+    "session": {
+     "createdAt": 1794151019391,
+     "mode": "build",
+     "model": {
+      "providerId": "account:bigmodel-start-plan",
+      "modelId": "GLM-5.3-Flash"
+     },
+     "traceId": "462b6186-9de4-45bf-af76-0410243d262f",
+     "sessionId": "sess_dffa09cd-f50a-45f8-a606-a3c2c65c9f9b",
+     "sessionKind": "interactive",
+     "status": "idle",
+     "target": null,
+     "title": "",
+     "updatedAt": 1794151019391,
+     "workspace": {
+      "workspacePath": "C:\\Users\\Rt\\.zcode\\workspace\\draft-26e30bc0-b470-4d11-afa5-0072a7c3058e\\zcode-acp-recon\\traces\\workspace",
+      "workspaceKey": "workspace"
+     }
+    },
+    "settings": {
+     "mode": {
+      "current": "build"
+     },
+     "model": {
+      "available": [
+       {
+        "ref": {
+         "providerId": "account:bigmodel-start-plan",
+         "modelId": "GLM-5.3-Flash"
+        },
+        "label": "GLM-5.3-Flash",
+        "providerLabel": "Start Plan",
+        "contextWindow": 1000000,
+        "maxOutputTokens": "<redacted>",
+        "reasoning": {
+         "levels": [
+          {
+           "value": "low",
+           "label": "low"
+          },
+          {
+           "value": "high",
+           "label": "high"
+          },
+          {
+           "value": "max",
+           "label": "max"
+          }
+         ],
+         "defaultLevel": "max"
+        },
+        "properties": {
+         "inputFormat": {
+          "supportsText": true,
+          "supportsImage": true,
+          "supportsVideo": true,
+          "supportsAudio": false,
+          "supportsPdf": true
+         },
+         "outputFormat": {
+          "supportsText": true
+         }
+        }
+       }
+      ],
+      "current": {
+       "providerId": "account:bigmodel-start-plan",
+       "modelId": "GLM-5.3-Flash"
+      },
+      "lastUsed": {
+       "providerId": "account:bigmodel-start-plan",
+       "modelId": "GLM-5.3-Flash"
+      }
+     },
+     "permission": {
+      "mode": "build"
+     },
+     "thoughtLevel": {
+      "available": [
+       {
+        "label": "low",
+        "value": "low"
+       },
+       {
+        "label": "high",
+        "value": "high"
+       },
+       {
+        "label": "max",
+        "value": "max"
+       }
+      ],
+      "enabled": true
+     }
+    },
+    "slashCommands": [
+     {
+      "description": "Show or set the current session goal.",
+      "inputHint": "/goal [pause|resume|clear|replace <objective>|<objective>]",
+      "name": "goal",
+      "source": "builtin"
+     },
+     {
+      "description": "Compact the current conversation with optional instructions.",
+      "inputHint": "/compact [instructions]",
+      "name": "compact",
+      "source": "builtin"
+     },
+     {
+      "description": "Create or update workspace AGENTS.md instructions.",
+      "inputHint": "/init [notes]",
+      "name": "init",
+      "source": "builtin"
+     },
+     {
+      "description": "Run CodeRabbit AI code review on your changes",
+      "inputHint": "/coderabbit-review [type] [--base <branch>] [--dir <path>]",
+      "name": "coderabbit-review",
+      "source": "custom"
+     },
+     {
+      "description": "Reproducible, sealed Mimosa deep security audit. / 执行可复核的 Mimosa 密封深度安全审计。",
+      "inputHint": "/mimosa-deep-audit [项目路径 | project path]",
+      "name": "mimosa-deep-audit",
+      "source": "custom"
+     },
+     {
+      "description": "Fast static security audit with Mimosa. / 用 Mimosa 做快速静态安全审计。",
+      "inputHint": "/mimosa-scan [项目路径 | project path]",
+      "name": "mimosa-scan",
+      "source": "custom"
+     },
+     {
+      "description": "Show Mimosa hook, coverage, and open-finding status for this project. / 查看 Mimosa 当前项目的 Hook、扫描覆盖与未结 finding 状态。",
+      "inputHint": "/mimosa-status",
+      "name": "mimosa-status",
+      "source": "custom"
+     },
+     {
+      "description": "Open VectorCraft and optionally a workspace file",
+      "inputHint": "/open",
+      "name": "open",
+      "source": "custom"
+     },
+     {
+      "description": "Hide or show the ZCode badge on the linked ZCode Sites site.",
+      "inputHint": "/site-badge hide | show",
+      "name": "site-badge",
+      "source": "custom"
+     },
+     {
+      "description": "Deploy this project to ZCode Sites, or redeploy the linked site.",
+      "inputHint": "/site-deploy [site id or notes]",
+      "name": "site-deploy",
+      "source": "custom"
+     },
+     {
+      "description": "Show the logs of a ZCode Sites deployment and explain any failure.",
+      "inputHint": "/site-logs [deployment id]",
+      "name": "site-logs",
+      "source": "custom"
+     },
+     {
+      "description": "Take the linked ZCode Sites site offline.",
+      "inputHint": "/site-offline [site id]",
+      "name": "site-offline",
+      "source": "custom"
+     },
+     {
+      "description": "Bring the linked ZCode Sites site back online.",
+      "inputHint": "/site-online [site id]",
+      "name": "site-online",
+      "source": "custom"
+     },
+     {
+      "description": "Show the ZCode Sites site linked to this project.",
+      "inputHint": "/site-status [site id]",
+      "name": "site-status",
+      "source": "custom"
+     },
+     {
+      "description": "Show ZCode Sites usage and plan limits.",
+      "inputHint": "/site-usage",
+      "name": "site-usage",
+      "source": "custom"
+     }
+    ],
+    "todos": [],
+    "todoGroups": []
+   }
+  },
+  {
+   "id": 3,
+   "method": "session/subscribe",
+   "params": {
+    "sessionId": "sess_dffa09cd-f50a-45f8-a606-a3c2c65c9f9b",
+    "deliveryKind": "desktop-continuous",
+    "includeSnapshot": true
+   }
+  },
+  {
+   "id": 3,
+   "result": {
+    "eventSeq": 0,
+    "events": [],
+    "sessionId": "sess_dffa09cd-f50a-45f8-a606-a3c2c65c9f9b",
+    "snapshot": {
+     "messages": [],
+     "projection": {
+      "activeToolCalls": [],
+      "backgroundJobs": [],
+      "contextUsed": 0,
+      "contextWindow": 200000,
+      "mode": "build",
+      "pendingPermissions": [],
+      "sessionId": "unknown",
+      "status": "idle",
+      "target": null,
+      "totalTokenCount": "<redacted>",
+      "turnCount": 0
+     },
+     "protocol": {
+      "name": "ZCode Protocol",
+      "version": 1
+     },
+     "runtime": {
+      "deliveryKind": "desktop-continuous",
+      "eventSeq": 0,
+      "pendingRequestIds": [],
+      "goalVerifications": [],
+      "goalVerificationTimeline": [],
+      "stateRevision": 1
+     },
+     "session": {
+      "createdAt": 1794151019391,
+      "mode": "build",
+      "model": {
+       "providerId": "account:bigmodel-start-plan",
+       "modelId": "GLM-5.3-Flash"
+      },
+      "traceId": "462b6186-9de4-45bf-af76-0410243d262f",
+      "sessionId": "sess_dffa09cd-f50a-45f8-a606-a3c2c65c9f9b",
+      "sessionKind": "interactive",
+      "status": "idle",
+      "target": null,
+      "title": "",
+      "updatedAt": 1794151019391,
+      "workspace": {
+       "workspacePath": "C:\\Users\\Rt\\.zcode\\workspace\\draft-26e30bc0-b470-4d11-afa5-0072a7c3058e\\zcode-acp-recon\\traces\\workspace",
+       "workspaceKey": "workspace"
+      }
+     },
+     "settings": {
+      "mode": {
+       "current": "build"
+      },
+      "model": {
+       "available": [
+        {
+         "ref": {
+          "providerId": "account:bigmodel-start-plan",
+          "modelId": "GLM-5.3-Flash"
+         },
+         "label": "GLM-5.3-Flash",
+         "providerLabel": "Start Plan",
+         "contextWindow": 200000,
+         "maxOutputTokens": "<redacted>",
+         "reasoning": {
+          "levels": [
+           {
+            "value": "low",
+            "label": "low"
+           },
+           {
+            "value": "high",
+            "label": "high"
+           },
+           {
+            "value": "max",
+            "label": "max"
+           }
+          ],
+          "defaultLevel": "max"
+         },
+         "properties": {
+          "inputFormat": {
+           "supportsText": true,
+           "supportsImage": true,
+           "supportsVideo": true,
+           "supportsAudio": false,
+           "supportsPdf": true
+          },
+          "outputFormat": {
+           "supportsText": true
+          }
+         }
+        }
+       ],
+       "current": {
+        "providerId": "account:bigmodel-start-plan",
+        "modelId": "GLM-5.3-Flash"
+       },
+       "lastUsed": {
+        "providerId": "account:bigmodel-start-plan",
+        "modelId": "GLM-5.3-Flash"
+       }
+      },
+      "permission": {
+       "mode": "build"
+      },
+      "thoughtLevel": {
+       "available": [
+        {
+         "label": "low",
+         "value": "low"
+        },
+        {
+         "label": "high",
+         "value": "high"
+        },
+        {
+         "label": "max",
+         "value": "max"
+        }
+       ],
+       "enabled": true
+      }
+     },
+     "slashCommands": [
+      {
+       "description": "Show or set the current session goal.",
+       "inputHint": "/goal [pause|resume|clear|replace <objective>|<objective>]",
+       "name": "goal",
+       "source": "builtin"
+      },
+      {
+       "description": "Compact the current conversation with optional instructions.",
+       "inputHint": "/compact [instructions]",
+       "name": "compact",
+       "source": "builtin"
+      },
+      {
+       "description": "Create or update workspace AGENTS.md instructions.",
+       "inputHint": "/init [notes]",
+       "name": "init",
+       "source": "builtin"
+      },
+      {
+       "description": "Run CodeRabbit AI code review on your changes",
+       "inputHint": "/coderabbit-review [type] [--base <branch>] [--dir <path>]",
+       "name": "coderabbit-review",
+       "source": "custom"
+      },
+      {
+       "description": "Reproducible, sealed Mimosa deep security audit. / 执行可复核的 Mimosa 密封深度安全审计。",
+       "inputHint": "/mimosa-deep-audit [项目路径 | project path]",
+       "name": "mimosa-deep-audit",
+       "source": "custom"
+      },
+      {
+       "description": "Fast static security audit with Mimosa. / 用 Mimosa 做快速静态安全审计。",
+       "inputHint": "/mimosa-scan [项目路径 | project path]",
+       "name": "mimosa-scan",
+       "source": "custom"
+      },
+      {
+       "description": "Show Mimosa hook, coverage, and open-finding status for this project. / 查看 Mimosa 当前项目的 Hook、扫描覆盖与未结 finding 状态。",
+       "inputHint": "/mimosa-status",
+       "name": "mimosa-status",
+       "source": "custom"
+      },
+      {
+       "description": "Open VectorCraft and optionally a workspace file",
+       "inputHint": "/open",
+       "name": "open",
+       "source": "custom"
+      },
+      {
+       "description": "Hide or show the ZCode badge on the linked ZCode Sites site.",
+       "inputHint": "/site-badge hide | show",
+       "name": "site-badge",
+       "source": "custom"
+      },
+      {
+       "description": "Deploy this project to ZCode Sites, or redeploy the linked site.",
+       "inputHint": "/site-deploy [site id or notes]",
+       "name": "site-deploy",
+       "source": "custom"
+      },
+      {
+       "description": "Show the logs of a ZCode Sites deployment and explain any failure.",
+       "inputHint": "/site-logs [deployment id]",
+       "name": "site-logs",
+       "source": "custom"
+      },
+      {
+       "description": "Take the linked ZCode Sites site offline.",
+       "inputHint": "/site-offline [site id]",
+       "name": "site-offline",
+       "source": "custom"
+      },
+      {
+       "description": "Bring the linked ZCode Sites site back online.",
+       "inputHint": "/site-online [site id]",
+       "name": "site-online",
+       "source": "custom"
+      },
+      {
+       "description": "Show the ZCode Sites site linked to this project.",
+       "inputHint": "/site-status [site id]",
+       "name": "site-status",
+       "source": "custom"
+      },
+      {
+       "description": "Show ZCode Sites usage and plan limits.",
+       "inputHint": "/site-usage",
+       "name": "site-usage",
+       "source": "custom"
+      }
+     ],
+     "todos": [],
+     "todoGroups": []
+    }
+   }
+  },
+  {
+   "id": 4,
+   "method": "session/send",
+   "params": {
+    "sessionId": "sess_dffa09cd-f50a-45f8-a606-a3c2c65c9f9b",
+    "content": "请在当前目录创建名为 probe-permission-test.txt 的文件，内容为一行文字 hello，然后告诉我创建结果。",
+    "modelSelection": {
+     "providerId": "account:bigmodel-start-plan",
+     "modelId": "GLM-5.3-Flash",
+     "options": {
+      "reasoningLevel": "high"
+     }
+    }
+   }
+  },
+  {
+   "id": "server-5",
+   "method": "session/requestRuntimePreferences",
+   "params": {
+    "sessionId": "sess_dffa09cd-f50a-45f8-a606-a3c2c65c9f9b",
+    "scope": "user-execution"
+   }
+  },
+  {
+   "id": "server-5",
+   "result": {
+    "nativeSearchEnhancementsEnabled": false,
+    "toolSearchMode": "off",
+    "memoryEnabled": false,
+    "askUserQuestionAutoResolutionEnabled": true,
+    "modelContextBudgetStrategy": "preflight-v1"
+   }
+  },
+  {
+   "method": "state.updated",
+   "params": {
+    "patch": {
+     "status": "running"
+    },
+    "reason": "prompt_started",
+    "revision": 2,
+    "scope": "session",
+    "sessionId": "sess_dffa09cd-f50a-45f8-a606-a3c2c65c9f9b",
+    "type": "state.updated",
+    "workspace": {
+     "workspacePath": "C:\\Users\\Rt\\.zcode\\workspace\\draft-26e30bc0-b470-4d11-afa5-0072a7c3058e\\zcode-acp-recon\\traces\\workspace",
+     "workspaceKey": "workspace"
+    }
+   }
+  },
+  {
+   "id": 4,
+   "result": {
+    "accepted": true,
+    "sessionId": "sess_dffa09cd-f50a-45f8-a606-a3c2c65c9f9b",
+    "stateRevision": 2
+   }
+  },
+  {
+   "method": "process/mcpTelemetry",
+   "params": {
+    "arch": "x64",
+    "kind": "process_start",
+    "mcpId": "builtin:jupyter-notebook:jupyter-notebook",
+    "mcpInstanceId": "e6b3aed4-278d-4022-bb17-28987824dd55",
+    "mcpIsolation": "session",
+    "mcpSource": "builtin",
+    "occurredAt": 1794151022761,
+    "platform": "win32"
+   }
+  },
+  {
+   "method": "process/mcpTelemetry",
+   "params": {
+    "arch": "x64",
+    "kind": "process_start",
+    "mcpId": "builtin:designcraft:designcraft",
+    "mcpInstanceId": "e3a9887f-8fa2-4c54-8948-547bb89557b9",
+    "mcpIsolation": "session",
+    "mcpSource": "builtin",
+    "occurredAt": 1794151022810,
+    "platform": "win32"
+   }
+  },
+  {
+   "method": "process/mcpTelemetry",
+   "params": {
+    "arch": "x64",
+    "kind": "process_start",
+    "mcpId": "builtin:photocraft:photocraft",
+    "mcpInstanceId": "38f0ba00-519f-472d-899e-21636e934398",
+    "mcpIsolation": "session",
+    "mcpSource": "builtin",
+    "occurredAt": 1794151022815,
+    "platform": "win32"
+   }
+  },
+  {
+   "id": "server-6",
+   "method": "interaction/requestOfficialMcpAuthHeaders",
+   "params": {
+    "mcpKey": "sites",
+    "pluginId": "zcode-site@zcode-plugins-official",
+    "requestId": "official-mcp-auth:4",
+    "targetOrigin": "https://zcode.z.ai/",
+    "workspace": {
+     "workspaceKey": "C:\\Users\\Rt\\.zcode\\workspace\\draft-26e30bc0-b470-4d11-afa5-0072a7c3058e\\zcode-acp-recon\\traces\\workspace",
+     "workspacePath": "C:\\Users\\Rt\\.zcode\\workspace\\draft-26e30bc0-b470-4d11-afa5-0072a7c3058e\\zcode-acp-recon\\traces\\workspace"
+    }
+   }
+  },
+  {
+   "id": "server-6",
+   "result": {}
+  },
+  {
+   "method": "process/mcpTelemetry",
+   "params": {
+    "arch": "x64",
+    "kind": "process_start",
+    "mcpId": "builtin:soundcraft:soundcraft",
+    "mcpInstanceId": "ae0d9202-6da2-4db9-a805-a9da04e22ad1",
+    "mcpIsolation": "session",
+    "mcpSource": "builtin",
+    "occurredAt": 1794151022921,
+    "platform": "win32"
+   }
+  },
+  {
+   "method": "process/mcpTelemetry",
+   "params": {
+    "arch": "x64",
+    "kind": "process_start",
+    "mcpId": "builtin:vectorcraft:vectorcraft",
+    "mcpInstanceId": "06fc172c-865a-4664-b3d9-a25ab60279ed",
+    "mcpIsolation": "session",
+    "mcpSource": "builtin",
+    "occurredAt": 1794151022991,
+    "platform": "win32"
+   }
+  },
+  {
+   "method": "process/mcpTelemetry",
+   "params": {
+    "arch": "x64",
+    "kind": "process_start",
+    "mcpId": "builtin:zotero:zotero",
+    "mcpInstanceId": "7cb2206d-e30b-4687-afe0-ea5589cce3a2",
+    "mcpIsolation": "session",
+    "mcpSource": "builtin",
+    "occurredAt": 1794151023061,
+    "platform": "win32"
+   }
+  },
+  {
+   "method": "session/event",
+   "params": {
+    "deliveryKind": "desktop-continuous",
+    "eventId": "ea05fe21-7566-4c42-a3e6-219f19d83e71",
+    "payload": {
+     "descriptor": {
+      "clientVisible": true,
+      "commandDisplay": "node \"C:\\\\Users\\\\Rt\\\\.zcode\\\\cli\\\\plugins\\\\cache\\\\zcode-plugins-official\\\\mimosa\\\\1.0.4/hooks/run-hook.cjs\" session-hook.mjs SessionStart",
+      "executionMode": "foreground",
+      "executionType": "process",
+      "pluginId": "mimosa@zcode-plugins-official",
+      "pluginName": "mimosa",
+      "sourceKind": "plugin",
+      "sourcePath": "C:\\Users\\Rt\\.zcode\\cli\\plugins\\cache\\zcode-plugins-official\\mimosa\\1.0.4\\hooks\\hooks.json",
+      "statusMessage": "Mimosa 正在准备项目安全上下文…",
+      "timeoutMs": 120000
+     },
+     "hookEventName": "SessionStart",
+     "hookIndex": 0,
+     "hookCount": 2,
+     "hookInvocationId": "f1b5d599-bdde-4501-aedc-67c7e17a7d39",
+     "hookRunId": "0eb95d71-b755-4312-bf7b-65a5dd40269c",
+     "hookSource": "plugin.mimosa@zcode-plugins-official.SessionStart.0.0",
+     "startedAt": 1794151023211
+    },
+    "seq": 1,
+    "sessionId": "sess_dffa09cd-f50a-45f8-a606-a3c2c65c9f9b",
+    "timestamp": 1794151023211,
+    "traceId": "462b6186-9de4-45bf-af76-0410243d262f",
+    "turnId": "turn_233a8a57-2f5d-4bc4-b460-d92e35c874d3",
+    "type": "session.updated"
+   }
+  },
+  {
+   "method": "session/event",
+   "params": {
+    "deliveryKind": "desktop-continuous",
+    "eventId": "31548eb2-0da0-48d5-b6b1-ce791c945ac6",
+    "payload": {
+     "descriptor": {
+      "clientVisible": true,
+      "commandDisplay": "node \"C:\\\\Users\\\\Rt\\\\.zcode\\\\cli\\\\plugins\\\\cache\\\\zcode-plugins-official\\\\mimosa\\\\1.0.4/hooks/run-hook.cjs\" session-hook.mjs SessionStart",
+      "executionMode": "foreground",
+      "executionType": "process",
+      "pluginId": "mimosa@zcode-plugins-official",
+      "pluginName": "mimosa",
+      "sourceKind": "plugin",
+      "sourcePath": "C:\\Users\\Rt\\.zcode\\cli\\plugins\\cache\\zcode-plugins-official\\mimosa\\1.0.4\\hooks\\hooks.json",
+      "statusMessage": "Mimosa 正在准备项目安全上下文…",
+      "timeoutMs": 120000
+     },
+     "hookEventName": "SessionStart",
+     "hookIndex": 0,
+     "hookCount": 2,
+     "hookInvocationId": "f1b5d599-bdde-4501-aedc-67c7e17a7d39",
+     "hookRunId": "0eb95d71-b755-4312-bf7b-65a5dd40269c",
+     "hookSource": "plugin.mimosa@zcode-plugins-official.SessionStart.0.0",
+     "startedAt": 1794151023211,
+     "durationMs": 584,
+     "outcome": "success"
+    },
+    "seq": 2,
+    "sessionId": "sess_dffa09cd-f50a-45f8-a606-a3c2c65c9f9b",
+    "timestamp": 1794151023796,
+    "traceId": "462b6186-9de4-45bf-af76-0410243d262f",
+    "turnId": "turn_233a8a57-2f5d-4bc4-b460-d92e35c874d3",
+    "type": "session.updated"
+   }
+  },
+  {
+   "method": "session/event",
+   "params": {
+    "deliveryKind": "desktop-continuous",
+    "eventId": "a85b52cb-d3fe-4fc4-a018-2fe630ffd406",
+    "payload": {
+     "descriptor": {
+      "clientVisible": true,
+      "commandDisplay": "node \"C:\\\\Users\\\\Rt\\\\.zcode\\\\cli\\\\plugins\\\\cache\\\\zcode-plugins-official\\\\tripo-3d\\\\0.1.4/hooks/session-start.mjs\"",
+      "executionMode": "foreground",
+      "executionType": "process",
+      "pluginId": "tripo-3d@zcode-plugins-official",
+      "pluginName": "tripo-3d",
+      "sourceKind": "plugin",
+      "sourcePath": "C:\\Users\\Rt\\.zcode\\cli\\plugins\\cache\\zcode-plugins-official\\tripo-3d\\0.1.4\\hooks\\hooks.json",
+      "statusMessage": "tripo-3d: loading Tripo rules…",
+      "timeoutMs": 5000
+     },
+     "hookEventName": "SessionStart",
+     "hookIndex": 1,
+     "hookCount": 2,
+     "hookInvocationId": "f1b5d599-bdde-4501-aedc-67c7e17a7d39",
+     "hookRunId": "3c229955-6ff4-4b71-ba45-01a2d258829f",
+     "hookSource": "plugin.tripo-3d@zcode-plugins-official.SessionStart.1.0",
+     "matcher": "startup|clear|compact",
+     "startedAt": 1794151023797
+    },
+    "seq": 3,
+    "sessionId": "sess_dffa09cd-f50a-45f8-a606-a3c2c65c9f9b",
+    "timestamp": 1794151023797,
+    "traceId": "462b6186-9de4-45bf-af76-0410243d262f",
+    "turnId": "turn_233a8a57-2f5d-4bc4-b460-d92e35c874d3",
+    "type": "session.updated"
+   }
+  },
+  {
+   "method": "process/mcpTelemetry",
+   "params": {
+    "arch": "x64",
+    "kind": "process_start",
+    "mcpId": "builtin:mimosa:mimosa",
+    "mcpInstanceId": "7056552c-51e0-4dab-89e2-39b7bb060ea3",
+    "mcpIsolation": "session",
+    "mcpSource": "builtin",
+    "occurredAt": 1794151023926,
+    "platform": "win32"
+   }
+  },
+  {
+   "method": "process/mcpTelemetry",
+   "params": {
+    "arch": "x64",
+    "kind": "process_start",
+    "mcpId": "builtin:presentations:presentations",
+    "mcpInstanceId": "3199083e-4611-4dca-bf38-ddd63fc4e63a",
+    "mcpIsolation": "workspace",
+    "mcpSource": "builtin",
+    "occurredAt": 1794151023957,
+    "platform": "win32"
+   }
+  },
+  {
+   "id": "server-7",
+   "method": "interaction/requestOfficialMcpAuthHeaders",
+   "params": {
+    "mcpKey": "sites",
+    "pluginId": "zcode-site@zcode-plugins-official",
+    "requestId": "official-mcp-auth:5",
+    "targetOrigin": "https://zcode.z.ai/",
+    "workspace": {
+     "workspaceKey": "C:\\Users\\Rt\\.zcode\\workspace\\draft-26e30bc0-b470-4d11-afa5-0072a7c3058e\\zcode-acp-recon\\traces\\workspace",
+     "workspacePath": "C:\\Users\\Rt\\.zcode\\workspace\\draft-26e30bc0-b470-4d11-afa5-0072a7c3058e\\zcode-acp-recon\\traces\\workspace"
+    }
+   }
+  },
+  {
+   "id": "server-7",
+   "result": {}
+  },
+  {
+   "id": "server-8",
+   "method": "interaction/requestOfficialMcpAuthHeaders",
+   "params": {
+    "mcpKey": "sites",
+    "pluginId": "zcode-site@zcode-plugins-official",
+    "requestId": "official-mcp-auth:6",
+    "targetOrigin": "https://zcode.z.ai/",
+    "workspace": {
+     "workspaceKey": "C:\\Users\\Rt\\.zcode\\workspace\\draft-26e30bc0-b470-4d11-afa5-0072a7c3058e\\zcode-acp-recon\\traces\\workspace",
+     "workspacePath": "C:\\Users\\Rt\\.zcode\\workspace\\draft-26e30bc0-b470-4d11-afa5-0072a7c3058e\\zcode-acp-recon\\traces\\workspace"
+    }
+   }
+  },
+  {
+   "id": "server-8",
+   "result": {}
+  },
+  {
+   "method": "process/mcpTelemetry",
+   "params": {
+    "arch": "x64",
+    "kind": "process_start",
+    "mcpId": "builtin:zcode-site:sites",
+    "mcpInstanceId": "99096956-32dd-4734-b139-67d1126b05e5",
+    "mcpIsolation": "session",
+    "mcpSource": "builtin",
+    "occurredAt": 1794151024020,
+    "platform": "win32"
+   }
+  },
+  {
+   "method": "process/mcpTelemetry",
+   "params": {
+    "arch": "x64",
+    "kind": "process_start",
+    "mcpId": "builtin:documents:documents",
+    "mcpInstanceId": "acaa59fa-01b1-4f8f-8c12-d82bd7cbf672",
+    "mcpIsolation": "workspace",
+    "mcpSource": "builtin",
+    "occurredAt": 1794151024036,
+    "platform": "win32"
+   }
+  },
+  {
+   "method": "session/event",
+   "params": {
+    "deliveryKind": "desktop-continuous",
+    "eventId": "bf11c985-7540-432e-8659-e1ce5697ba99",
+    "payload": {
+     "descriptor": {
+      "clientVisible": true,
+      "commandDisplay": "node \"C:\\\\Users\\\\Rt\\\\.zcode\\\\cli\\\\plugins\\\\cache\\\\zcode-plugins-official\\\\tripo-3d\\\\0.1.4/hooks/session-start.mjs\"",
+      "executionMode": "foreground",
+      "executionType": "process",
+      "pluginId": "tripo-3d@zcode-plugins-official",
+      "pluginName": "tripo-3d",
+      "sourceKind": "plugin",
+      "sourcePath": "C:\\Users\\Rt\\.zcode\\cli\\plugins\\cache\\zcode-plugins-official\\tripo-3d\\0.1.4\\hooks\\hooks.json",
+      "statusMessage": "tripo-3d: loading Tripo rules…",
+      "timeoutMs": 5000
+     },
+     "hookEventName": "SessionStart",
+     "hookIndex": 1,
+     "hookCount": 2,
+     "hookInvocationId": "f1b5d599-bdde-4501-aedc-67c7e17a7d39",
+     "hookRunId": "3c229955-6ff4-4b71-ba45-01a2d258829f",
+     "hookSource": "plugin.tripo-3d@zcode-plugins-official.SessionStart.1.0",
+     "matcher": "startup|clear|compact",
+     "startedAt": 1794151023797,
+     "durationMs": 243,
+     "outcome": "success"
+    },
+    "seq": 4,
+    "sessionId": "sess_dffa09cd-f50a-45f8-a606-a3c2c65c9f9b",
+    "timestamp": 1794151024040,
+    "traceId": "462b6186-9de4-45bf-af76-0410243d262f",
+    "turnId": "turn_233a8a57-2f5d-4bc4-b460-d92e35c874d3",
+    "type": "session.updated"
+   }
+  },
+  {
+   "method": "session/event",
+   "params": {
+    "deliveryKind": "desktop-continuous",
+    "eventId": "a7c5d75b-2f1e-49d5-ae15-d3ab9d60da61",
+    "payload": {
+     "previousTitle": "",
+     "source": "first_input",
+     "title": "请在当前目录创建名为 probe-permission-test.txt 的文件，内容为一行文字 hello，然后..."
+    },
+    "seq": 5,
+    "sessionId": "sess_dffa09cd-f50a-45f8-a606-a3c2c65c9f9b",
+    "timestamp": 1794151024054,
+    "traceId": "462b6186-9de4-45bf-af76-0410243d262f",
+    "turnId": "turn_233a8a57-2f5d-4bc4-b460-d92e35c874d3",
+    "type": "session.titleUpdated"
+   }
+  },
+  {
+   "method": "session/event",
+   "params": {
+    "deliveryKind": "desktop-continuous",
+    "eventId": "c2e59e0e-91b7-48aa-ae40-a73c1bffe95f",
+    "payload": {
+     "contextWindow": 1000000,
+     "modelSelection": {
+      "providerId": "account:bigmodel-start-plan",
+      "modelId": "GLM-5.3-Flash",
+      "options": {
+       "reasoningLevel": "high"
+      }
+     },
+     "effectiveReasoningLevel": "high",
+     "previousModelSelection": {
+      "providerId": "account:bigmodel-start-plan",
+      "modelId": "GLM-5.3-Flash"
+     },
+     "supportedThoughtLevels": [
+      "low",
+      "high",
+      "max"
+     ]
+    },
+    "seq": 6,
+    "sessionId": "sess_dffa09cd-f50a-45f8-a606-a3c2c65c9f9b",
+    "timestamp": 1794151024059,
+    "traceId": "462b6186-9de4-45bf-af76-0410243d262f",
+    "type": "session.updated"
+   }
+  },
+  {
+   "method": "computer-use/operation-event",
+   "params": {
+    "eventId": "b8ce76c8-c510-4bac-aa3e-65032bf52679",
+    "sequenceNumber": 7,
+    "sessionId": "sess_dffa09cd-f50a-45f8-a606-a3c2c65c9f9b",
+    "timestamp": 1794151024062,
+    "kind": "turn-started",
+    "turnId": "turn_233a8a57-2f5d-4bc4-b460-d92e35c874d3"
+   }
+  },
+  {
+   "method": "v4/telemetry/event",
+   "params": {
+    "memoryEnabled": false,
+    "version": 1,
+    "eventId": "b8ce76c8-c510-4bac-aa3e-65032bf52679",
+    "eventSeq": 7,
+    "occurredAt": 1794151024062,
+    "sessionId": "sess_dffa09cd-f50a-45f8-a606-a3c2c65c9f9b",
+    "sourceCommandId": "00376f75-a4c9-4151-a9e2-20b40fcfd0a4",
+    "turnId": "turn_233a8a57-2f5d-4bc4-b460-d92e35c874d3",
+    "kind": "turn.started",
+    "modelName": "GLM-5.3-Flash",
+    "modelProvider": "account:bigmodel-start-plan"
+   }
+  },
+  {
+   "method": "session/event",
+   "params": {
+    "deliveryKind": "desktop-continuous",
+    "eventId": "b8ce76c8-c510-4bac-aa3e-65032bf52679",
+    "payload": {
+     "executionStartedAt": 1794151022699.8079,
+     "turnNumber": 0,
+     "input": "请在当前目录创建名为 probe-permission-test.txt 的文件，内容为一行文字 hello，然后告诉我创建结果。",
+     "messageId": "msg_mw7z7265_97a2dacd-3c7f-45e2-bfbf-f9449b385352",
+     "inputId": "00376f75-a4c9-4151-a9e2-20b40fcfd0a4",
+     "foregroundExecutionId": "runtime_command_1",
+     "queryId": "00376f75-a4c9-4151-a9e2-20b40fcfd0a4",
+     "intent": {
+      "sourceCommandId": "00376f75-a4c9-4151-a9e2-20b40fcfd0a4",
+      "queueItemId": "queue_00376f75-a4c9-4151-a9e2-20b40fcfd0a4",
+      "clientId": "legacy-session-send",
+      "kind": "sendText",
+      "text": "请在当前目录创建名为 probe-permission-test.txt 的文件，内容为一行文字 hello，然后告诉我创建结果。",
+      "modelSelection": {
+       "providerId": "account:bigmodel-start-plan",
+       "modelId": "GLM-5.3-Flash",
+       "options": {
+        "reasoningLevel": "high"
+       }
+      },
+      "admissionSeq": 0,
+      "admittedAt": 1794151022666,
+      "requestedDelivery": "startNow",
+      "admittedDelivery": "startNow"
+     }
+    },
+    "seq": 7,
+    "sessionId": "sess_dffa09cd-f50a-45f8-a606-a3c2c65c9f9b",
+    "timestamp": 1794151024062,
+    "traceId": "462b6186-9de4-45bf-af76-0410243d262f",
+    "turnId": "turn_233a8a57-2f5d-4bc4-b460-d92e35c874d3",
+    "type": "turn.started"
+   }
+  },
+  {
+   "method": "session/event",
+   "params": {
+    "deliveryKind": "desktop-continuous",
+    "eventId": "c07dfa7a-c4fd-4fd2-842b-7c0ea0173c21",
+    "payload": {
+     "descriptor": {
+      "clientVisible": true,
+      "commandDisplay": "node \"C:\\\\Users\\\\Rt\\\\.zcode\\\\cli\\\\plugins\\\\cache\\\\zcode-plugins-official\\\\mimosa\\\\1.0.4/hooks/run-hook.cjs\" prompt-hook.mjs UserPromptSubmit",
+      "executionMode": "foreground",
+      "executionType": "process",
+      "pluginId": "mimosa@zcode-plugins-official",
+      "pluginName": "mimosa",
+      "sourceKind": "plugin",
+      "sourcePath": "C:\\Users\\Rt\\.zcode\\cli\\plugins\\cache\\zcode-plugins-official\\mimosa\\1.0.4\\hooks\\hooks.json",
+      "timeoutMs": 30000
+     },
+     "hookEventName": "UserPromptSubmit",
+     "hookIndex": 0,
+     "hookCount": 1,
+     "hookInvocationId": "b01454ef-639c-495e-96be-f5ead0e63032",
+     "hookRunId": "99f94f4d-6b05-4a8d-8c07-5ce72dbe42b0",
+     "hookSource": "plugin.mimosa@zcode-plugins-official.UserPromptSubmit.0.0",
+     "startedAt": 1794151024078
+    },
+    "seq": 8,
+    "sessionId": "sess_dffa09cd-f50a-45f8-a606-a3c2c65c9f9b",
+    "timestamp": 1794151024078,
+    "traceId": "462b6186-9de4-45bf-af76-0410243d262f",
+    "turnId": "turn_233a8a57-2f5d-4bc4-b460-d92e35c874d3",
+    "type": "session.updated"
+   }
+  },
+  {
+   "method": "process/mcpTelemetry",
+   "params": {
+    "arch": "x64",
+    "kind": "process_start",
+    "mcpId": "builtin:spreadsheets:spreadsheets",
+    "mcpInstanceId": "f0b4f281-dc6a-47ab-b67f-c076d2fbe8d7",
+    "mcpIsolation": "workspace",
+    "mcpSource": "builtin",
+    "occurredAt": 1794151024196,
+    "platform": "win32"
+   }
+  },
+  {
+   "method": "process/mcpTelemetry",
+   "params": {
+    "arch": "x64",
+    "kind": "process_start",
+    "mcpId": "builtin:pdf:pdf",
+    "mcpInstanceId": "ac74a200-fa46-4630-a0bb-cd051fe923af",
+    "mcpIsolation": "workspace",
+    "mcpSource": "builtin",
+    "occurredAt": 1794151024213,
+    "platform": "win32"
+   }
+  },
+  {
+   "method": "process/mcpTelemetry",
+   "params": {
+    "arch": "x64",
+    "kind": "process_start",
+    "mcpId": "builtin:node_repl",
+    "mcpInstanceId": "5be50042-0d60-4201-a853-35ec74900652",
+    "mcpIsolation": "workspace",
+    "mcpSource": "builtin",
+    "occurredAt": 1794151024260,
+    "platform": "win32"
+   }
+  },
+  {
+   "method": "session/event",
+   "params": {
+    "deliveryKind": "desktop-continuous",
+    "eventId": "e64453fb-c23a-4e59-a408-14813a20592e",
+    "payload": {
+     "descriptor": {
+      "clientVisible": true,
+      "commandDisplay": "node \"C:\\\\Users\\\\Rt\\\\.zcode\\\\cli\\\\plugins\\\\cache\\\\zcode-plugins-official\\\\mimosa\\\\1.0.4/hooks/run-hook.cjs\" prompt-hook.mjs UserPromptSubmit",
+      "executionMode": "foreground",
+      "executionType": "process",
+      "pluginId": "mimosa@zcode-plugins-official",
+      "pluginName": "mimosa",
+      "sourceKind": "plugin",
+      "sourcePath": "C:\\Users\\Rt\\.zcode\\cli\\plugins\\cache\\zcode-plugins-official\\mimosa\\1.0.4\\hooks\\hooks.json",
+      "timeoutMs": 30000
+     },
+     "hookEventName": "UserPromptSubmit",
+     "hookIndex": 0,
+     "hookCount": 1,
+     "hookInvocationId": "b01454ef-639c-495e-96be-f5ead0e63032",
+     "hookRunId": "99f94f4d-6b05-4a8d-8c07-5ce72dbe42b0",
+     "hookSource": "plugin.mimosa@zcode-plugins-official.UserPromptSubmit.0.0",
+     "startedAt": 1794151024078,
+     "durationMs": 444,
+     "outcome": "success"
+    },
+    "seq": 9,
+    "sessionId": "sess_dffa09cd-f50a-45f8-a606-a3c2c65c9f9b",
+    "timestamp": 1794151024523,
+    "traceId": "462b6186-9de4-45bf-af76-0410243d262f",
+    "turnId": "turn_233a8a57-2f5d-4bc4-b460-d92e35c874d3",
+    "type": "session.updated"
+   }
+  },
+  {
+   "method": "session/event",
+   "params": {
+    "deliveryKind": "desktop-continuous",
+    "eventId": "5a0ebc91-cbe1-45f8-9356-42309bba5c39",
+    "payload": {
+     "pendingInputId": "queue_00376f75-a4c9-4151-a9e2-20b40fcfd0a4",
+     "sourceCommandId": "00376f75-a4c9-4151-a9e2-20b40fcfd0a4",
+     "messageId": "msg_mw7z7265_97a2dacd-3c7f-45e2-bfbf-f9449b385352"
+    },
+    "seq": 10,
+    "sessionId": "sess_dffa09cd-f50a-45f8-a606-a3c2c65c9f9b",
+    "timestamp": 1794151024544,
+    "traceId": "462b6186-9de4-45bf-af76-0410243d262f",
+    "turnId": "turn_233a8a57-2f5d-4bc4-b460-d92e35c874d3",
+    "type": "session.updated"
+   }
+  },
+  {
+   "method": "process/mcpTelemetry",
+   "params": {
+    "arch": "x64",
+    "kind": "process_start",
+    "mcpId": "builtin:jev-decisions:jev",
+    "mcpInstanceId": "a6dc329e-9b7e-47c0-926c-87e2943a4083",
+    "mcpIsolation": "session",
+    "mcpSource": "builtin",
+    "occurredAt": 1794151027129,
+    "platform": "win32"
+   }
+  },
+  {
+   "method": "process/mcpTelemetry",
+   "params": {
+    "arch": "x64",
+    "kind": "process_start",
+    "mcpId": "builtin:cloudbase-skills:cloudbase",
+    "mcpInstanceId": "50dedf4b-9aab-4965-8306-f173f537293e",
+    "mcpIsolation": "session",
+    "mcpSource": "builtin",
+    "occurredAt": 1794151027531,
+    "platform": "win32"
+   }
+  },
+  {
+   "method": "process/mcpTelemetry",
+   "params": {
+    "arch": "x64",
+    "configuredCount": 19,
+    "connectedCount": 16,
+    "failedCount": 3,
+    "kind": "session_startup",
+    "occurredAt": 1794151034779,
+    "platform": "win32",
+    "processCount": 15,
+    "sessionId": "sess_dffa09cd-f50a-45f8-a606-a3c2c65c9f9b"
+   }
+  },
+  {
+   "method": "session/event",
+   "params": {
+    "deliveryKind": "desktop-continuous",
+    "eventId": "b670b25a-d062-4904-a8fc-4805862d0fbd",
+    "payload": {
+     "messageCount": 6,
+     "providerId": "account:bigmodel-start-plan",
+     "modelId": "GLM-5.3-Flash",
+     "toolCount": 244,
+     "iteration": 0
+    },
+    "seq": 11,
+    "sessionId": "sess_dffa09cd-f50a-45f8-a606-a3c2c65c9f9b",
+    "timestamp": 1794151034862,
+    "traceId": "462b6186-9de4-45bf-af76-0410243d262f",
+    "turnId": "turn_233a8a57-2f5d-4bc4-b460-d92e35c874d3",
+    "type": "session.updated"
+   }
+  },
+  {
+   "id": "server-9",
+   "method": "interaction/requestProviderRuntimeHeaders",
+   "params": {
+    "requestId": "sess_dffa09cd-f50a-45f8-a606-a3c2c65c9f9b:provider-runtime-headers:725961a3-8bf3-4294-b8d8-6f522b6336d4",
+    "sessionId": "sess_dffa09cd-f50a-45f8-a606-a3c2c65c9f9b",
+    "turnId": "turn_233a8a57-2f5d-4bc4-b460-d92e35c874d3",
+    "workspace": {
+     "workspacePath": "C:\\Users\\Rt\\.zcode\\workspace\\draft-26e30bc0-b470-4d11-afa5-0072a7c3058e\\zcode-acp-recon\\traces\\workspace",
+     "workspaceKey": "workspace"
+    },
+    "modelSelection": {
+     "providerId": "account:bigmodel-start-plan",
+     "modelId": "GLM-5.3-Flash"
+    },
+    "providerId": "account:bigmodel-start-plan",
+    "accountAccess": {
+     "type": "zhipu-account",
+     "accountType": "bigmodel",
+     "mode": "start-plan",
+     "entitled": true
+    },
+    "reason": "model-request"
+   },
+   "trace": {
+    "traceId": "462b6186-9de4-45bf-af76-0410243d262f",
+    "spanId": "a5fd5c76-5f36-40",
+    "parentId": "072ba043-75c1-47"
+   }
+  },
+  {
+   "id": "server-9",
+   "result": {
+    "headersApplied": true,
+    "requestAuth": "<redacted>"
+   }
+  },
+  {
+   "method": "v4/telemetry/event",
+   "params": {
+    "memoryEnabled": false,
+    "version": 1,
+    "eventId": "36e6397f-38e7-4492-b03f-f6c561c47538",
+    "eventSeq": 12,
+    "occurredAt": 1794151034930,
+    "sessionId": "sess_dffa09cd-f50a-45f8-a606-a3c2c65c9f9b",
+    "sourceCommandId": "00376f75-a4c9-4151-a9e2-20b40fcfd0a4",
+    "turnId": "turn_233a8a57-2f5d-4bc4-b460-d92e35c874d3",
+    "kind": "model.request.status",
+    "requestId": "62ce998c-0f7f-46a5-80ee-ecf364511785",
+    "status": "model_request_started",
+    "providerId": "account:bigmodel-start-plan",
+    "modelId": "GLM-5.3-Flash",
+    "providerKind": "anthropic",
+    "providerHostname": "zcode.z.ai",
+    "transport": "sse",
+    "querySource": "main_turn",
+    "queryId": "00376f75-a4c9-4151-a9e2-20b40fcfd0a4",
+    "attempt": 1,
+    "maxAttempts": 11
+   }
+  },
+  {
+   "method": "session/event",
+   "params": {
+    "deliveryKind": "desktop-continuous",
+    "eventId": "36e6397f-38e7-4492-b03f-f6c561c47538",
+    "payload": {
+     "baseURL": "https://zcode.z.ai/api/v1/zcode-plan/anthropic",
+     "maxAttempts": 11,
+     "providerId": "account:bigmodel-start-plan",
+     "modelId": "GLM-5.3-Flash",
+     "modelRequestSessionType": "main",
+     "requestId": "62ce998c-0f7f-46a5-80ee-ecf364511785",
+     "sessionId": "sess_dffa09cd-f50a-45f8-a606-a3c2c65c9f9b",
+     "spanId": "a5fd5c76-5f36-40",
+     "parentSpanId": "072ba043-75c1-47",
+     "querySource": "main_turn",
+     "queryId": "00376f75-a4c9-4151-a9e2-20b40fcfd0a4",
+     "traceId": "462b6186-9de4-45bf-af76-0410243d262f",
+     "providerKind": "anthropic",
+     "transport": "sse",
+     "turnId": "turn_233a8a57-2f5d-4bc4-b460-d92e35c874d3",
+     "modelCall": {
+      "operation": "agent_step",
+      "actorKind": "main",
+      "operationId": "a5fd5c76-5f36-40",
+      "reasoning": {
+       "capability": "unknown",
+       "requestedControl": "provider_default",
+       "requestedState": "provider_default",
+       "requestedLevel": "high",
+       "effectiveControl": "unknown",
+       "effectiveState": "unknown",
+       "effectiveLevel": "unknown"
+      },
+      "logicalCallId": "c1e2dae1-fdba-41ba-ac60-c17945a8e989",
+      "stepIndex": 0
+     },
+     "attempt": 1,
+     "requestHeaderCount": 17,
+     "requestHeaders": {
+      "http-referer": "https://zcode.z.ai/",
+      "user-agent": "ZCode/3.17.2",
+      "x-zcode-app-version": "3.17.2",
+      "x-title": "Z Code@electron",
+      "x-release-channel": "production",
+      "x-client-language": "zh-CN",
+      "x-client-timezone": "Asia/Shanghai",
+      "x-zcode-agent": "glm",
+      "x-platform": "win32-x64",
+      "x-os-category": "windows",
+      "x-os-version": "10.0.26300",
+      "x-request-id": "62ce998c-0f7f-46a5-80ee-ecf364511785",
+      "x-zcode-session-type": "main",
+      "x-zcode-trace-id": "462b6186-9de4-45bf-af76-0410243d262f",
+      "x-query-id": "00376f75-a4c9-4151-a9e2-20b40fcfd0a4",
+      "x-zcode-query-source": "main_turn",
+      "x-session-id": "dffa09cd-f50a-45f8-a606-a3c2c65c9f9b"
+     },
+     "timestamp": "2026-11-08T15:17:14.899Z",
+     "type": "model_request_started",
+     "_meta": {
+      "zcode": {
+       "apiRetry": null
+      }
+     }
+    },
+    "seq": 12,
+    "sessionId": "sess_dffa09cd-f50a-45f8-a606-a3c2c65c9f9b",
+    "timestamp": 1794151034930,
+    "traceId": "462b6186-9de4-45bf-af76-0410243d262f",
+    "turnId": "turn_233a8a57-2f5d-4bc4-b460-d92e35c874d3",
+    "type": "session.updated"
+   }
+  },
+  {
+   "method": "session/event",
+   "params": {
+    "deliveryKind": "desktop-continuous",
+    "eventId": "e19f2906-dfde-465d-ac21-bd590a47c24d",
+    "payload": {
+     "assistantMessageId": "msg_mw7z7ahw_d0c65306-05ad-417f-b07a-7895efa170a8",
+     "delta": "",
+     "done": false,
+     "kind": "tool_input_start",
+     "toolCallId": "call_3d44becd2d8b401582d2fb7b",
+     "toolName": "Write"
+    },
+    "seq": 13,
+    "sessionId": "sess_dffa09cd-f50a-45f8-a606-a3c2c65c9f9b",
+    "timestamp": 1794151069480,
+    "traceId": "462b6186-9de4-45bf-af76-0410243d262f",
+    "turnId": "turn_233a8a57-2f5d-4bc4-b460-d92e35c874d3",
+    "type": "model.streaming"
+   }
+  },
+  {
+   "method": "session/event",
+   "params": {
+    "deliveryKind": "desktop-continuous",
+    "eventId": "c3fccb05-720c-462a-9e6a-959efe36466a",
+    "payload": {
+     "assistantMessageId": "msg_mw7z7ahw_d0c65306-05ad-417f-b07a-7895efa170a8",
+     "delta": "{\"file_path\":\"C:\\\\Users\\\\Rt\\\\.zcode\\\\workspace\\\\draft-26e30bc0-b470-4d11-afa5-0072a7c3058e\\\\zcode-acp-recon\\\\traces\\\\workspace\\\\probe-permission-test.txt\",\"content\":\"hello\\n",
+     "done": false,
+     "kind": "tool_input_delta",
+     "toolCallId": "call_3d44becd2d8b401582d2fb7b"
+    },
+    "seq": 14,
+    "sessionId": "sess_dffa09cd-f50a-45f8-a606-a3c2c65c9f9b",
+    "timestamp": 1794151069484,
+    "traceId": "462b6186-9de4-45bf-af76-0410243d262f",
+    "turnId": "turn_233a8a57-2f5d-4bc4-b460-d92e35c874d3",
+    "type": "model.streaming"
+   }
+  },
+  {
+   "method": "session/event",
+   "params": {
+    "deliveryKind": "desktop-continuous",
+    "eventId": "29558f0d-1d7a-44c9-baad-751810fdc6dd",
+    "payload": {
+     "assistantMessageId": "msg_mw7z7ahw_d0c65306-05ad-417f-b07a-7895efa170a8",
+     "delta": "\"}",
+     "done": false,
+     "kind": "tool_input_delta",
+     "toolCallId": "call_3d44becd2d8b401582d2fb7b"
+    },
+    "seq": 15,
+    "sessionId": "sess_dffa09cd-f50a-45f8-a606-a3c2c65c9f9b",
+    "timestamp": 1794151069486,
+    "traceId": "462b6186-9de4-45bf-af76-0410243d262f",
+    "turnId": "turn_233a8a57-2f5d-4bc4-b460-d92e35c874d3",
+    "type": "model.streaming"
+   }
+  },
+  {
+   "method": "session/event",
+   "params": {
+    "deliveryKind": "desktop-continuous",
+    "eventId": "6e2bd887-e6b0-47cd-962c-44a5c3b4908a",
+    "payload": {
+     "assistantMessageId": "msg_mw7z7ahw_d0c65306-05ad-417f-b07a-7895efa170a8",
+     "delta": "",
+     "done": false,
+     "kind": "tool_input_end",
+     "toolCallId": "call_3d44becd2d8b401582d2fb7b"
+    },
+    "seq": 16,
+    "sessionId": "sess_dffa09cd-f50a-45f8-a606-a3c2c65c9f9b",
+    "timestamp": 1794151069487,
+    "traceId": "462b6186-9de4-45bf-af76-0410243d262f",
+    "turnId": "turn_233a8a57-2f5d-4bc4-b460-d92e35c874d3",
+    "type": "model.streaming"
+   }
+  },
+  {
+   "method": "session/event",
+   "params": {
+    "deliveryKind": "desktop-continuous",
+    "eventId": "3a5cdf5d-4948-4453-adf7-a878ddb5b902",
+    "payload": {
+     "assistantMessageId": "msg_mw7z7ahw_d0c65306-05ad-417f-b07a-7895efa170a8",
+     "delta": "",
+     "done": false,
+     "input": {
+      "file_path": "C:\\Users\\Rt\\.zcode\\workspace\\draft-26e30bc0-b470-4d11-afa5-0072a7c3058e\\zcode-acp-recon\\traces\\workspace\\probe-permission-test.txt",
+      "content": "hello\n"
+     },
+     "kind": "tool_call",
+     "toolCallId": "call_3d44becd2d8b401582d2fb7b",
+     "toolName": "Write"
+    },
+    "seq": 17,
+    "sessionId": "sess_dffa09cd-f50a-45f8-a606-a3c2c65c9f9b",
+    "timestamp": 1794151069488,
+    "traceId": "462b6186-9de4-45bf-af76-0410243d262f",
+    "turnId": "turn_233a8a57-2f5d-4bc4-b460-d92e35c874d3",
+    "type": "model.streaming"
+   }
+  },
+  {
+   "method": "v4/telemetry/event",
+   "params": {
+    "memoryEnabled": false,
+    "version": 1,
+    "eventId": "2b1adbe1-2ecf-4e80-b3f7-4ae1fe92beaa",
+    "eventSeq": 20,
+    "occurredAt": 1794151069516,
+    "sessionId": "sess_dffa09cd-f50a-45f8-a606-a3c2c65c9f9b",
+    "sourceCommandId": "00376f75-a4c9-4151-a9e2-20b40fcfd0a4",
+    "turnId": "turn_233a8a57-2f5d-4bc4-b460-d92e35c874d3",
+    "kind": "model.request.status",
+    "requestId": "62ce998c-0f7f-46a5-80ee-ecf364511785",
+    "status": "model_request_completed",
+    "providerId": "account:bigmodel-start-plan",
+    "modelId": "GLM-5.3-Flash",
+    "providerKind": "anthropic",
+    "providerHostname": "zcode.z.ai",
+    "transport": "sse",
+    "querySource": "main_turn",
+    "queryId": "00376f75-a4c9-4151-a9e2-20b40fcfd0a4",
+    "attempt": 1,
+    "maxAttempts": 11,
+    "durationMs": 34612
+   }
+  },
+  {
+   "method": "session/event",
+   "params": {
+    "deliveryKind": "desktop-continuous",
+    "eventId": "2b1adbe1-2ecf-4e80-b3f7-4ae1fe92beaa",
+    "payload": {
+     "baseURL": "https://zcode.z.ai/api/v1/zcode-plan/anthropic",
+     "maxAttempts": 11,
+     "providerId": "account:bigmodel-start-plan",
+     "modelId": "GLM-5.3-Flash",
+     "modelRequestSessionType": "main",
+     "requestId": "62ce998c-0f7f-46a5-80ee-ecf364511785",
+     "sessionId": "sess_dffa09cd-f50a-45f8-a606-a3c2c65c9f9b",
+     "spanId": "a5fd5c76-5f36-40",
+     "parentSpanId": "072ba043-75c1-47",
+     "querySource": "main_turn",
+     "queryId": "00376f75-a4c9-4151-a9e2-20b40fcfd0a4",
+     "traceId": "462b6186-9de4-45bf-af76-0410243d262f",
+     "providerKind": "anthropic",
+     "transport": "sse",
+     "turnId": "turn_233a8a57-2f5d-4bc4-b460-d92e35c874d3",
+     "modelCall": {
+      "operation": "agent_step",
+      "actorKind": "main",
+      "operationId": "a5fd5c76-5f36-40",
+      "reasoning": {
+       "capability": "unknown",
+       "requestedControl": "provider_default",
+       "requestedState": "provider_default",
+       "requestedLevel": "high",
+       "effectiveControl": "unknown",
+       "effectiveState": "unknown",
+       "effectiveLevel": "unknown"
+      },
+      "logicalCallId": "c1e2dae1-fdba-41ba-ac60-c17945a8e989",
+      "stepIndex": 0
+     },
+     "attempt": 1,
+     "durationMs": 34612,
+     "requestHeaderCount": 17,
+     "requestHeaders": {
+      "http-referer": "https://zcode.z.ai/",
+      "user-agent": "ZCode/3.17.2",
+      "x-zcode-app-version": "3.17.2",
+      "x-title": "Z Code@electron",
+      "x-release-channel": "production",
+      "x-client-language": "zh-CN",
+      "x-client-timezone": "Asia/Shanghai",
+      "x-zcode-agent": "glm",
+      "x-platform": "win32-x64",
+      "x-os-category": "windows",
+      "x-os-version": "10.0.26300",
+      "x-request-id": "62ce998c-0f7f-46a5-80ee-ecf364511785",
+      "x-zcode-session-type": "main",
+      "x-zcode-trace-id": "462b6186-9de4-45bf-af76-0410243d262f",
+      "x-query-id": "00376f75-a4c9-4151-a9e2-20b40fcfd0a4",
+      "x-zcode-query-source": "main_turn",
+      "x-session-id": "dffa09cd-f50a-45f8-a606-a3c2c65c9f9b"
+     },
+     "responseHeaderCount": 15,
+     "responseHeaders": {
+      "cache-control": "no-cache",
+      "connection": "keep-alive",
+      "content-type": "text/event-stream; charset=utf-8",
+      "date": "Sun, 08 Nov 2026 15:17:15 GMT",
+      "eagleid": "8ccf3f6217941510349951908e",
+      "server": "ESA",
+      "set-cookie": "<redacted>",
+      "timing-allow-origin": "*",
+      "transfer-encoding": "chunked",
+      "vary": "Accept-Encoding",
+      "via": "ens-cache49.l2eo166-17[416,0,DP], ens-cache14.cn7369[418,0,DP], ens-cache14.cn7369[419,0]",
+      "x-content-type-options": "nosniff",
+      "x-log-id": "202611082317159116e483c7b84017",
+      "x-request-id": "202611081517154c0cb64404ffb03fd2a0",
+      "x-site-cache-status": "DYNAMIC"
+     },
+     "providerRequestId": "202611081517154c0cb64404ffb03fd2a0",
+     "finishReason": "tool-calls",
+     "usage": {
+      "inputTokens": "<redacted>",
+      "outputTokens": "<redacted>",
+      "totalTokens": "<redacted>",
+      "cacheReadTokens": "<redacted>",
+      "cacheWriteTokens": "<redacted>"
+     },
+     "timeToFirstProviderEventMs": 69,
+     "timeToFirstContentMs": 33567,
+     "streamStallCount": 0,
+     "streamOutputCommitted": true,
+     "timestamp": "2026-11-08T15:17:49.511Z",
+     "type": "model_request_completed",
+     "_meta": {
+      "zcode": {
+       "apiRetry": null
+      }
+     }
+    },
+    "seq": 18,
+    "sessionId": "sess_dffa09cd-f50a-45f8-a606-a3c2c65c9f9b",
+    "timestamp": 1794151069516,
+    "traceId": "462b6186-9de4-45bf-af76-0410243d262f",
+    "turnId": "turn_233a8a57-2f5d-4bc4-b460-d92e35c874d3",
+    "type": "session.updated"
+   }
+  },
+  {
+   "method": "v4/telemetry/event",
+   "params": {
+    "memoryEnabled": false,
+    "version": 1,
+    "eventId": "1f1f27d2-5ea5-43d7-b77e-75701aa7069b",
+    "eventSeq": 21,
+    "occurredAt": 1794151069564,
+    "sessionId": "sess_dffa09cd-f50a-45f8-a606-a3c2c65c9f9b",
+    "sourceCommandId": "00376f75-a4c9-4151-a9e2-20b40fcfd0a4",
+    "turnId": "turn_233a8a57-2f5d-4bc4-b460-d92e35c874d3",
+    "kind": "usage.delta",
+    "requestId": "62ce998c-0f7f-46a5-80ee-ecf364511785",
+    "providerId": "account:bigmodel-start-plan",
+    "modelId": "GLM-5.3-Flash",
+    "providerKind": "anthropic",
+    "providerHostname": "zcode.z.ai",
+    "inputTokens": "<redacted>",
+    "outputTokens": "<redacted>",
+    "totalTokens": "<redacted>",
+    "reasoningTokens": "<redacted>",
+    "cacheReadTokens": "<redacted>",
+    "cacheWriteTokens": "<redacted>"
+   }
+  },
+  {
+   "method": "session/event",
+   "params": {
+    "deliveryKind": "desktop-continuous",
+    "eventId": "1f1f27d2-5ea5-43d7-b77e-75701aa7069b",
+    "payload": {
+     "content": "",
+     "contextWindow": 1000000,
+     "querySource": "main_turn",
+     "stopReason": "tool-calls",
+     "usage": {
+      "inputTokens": "<redacted>",
+      "outputTokens": "<redacted>",
+      "totalTokens": "<redacted>",
+      "cacheReadTokens": "<redacted>",
+      "cacheWriteTokens": "<redacted>"
+     },
+     "cacheHit": {
+      "inputTokens": "<redacted>",
+      "cacheReadTokens": "<redacted>",
+      "cacheWriteTokens": "<redacted>",
+      "latestHitRate": 0,
+      "hitRate": 0,
+      "hitRateRequestCount": 1,
+      "totalInputTokens": "<redacted>",
+      "totalCacheReadTokens": "<redacted>",
+      "totalCacheWriteTokens": "<redacted>"
+     },
+     "contextUsageBreakdown": [
+      {
+       "source": "system_prompt",
+       "chars": 2961
+      },
+      {
+       "source": "meta_user_context",
+       "chars": 2861
+      },
+      {
+       "source": "skills",
+       "chars": 19074
+      },
+      {
+       "source": "system_tool_schemas",
+       "chars": 86131
+      },
+      {
+       "source": "mcp_tool_schemas",
+       "chars": 422316
+      },
+      {
+       "source": "messages",
+       "chars": 93
+      }
+     ],
+     "toolCallCount": 1
+    },
+    "seq": 19,
+    "sessionId": "sess_dffa09cd-f50a-45f8-a606-a3c2c65c9f9b",
+    "timestamp": 1794151069564,
+    "traceId": "462b6186-9de4-45bf-af76-0410243d262f",
+    "turnId": "turn_233a8a57-2f5d-4bc4-b460-d92e35c874d3",
+    "type": "session.updated"
+   }
+  },
+  {
+   "method": "computer-use/operation-event",
+   "params": {
+    "eventId": "eccc2a27-134c-4a96-a31c-924e8b0e0f8f",
+    "sequenceNumber": 23,
+    "sessionId": "sess_dffa09cd-f50a-45f8-a606-a3c2c65c9f9b",
+    "timestamp": 1794151069595,
+    "kind": "tool-scheduled",
+    "turnId": "turn_233a8a57-2f5d-4bc4-b460-d92e35c874d3",
+    "toolCallId": "call_3d44becd2d8b401582d2fb7b",
+    "toolName": "Write"
+   }
+  },
+  {
+   "method": "v4/telemetry/event",
+   "params": {
+    "memoryEnabled": false,
+    "version": 1,
+    "eventId": "eccc2a27-134c-4a96-a31c-924e8b0e0f8f",
+    "eventSeq": 23,
+    "occurredAt": 1794151069595,
+    "sessionId": "sess_dffa09cd-f50a-45f8-a606-a3c2c65c9f9b",
+    "sourceCommandId": "00376f75-a4c9-4151-a9e2-20b40fcfd0a4",
+    "turnId": "turn_233a8a57-2f5d-4bc4-b460-d92e35c874d3",
+    "kind": "tool.lifecycle",
+    "phase": "scheduled",
+    "toolCallId": "call_3d44becd2d8b401582d2fb7b",
+    "toolName": "Write"
+   }
+  },
+  {
+   "method": "session/event",
+   "params": {
+    "deliveryKind": "desktop-continuous",
+    "eventId": "eccc2a27-134c-4a96-a31c-924e8b0e0f8f",
+    "payload": {
+     "toolCallId": "call_3d44becd2d8b401582d2fb7b",
+     "assistantMessageId": "msg_mw7z7ahw_d0c65306-05ad-417f-b07a-7895efa170a8",
+     "toolName": "Write",
+     "dependencies": [],
+     "parallelGroupIndex": 0,
+     "canRunParallel": false,
+     "schedule": {
+      "parallelGroups": [
+       [
+        "call_3d44becd2d8b401582d2fb7b"
+       ]
+      ],
+      "executionOrder": [
+       "call_3d44becd2d8b401582d2fb7b"
+      ]
+     },
+     "kind": "scheduled",
+     "inputByteLength": 175,
+     "inputOmitted": true,
+     "inputRef": "model_stream"
+    },
+    "seq": 20,
+    "sessionId": "sess_dffa09cd-f50a-45f8-a606-a3c2c65c9f9b",
+    "timestamp": 1794151069595,
+    "traceId": "462b6186-9de4-45bf-af76-0410243d262f",
+    "turnId": "turn_233a8a57-2f5d-4bc4-b460-d92e35c874d3",
+    "type": "tool.updated"
+   }
+  },
+  {
+   "method": "session/event",
+   "params": {
+    "deliveryKind": "desktop-continuous",
+    "eventId": "6dcf70ea-fc40-46dd-8732-b3d6919ea566",
+    "payload": {
+     "descriptor": {
+      "clientVisible": true,
+      "commandDisplay": "node \"C:\\\\Users\\\\Rt\\\\.zcode\\\\cli\\\\plugins\\\\cache\\\\zcode-plugins-official\\\\mimosa\\\\1.0.4/hooks/run-hook.cjs\" scan-hook.mjs PreToolUse",
+      "executionMode": "foreground",
+      "executionType": "process",
+      "pluginId": "mimosa@zcode-plugins-official",
+      "pluginName": "mimosa",
+      "sourceKind": "plugin",
+      "sourcePath": "C:\\Users\\Rt\\.zcode\\cli\\plugins\\cache\\zcode-plugins-official\\mimosa\\1.0.4\\hooks\\hooks.json",
+      "statusMessage": "Mimosa 正在检查候选代码…",
+      "timeoutMs": 120000
+     },
+     "hookEventName": "PreToolUse",
+     "hookIndex": 0,
+     "hookCount": 1,
+     "hookInvocationId": "6e2c3788-a691-44f5-939b-15fda2009c14",
+     "hookRunId": "3e9cfe5b-b46a-4efa-93df-5dfbc94d06e8",
+     "hookSource": "plugin.mimosa@zcode-plugins-official.PreToolUse.0.0",
+     "matcher": "Edit|Write|MultiEdit",
+     "startedAt": 1794151069626,
+     "toolCallId": "call_3d44becd2d8b401582d2fb7b",
+     "toolName": "Write"
+    },
+    "seq": 21,
+    "sessionId": "sess_dffa09cd-f50a-45f8-a606-a3c2c65c9f9b",
+    "timestamp": 1794151069626,
+    "traceId": "462b6186-9de4-45bf-af76-0410243d262f",
+    "turnId": "turn_233a8a57-2f5d-4bc4-b460-d92e35c874d3",
+    "type": "session.updated"
+   }
+  },
+  {
+   "method": "session/event",
+   "params": {
+    "deliveryKind": "desktop-continuous",
+    "eventId": "fe7cba30-fee5-41cd-9319-d004a9e4b39d",
+    "payload": {
+     "descriptor": {
+      "clientVisible": true,
+      "commandDisplay": "node \"C:\\\\Users\\\\Rt\\\\.zcode\\\\cli\\\\plugins\\\\cache\\\\zcode-plugins-official\\\\mimosa\\\\1.0.4/hooks/run-hook.cjs\" scan-hook.mjs PreToolUse",
+      "executionMode": "foreground",
+      "executionType": "process",
+      "pluginId": "mimosa@zcode-plugins-official",
+      "pluginName": "mimosa",
+      "sourceKind": "plugin",
+      "sourcePath": "C:\\Users\\Rt\\.zcode\\cli\\plugins\\cache\\zcode-plugins-official\\mimosa\\1.0.4\\hooks\\hooks.json",
+      "statusMessage": "Mimosa 正在检查候选代码…",
+      "timeoutMs": 120000
+     },
+     "hookEventName": "PreToolUse",
+     "hookIndex": 0,
+     "hookCount": 1,
+     "hookInvocationId": "6e2c3788-a691-44f5-939b-15fda2009c14",
+     "hookRunId": "3e9cfe5b-b46a-4efa-93df-5dfbc94d06e8",
+     "hookSource": "plugin.mimosa@zcode-plugins-official.PreToolUse.0.0",
+     "matcher": "Edit|Write|MultiEdit",
+     "startedAt": 1794151069626,
+     "toolCallId": "call_3d44becd2d8b401582d2fb7b",
+     "toolName": "Write",
+     "durationMs": 424,
+     "outcome": "success"
+    },
+    "seq": 22,
+    "sessionId": "sess_dffa09cd-f50a-45f8-a606-a3c2c65c9f9b",
+    "timestamp": 1794151070052,
+    "traceId": "462b6186-9de4-45bf-af76-0410243d262f",
+    "turnId": "turn_233a8a57-2f5d-4bc4-b460-d92e35c874d3",
+    "type": "session.updated"
+   }
+  },
+  {
+   "id": "server-10",
+   "method": "interaction/requestPermission",
+   "params": {
+    "input": {
+     "file_path": "C:\\Users\\Rt\\.zcode\\workspace\\draft-26e30bc0-b470-4d11-afa5-0072a7c3058e\\zcode-acp-recon\\traces\\workspace\\probe-permission-test.txt",
+     "content": "hello\n"
+    },
+    "reason": "Tool has side effects and requires approval",
+    "requestId": "perm_d204c88b-088e-4d7f-800b-36ffa5362e06",
+    "riskLevel": "medium",
+    "sessionId": "sess_dffa09cd-f50a-45f8-a606-a3c2c65c9f9b",
+    "options": [
+     {
+      "kind": "allow_once",
+      "name": "Allow once",
+      "optionId": "allow_once",
+      "response": {
+       "decision": "allow",
+       "reason": "Approved once"
+      }
+     },
+     {
+      "description": "Do not ask again for matching requests in this project",
+      "kind": "allow_always",
+      "name": "Always allow in this project",
+      "optionId": "allow_project",
+      "response": {
+       "decision": "allow",
+       "permissionUpdates": [
+        {
+         "behavior": "allow",
+         "rules": [
+          {
+           "toolName": "Write",
+           "ruleContent": "C:\\Users\\Rt\\.zcode\\workspace\\draft-26e30bc0-b470-4d11-afa5-0072a7c3058e\\zcode-acp-recon\\traces\\workspace\\probe-permission-test.txt"
+          }
+         ],
+         "type": "addRules"
+        }
+       ],
+       "reason": "Approved for this project"
+      }
+     },
+     {
+      "kind": "deny",
+      "name": "Deny",
+      "optionId": "deny",
+      "response": {
+       "decision": "deny",
+       "reason": "The user doesn't want to proceed with this tool use. The tool use was rejected (eg. if it was a file edit, the new_string was NOT written to the file). STOP what you are doing and wait for the user to tell you how to proceed."
+      }
+     }
+    ],
+    "toolCallId": "call_3d44becd2d8b401582d2fb7b",
+    "toolName": "Write",
+    "turnId": "turn_233a8a57-2f5d-4bc4-b460-d92e35c874d3"
+   }
+  },
+  {
+   "id": "server-10",
+   "result": {
+    "optionId": "deny"
+   }
+  },
+  {
+   "method": "v4/telemetry/event",
+   "params": {
+    "memoryEnabled": false,
+    "version": 1,
+    "eventId": "f6bc51c2-6188-44b7-b05f-4f3f6c33e765",
+    "eventSeq": 28,
+    "occurredAt": 1794151070063,
+    "sessionId": "sess_dffa09cd-f50a-45f8-a606-a3c2c65c9f9b",
+    "sourceCommandId": "00376f75-a4c9-4151-a9e2-20b40fcfd0a4",
+    "turnId": "turn_233a8a57-2f5d-4bc4-b460-d92e35c874d3",
+    "kind": "permission.lifecycle",
+    "phase": "requested",
+    "requestId": "perm_d204c88b-088e-4d7f-800b-36ffa5362e06",
+    "toolCallId": "call_3d44becd2d8b401582d2fb7b",
+    "toolName": "Write"
+   }
+  },
+  {
+   "method": "session/event",
+   "params": {
+    "deliveryKind": "desktop-continuous",
+    "eventId": "f6bc51c2-6188-44b7-b05f-4f3f6c33e765",
+    "payload": {
+     "requestId": "perm_d204c88b-088e-4d7f-800b-36ffa5362e06",
+     "toolCallId": "call_3d44becd2d8b401582d2fb7b",
+     "toolName": "Write",
+     "riskLevel": "medium",
+     "reason": "Tool has side effects and requires approval",
+     "input": {
+      "file_path": "C:\\Users\\Rt\\.zcode\\workspace\\draft-26e30bc0-b470-4d11-afa5-0072a7c3058e\\zcode-acp-recon\\traces\\workspace\\probe-permission-test.txt",
+      "content": "hello\n"
+     },
+     "suggestedPermissionUpdates": [
+      {
+       "behavior": "allow",
+       "rules": [
+        {
+         "toolName": "Write",
+         "ruleContent": "C:\\Users\\Rt\\.zcode\\workspace\\draft-26e30bc0-b470-4d11-afa5-0072a7c3058e\\zcode-acp-recon\\traces\\workspace\\probe-permission-test.txt"
+        }
+       ],
+       "type": "addRules"
+      }
+     ],
+     "fullAccessSupported": true,
+     "options": [
+      {
+       "kind": "allow_once",
+       "name": "Allow once",
+       "optionId": "allow_once",
+       "response": {
+        "decision": "allow",
+        "reason": "Approved once"
+       }
+      },
+      {
+       "description": "Do not ask again for matching requests in this project",
+       "kind": "allow_always",
+       "name": "Always allow in this project",
+       "optionId": "allow_project",
+       "response": {
+        "decision": "allow",
+        "permissionUpdates": [
+         {
+          "behavior": "allow",
+          "rules": [
+           {
+            "toolName": "Write",
+            "ruleContent": "C:\\Users\\Rt\\.zcode\\workspace\\draft-26e30bc0-b470-4d11-afa5-0072a7c3058e\\zcode-acp-recon\\traces\\workspace\\probe-permission-test.txt"
+           }
+          ],
+          "type": "addRules"
+         }
+        ],
+        "reason": "Approved for this project"
+       }
+      },
+      {
+       "kind": "deny",
+       "name": "Deny",
+       "optionId": "deny",
+       "response": {
+        "decision": "deny",
+        "reason": "The user doesn't want to proceed with this tool use. The tool use was rejected (eg. if it was a file edit, the new_string was NOT written to the file). STOP what you are doing and wait for the user to tell you how to proceed."
+       }
+      }
+     ]
+    },
+    "seq": 23,
+    "sessionId": "sess_dffa09cd-f50a-45f8-a606-a3c2c65c9f9b",
+    "timestamp": 1794151070063,
+    "traceId": "462b6186-9de4-45bf-af76-0410243d262f",
+    "turnId": "turn_233a8a57-2f5d-4bc4-b460-d92e35c874d3",
+    "type": "permission.requested"
+   }
+  },
+  {
+   "method": "v4/telemetry/event",
+   "params": {
+    "memoryEnabled": false,
+    "version": 1,
+    "eventId": "b2bb187d-5d03-4de0-901b-e20480445d21",
+    "eventSeq": 29,
+    "occurredAt": 1794151070079,
+    "sessionId": "sess_dffa09cd-f50a-45f8-a606-a3c2c65c9f9b",
+    "sourceCommandId": "00376f75-a4c9-4151-a9e2-20b40fcfd0a4",
+    "turnId": "turn_233a8a57-2f5d-4bc4-b460-d92e35c874d3",
+    "kind": "permission.lifecycle",
+    "phase": "resolved",
+    "requestId": "perm_d204c88b-088e-4d7f-800b-36ffa5362e06",
+    "toolCallId": "call_3d44becd2d8b401582d2fb7b",
+    "decision": "deny"
+   }
+  },
+  {
+   "method": "session/event",
+   "params": {
+    "deliveryKind": "desktop-continuous",
+    "eventId": "b2bb187d-5d03-4de0-901b-e20480445d21",
+    "payload": {
+     "requestId": "perm_d204c88b-088e-4d7f-800b-36ffa5362e06",
+     "toolCallId": "call_3d44becd2d8b401582d2fb7b",
+     "decision": "deny",
+     "reason": "Permission request failed"
+    },
+    "seq": 24,
+    "sessionId": "sess_dffa09cd-f50a-45f8-a606-a3c2c65c9f9b",
+    "timestamp": 1794151070079,
+    "traceId": "462b6186-9de4-45bf-af76-0410243d262f",
+    "turnId": "turn_233a8a57-2f5d-4bc4-b460-d92e35c874d3",
+    "type": "permission.resolved"
+   }
+  },
+  {
+   "method": "session/event",
+   "params": {
+    "deliveryKind": "desktop-continuous",
+    "eventId": "9de23307-e105-4bb5-b02a-8208540c3635",
+    "payload": {
+     "toolCallIds": [
+      "call_3d44becd2d8b401582d2fb7b"
+     ],
+     "successCount": 0,
+     "errorCount": 1,
+     "kind": "batch"
+    },
+    "seq": 25,
+    "sessionId": "sess_dffa09cd-f50a-45f8-a606-a3c2c65c9f9b",
+    "timestamp": 1794151070087,
+    "traceId": "462b6186-9de4-45bf-af76-0410243d262f",
+    "turnId": "turn_233a8a57-2f5d-4bc4-b460-d92e35c874d3",
+    "type": "tool.updated"
+   }
+  },
+  {
+   "method": "session/event",
+   "params": {
+    "deliveryKind": "desktop-continuous",
+    "eventId": "8e8bc090-ef98-42af-9db0-9ac15d409160",
+    "payload": {
+     "anchorId": "msg_mw7z7ahw_d0c65306-05ad-417f-b07a-7895efa170a8:call_3d44becd2d8b401582d2fb7b:tool-result",
+     "attemptId": "msg_mw7z7ahw_d0c65306-05ad-417f-b07a-7895efa170a8:end-of-stream",
+     "kind": "tool_error",
+     "assistantMessageId": "msg_mw7z7ahw_d0c65306-05ad-417f-b07a-7895efa170a8",
+     "toolCallId": "call_3d44becd2d8b401582d2fb7b",
+     "toolName": "Write",
+     "resultPartId": "part_mw7z81ar_e920023e-74de-4ed9-91a8-1a7184f6c66e",
+     "committedToolCallIds": [
+      "call_3d44becd2d8b401582d2fb7b"
+     ],
+     "committedAt": "2026-11-08T15:17:50.079Z"
+    },
+    "seq": 26,
+    "sessionId": "sess_dffa09cd-f50a-45f8-a606-a3c2c65c9f9b",
+    "timestamp": 1794151070098,
+    "traceId": "462b6186-9de4-45bf-af76-0410243d262f",
+    "turnId": "turn_233a8a57-2f5d-4bc4-b460-d92e35c874d3",
+    "type": "streamRecovery.updated"
+   }
+  },
+  {
+   "method": "session/event",
+   "params": {
+    "deliveryKind": "desktop-continuous",
+    "eventId": "485ff9aa-b68d-482e-9405-140594b5090d",
+    "payload": {
+     "messageCount": 8,
+     "providerId": "account:bigmodel-start-plan",
+     "modelId": "GLM-5.3-Flash",
+     "toolCount": 244,
+     "iteration": 1
+    },
+    "seq": 27,
+    "sessionId": "sess_dffa09cd-f50a-45f8-a606-a3c2c65c9f9b",
+    "timestamp": 1794151070126,
+    "traceId": "462b6186-9de4-45bf-af76-0410243d262f",
+    "turnId": "turn_233a8a57-2f5d-4bc4-b460-d92e35c874d3",
+    "type": "session.updated"
+   }
+  },
+  {
+   "id": "server-11",
+   "method": "interaction/requestProviderRuntimeHeaders",
+   "params": {
+    "requestId": "sess_dffa09cd-f50a-45f8-a606-a3c2c65c9f9b:provider-runtime-headers:1e14e4d1-d262-419d-9c14-67834a1d8681",
+    "sessionId": "sess_dffa09cd-f50a-45f8-a606-a3c2c65c9f9b",
+    "turnId": "turn_233a8a57-2f5d-4bc4-b460-d92e35c874d3",
+    "workspace": {
+     "workspacePath": "C:\\Users\\Rt\\.zcode\\workspace\\draft-26e30bc0-b470-4d11-afa5-0072a7c3058e\\zcode-acp-recon\\traces\\workspace",
+     "workspaceKey": "workspace"
+    },
+    "modelSelection": {
+     "providerId": "account:bigmodel-start-plan",
+     "modelId": "GLM-5.3-Flash"
+    },
+    "providerId": "account:bigmodel-start-plan",
+    "accountAccess": {
+     "type": "zhipu-account",
+     "accountType": "bigmodel",
+     "mode": "start-plan",
+     "entitled": true
+    },
+    "reason": "model-request"
+   },
+   "trace": {
+    "traceId": "462b6186-9de4-45bf-af76-0410243d262f",
+    "spanId": "c87cc21e-f96f-4b",
+    "parentId": "072ba043-75c1-47"
+   }
+  },
+  {
+   "id": "server-11",
+   "result": {
+    "headersApplied": true,
+    "requestAuth": "<redacted>"
+   }
+  },
+  {
+   "method": "v4/telemetry/event",
+   "params": {
+    "memoryEnabled": false,
+    "version": 1,
+    "eventId": "0c9378dd-c947-4768-b084-647df6f94fa4",
+    "eventSeq": 34,
+    "occurredAt": 1794151070158,
+    "sessionId": "sess_dffa09cd-f50a-45f8-a606-a3c2c65c9f9b",
+    "sourceCommandId": "00376f75-a4c9-4151-a9e2-20b40fcfd0a4",
+    "turnId": "turn_233a8a57-2f5d-4bc4-b460-d92e35c874d3",
+    "kind": "model.request.status",
+    "requestId": "0574be6d-01b3-47ac-8f6e-61b1f8b6c8bd",
+    "status": "model_request_started",
+    "providerId": "account:bigmodel-start-plan",
+    "modelId": "GLM-5.3-Flash",
+    "providerKind": "anthropic",
+    "providerHostname": "zcode.z.ai",
+    "transport": "sse",
+    "querySource": "main_turn",
+    "queryId": "00376f75-a4c9-4151-a9e2-20b40fcfd0a4",
+    "attempt": 1,
+    "maxAttempts": 11
+   }
+  },
+  {
+   "method": "session/event",
+   "params": {
+    "deliveryKind": "desktop-continuous",
+    "eventId": "0c9378dd-c947-4768-b084-647df6f94fa4",
+    "payload": {
+     "baseURL": "https://zcode.z.ai/api/v1/zcode-plan/anthropic",
+     "maxAttempts": 11,
+     "providerId": "account:bigmodel-start-plan",
+     "modelId": "GLM-5.3-Flash",
+     "modelRequestSessionType": "main",
+     "requestId": "0574be6d-01b3-47ac-8f6e-61b1f8b6c8bd",
+     "sessionId": "sess_dffa09cd-f50a-45f8-a606-a3c2c65c9f9b",
+     "spanId": "c87cc21e-f96f-4b",
+     "parentSpanId": "072ba043-75c1-47",
+     "querySource": "main_turn",
+     "queryId": "00376f75-a4c9-4151-a9e2-20b40fcfd0a4",
+     "traceId": "462b6186-9de4-45bf-af76-0410243d262f",
+     "providerKind": "anthropic",
+     "transport": "sse",
+     "turnId": "turn_233a8a57-2f5d-4bc4-b460-d92e35c874d3",
+     "modelCall": {
+      "operation": "agent_step",
+      "actorKind": "main",
+      "operationId": "c87cc21e-f96f-4b",
+      "reasoning": {
+       "capability": "unknown",
+       "requestedControl": "provider_default",
+       "requestedState": "provider_default",
+       "requestedLevel": "high",
+       "effectiveControl": "unknown",
+       "effectiveState": "unknown",
+       "effectiveLevel": "unknown"
+      },
+      "logicalCallId": "d0da1d94-37a4-497d-a738-eb492840a7fa",
+      "stepIndex": 1
+     },
+     "attempt": 1,
+     "requestHeaderCount": 17,
+     "requestHeaders": {
+      "http-referer": "https://zcode.z.ai/",
+      "user-agent": "ZCode/3.17.2",
+      "x-zcode-app-version": "3.17.2",
+      "x-title": "Z Code@electron",
+      "x-release-channel": "production",
+      "x-client-language": "zh-CN",
+      "x-client-timezone": "Asia/Shanghai",
+      "x-zcode-agent": "glm",
+      "x-platform": "win32-x64",
+      "x-os-category": "windows",
+      "x-os-version": "10.0.26300",
+      "x-request-id": "0574be6d-01b3-47ac-8f6e-61b1f8b6c8bd",
+      "x-zcode-session-type": "main",
+      "x-zcode-trace-id": "462b6186-9de4-45bf-af76-0410243d262f",
+      "x-query-id": "00376f75-a4c9-4151-a9e2-20b40fcfd0a4",
+      "x-zcode-query-source": "main_turn",
+      "x-session-id": "dffa09cd-f50a-45f8-a606-a3c2c65c9f9b"
+     },
+     "timestamp": "2026-11-08T15:17:50.149Z",
+     "type": "model_request_started",
+     "_meta": {
+      "zcode": {
+       "apiRetry": null
+      }
+     }
+    },
+    "seq": 28,
+    "sessionId": "sess_dffa09cd-f50a-45f8-a606-a3c2c65c9f9b",
+    "timestamp": 1794151070158,
+    "traceId": "462b6186-9de4-45bf-af76-0410243d262f",
+    "turnId": "turn_233a8a57-2f5d-4bc4-b460-d92e35c874d3",
+    "type": "session.updated"
+   }
+  },
+  {
+   "method": "v4/telemetry/event",
+   "params": {
+    "memoryEnabled": false,
+    "version": 1,
+    "eventId": "3b372fcf-c148-49b6-9de6-e0cf84288279",
+    "eventSeq": 37,
+    "occurredAt": 1794151072666,
+    "sessionId": "sess_dffa09cd-f50a-45f8-a606-a3c2c65c9f9b",
+    "sourceCommandId": "00376f75-a4c9-4151-a9e2-20b40fcfd0a4",
+    "turnId": "turn_233a8a57-2f5d-4bc4-b460-d92e35c874d3",
+    "kind": "stream.chunk",
+    "channel": "thought",
+    "chunkLength": 10,
+    "firstChunk": true,
+    "assistantMessageId": "msg_mw7z81pg_0ba35580-0e7e-4ac1-b942-cfbe4818e9fd"
+   }
+  },
+  {
+   "method": "session/event",
+   "params": {
+    "deliveryKind": "desktop-continuous",
+    "eventId": "3b372fcf-c148-49b6-9de6-e0cf84288279",
+    "payload": {
+     "assistantMessageId": "msg_mw7z81pg_0ba35580-0e7e-4ac1-b942-cfbe4818e9fd",
+     "delta": "Permission",
+     "done": false,
+     "kind": "reasoning_delta"
+    },
+    "seq": 29,
+    "sessionId": "sess_dffa09cd-f50a-45f8-a606-a3c2c65c9f9b",
+    "timestamp": 1794151072666,
+    "traceId": "462b6186-9de4-45bf-af76-0410243d262f",
+    "turnId": "turn_233a8a57-2f5d-4bc4-b460-d92e35c874d3",
+    "type": "model.streaming"
+   }
+  },
+  {
+   "method": "v4/telemetry/event",
+   "params": {
+    "memoryEnabled": false,
+    "version": 1,
+    "eventId": "c67f2ad1-4932-47a3-98bb-ff45d36ff185",
+    "eventSeq": 38,
+    "occurredAt": 1794151072741,
+    "sessionId": "sess_dffa09cd-f50a-45f8-a606-a3c2c65c9f9b",
+    "sourceCommandId": "00376f75-a4c9-4151-a9e2-20b40fcfd0a4",
+    "turnId": "turn_233a8a57-2f5d-4bc4-b460-d92e35c874d3",
+    "kind": "stream.chunk",
+    "channel": "thought",
+    "chunkLength": 8,
+    "firstChunk": false,
+    "assistantMessageId": "msg_mw7z81pg_0ba35580-0e7e-4ac1-b942-cfbe4818e9fd"
+   }
+  },
+  {
+   "method": "v4/telemetry/event",
+   "params": {
+    "memoryEnabled": false,
+    "version": 1,
+    "eventId": "6d6c9355-f495-4119-9362-5bb5a7c6c83e",
+    "eventSeq": 39,
+    "occurredAt": 1794151072814,
+    "sessionId": "sess_dffa09cd-f50a-45f8-a606-a3c2c65c9f9b",
+    "sourceCommandId": "00376f75-a4c9-4151-a9e2-20b40fcfd0a4",
+    "turnId": "turn_233a8a57-2f5d-4bc4-b460-d92e35c874d3",
+    "kind": "stream.chunk",
+    "channel": "thought",
+    "chunkLength": 7,
+    "firstChunk": false,
+    "assistantMessageId": "msg_mw7z81pg_0ba35580-0e7e-4ac1-b942-cfbe4818e9fd"
+   }
+  },
+  {
+   "method": "v4/telemetry/event",
+   "params": {
+    "memoryEnabled": false,
+    "version": 1,
+    "eventId": "f1eafddd-98bb-4f9d-a971-9bfe0326160f",
+    "eventSeq": 40,
+    "occurredAt": 1794151072815,
+    "sessionId": "sess_dffa09cd-f50a-45f8-a606-a3c2c65c9f9b",
+    "sourceCommandId": "00376f75-a4c9-4151-a9e2-20b40fcfd0a4",
+    "turnId": "turn_233a8a57-2f5d-4bc4-b460-d92e35c874d3",
+    "kind": "stream.chunk",
+    "channel": "thought",
+    "chunkLength": 2,
+    "firstChunk": false,
+    "assistantMessageId": "msg_mw7z81pg_0ba35580-0e7e-4ac1-b942-cfbe4818e9fd"
+   }
+  },
+  {
+   "method": "v4/telemetry/event",
+   "params": {
+    "memoryEnabled": false,
+    "version": 1,
+    "eventId": "06aa6957-630c-4e0d-a2ca-40b128aae6a7",
+    "eventSeq": 41,
+    "occurredAt": 1794151072816,
+    "sessionId": "sess_dffa09cd-f50a-45f8-a606-a3c2c65c9f9b",
+    "sourceCommandId": "00376f75-a4c9-4151-a9e2-20b40fcfd0a4",
+    "turnId": "turn_233a8a57-2f5d-4bc4-b460-d92e35c874d3",
+    "kind": "stream.chunk",
+    "channel": "thought",
+    "chunkLength": 4,
+    "firstChunk": false,
+    "assistantMessageId": "msg_mw7z81pg_0ba35580-0e7e-4ac1-b942-cfbe4818e9fd"
+   }
+  },
+  {
+   "method": "v4/telemetry/event",
+   "params": {
+    "memoryEnabled": false,
+    "version": 1,
+    "eventId": "74693065-8324-4005-9c2d-fe5ee6b0448b",
+    "eventSeq": 42,
+    "occurredAt": 1794151072817,
+    "sessionId": "sess_dffa09cd-f50a-45f8-a606-a3c2c65c9f9b",
+    "sourceCommandId": "00376f75-a4c9-4151-a9e2-20b40fcfd0a4",
+    "turnId": "turn_233a8a57-2f5d-4bc4-b460-d92e35c874d3",
+    "kind": "stream.chunk",
+    "channel": "thought",
+    "chunkLength": 5,
+    "firstChunk": false,
+    "assistantMessageId": "msg_mw7z81pg_0ba35580-0e7e-4ac1-b942-cfbe4818e9fd"
+   }
+  },
+  {
+   "method": "v4/telemetry/event",
+   "params": {
+    "memoryEnabled": false,
+    "version": 1,
+    "eventId": "94f0c219-b398-423e-87bf-cf43decbcc9d",
+    "eventSeq": 43,
+    "occurredAt": 1794151072897,
+    "sessionId": "sess_dffa09cd-f50a-45f8-a606-a3c2c65c9f9b",
+    "sourceCommandId": "00376f75-a4c9-4151-a9e2-20b40fcfd0a4",
+    "turnId": "turn_233a8a57-2f5d-4bc4-b460-d92e35c874d3",
+    "kind": "stream.chunk",
+    "channel": "thought",
+    "chunkLength": 7,
+    "firstChunk": false,
+    "assistantMessageId": "msg_mw7z81pg_0ba35580-0e7e-4ac1-b942-cfbe4818e9fd"
+   }
+  },
+  {
+   "method": "v4/telemetry/event",
+   "params": {
+    "memoryEnabled": false,
+    "version": 1,
+    "eventId": "93c6eb26-1a03-46f3-a31e-d0ce1e12d853",
+    "eventSeq": 44,
+    "occurredAt": 1794151072966,
+    "sessionId": "sess_dffa09cd-f50a-45f8-a606-a3c2c65c9f9b",
+    "sourceCommandId": "00376f75-a4c9-4151-a9e2-20b40fcfd0a4",
+    "turnId": "turn_233a8a57-2f5d-4bc4-b460-d92e35c874d3",
+    "kind": "stream.chunk",
+    "channel": "thought",
+    "chunkLength": 9,
+    "firstChunk": false,
+    "assistantMessageId": "msg_mw7z81pg_0ba35580-0e7e-4ac1-b942-cfbe4818e9fd"
+   }
+  },
+  {
+   "method": "session/event",
+   "params": {
+    "deliveryKind": "desktop-continuous",
+    "eventId": "93c6eb26-1a03-46f3-a31e-d0ce1e12d853",
+    "payload": {
+     "assistantMessageId": "msg_mw7z81pg_0ba35580-0e7e-4ac1-b942-cfbe4818e9fd",
+     "delta": " request failed — the user likely declined",
+     "done": false,
+     "kind": "reasoning_delta"
+    },
+    "seq": 30,
+    "sessionId": "sess_dffa09cd-f50a-45f8-a606-a3c2c65c9f9b",
+    "timestamp": 1794151072966,
+    "traceId": "462b6186-9de4-45bf-af76-0410243d262f",
+    "turnId": "turn_233a8a57-2f5d-4bc4-b460-d92e35c874d3",
+    "type": "model.streaming"
+   }
+  },
+  {
+   "method": "v4/telemetry/event",
+   "params": {
+    "memoryEnabled": false,
+    "version": 1,
+    "eventId": "cc57212f-8529-4262-8b26-a8adec0e77e7",
+    "eventSeq": 45,
+    "occurredAt": 1794151072967,
+    "sessionId": "sess_dffa09cd-f50a-45f8-a606-a3c2c65c9f9b",
+    "sourceCommandId": "00376f75-a4c9-4151-a9e2-20b40fcfd0a4",
+    "turnId": "turn_233a8a57-2f5d-4bc4-b460-d92e35c874d3",
+    "kind": "stream.chunk",
+    "channel": "thought",
+    "chunkLength": 3,
+    "firstChunk": false,
+    "assistantMessageId": "msg_mw7z81pg_0ba35580-0e7e-4ac1-b942-cfbe4818e9fd"
+   }
+  },
+  {
+   "method": "v4/telemetry/event",
+   "params": {
+    "memoryEnabled": false,
+    "version": 1,
+    "eventId": "b27a618d-cb71-49d4-a2a7-62c488e6459f",
+    "eventSeq": 46,
+    "occurredAt": 1794151073002,
+    "sessionId": "sess_dffa09cd-f50a-45f8-a606-a3c2c65c9f9b",
+    "sourceCommandId": "00376f75-a4c9-4151-a9e2-20b40fcfd0a4",
+    "turnId": "turn_233a8a57-2f5d-4bc4-b460-d92e35c874d3",
+    "kind": "stream.chunk",
+    "channel": "thought",
+    "chunkLength": 4,
+    "firstChunk": false,
+    "assistantMessageId": "msg_mw7z81pg_0ba35580-0e7e-4ac1-b942-cfbe4818e9fd"
+   }
+  },
+  {
+   "method": "v4/telemetry/event",
+   "params": {
+    "memoryEnabled": false,
+    "version": 1,
+    "eventId": "58ab5975-dcf2-4b66-8fcf-2a227b08f453",
+    "eventSeq": 47,
+    "occurredAt": 1794151073003,
+    "sessionId": "sess_dffa09cd-f50a-45f8-a606-a3c2c65c9f9b",
+    "sourceCommandId": "00376f75-a4c9-4151-a9e2-20b40fcfd0a4",
+    "turnId": "turn_233a8a57-2f5d-4bc4-b460-d92e35c874d3",
+    "kind": "stream.chunk",
+    "channel": "thought",
+    "chunkLength": 8,
+    "firstChunk": false,
+    "assistantMessageId": "msg_mw7z81pg_0ba35580-0e7e-4ac1-b942-cfbe4818e9fd"
+   }
+  },
+  {
+   "method": "v4/telemetry/event",
+   "params": {
+    "memoryEnabled": false,
+    "version": 1,
+    "eventId": "2c0bdd31-00dd-4263-b3fd-7934a1436a40",
+    "eventSeq": 48,
+    "occurredAt": 1794151073072,
+    "sessionId": "sess_dffa09cd-f50a-45f8-a606-a3c2c65c9f9b",
+    "sourceCommandId": "00376f75-a4c9-4151-a9e2-20b40fcfd0a4",
+    "turnId": "turn_233a8a57-2f5d-4bc4-b460-d92e35c874d3",
+    "kind": "stream.chunk",
+    "channel": "thought",
+    "chunkLength": 7,
+    "firstChunk": false,
+    "assistantMessageId": "msg_mw7z81pg_0ba35580-0e7e-4ac1-b942-cfbe4818e9fd"
+   }
+  },
+  {
+   "method": "v4/telemetry/event",
+   "params": {
+    "memoryEnabled": false,
+    "version": 1,
+    "eventId": "cad84b3f-e517-45ae-9c38-55d6374658c0",
+    "eventSeq": 49,
+    "occurredAt": 1794151073128,
+    "sessionId": "sess_dffa09cd-f50a-45f8-a606-a3c2c65c9f9b",
+    "sourceCommandId": "00376f75-a4c9-4151-a9e2-20b40fcfd0a4",
+    "turnId": "turn_233a8a57-2f5d-4bc4-b460-d92e35c874d3",
+    "kind": "stream.chunk",
+    "channel": "thought",
+    "chunkLength": 1,
+    "firstChunk": false,
+    "assistantMessageId": "msg_mw7z81pg_0ba35580-0e7e-4ac1-b942-cfbe4818e9fd"
+   }
+  },
+  {
+   "method": "v4/telemetry/event",
+   "params": {
+    "memoryEnabled": false,
+    "version": 1,
+    "eventId": "6a7b8fd8-4151-4878-af34-b461c2f059a0",
+    "eventSeq": 50,
+    "occurredAt": 1794151073207,
+    "sessionId": "sess_dffa09cd-f50a-45f8-a606-a3c2c65c9f9b",
+    "sourceCommandId": "00376f75-a4c9-4151-a9e2-20b40fcfd0a4",
+    "turnId": "turn_233a8a57-2f5d-4bc4-b460-d92e35c874d3",
+    "kind": "stream.chunk",
+    "channel": "thought",
+    "chunkLength": 7,
+    "firstChunk": false,
+    "assistantMessageId": "msg_mw7z81pg_0ba35580-0e7e-4ac1-b942-cfbe4818e9fd"
+   }
+  },
+  {
+   "method": "v4/telemetry/event",
+   "params": {
+    "memoryEnabled": false,
+    "version": 1,
+    "eventId": "d68c3db8-871d-4e11-adf3-73cae1f90498",
+    "eventSeq": 51,
+    "occurredAt": 1794151073208,
+    "sessionId": "sess_dffa09cd-f50a-45f8-a606-a3c2c65c9f9b",
+    "sourceCommandId": "00376f75-a4c9-4151-a9e2-20b40fcfd0a4",
+    "turnId": "turn_233a8a57-2f5d-4bc4-b460-d92e35c874d3",
+    "kind": "stream.chunk",
+    "channel": "thought",
+    "chunkLength": 9,
+    "firstChunk": false,
+    "assistantMessageId": "msg_mw7z81pg_0ba35580-0e7e-4ac1-b942-cfbe4818e9fd"
+   }
+  },
+  {
+   "method": "v4/telemetry/event",
+   "params": {
+    "memoryEnabled": false,
+    "version": 1,
+    "eventId": "1f0d2808-647e-4331-addd-c8ed4b2b095c",
+    "eventSeq": 52,
+    "occurredAt": 1794151073266,
+    "sessionId": "sess_dffa09cd-f50a-45f8-a606-a3c2c65c9f9b",
+    "sourceCommandId": "00376f75-a4c9-4151-a9e2-20b40fcfd0a4",
+    "turnId": "turn_233a8a57-2f5d-4bc4-b460-d92e35c874d3",
+    "kind": "stream.chunk",
+    "channel": "thought",
+    "chunkLength": 1,
+    "firstChunk": false,
+    "assistantMessageId": "msg_mw7z81pg_0ba35580-0e7e-4ac1-b942-cfbe4818e9fd"
+   }
+  },
+  {
+   "method": "session/event",
+   "params": {
+    "deliveryKind": "desktop-continuous",
+    "eventId": "1f0d2808-647e-4331-addd-c8ed4b2b095c",
+    "payload": {
+     "assistantMessageId": "msg_mw7z81pg_0ba35580-0e7e-4ac1-b942-cfbe4818e9fd",
+     "delta": " or the harness failed. Report honestly.",
+     "done": false,
+     "kind": "reasoning_delta"
+    },
+    "seq": 31,
+    "sessionId": "sess_dffa09cd-f50a-45f8-a606-a3c2c65c9f9b",
+    "timestamp": 1794151073266,
+    "traceId": "462b6186-9de4-45bf-af76-0410243d262f",
+    "turnId": "turn_233a8a57-2f5d-4bc4-b460-d92e35c874d3",
+    "type": "model.streaming"
+   }
+  },
+  {
+   "method": "v4/telemetry/event",
+   "params": {
+    "memoryEnabled": false,
+    "version": 1,
+    "eventId": "894c6d33-9214-4600-a762-e6690339596a",
+    "eventSeq": 53,
+    "occurredAt": 1794151073271,
+    "sessionId": "sess_dffa09cd-f50a-45f8-a606-a3c2c65c9f9b",
+    "sourceCommandId": "00376f75-a4c9-4151-a9e2-20b40fcfd0a4",
+    "turnId": "turn_233a8a57-2f5d-4bc4-b460-d92e35c874d3",
+    "kind": "stream.chunk",
+    "channel": "thought",
+    "chunkLength": 0,
+    "firstChunk": false,
+    "assistantMessageId": "msg_mw7z81pg_0ba35580-0e7e-4ac1-b942-cfbe4818e9fd"
+   }
+  },
+  {
+   "method": "v4/telemetry/event",
+   "params": {
+    "memoryEnabled": false,
+    "version": 1,
+    "eventId": "5a387fe1-6932-4d4c-944f-9a6830874bc0",
+    "eventSeq": 56,
+    "occurredAt": 1794151073327,
+    "sessionId": "sess_dffa09cd-f50a-45f8-a606-a3c2c65c9f9b",
+    "sourceCommandId": "00376f75-a4c9-4151-a9e2-20b40fcfd0a4",
+    "turnId": "turn_233a8a57-2f5d-4bc4-b460-d92e35c874d3",
+    "kind": "stream.chunk",
+    "channel": "text",
+    "chunkLength": 2,
+    "firstChunk": true,
+    "assistantMessageId": "msg_mw7z81pg_0ba35580-0e7e-4ac1-b942-cfbe4818e9fd"
+   }
+  },
+  {
+   "method": "session/event",
+   "params": {
+    "deliveryKind": "desktop-continuous",
+    "eventId": "5a387fe1-6932-4d4c-944f-9a6830874bc0",
+    "payload": {
+     "assistantMessageId": "msg_mw7z81pg_0ba35580-0e7e-4ac1-b942-cfbe4818e9fd",
+     "delta": "创建",
+     "done": false,
+     "kind": "text_delta"
+    },
+    "seq": 32,
+    "sessionId": "sess_dffa09cd-f50a-45f8-a606-a3c2c65c9f9b",
+    "timestamp": 1794151073327,
+    "traceId": "462b6186-9de4-45bf-af76-0410243d262f",
+    "turnId": "turn_233a8a57-2f5d-4bc4-b460-d92e35c874d3",
+    "type": "model.streaming"
+   }
+  },
+  {
+   "method": "v4/telemetry/event",
+   "params": {
+    "memoryEnabled": false,
+    "version": 1,
+    "eventId": "e7f345ae-3fd9-484a-a895-ded614c7a3b6",
+    "eventSeq": 57,
+    "occurredAt": 1794151073328,
+    "sessionId": "sess_dffa09cd-f50a-45f8-a606-a3c2c65c9f9b",
+    "sourceCommandId": "00376f75-a4c9-4151-a9e2-20b40fcfd0a4",
+    "turnId": "turn_233a8a57-2f5d-4bc4-b460-d92e35c874d3",
+    "kind": "stream.chunk",
+    "channel": "text",
+    "chunkLength": 2,
+    "firstChunk": false,
+    "assistantMessageId": "msg_mw7z81pg_0ba35580-0e7e-4ac1-b942-cfbe4818e9fd"
+   }
+  },
+  {
+   "method": "v4/telemetry/event",
+   "params": {
+    "memoryEnabled": false,
+    "version": 1,
+    "eventId": "d4f06425-08b5-4727-b33f-a4dc7003eda7",
+    "eventSeq": 58,
+    "occurredAt": 1794151073379,
+    "sessionId": "sess_dffa09cd-f50a-45f8-a606-a3c2c65c9f9b",
+    "sourceCommandId": "00376f75-a4c9-4151-a9e2-20b40fcfd0a4",
+    "turnId": "turn_233a8a57-2f5d-4bc4-b460-d92e35c874d3",
+    "kind": "stream.chunk",
+    "channel": "text",
+    "chunkLength": 1,
+    "firstChunk": false,
+    "assistantMessageId": "msg_mw7z81pg_0ba35580-0e7e-4ac1-b942-cfbe4818e9fd"
+   }
+  },
+  {
+   "method": "v4/telemetry/event",
+   "params": {
+    "memoryEnabled": false,
+    "version": 1,
+    "eventId": "8ced0f8f-ffbc-4d6a-b8c6-c6159c049c8f",
+    "eventSeq": 59,
+    "occurredAt": 1794151073380,
+    "sessionId": "sess_dffa09cd-f50a-45f8-a606-a3c2c65c9f9b",
+    "sourceCommandId": "00376f75-a4c9-4151-a9e2-20b40fcfd0a4",
+    "turnId": "turn_233a8a57-2f5d-4bc4-b460-d92e35c874d3",
+    "kind": "stream.chunk",
+    "channel": "text",
+    "chunkLength": 5,
+    "firstChunk": false,
+    "assistantMessageId": "msg_mw7z81pg_0ba35580-0e7e-4ac1-b942-cfbe4818e9fd"
+   }
+  },
+  {
+   "method": "v4/telemetry/event",
+   "params": {
+    "memoryEnabled": false,
+    "version": 1,
+    "eventId": "90a26930-f24e-49a1-b820-b3f7a44123e5",
+    "eventSeq": 60,
+    "occurredAt": 1794151073445,
+    "sessionId": "sess_dffa09cd-f50a-45f8-a606-a3c2c65c9f9b",
+    "sourceCommandId": "00376f75-a4c9-4151-a9e2-20b40fcfd0a4",
+    "turnId": "turn_233a8a57-2f5d-4bc4-b460-d92e35c874d3",
+    "kind": "stream.chunk",
+    "channel": "text",
+    "chunkLength": 1,
+    "firstChunk": false,
+    "assistantMessageId": "msg_mw7z81pg_0ba35580-0e7e-4ac1-b942-cfbe4818e9fd"
+   }
+  },
+  {
+   "method": "v4/telemetry/event",
+   "params": {
+    "memoryEnabled": false,
+    "version": 1,
+    "eventId": "656269e5-7376-4e42-9665-e43171aee289",
+    "eventSeq": 61,
+    "occurredAt": 1794151073446,
+    "sessionId": "sess_dffa09cd-f50a-45f8-a606-a3c2c65c9f9b",
+    "sourceCommandId": "00376f75-a4c9-4151-a9e2-20b40fcfd0a4",
+    "turnId": "turn_233a8a57-2f5d-4bc4-b460-d92e35c874d3",
+    "kind": "stream.chunk",
+    "channel": "text",
+    "chunkLength": 1,
+    "firstChunk": false,
+    "assistantMessageId": "msg_mw7z81pg_0ba35580-0e7e-4ac1-b942-cfbe4818e9fd"
+   }
+  },
+  {
+   "method": "v4/telemetry/event",
+   "params": {
+    "memoryEnabled": false,
+    "version": 1,
+    "eventId": "be114db5-4543-4ed8-ab9b-5bbde6f8edb0",
+    "eventSeq": 62,
+    "occurredAt": 1794151073447,
+    "sessionId": "sess_dffa09cd-f50a-45f8-a606-a3c2c65c9f9b",
+    "sourceCommandId": "00376f75-a4c9-4151-a9e2-20b40fcfd0a4",
+    "turnId": "turn_233a8a57-2f5d-4bc4-b460-d92e35c874d3",
+    "kind": "stream.chunk",
+    "channel": "text",
+    "chunkLength": 1,
+    "firstChunk": false,
+    "assistantMessageId": "msg_mw7z81pg_0ba35580-0e7e-4ac1-b942-cfbe4818e9fd"
+   }
+  },
+  {
+   "method": "v4/telemetry/event",
+   "params": {
+    "memoryEnabled": false,
+    "version": 1,
+    "eventId": "89412ac3-a2b7-4e16-b4f9-72ef5da8a9da",
+    "eventSeq": 63,
+    "occurredAt": 1794151073448,
+    "sessionId": "sess_dffa09cd-f50a-45f8-a606-a3c2c65c9f9b",
+    "sourceCommandId": "00376f75-a4c9-4151-a9e2-20b40fcfd0a4",
+    "turnId": "turn_233a8a57-2f5d-4bc4-b460-d92e35c874d3",
+    "kind": "stream.chunk",
+    "channel": "text",
+    "chunkLength": 1,
+    "firstChunk": false,
+    "assistantMessageId": "msg_mw7z81pg_0ba35580-0e7e-4ac1-b942-cfbe4818e9fd"
+   }
+  },
+  {
+   "method": "v4/telemetry/event",
+   "params": {
+    "memoryEnabled": false,
+    "version": 1,
+    "eventId": "67c1b2a0-d269-4749-bd29-f62aaec3f4a4",
+    "eventSeq": 64,
+    "occurredAt": 1794151073527,
+    "sessionId": "sess_dffa09cd-f50a-45f8-a606-a3c2c65c9f9b",
+    "sourceCommandId": "00376f75-a4c9-4151-a9e2-20b40fcfd0a4",
+    "turnId": "turn_233a8a57-2f5d-4bc4-b460-d92e35c874d3",
+    "kind": "stream.chunk",
+    "channel": "text",
+    "chunkLength": 2,
+    "firstChunk": false,
+    "assistantMessageId": "msg_mw7z81pg_0ba35580-0e7e-4ac1-b942-cfbe4818e9fd"
+   }
+  },
+  {
+   "method": "v4/telemetry/event",
+   "params": {
+    "memoryEnabled": false,
+    "version": 1,
+    "eventId": "c4c1b51d-804d-4cba-9f9d-50050cb3c7e4",
+    "eventSeq": 65,
+    "occurredAt": 1794151073528,
+    "sessionId": "sess_dffa09cd-f50a-45f8-a606-a3c2c65c9f9b",
+    "sourceCommandId": "00376f75-a4c9-4151-a9e2-20b40fcfd0a4",
+    "turnId": "turn_233a8a57-2f5d-4bc4-b460-d92e35c874d3",
+    "kind": "stream.chunk",
+    "channel": "text",
+    "chunkLength": 2,
+    "firstChunk": false,
+    "assistantMessageId": "msg_mw7z81pg_0ba35580-0e7e-4ac1-b942-cfbe4818e9fd"
+   }
+  },
+  {
+   "method": "v4/telemetry/event",
+   "params": {
+    "memoryEnabled": false,
+    "version": 1,
+    "eventId": "a60e7407-08f1-4779-ae0e-c857c496b539",
+    "eventSeq": 66,
+    "occurredAt": 1794151073529,
+    "sessionId": "sess_dffa09cd-f50a-45f8-a606-a3c2c65c9f9b",
+    "sourceCommandId": "00376f75-a4c9-4151-a9e2-20b40fcfd0a4",
+    "turnId": "turn_233a8a57-2f5d-4bc4-b460-d92e35c874d3",
+    "kind": "stream.chunk",
+    "channel": "text",
+    "chunkLength": 2,
+    "firstChunk": false,
+    "assistantMessageId": "msg_mw7z81pg_0ba35580-0e7e-4ac1-b942-cfbe4818e9fd"
+   }
+  },
+  {
+   "method": "v4/telemetry/event",
+   "params": {
+    "memoryEnabled": false,
+    "version": 1,
+    "eventId": "017e6852-bcf9-4b90-8fbc-5c310a030ab0",
+    "eventSeq": 67,
+    "occurredAt": 1794151073582,
+    "sessionId": "sess_dffa09cd-f50a-45f8-a606-a3c2c65c9f9b",
+    "sourceCommandId": "00376f75-a4c9-4151-a9e2-20b40fcfd0a4",
+    "turnId": "turn_233a8a57-2f5d-4bc4-b460-d92e35c874d3",
+    "kind": "stream.chunk",
+    "channel": "text",
+    "chunkLength": 2,
+    "firstChunk": false,
+    "assistantMessageId": "msg_mw7z81pg_0ba35580-0e7e-4ac1-b942-cfbe4818e9fd"
+   }
+  },
+  {
+   "method": "session/event",
+   "params": {
+    "deliveryKind": "desktop-continuous",
+    "eventId": "017e6852-bcf9-4b90-8fbc-5c310a030ab0",
+    "payload": {
+     "assistantMessageId": "msg_mw7z81pg_0ba35580-0e7e-4ac1-b942-cfbe4818e9fd",
+     "delta": "失败：Write 工具的权限请求未能获得",
+     "done": false,
+     "kind": "text_delta"
+    },
+    "seq": 33,
+    "sessionId": "sess_dffa09cd-f50a-45f8-a606-a3c2c65c9f9b",
+    "timestamp": 1794151073582,
+    "traceId": "462b6186-9de4-45bf-af76-0410243d262f",
+    "turnId": "turn_233a8a57-2f5d-4bc4-b460-d92e35c874d3",
+    "type": "model.streaming"
+   }
+  },
+  {
+   "method": "v4/telemetry/event",
+   "params": {
+    "memoryEnabled": false,
+    "version": 1,
+    "eventId": "49c9ffe5-ae0d-49cd-a693-c1f68a1cb434",
+    "eventSeq": 68,
+    "occurredAt": 1794151073644,
+    "sessionId": "sess_dffa09cd-f50a-45f8-a606-a3c2c65c9f9b",
+    "sourceCommandId": "00376f75-a4c9-4151-a9e2-20b40fcfd0a4",
+    "turnId": "turn_233a8a57-2f5d-4bc4-b460-d92e35c874d3",
+    "kind": "stream.chunk",
+    "channel": "text",
+    "chunkLength": 2,
+    "firstChunk": false,
+    "assistantMessageId": "msg_mw7z81pg_0ba35580-0e7e-4ac1-b942-cfbe4818e9fd"
+   }
+  },
+  {
+   "method": "v4/telemetry/event",
+   "params": {
+    "memoryEnabled": false,
+    "version": 1,
+    "eventId": "226e83e4-f548-4075-a133-cc2044f3ba0b",
+    "eventSeq": 69,
+    "occurredAt": 1794151073645,
+    "sessionId": "sess_dffa09cd-f50a-45f8-a606-a3c2c65c9f9b",
+    "sourceCommandId": "00376f75-a4c9-4151-a9e2-20b40fcfd0a4",
+    "turnId": "turn_233a8a57-2f5d-4bc4-b460-d92e35c874d3",
+    "kind": "stream.chunk",
+    "channel": "text",
+    "chunkLength": 1,
+    "firstChunk": false,
+    "assistantMessageId": "msg_mw7z81pg_0ba35580-0e7e-4ac1-b942-cfbe4818e9fd"
+   }
+  },
+  {
+   "method": "v4/telemetry/event",
+   "params": {
+    "memoryEnabled": false,
+    "version": 1,
+    "eventId": "0bdf4a12-34cf-4a82-8b6d-831c130f6fb2",
+    "eventSeq": 70,
+    "occurredAt": 1794151073646,
+    "sessionId": "sess_dffa09cd-f50a-45f8-a606-a3c2c65c9f9b",
+    "sourceCommandId": "00376f75-a4c9-4151-a9e2-20b40fcfd0a4",
+    "turnId": "turn_233a8a57-2f5d-4bc4-b460-d92e35c874d3",
+    "kind": "stream.chunk",
+    "channel": "text",
+    "chunkLength": 1,
+    "firstChunk": false,
+    "assistantMessageId": "msg_mw7z81pg_0ba35580-0e7e-4ac1-b942-cfbe4818e9fd"
+   }
+  },
+  {
+   "method": "v4/telemetry/event",
+   "params": {
+    "memoryEnabled": false,
+    "version": 1,
+    "eventId": "d1f4514f-30c4-4d29-b789-7089181bd6eb",
+    "eventSeq": 71,
+    "occurredAt": 1794151073700,
+    "sessionId": "sess_dffa09cd-f50a-45f8-a606-a3c2c65c9f9b",
+    "sourceCommandId": "00376f75-a4c9-4151-a9e2-20b40fcfd0a4",
+    "turnId": "turn_233a8a57-2f5d-4bc4-b460-d92e35c874d3",
+    "kind": "stream.chunk",
+    "channel": "text",
+    "chunkLength": 10,
+    "firstChunk": false,
+    "assistantMessageId": "msg_mw7z81pg_0ba35580-0e7e-4ac1-b942-cfbe4818e9fd"
+   }
+  },
+  {
+   "method": "v4/telemetry/event",
+   "params": {
+    "memoryEnabled": false,
+    "version": 1,
+    "eventId": "defeb018-246f-4a32-a375-3abe6ece1a71",
+    "eventSeq": 72,
+    "occurredAt": 1794151073702,
+    "sessionId": "sess_dffa09cd-f50a-45f8-a606-a3c2c65c9f9b",
+    "sourceCommandId": "00376f75-a4c9-4151-a9e2-20b40fcfd0a4",
+    "turnId": "turn_233a8a57-2f5d-4bc4-b460-d92e35c874d3",
+    "kind": "stream.chunk",
+    "channel": "text",
+    "chunkLength": 8,
+    "firstChunk": false,
+    "assistantMessageId": "msg_mw7z81pg_0ba35580-0e7e-4ac1-b942-cfbe4818e9fd"
+   }
+  },
+  {
+   "method": "v4/telemetry/event",
+   "params": {
+    "memoryEnabled": false,
+    "version": 1,
+    "eventId": "02a6d1da-fe3b-4fa4-ab01-6f0c843eeb91",
+    "eventSeq": 73,
+    "occurredAt": 1794151073703,
+    "sessionId": "sess_dffa09cd-f50a-45f8-a606-a3c2c65c9f9b",
+    "sourceCommandId": "00376f75-a4c9-4151-a9e2-20b40fcfd0a4",
+    "turnId": "turn_233a8a57-2f5d-4bc4-b460-d92e35c874d3",
+    "kind": "stream.chunk",
+    "channel": "text",
+    "chunkLength": 7,
+    "firstChunk": false,
+    "assistantMessageId": "msg_mw7z81pg_0ba35580-0e7e-4ac1-b942-cfbe4818e9fd"
+   }
+  },
+  {
+   "method": "v4/telemetry/event",
+   "params": {
+    "memoryEnabled": false,
+    "version": 1,
+    "eventId": "f71d49fb-a0e0-4959-8e48-3a74df403ceb",
+    "eventSeq": 74,
+    "occurredAt": 1794151073703,
+    "sessionId": "sess_dffa09cd-f50a-45f8-a606-a3c2c65c9f9b",
+    "sourceCommandId": "00376f75-a4c9-4151-a9e2-20b40fcfd0a4",
+    "turnId": "turn_233a8a57-2f5d-4bc4-b460-d92e35c874d3",
+    "kind": "stream.chunk",
+    "channel": "text",
+    "chunkLength": 1,
+    "firstChunk": false,
+    "assistantMessageId": "msg_mw7z81pg_0ba35580-0e7e-4ac1-b942-cfbe4818e9fd"
+   }
+  },
+  {
+   "method": "v4/telemetry/event",
+   "params": {
+    "memoryEnabled": false,
+    "version": 1,
+    "eventId": "27c05c91-506f-4ee4-bb4b-12bca40c7ce5",
+    "eventSeq": 75,
+    "occurredAt": 1794151073704,
+    "sessionId": "sess_dffa09cd-f50a-45f8-a606-a3c2c65c9f9b",
+    "sourceCommandId": "00376f75-a4c9-4151-a9e2-20b40fcfd0a4",
+    "turnId": "turn_233a8a57-2f5d-4bc4-b460-d92e35c874d3",
+    "kind": "stream.chunk",
+    "channel": "text",
+    "chunkLength": 2,
+    "firstChunk": false,
+    "assistantMessageId": "msg_mw7z81pg_0ba35580-0e7e-4ac1-b942-cfbe4818e9fd"
+   }
+  },
+  {
+   "method": "v4/telemetry/event",
+   "params": {
+    "memoryEnabled": false,
+    "version": 1,
+    "eventId": "81a57935-2c4b-4383-8b19-2478eab9f96f",
+    "eventSeq": 76,
+    "occurredAt": 1794151073818,
+    "sessionId": "sess_dffa09cd-f50a-45f8-a606-a3c2c65c9f9b",
+    "sourceCommandId": "00376f75-a4c9-4151-a9e2-20b40fcfd0a4",
+    "turnId": "turn_233a8a57-2f5d-4bc4-b460-d92e35c874d3",
+    "kind": "stream.chunk",
+    "channel": "text",
+    "chunkLength": 2,
+    "firstChunk": false,
+    "assistantMessageId": "msg_mw7z81pg_0ba35580-0e7e-4ac1-b942-cfbe4818e9fd"
+   }
+  },
+  {
+   "method": "v4/telemetry/event",
+   "params": {
+    "memoryEnabled": false,
+    "version": 1,
+    "eventId": "0ccb32b9-f482-4a83-96dc-f1dcabd6de5d",
+    "eventSeq": 77,
+    "occurredAt": 1794151073819,
+    "sessionId": "sess_dffa09cd-f50a-45f8-a606-a3c2c65c9f9b",
+    "sourceCommandId": "00376f75-a4c9-4151-a9e2-20b40fcfd0a4",
+    "turnId": "turn_233a8a57-2f5d-4bc4-b460-d92e35c874d3",
+    "kind": "stream.chunk",
+    "channel": "text",
+    "chunkLength": 2,
+    "firstChunk": false,
+    "assistantMessageId": "msg_mw7z81pg_0ba35580-0e7e-4ac1-b942-cfbe4818e9fd"
+   }
+  },
+  {
+   "method": "v4/telemetry/event",
+   "params": {
+    "memoryEnabled": false,
+    "version": 1,
+    "eventId": "59351c84-c457-4f77-a055-a9d57889b476",
+    "eventSeq": 78,
+    "occurredAt": 1794151073824,
+    "sessionId": "sess_dffa09cd-f50a-45f8-a606-a3c2c65c9f9b",
+    "sourceCommandId": "00376f75-a4c9-4151-a9e2-20b40fcfd0a4",
+    "turnId": "turn_233a8a57-2f5d-4bc4-b460-d92e35c874d3",
+    "kind": "stream.chunk",
+    "channel": "text",
+    "chunkLength": 5,
+    "firstChunk": false,
+    "assistantMessageId": "msg_mw7z81pg_0ba35580-0e7e-4ac1-b942-cfbe4818e9fd"
+   }
+  },
+  {
+   "method": "v4/telemetry/event",
+   "params": {
+    "memoryEnabled": false,
+    "version": 1,
+    "eventId": "b077c83a-2a32-4d66-aaad-91e8ec2af544",
+    "eventSeq": 79,
+    "occurredAt": 1794151073825,
+    "sessionId": "sess_dffa09cd-f50a-45f8-a606-a3c2c65c9f9b",
+    "sourceCommandId": "00376f75-a4c9-4151-a9e2-20b40fcfd0a4",
+    "turnId": "turn_233a8a57-2f5d-4bc4-b460-d92e35c874d3",
+    "kind": "stream.chunk",
+    "channel": "text",
+    "chunkLength": 4,
+    "firstChunk": false,
+    "assistantMessageId": "msg_mw7z81pg_0ba35580-0e7e-4ac1-b942-cfbe4818e9fd"
+   }
+  },
+  {
+   "method": "v4/telemetry/event",
+   "params": {
+    "memoryEnabled": false,
+    "version": 1,
+    "eventId": "075b6839-4b8a-4b2c-911c-634bdacc6d91",
+    "eventSeq": 80,
+    "occurredAt": 1794151073842,
+    "sessionId": "sess_dffa09cd-f50a-45f8-a606-a3c2c65c9f9b",
+    "sourceCommandId": "00376f75-a4c9-4151-a9e2-20b40fcfd0a4",
+    "turnId": "turn_233a8a57-2f5d-4bc4-b460-d92e35c874d3",
+    "kind": "stream.chunk",
+    "channel": "text",
+    "chunkLength": 7,
+    "firstChunk": false,
+    "assistantMessageId": "msg_mw7z81pg_0ba35580-0e7e-4ac1-b942-cfbe4818e9fd"
+   }
+  },
+  {
+   "method": "session/event",
+   "params": {
+    "deliveryKind": "desktop-continuous",
+    "eventId": "075b6839-4b8a-4b2c-911c-634bdacc6d91",
+    "payload": {
+     "assistantMessageId": "msg_mw7z81pg_0ba35580-0e7e-4ac1-b942-cfbe4818e9fd",
+     "delta": "批准（\"Permission request failed\"），文件 `probe-permission",
+     "done": false,
+     "kind": "text_delta"
+    },
+    "seq": 34,
+    "sessionId": "sess_dffa09cd-f50a-45f8-a606-a3c2c65c9f9b",
+    "timestamp": 1794151073842,
+    "traceId": "462b6186-9de4-45bf-af76-0410243d262f",
+    "turnId": "turn_233a8a57-2f5d-4bc4-b460-d92e35c874d3",
+    "type": "model.streaming"
+   }
+  },
+  {
+   "method": "v4/telemetry/event",
+   "params": {
+    "memoryEnabled": false,
+    "version": 1,
+    "eventId": "6f5eb8a3-7d0d-495c-98e3-3c1f2ff5495f",
+    "eventSeq": 81,
+    "occurredAt": 1794151073843,
+    "sessionId": "sess_dffa09cd-f50a-45f8-a606-a3c2c65c9f9b",
+    "sourceCommandId": "00376f75-a4c9-4151-a9e2-20b40fcfd0a4",
+    "turnId": "turn_233a8a57-2f5d-4bc4-b460-d92e35c874d3",
+    "kind": "stream.chunk",
+    "channel": "text",
+    "chunkLength": 5,
+    "firstChunk": false,
+    "assistantMessageId": "msg_mw7z81pg_0ba35580-0e7e-4ac1-b942-cfbe4818e9fd"
+   }
+  },
+  {
+   "method": "v4/telemetry/event",
+   "params": {
+    "memoryEnabled": false,
+    "version": 1,
+    "eventId": "140962de-65f4-4d27-a787-3719df27cc2a",
+    "eventSeq": 82,
+    "occurredAt": 1794151073844,
+    "sessionId": "sess_dffa09cd-f50a-45f8-a606-a3c2c65c9f9b",
+    "sourceCommandId": "00376f75-a4c9-4151-a9e2-20b40fcfd0a4",
+    "turnId": "turn_233a8a57-2f5d-4bc4-b460-d92e35c874d3",
+    "kind": "stream.chunk",
+    "channel": "text",
+    "chunkLength": 4,
+    "firstChunk": false,
+    "assistantMessageId": "msg_mw7z81pg_0ba35580-0e7e-4ac1-b942-cfbe4818e9fd"
+   }
+  },
+  {
+   "method": "v4/telemetry/event",
+   "params": {
+    "memoryEnabled": false,
+    "version": 1,
+    "eventId": "7fb86868-285f-43b5-b70d-a31aa210fab1",
+    "eventSeq": 83,
+    "occurredAt": 1794151073883,
+    "sessionId": "sess_dffa09cd-f50a-45f8-a606-a3c2c65c9f9b",
+    "sourceCommandId": "00376f75-a4c9-4151-a9e2-20b40fcfd0a4",
+    "turnId": "turn_233a8a57-2f5d-4bc4-b460-d92e35c874d3",
+    "kind": "stream.chunk",
+    "channel": "text",
+    "chunkLength": 1,
+    "firstChunk": false,
+    "assistantMessageId": "msg_mw7z81pg_0ba35580-0e7e-4ac1-b942-cfbe4818e9fd"
+   }
+  },
+  {
+   "method": "v4/telemetry/event",
+   "params": {
+    "memoryEnabled": false,
+    "version": 1,
+    "eventId": "e5004a9d-999b-46ea-8771-7e9bbae6db1c",
+    "eventSeq": 84,
+    "occurredAt": 1794151073884,
+    "sessionId": "sess_dffa09cd-f50a-45f8-a606-a3c2c65c9f9b",
+    "sourceCommandId": "00376f75-a4c9-4151-a9e2-20b40fcfd0a4",
+    "turnId": "turn_233a8a57-2f5d-4bc4-b460-d92e35c874d3",
+    "kind": "stream.chunk",
+    "channel": "text",
+    "chunkLength": 1,
+    "firstChunk": false,
+    "assistantMessageId": "msg_mw7z81pg_0ba35580-0e7e-4ac1-b942-cfbe4818e9fd"
+   }
+  },
+  {
+   "method": "v4/telemetry/event",
+   "params": {
+    "memoryEnabled": false,
+    "version": 1,
+    "eventId": "f814dd77-7b8a-49b5-aad3-74adb3c9ea0a",
+    "eventSeq": 85,
+    "occurredAt": 1794151073948,
+    "sessionId": "sess_dffa09cd-f50a-45f8-a606-a3c2c65c9f9b",
+    "sourceCommandId": "00376f75-a4c9-4151-a9e2-20b40fcfd0a4",
+    "turnId": "turn_233a8a57-2f5d-4bc4-b460-d92e35c874d3",
+    "kind": "stream.chunk",
+    "channel": "text",
+    "chunkLength": 1,
+    "firstChunk": false,
+    "assistantMessageId": "msg_mw7z81pg_0ba35580-0e7e-4ac1-b942-cfbe4818e9fd"
+   }
+  },
+  {
+   "method": "v4/telemetry/event",
+   "params": {
+    "memoryEnabled": false,
+    "version": 1,
+    "eventId": "d4b2f980-7e52-498f-adde-3c4ede809446",
+    "eventSeq": 86,
+    "occurredAt": 1794151073949,
+    "sessionId": "sess_dffa09cd-f50a-45f8-a606-a3c2c65c9f9b",
+    "sourceCommandId": "00376f75-a4c9-4151-a9e2-20b40fcfd0a4",
+    "turnId": "turn_233a8a57-2f5d-4bc4-b460-d92e35c874d3",
+    "kind": "stream.chunk",
+    "channel": "text",
+    "chunkLength": 1,
+    "firstChunk": false,
+    "assistantMessageId": "msg_mw7z81pg_0ba35580-0e7e-4ac1-b942-cfbe4818e9fd"
+   }
+  },
+  {
+   "method": "v4/telemetry/event",
+   "params": {
+    "memoryEnabled": false,
+    "version": 1,
+    "eventId": "139d9992-0da2-41fd-8c5d-0212c68b3ad5",
+    "eventSeq": 87,
+    "occurredAt": 1794151073964,
+    "sessionId": "sess_dffa09cd-f50a-45f8-a606-a3c2c65c9f9b",
+    "sourceCommandId": "00376f75-a4c9-4151-a9e2-20b40fcfd0a4",
+    "turnId": "turn_233a8a57-2f5d-4bc4-b460-d92e35c874d3",
+    "kind": "stream.chunk",
+    "channel": "text",
+    "chunkLength": 1,
+    "firstChunk": false,
+    "assistantMessageId": "msg_mw7z81pg_0ba35580-0e7e-4ac1-b942-cfbe4818e9fd"
+   }
+  },
+  {
+   "method": "v4/telemetry/event",
+   "params": {
+    "memoryEnabled": false,
+    "version": 1,
+    "eventId": "da3647f6-7e05-4b2f-9f23-95a71a235675",
+    "eventSeq": 88,
+    "occurredAt": 1794151074009,
+    "sessionId": "sess_dffa09cd-f50a-45f8-a606-a3c2c65c9f9b",
+    "sourceCommandId": "00376f75-a4c9-4151-a9e2-20b40fcfd0a4",
+    "turnId": "turn_233a8a57-2f5d-4bc4-b460-d92e35c874d3",
+    "kind": "stream.chunk",
+    "channel": "text",
+    "chunkLength": 2,
+    "firstChunk": false,
+    "assistantMessageId": "msg_mw7z81pg_0ba35580-0e7e-4ac1-b942-cfbe4818e9fd"
+   }
+  },
+  {
+   "method": "v4/telemetry/event",
+   "params": {
+    "memoryEnabled": false,
+    "version": 1,
+    "eventId": "191bbd36-9eff-4fc2-aa71-2c6881eda8a4",
+    "eventSeq": 89,
+    "occurredAt": 1794151074010,
+    "sessionId": "sess_dffa09cd-f50a-45f8-a606-a3c2c65c9f9b",
+    "sourceCommandId": "00376f75-a4c9-4151-a9e2-20b40fcfd0a4",
+    "turnId": "turn_233a8a57-2f5d-4bc4-b460-d92e35c874d3",
+    "kind": "stream.chunk",
+    "channel": "text",
+    "chunkLength": 3,
+    "firstChunk": false,
+    "assistantMessageId": "msg_mw7z81pg_0ba35580-0e7e-4ac1-b942-cfbe4818e9fd"
+   }
+  },
+  {
+   "method": "v4/telemetry/event",
+   "params": {
+    "memoryEnabled": false,
+    "version": 1,
+    "eventId": "e2d67caf-31b4-4a9d-aae4-20ba6a066c24",
+    "eventSeq": 90,
+    "occurredAt": 1794151074011,
+    "sessionId": "sess_dffa09cd-f50a-45f8-a606-a3c2c65c9f9b",
+    "sourceCommandId": "00376f75-a4c9-4151-a9e2-20b40fcfd0a4",
+    "turnId": "turn_233a8a57-2f5d-4bc4-b460-d92e35c874d3",
+    "kind": "stream.chunk",
+    "channel": "text",
+    "chunkLength": 1,
+    "firstChunk": false,
+    "assistantMessageId": "msg_mw7z81pg_0ba35580-0e7e-4ac1-b942-cfbe4818e9fd"
+   }
+  },
+  {
+   "method": "v4/telemetry/event",
+   "params": {
+    "memoryEnabled": false,
+    "version": 1,
+    "eventId": "2ea88463-9534-4585-91bf-1b15e763c2af",
+    "eventSeq": 91,
+    "occurredAt": 1794151074069,
+    "sessionId": "sess_dffa09cd-f50a-45f8-a606-a3c2c65c9f9b",
+    "sourceCommandId": "00376f75-a4c9-4151-a9e2-20b40fcfd0a4",
+    "turnId": "turn_233a8a57-2f5d-4bc4-b460-d92e35c874d3",
+    "kind": "stream.chunk",
+    "channel": "text",
+    "chunkLength": 2,
+    "firstChunk": false,
+    "assistantMessageId": "msg_mw7z81pg_0ba35580-0e7e-4ac1-b942-cfbe4818e9fd"
+   }
+  },
+  {
+   "method": "v4/telemetry/event",
+   "params": {
+    "memoryEnabled": false,
+    "version": 1,
+    "eventId": "98dff445-9468-4b5e-b158-a9064ee1aa2a",
+    "eventSeq": 92,
+    "occurredAt": 1794151074071,
+    "sessionId": "sess_dffa09cd-f50a-45f8-a606-a3c2c65c9f9b",
+    "sourceCommandId": "00376f75-a4c9-4151-a9e2-20b40fcfd0a4",
+    "turnId": "turn_233a8a57-2f5d-4bc4-b460-d92e35c874d3",
+    "kind": "stream.chunk",
+    "channel": "text",
+    "chunkLength": 2,
+    "firstChunk": false,
+    "assistantMessageId": "msg_mw7z81pg_0ba35580-0e7e-4ac1-b942-cfbe4818e9fd"
+   }
+  },
+  {
+   "method": "v4/telemetry/event",
+   "params": {
+    "memoryEnabled": false,
+    "version": 1,
+    "eventId": "2f268f42-0be5-4f08-9de1-a0c8905c8625",
+    "eventSeq": 93,
+    "occurredAt": 1794151074135,
+    "sessionId": "sess_dffa09cd-f50a-45f8-a606-a3c2c65c9f9b",
+    "sourceCommandId": "00376f75-a4c9-4151-a9e2-20b40fcfd0a4",
+    "turnId": "turn_233a8a57-2f5d-4bc4-b460-d92e35c874d3",
+    "kind": "stream.chunk",
+    "channel": "text",
+    "chunkLength": 1,
+    "firstChunk": false,
+    "assistantMessageId": "msg_mw7z81pg_0ba35580-0e7e-4ac1-b942-cfbe4818e9fd"
+   }
+  },
+  {
+   "method": "session/event",
+   "params": {
+    "deliveryKind": "desktop-continuous",
+    "eventId": "2f268f42-0be5-4f08-9de1-a0c8905c8625",
+    "payload": {
+     "assistantMessageId": "msg_mw7z81pg_0ba35580-0e7e-4ac1-b942-cfbe4818e9fd",
+     "delta": "-test.txt` 没有被创建。\n\n请确认：\n-",
+     "done": false,
+     "kind": "text_delta"
+    },
+    "seq": 35,
+    "sessionId": "sess_dffa09cd-f50a-45f8-a606-a3c2c65c9f9b",
+    "timestamp": 1794151074135,
+    "traceId": "462b6186-9de4-45bf-af76-0410243d262f",
+    "turnId": "turn_233a8a57-2f5d-4bc4-b460-d92e35c874d3",
+    "type": "model.streaming"
+   }
+  },
+  {
+   "method": "v4/telemetry/event",
+   "params": {
+    "memoryEnabled": false,
+    "version": 1,
+    "eventId": "8044c7e1-7042-493b-b87f-1e4e539b4235",
+    "eventSeq": 94,
+    "occurredAt": 1794151074195,
+    "sessionId": "sess_dffa09cd-f50a-45f8-a606-a3c2c65c9f9b",
+    "sourceCommandId": "00376f75-a4c9-4151-a9e2-20b40fcfd0a4",
+    "turnId": "turn_233a8a57-2f5d-4bc4-b460-d92e35c874d3",
+    "kind": "stream.chunk",
+    "channel": "text",
+    "chunkLength": 3,
+    "firstChunk": false,
+    "assistantMessageId": "msg_mw7z81pg_0ba35580-0e7e-4ac1-b942-cfbe4818e9fd"
+   }
+  },
+  {
+   "method": "v4/telemetry/event",
+   "params": {
+    "memoryEnabled": false,
+    "version": 1,
+    "eventId": "288a264e-a394-4268-8556-061e06fd446a",
+    "eventSeq": 95,
+    "occurredAt": 1794151074196,
+    "sessionId": "sess_dffa09cd-f50a-45f8-a606-a3c2c65c9f9b",
+    "sourceCommandId": "00376f75-a4c9-4151-a9e2-20b40fcfd0a4",
+    "turnId": "turn_233a8a57-2f5d-4bc4-b460-d92e35c874d3",
+    "kind": "stream.chunk",
+    "channel": "text",
+    "chunkLength": 2,
+    "firstChunk": false,
+    "assistantMessageId": "msg_mw7z81pg_0ba35580-0e7e-4ac1-b942-cfbe4818e9fd"
+   }
+  },
+  {
+   "method": "v4/telemetry/event",
+   "params": {
+    "memoryEnabled": false,
+    "version": 1,
+    "eventId": "1a9fac8a-9904-4b83-90bb-f34e13c69ed4",
+    "eventSeq": 96,
+    "occurredAt": 1794151074259,
+    "sessionId": "sess_dffa09cd-f50a-45f8-a606-a3c2c65c9f9b",
+    "sourceCommandId": "00376f75-a4c9-4151-a9e2-20b40fcfd0a4",
+    "turnId": "turn_233a8a57-2f5d-4bc4-b460-d92e35c874d3",
+    "kind": "stream.chunk",
+    "channel": "text",
+    "chunkLength": 2,
+    "firstChunk": false,
+    "assistantMessageId": "msg_mw7z81pg_0ba35580-0e7e-4ac1-b942-cfbe4818e9fd"
+   }
+  },
+  {
+   "method": "v4/telemetry/event",
+   "params": {
+    "memoryEnabled": false,
+    "version": 1,
+    "eventId": "d454b4a3-66f5-45a6-9c52-ce458fdf4529",
+    "eventSeq": 97,
+    "occurredAt": 1794151074262,
+    "sessionId": "sess_dffa09cd-f50a-45f8-a606-a3c2c65c9f9b",
+    "sourceCommandId": "00376f75-a4c9-4151-a9e2-20b40fcfd0a4",
+    "turnId": "turn_233a8a57-2f5d-4bc4-b460-d92e35c874d3",
+    "kind": "stream.chunk",
+    "channel": "text",
+    "chunkLength": 2,
+    "firstChunk": false,
+    "assistantMessageId": "msg_mw7z81pg_0ba35580-0e7e-4ac1-b942-cfbe4818e9fd"
+   }
+  },
+  {
+   "method": "v4/telemetry/event",
+   "params": {
+    "memoryEnabled": false,
+    "version": 1,
+    "eventId": "6cd21caa-83d2-42d5-adba-ec8698c7750e",
+    "eventSeq": 98,
+    "occurredAt": 1794151074378,
+    "sessionId": "sess_dffa09cd-f50a-45f8-a606-a3c2c65c9f9b",
+    "sourceCommandId": "00376f75-a4c9-4151-a9e2-20b40fcfd0a4",
+    "turnId": "turn_233a8a57-2f5d-4bc4-b460-d92e35c874d3",
+    "kind": "stream.chunk",
+    "channel": "text",
+    "chunkLength": 1,
+    "firstChunk": false,
+    "assistantMessageId": "msg_mw7z81pg_0ba35580-0e7e-4ac1-b942-cfbe4818e9fd"
+   }
+  },
+  {
+   "method": "v4/telemetry/event",
+   "params": {
+    "memoryEnabled": false,
+    "version": 1,
+    "eventId": "d3cd4a8a-175b-4acb-876e-8cfbdc85d867",
+    "eventSeq": 99,
+    "occurredAt": 1794151074379,
+    "sessionId": "sess_dffa09cd-f50a-45f8-a606-a3c2c65c9f9b",
+    "sourceCommandId": "00376f75-a4c9-4151-a9e2-20b40fcfd0a4",
+    "turnId": "turn_233a8a57-2f5d-4bc4-b460-d92e35c874d3",
+    "kind": "stream.chunk",
+    "channel": "text",
+    "chunkLength": 1,
+    "firstChunk": false,
+    "assistantMessageId": "msg_mw7z81pg_0ba35580-0e7e-4ac1-b942-cfbe4818e9fd"
+   }
+  },
+  {
+   "method": "v4/telemetry/event",
+   "params": {
+    "memoryEnabled": false,
+    "version": 1,
+    "eventId": "63828a1e-e3c3-48fd-b839-3c36b073a710",
+    "eventSeq": 100,
+    "occurredAt": 1794151074380,
+    "sessionId": "sess_dffa09cd-f50a-45f8-a606-a3c2c65c9f9b",
+    "sourceCommandId": "00376f75-a4c9-4151-a9e2-20b40fcfd0a4",
+    "turnId": "turn_233a8a57-2f5d-4bc4-b460-d92e35c874d3",
+    "kind": "stream.chunk",
+    "channel": "text",
+    "chunkLength": 1,
+    "firstChunk": false,
+    "assistantMessageId": "msg_mw7z81pg_0ba35580-0e7e-4ac1-b942-cfbe4818e9fd"
+   }
+  },
+  {
+   "method": "v4/telemetry/event",
+   "params": {
+    "memoryEnabled": false,
+    "version": 1,
+    "eventId": "5c1e3a41-3530-4518-83f7-64b9d1a96919",
+    "eventSeq": 101,
+    "occurredAt": 1794151074380,
+    "sessionId": "sess_dffa09cd-f50a-45f8-a606-a3c2c65c9f9b",
+    "sourceCommandId": "00376f75-a4c9-4151-a9e2-20b40fcfd0a4",
+    "turnId": "turn_233a8a57-2f5d-4bc4-b460-d92e35c874d3",
+    "kind": "stream.chunk",
+    "channel": "text",
+    "chunkLength": 2,
+    "firstChunk": false,
+    "assistantMessageId": "msg_mw7z81pg_0ba35580-0e7e-4ac1-b942-cfbe4818e9fd"
+   }
+  },
+  {
+   "method": "v4/telemetry/event",
+   "params": {
+    "memoryEnabled": false,
+    "version": 1,
+    "eventId": "4fa8674e-e138-4f05-bff6-a34c5a491ff0",
+    "eventSeq": 102,
+    "occurredAt": 1794151074403,
+    "sessionId": "sess_dffa09cd-f50a-45f8-a606-a3c2c65c9f9b",
+    "sourceCommandId": "00376f75-a4c9-4151-a9e2-20b40fcfd0a4",
+    "turnId": "turn_233a8a57-2f5d-4bc4-b460-d92e35c874d3",
+    "kind": "stream.chunk",
+    "channel": "text",
+    "chunkLength": 2,
+    "firstChunk": false,
+    "assistantMessageId": "msg_mw7z81pg_0ba35580-0e7e-4ac1-b942-cfbe4818e9fd"
+   }
+  },
+  {
+   "method": "session/event",
+   "params": {
+    "deliveryKind": "desktop-continuous",
+    "eventId": "4fa8674e-e138-4f05-bff6-a34c5a491ff0",
+    "payload": {
+     "assistantMessageId": "msg_mw7z81pg_0ba35580-0e7e-4ac1-b942-cfbe4818e9fd",
+     "delta": " 是否需要你在权限弹窗中手动允许",
+     "done": false,
+     "kind": "text_delta"
+    },
+    "seq": 36,
+    "sessionId": "sess_dffa09cd-f50a-45f8-a606-a3c2c65c9f9b",
+    "timestamp": 1794151074403,
+    "traceId": "462b6186-9de4-45bf-af76-0410243d262f",
+    "turnId": "turn_233a8a57-2f5d-4bc4-b460-d92e35c874d3",
+    "type": "model.streaming"
+   }
+  },
+  {
+   "method": "v4/telemetry/event",
+   "params": {
+    "memoryEnabled": false,
+    "version": 1,
+    "eventId": "b7849c73-f034-4793-a1a1-409f324455e1",
+    "eventSeq": 103,
+    "occurredAt": 1794151074469,
+    "sessionId": "sess_dffa09cd-f50a-45f8-a606-a3c2c65c9f9b",
+    "sourceCommandId": "00376f75-a4c9-4151-a9e2-20b40fcfd0a4",
+    "turnId": "turn_233a8a57-2f5d-4bc4-b460-d92e35c874d3",
+    "kind": "stream.chunk",
+    "channel": "text",
+    "chunkLength": 2,
+    "firstChunk": false,
+    "assistantMessageId": "msg_mw7z81pg_0ba35580-0e7e-4ac1-b942-cfbe4818e9fd"
+   }
+  },
+  {
+   "method": "v4/telemetry/event",
+   "params": {
+    "memoryEnabled": false,
+    "version": 1,
+    "eventId": "245798b6-01ab-46c3-8cd8-96d5f1a47aad",
+    "eventSeq": 104,
+    "occurredAt": 1794151074529,
+    "sessionId": "sess_dffa09cd-f50a-45f8-a606-a3c2c65c9f9b",
+    "sourceCommandId": "00376f75-a4c9-4151-a9e2-20b40fcfd0a4",
+    "turnId": "turn_233a8a57-2f5d-4bc4-b460-d92e35c874d3",
+    "kind": "stream.chunk",
+    "channel": "text",
+    "chunkLength": 2,
+    "firstChunk": false,
+    "assistantMessageId": "msg_mw7z81pg_0ba35580-0e7e-4ac1-b942-cfbe4818e9fd"
+   }
+  },
+  {
+   "method": "v4/telemetry/event",
+   "params": {
+    "memoryEnabled": false,
+    "version": 1,
+    "eventId": "8867b655-9032-46db-a4f5-b856b1661048",
+    "eventSeq": 105,
+    "occurredAt": 1794151074531,
+    "sessionId": "sess_dffa09cd-f50a-45f8-a606-a3c2c65c9f9b",
+    "sourceCommandId": "00376f75-a4c9-4151-a9e2-20b40fcfd0a4",
+    "turnId": "turn_233a8a57-2f5d-4bc4-b460-d92e35c874d3",
+    "kind": "stream.chunk",
+    "channel": "text",
+    "chunkLength": 2,
+    "firstChunk": false,
+    "assistantMessageId": "msg_mw7z81pg_0ba35580-0e7e-4ac1-b942-cfbe4818e9fd"
+   }
+  },
+  {
+   "method": "v4/telemetry/event",
+   "params": {
+    "memoryEnabled": false,
+    "version": 1,
+    "eventId": "849141c9-38d7-4a3d-95c8-9e689e3e8090",
+    "eventSeq": 106,
+    "occurredAt": 1794151074598,
+    "sessionId": "sess_dffa09cd-f50a-45f8-a606-a3c2c65c9f9b",
+    "sourceCommandId": "00376f75-a4c9-4151-a9e2-20b40fcfd0a4",
+    "turnId": "turn_233a8a57-2f5d-4bc4-b460-d92e35c874d3",
+    "kind": "stream.chunk",
+    "channel": "text",
+    "chunkLength": 1,
+    "firstChunk": false,
+    "assistantMessageId": "msg_mw7z81pg_0ba35580-0e7e-4ac1-b942-cfbe4818e9fd"
+   }
+  },
+  {
+   "method": "v4/telemetry/event",
+   "params": {
+    "memoryEnabled": false,
+    "version": 1,
+    "eventId": "9378d5bc-4969-4465-b07d-02df3c4fb13f",
+    "eventSeq": 107,
+    "occurredAt": 1794151074600,
+    "sessionId": "sess_dffa09cd-f50a-45f8-a606-a3c2c65c9f9b",
+    "sourceCommandId": "00376f75-a4c9-4151-a9e2-20b40fcfd0a4",
+    "turnId": "turn_233a8a57-2f5d-4bc4-b460-d92e35c874d3",
+    "kind": "stream.chunk",
+    "channel": "text",
+    "chunkLength": 3,
+    "firstChunk": false,
+    "assistantMessageId": "msg_mw7z81pg_0ba35580-0e7e-4ac1-b942-cfbe4818e9fd"
+   }
+  },
+  {
+   "method": "v4/telemetry/event",
+   "params": {
+    "memoryEnabled": false,
+    "version": 1,
+    "eventId": "1f07dffb-1034-427a-b9d8-154640fa9e6b",
+    "eventSeq": 108,
+    "occurredAt": 1794151074697,
+    "sessionId": "sess_dffa09cd-f50a-45f8-a606-a3c2c65c9f9b",
+    "sourceCommandId": "00376f75-a4c9-4151-a9e2-20b40fcfd0a4",
+    "turnId": "turn_233a8a57-2f5d-4bc4-b460-d92e35c874d3",
+    "kind": "stream.chunk",
+    "channel": "text",
+    "chunkLength": 3,
+    "firstChunk": false,
+    "assistantMessageId": "msg_mw7z81pg_0ba35580-0e7e-4ac1-b942-cfbe4818e9fd"
+   }
+  },
+  {
+   "method": "session/event",
+   "params": {
+    "deliveryKind": "desktop-continuous",
+    "eventId": "1f07dffb-1034-427a-b9d8-154640fa9e6b",
+    "payload": {
+     "assistantMessageId": "msg_mw7z81pg_0ba35580-0e7e-4ac1-b942-cfbe4818e9fd",
+     "delta": "本次写入？\n- 或者告诉我",
+     "done": false,
+     "kind": "text_delta"
+    },
+    "seq": 37,
+    "sessionId": "sess_dffa09cd-f50a-45f8-a606-a3c2c65c9f9b",
+    "timestamp": 1794151074697,
+    "traceId": "462b6186-9de4-45bf-af76-0410243d262f",
+    "turnId": "turn_233a8a57-2f5d-4bc4-b460-d92e35c874d3",
+    "type": "model.streaming"
+   }
+  },
+  {
+   "method": "v4/telemetry/event",
+   "params": {
+    "memoryEnabled": false,
+    "version": 1,
+    "eventId": "ec85137a-a22f-4cec-b0ae-25ee5b816871",
+    "eventSeq": 109,
+    "occurredAt": 1794151075081,
+    "sessionId": "sess_dffa09cd-f50a-45f8-a606-a3c2c65c9f9b",
+    "sourceCommandId": "00376f75-a4c9-4151-a9e2-20b40fcfd0a4",
+    "turnId": "turn_233a8a57-2f5d-4bc4-b460-d92e35c874d3",
+    "kind": "stream.chunk",
+    "channel": "text",
+    "chunkLength": 1,
+    "firstChunk": false,
+    "assistantMessageId": "msg_mw7z81pg_0ba35580-0e7e-4ac1-b942-cfbe4818e9fd"
+   }
+  },
+  {
+   "method": "session/event",
+   "params": {
+    "deliveryKind": "desktop-continuous",
+    "eventId": "ec85137a-a22f-4cec-b0ae-25ee5b816871",
+    "payload": {
+     "assistantMessageId": "msg_mw7z81pg_0ba35580-0e7e-4ac1-b942-cfbe4818e9fd",
+     "delta": "以",
+     "done": false,
+     "kind": "text_delta"
+    },
+    "seq": 38,
+    "sessionId": "sess_dffa09cd-f50a-45f8-a606-a3c2c65c9f9b",
+    "timestamp": 1794151075081,
+    "traceId": "462b6186-9de4-45bf-af76-0410243d262f",
+    "turnId": "turn_233a8a57-2f5d-4bc4-b460-d92e35c874d3",
+    "type": "model.streaming"
+   }
+  },
+  {
+   "method": "v4/telemetry/event",
+   "params": {
+    "memoryEnabled": false,
+    "version": 1,
+    "eventId": "13baaf6b-1c66-4060-b5ae-3cfd01b62dbb",
+    "eventSeq": 110,
+    "occurredAt": 1794151075083,
+    "sessionId": "sess_dffa09cd-f50a-45f8-a606-a3c2c65c9f9b",
+    "sourceCommandId": "00376f75-a4c9-4151-a9e2-20b40fcfd0a4",
+    "turnId": "turn_233a8a57-2f5d-4bc4-b460-d92e35c874d3",
+    "kind": "stream.chunk",
+    "channel": "text",
+    "chunkLength": 2,
+    "firstChunk": false,
+    "assistantMessageId": "msg_mw7z81pg_0ba35580-0e7e-4ac1-b942-cfbe4818e9fd"
+   }
+  },
+  {
+   "method": "v4/telemetry/event",
+   "params": {
+    "memoryEnabled": false,
+    "version": 1,
+    "eventId": "a2efd1d8-a2b7-41f9-9e7d-5052616e90df",
+    "eventSeq": 111,
+    "occurredAt": 1794151075084,
+    "sessionId": "sess_dffa09cd-f50a-45f8-a606-a3c2c65c9f9b",
+    "sourceCommandId": "00376f75-a4c9-4151-a9e2-20b40fcfd0a4",
+    "turnId": "turn_233a8a57-2f5d-4bc4-b460-d92e35c874d3",
+    "kind": "stream.chunk",
+    "channel": "text",
+    "chunkLength": 2,
+    "firstChunk": false,
+    "assistantMessageId": "msg_mw7z81pg_0ba35580-0e7e-4ac1-b942-cfbe4818e9fd"
+   }
+  },
+  {
+   "method": "v4/telemetry/event",
+   "params": {
+    "memoryEnabled": false,
+    "version": 1,
+    "eventId": "b463c497-4df8-42e1-8a96-8a3606dcc8c8",
+    "eventSeq": 112,
+    "occurredAt": 1794151075085,
+    "sessionId": "sess_dffa09cd-f50a-45f8-a606-a3c2c65c9f9b",
+    "sourceCommandId": "00376f75-a4c9-4151-a9e2-20b40fcfd0a4",
+    "turnId": "turn_233a8a57-2f5d-4bc4-b460-d92e35c874d3",
+    "kind": "stream.chunk",
+    "channel": "text",
+    "chunkLength": 1,
+    "firstChunk": false,
+    "assistantMessageId": "msg_mw7z81pg_0ba35580-0e7e-4ac1-b942-cfbe4818e9fd"
+   }
+  },
+  {
+   "method": "v4/telemetry/event",
+   "params": {
+    "memoryEnabled": false,
+    "version": 1,
+    "eventId": "33b2029e-7bd2-4722-a0a9-c34572472dd7",
+    "eventSeq": 113,
+    "occurredAt": 1794151075086,
+    "sessionId": "sess_dffa09cd-f50a-45f8-a606-a3c2c65c9f9b",
+    "sourceCommandId": "00376f75-a4c9-4151-a9e2-20b40fcfd0a4",
+    "turnId": "turn_233a8a57-2f5d-4bc4-b460-d92e35c874d3",
+    "kind": "stream.chunk",
+    "channel": "text",
+    "chunkLength": 2,
+    "firstChunk": false,
+    "assistantMessageId": "msg_mw7z81pg_0ba35580-0e7e-4ac1-b942-cfbe4818e9fd"
+   }
+  },
+  {
+   "method": "v4/telemetry/event",
+   "params": {
+    "memoryEnabled": false,
+    "version": 1,
+    "eventId": "c2569e5c-a38f-4e76-85a3-7721c137fab9",
+    "eventSeq": 114,
+    "occurredAt": 1794151075086,
+    "sessionId": "sess_dffa09cd-f50a-45f8-a606-a3c2c65c9f9b",
+    "sourceCommandId": "00376f75-a4c9-4151-a9e2-20b40fcfd0a4",
+    "turnId": "turn_233a8a57-2f5d-4bc4-b460-d92e35c874d3",
+    "kind": "stream.chunk",
+    "channel": "text",
+    "chunkLength": 1,
+    "firstChunk": false,
+    "assistantMessageId": "msg_mw7z81pg_0ba35580-0e7e-4ac1-b942-cfbe4818e9fd"
+   }
+  },
+  {
+   "method": "v4/telemetry/event",
+   "params": {
+    "memoryEnabled": false,
+    "version": 1,
+    "eventId": "76d35673-da99-4724-b9e2-556f0a29c542",
+    "eventSeq": 115,
+    "occurredAt": 1794151075088,
+    "sessionId": "sess_dffa09cd-f50a-45f8-a606-a3c2c65c9f9b",
+    "sourceCommandId": "00376f75-a4c9-4151-a9e2-20b40fcfd0a4",
+    "turnId": "turn_233a8a57-2f5d-4bc4-b460-d92e35c874d3",
+    "kind": "stream.chunk",
+    "channel": "text",
+    "chunkLength": 1,
+    "firstChunk": false,
+    "assistantMessageId": "msg_mw7z81pg_0ba35580-0e7e-4ac1-b942-cfbe4818e9fd"
+   }
+  },
+  {
+   "method": "v4/telemetry/event",
+   "params": {
+    "memoryEnabled": false,
+    "version": 1,
+    "eventId": "e27917f7-5d9c-4fe8-87d5-7e1372453260",
+    "eventSeq": 116,
+    "occurredAt": 1794151075089,
+    "sessionId": "sess_dffa09cd-f50a-45f8-a606-a3c2c65c9f9b",
+    "sourceCommandId": "00376f75-a4c9-4151-a9e2-20b40fcfd0a4",
+    "turnId": "turn_233a8a57-2f5d-4bc4-b460-d92e35c874d3",
+    "kind": "stream.chunk",
+    "channel": "text",
+    "chunkLength": 5,
+    "firstChunk": false,
+    "assistantMessageId": "msg_mw7z81pg_0ba35580-0e7e-4ac1-b942-cfbe4818e9fd"
+   }
+  },
+  {
+   "method": "v4/telemetry/event",
+   "params": {
+    "memoryEnabled": false,
+    "version": 1,
+    "eventId": "d559cba5-2b03-43cb-a9b0-92515d405344",
+    "eventSeq": 117,
+    "occurredAt": 1794151075091,
+    "sessionId": "sess_dffa09cd-f50a-45f8-a606-a3c2c65c9f9b",
+    "sourceCommandId": "00376f75-a4c9-4151-a9e2-20b40fcfd0a4",
+    "turnId": "turn_233a8a57-2f5d-4bc4-b460-d92e35c874d3",
+    "kind": "stream.chunk",
+    "channel": "text",
+    "chunkLength": 2,
+    "firstChunk": false,
+    "assistantMessageId": "msg_mw7z81pg_0ba35580-0e7e-4ac1-b942-cfbe4818e9fd"
+   }
+  },
+  {
+   "method": "v4/telemetry/event",
+   "params": {
+    "memoryEnabled": false,
+    "version": 1,
+    "eventId": "8f11ddcd-c584-4a7f-ad90-695500667fb5",
+    "eventSeq": 118,
+    "occurredAt": 1794151075092,
+    "sessionId": "sess_dffa09cd-f50a-45f8-a606-a3c2c65c9f9b",
+    "sourceCommandId": "00376f75-a4c9-4151-a9e2-20b40fcfd0a4",
+    "turnId": "turn_233a8a57-2f5d-4bc4-b460-d92e35c874d3",
+    "kind": "stream.chunk",
+    "channel": "text",
+    "chunkLength": 4,
+    "firstChunk": false,
+    "assistantMessageId": "msg_mw7z81pg_0ba35580-0e7e-4ac1-b942-cfbe4818e9fd"
+   }
+  },
+  {
+   "method": "v4/telemetry/event",
+   "params": {
+    "memoryEnabled": false,
+    "version": 1,
+    "eventId": "8ceec5b3-766d-4096-949a-21dfe9629131",
+    "eventSeq": 119,
+    "occurredAt": 1794151075092,
+    "sessionId": "sess_dffa09cd-f50a-45f8-a606-a3c2c65c9f9b",
+    "sourceCommandId": "00376f75-a4c9-4151-a9e2-20b40fcfd0a4",
+    "turnId": "turn_233a8a57-2f5d-4bc4-b460-d92e35c874d3",
+    "kind": "stream.chunk",
+    "channel": "text",
+    "chunkLength": 1,
+    "firstChunk": false,
+    "assistantMessageId": "msg_mw7z81pg_0ba35580-0e7e-4ac1-b942-cfbe4818e9fd"
+   }
+  },
+  {
+   "method": "v4/telemetry/event",
+   "params": {
+    "memoryEnabled": false,
+    "version": 1,
+    "eventId": "fd688685-d686-4df5-8f74-e3d3d2523635",
+    "eventSeq": 120,
+    "occurredAt": 1794151075093,
+    "sessionId": "sess_dffa09cd-f50a-45f8-a606-a3c2c65c9f9b",
+    "sourceCommandId": "00376f75-a4c9-4151-a9e2-20b40fcfd0a4",
+    "turnId": "turn_233a8a57-2f5d-4bc4-b460-d92e35c874d3",
+    "kind": "stream.chunk",
+    "channel": "text",
+    "chunkLength": 2,
+    "firstChunk": false,
+    "assistantMessageId": "msg_mw7z81pg_0ba35580-0e7e-4ac1-b942-cfbe4818e9fd"
+   }
+  },
+  {
+   "method": "v4/telemetry/event",
+   "params": {
+    "memoryEnabled": false,
+    "version": 1,
+    "eventId": "a9a1c34e-f780-4fb1-9b7c-e795d0866b89",
+    "eventSeq": 121,
+    "occurredAt": 1794151075763,
+    "sessionId": "sess_dffa09cd-f50a-45f8-a606-a3c2c65c9f9b",
+    "sourceCommandId": "00376f75-a4c9-4151-a9e2-20b40fcfd0a4",
+    "turnId": "turn_233a8a57-2f5d-4bc4-b460-d92e35c874d3",
+    "kind": "stream.chunk",
+    "channel": "text",
+    "chunkLength": 1,
+    "firstChunk": false,
+    "assistantMessageId": "msg_mw7z81pg_0ba35580-0e7e-4ac1-b942-cfbe4818e9fd"
+   }
+  },
+  {
+   "method": "session/event",
+   "params": {
+    "deliveryKind": "desktop-continuous",
+    "eventId": "a9a1c34e-f780-4fb1-9b7c-e795d0866b89",
+    "payload": {
+     "assistantMessageId": "msg_mw7z81pg_0ba35580-0e7e-4ac1-b942-cfbe4818e9fd",
+     "delta": "其他方式（例如改用 Bash `echo` 写入",
+     "done": false,
+     "kind": "text_delta"
+    },
+    "seq": 39,
+    "sessionId": "sess_dffa09cd-f50a-45f8-a606-a3c2c65c9f9b",
+    "timestamp": 1794151075763,
+    "traceId": "462b6186-9de4-45bf-af76-0410243d262f",
+    "turnId": "turn_233a8a57-2f5d-4bc4-b460-d92e35c874d3",
+    "type": "model.streaming"
+   }
+  },
+  {
+   "method": "v4/telemetry/event",
+   "params": {
+    "memoryEnabled": false,
+    "version": 1,
+    "eventId": "f97a9e93-a36a-4658-8cf2-357df3d1703b",
+    "eventSeq": 122,
+    "occurredAt": 1794151075764,
+    "sessionId": "sess_dffa09cd-f50a-45f8-a606-a3c2c65c9f9b",
+    "sourceCommandId": "00376f75-a4c9-4151-a9e2-20b40fcfd0a4",
+    "turnId": "turn_233a8a57-2f5d-4bc4-b460-d92e35c874d3",
+    "kind": "stream.chunk",
+    "channel": "text",
+    "chunkLength": 1,
+    "firstChunk": false,
+    "assistantMessageId": "msg_mw7z81pg_0ba35580-0e7e-4ac1-b942-cfbe4818e9fd"
+   }
+  },
+  {
+   "method": "v4/telemetry/event",
+   "params": {
+    "memoryEnabled": false,
+    "version": 1,
+    "eventId": "862a8af7-d144-4a4c-990f-d588d258bdb5",
+    "eventSeq": 123,
+    "occurredAt": 1794151075765,
+    "sessionId": "sess_dffa09cd-f50a-45f8-a606-a3c2c65c9f9b",
+    "sourceCommandId": "00376f75-a4c9-4151-a9e2-20b40fcfd0a4",
+    "turnId": "turn_233a8a57-2f5d-4bc4-b460-d92e35c874d3",
+    "kind": "stream.chunk",
+    "channel": "text",
+    "chunkLength": 1,
+    "firstChunk": false,
+    "assistantMessageId": "msg_mw7z81pg_0ba35580-0e7e-4ac1-b942-cfbe4818e9fd"
+   }
+  },
+  {
+   "method": "v4/telemetry/event",
+   "params": {
+    "memoryEnabled": false,
+    "version": 1,
+    "eventId": "80ee917d-1367-477b-97af-ef8841adef0c",
+    "eventSeq": 124,
+    "occurredAt": 1794151075816,
+    "sessionId": "sess_dffa09cd-f50a-45f8-a606-a3c2c65c9f9b",
+    "sourceCommandId": "00376f75-a4c9-4151-a9e2-20b40fcfd0a4",
+    "turnId": "turn_233a8a57-2f5d-4bc4-b460-d92e35c874d3",
+    "kind": "stream.chunk",
+    "channel": "text",
+    "chunkLength": 1,
+    "firstChunk": false,
+    "assistantMessageId": "msg_mw7z81pg_0ba35580-0e7e-4ac1-b942-cfbe4818e9fd"
+   }
+  },
+  {
+   "method": "v4/telemetry/event",
+   "params": {
+    "memoryEnabled": false,
+    "version": 1,
+    "eventId": "e70eb722-38af-4a36-a39c-f63d005605c8",
+    "eventSeq": 125,
+    "occurredAt": 1794151075816,
+    "sessionId": "sess_dffa09cd-f50a-45f8-a606-a3c2c65c9f9b",
+    "sourceCommandId": "00376f75-a4c9-4151-a9e2-20b40fcfd0a4",
+    "turnId": "turn_233a8a57-2f5d-4bc4-b460-d92e35c874d3",
+    "kind": "stream.chunk",
+    "channel": "text",
+    "chunkLength": 1,
+    "firstChunk": false,
+    "assistantMessageId": "msg_mw7z81pg_0ba35580-0e7e-4ac1-b942-cfbe4818e9fd"
+   }
+  },
+  {
+   "method": "session/event",
+   "params": {
+    "deliveryKind": "desktop-continuous",
+    "eventId": "e70eb722-38af-4a36-a39c-f63d005605c8",
+    "payload": {
+     "assistantMessageId": "msg_mw7z81pg_0ba35580-0e7e-4ac1-b942-cfbe4818e9fd",
+     "delta": "）重试。",
+     "done": false,
+     "kind": "text_delta"
+    },
+    "seq": 40,
+    "sessionId": "sess_dffa09cd-f50a-45f8-a606-a3c2c65c9f9b",
+    "timestamp": 1794151075816,
+    "traceId": "462b6186-9de4-45bf-af76-0410243d262f",
+    "turnId": "turn_233a8a57-2f5d-4bc4-b460-d92e35c874d3",
+    "type": "model.streaming"
+   }
+  },
+  {
+   "method": "v4/telemetry/event",
+   "params": {
+    "memoryEnabled": false,
+    "version": 1,
+    "eventId": "a26c005d-b2cd-4a4e-8e25-2a2d2672f0c4",
+    "eventSeq": 128,
+    "occurredAt": 1794151075973,
+    "sessionId": "sess_dffa09cd-f50a-45f8-a606-a3c2c65c9f9b",
+    "sourceCommandId": "00376f75-a4c9-4151-a9e2-20b40fcfd0a4",
+    "turnId": "turn_233a8a57-2f5d-4bc4-b460-d92e35c874d3",
+    "kind": "model.request.status",
+    "requestId": "0574be6d-01b3-47ac-8f6e-61b1f8b6c8bd",
+    "status": "model_request_completed",
+    "providerId": "account:bigmodel-start-plan",
+    "modelId": "GLM-5.3-Flash",
+    "providerKind": "anthropic",
+    "providerHostname": "zcode.z.ai",
+    "transport": "sse",
+    "querySource": "main_turn",
+    "queryId": "00376f75-a4c9-4151-a9e2-20b40fcfd0a4",
+    "attempt": 1,
+    "maxAttempts": 11,
+    "durationMs": 5820
+   }
+  },
+  {
+   "method": "session/event",
+   "params": {
+    "deliveryKind": "desktop-continuous",
+    "eventId": "a26c005d-b2cd-4a4e-8e25-2a2d2672f0c4",
+    "payload": {
+     "baseURL": "https://zcode.z.ai/api/v1/zcode-plan/anthropic",
+     "maxAttempts": 11,
+     "providerId": "account:bigmodel-start-plan",
+     "modelId": "GLM-5.3-Flash",
+     "modelRequestSessionType": "main",
+     "requestId": "0574be6d-01b3-47ac-8f6e-61b1f8b6c8bd",
+     "sessionId": "sess_dffa09cd-f50a-45f8-a606-a3c2c65c9f9b",
+     "spanId": "c87cc21e-f96f-4b",
+     "parentSpanId": "072ba043-75c1-47",
+     "querySource": "main_turn",
+     "queryId": "00376f75-a4c9-4151-a9e2-20b40fcfd0a4",
+     "traceId": "462b6186-9de4-45bf-af76-0410243d262f",
+     "providerKind": "anthropic",
+     "transport": "sse",
+     "turnId": "turn_233a8a57-2f5d-4bc4-b460-d92e35c874d3",
+     "modelCall": {
+      "operation": "agent_step",
+      "actorKind": "main",
+      "operationId": "c87cc21e-f96f-4b",
+      "reasoning": {
+       "capability": "unknown",
+       "requestedControl": "provider_default",
+       "requestedState": "provider_default",
+       "requestedLevel": "high",
+       "effectiveControl": "unknown",
+       "effectiveState": "unknown",
+       "effectiveLevel": "unknown"
+      },
+      "logicalCallId": "d0da1d94-37a4-497d-a738-eb492840a7fa",
+      "stepIndex": 1
+     },
+     "attempt": 1,
+     "durationMs": 5820,
+     "requestHeaderCount": 17,
+     "requestHeaders": {
+      "http-referer": "https://zcode.z.ai/",
+      "user-agent": "ZCode/3.17.2",
+      "x-zcode-app-version": "3.17.2",
+      "x-title": "Z Code@electron",
+      "x-release-channel": "production",
+      "x-client-language": "zh-CN",
+      "x-client-timezone": "Asia/Shanghai",
+      "x-zcode-agent": "glm",
+      "x-platform": "win32-x64",
+      "x-os-category": "windows",
+      "x-os-version": "10.0.26300",
+      "x-request-id": "0574be6d-01b3-47ac-8f6e-61b1f8b6c8bd",
+      "x-zcode-session-type": "main",
+      "x-zcode-trace-id": "462b6186-9de4-45bf-af76-0410243d262f",
+      "x-query-id": "00376f75-a4c9-4151-a9e2-20b40fcfd0a4",
+      "x-zcode-query-source": "main_turn",
+      "x-session-id": "dffa09cd-f50a-45f8-a606-a3c2c65c9f9b"
+     },
+     "responseHeaderCount": 15,
+     "responseHeaders": {
+      "cache-control": "no-cache",
+      "connection": "keep-alive",
+      "content-type": "text/event-stream; charset=utf-8",
+      "date": "Sun, 08 Nov 2026 15:17:50 GMT",
+      "eagleid": "8ccf3f6217941510700504301e",
+      "server": "ESA",
+      "set-cookie": "<redacted>",
+      "timing-allow-origin": "*",
+      "transfer-encoding": "chunked",
+      "vary": "Accept-Encoding",
+      "via": "ens-cache37.l2eo166-17[209,0,DP], ens-cache14.cn7369[213,0,DP], ens-cache14.cn7369[214,0]",
+      "x-content-type-options": "nosniff",
+      "x-log-id": "20261108231750a374a4e6aed54523",
+      "x-request-id": "20261108151750a4e2bd0e6a2059182a28",
+      "x-site-cache-status": "DYNAMIC"
+     },
+     "providerRequestId": "20261108151750a4e2bd0e6a2059182a28",
+     "finishReason": "stop",
+     "usage": {
+      "inputTokens": "<redacted>",
+      "outputTokens": "<redacted>",
+      "totalTokens": "<redacted>",
+      "cacheReadTokens": "<redacted>",
+      "cacheWriteTokens": "<redacted>"
+     },
+     "timeToFirstProviderEventMs": 17,
+     "timeToFirstContentMs": 2512,
+     "timeToFirstTextMs": 3177,
+     "streamStallCount": 0,
+     "streamOutputCommitted": true,
+     "timestamp": "2026-11-08T15:17:55.969Z",
+     "type": "model_request_completed",
+     "_meta": {
+      "zcode": {
+       "apiRetry": null
+      }
+     }
+    },
+    "seq": 41,
+    "sessionId": "sess_dffa09cd-f50a-45f8-a606-a3c2c65c9f9b",
+    "timestamp": 1794151075973,
+    "traceId": "462b6186-9de4-45bf-af76-0410243d262f",
+    "turnId": "turn_233a8a57-2f5d-4bc4-b460-d92e35c874d3",
+    "type": "session.updated"
+   }
+  },
+  {
+   "method": "v4/telemetry/event",
+   "params": {
+    "memoryEnabled": false,
+    "version": 1,
+    "eventId": "c15bea8c-14be-43bd-8d1b-cc4a4d45618d",
+    "eventSeq": 129,
+    "occurredAt": 1794151076011,
+    "sessionId": "sess_dffa09cd-f50a-45f8-a606-a3c2c65c9f9b",
+    "sourceCommandId": "00376f75-a4c9-4151-a9e2-20b40fcfd0a4",
+    "turnId": "turn_233a8a57-2f5d-4bc4-b460-d92e35c874d3",
+    "kind": "usage.delta",
+    "requestId": "0574be6d-01b3-47ac-8f6e-61b1f8b6c8bd",
+    "providerId": "account:bigmodel-start-plan",
+    "modelId": "GLM-5.3-Flash",
+    "providerKind": "anthropic",
+    "providerHostname": "zcode.z.ai",
+    "inputTokens": "<redacted>",
+    "outputTokens": "<redacted>",
+    "totalTokens": "<redacted>",
+    "reasoningTokens": "<redacted>",
+    "cacheReadTokens": "<redacted>",
+    "cacheWriteTokens": "<redacted>"
+   }
+  },
+  {
+   "method": "session/event",
+   "params": {
+    "deliveryKind": "desktop-continuous",
+    "eventId": "c15bea8c-14be-43bd-8d1b-cc4a4d45618d",
+    "payload": {
+     "content": "创建失败：Write 工具的权限请求未能获得批准（\"Permission request failed\"），文件 `probe-permission-test.txt` 没有被创建。\n\n请确认：\n- 是否需要你在权限弹窗中手动允许本次写入？\n- 或者告诉我以其他方式（例如改用 Bash `echo` 写入）重试。",
+     "contextWindow": 1000000,
+     "querySource": "main_turn",
+     "stopReason": "stop",
+     "usage": {
+      "inputTokens": "<redacted>",
+      "outputTokens": "<redacted>",
+      "totalTokens": "<redacted>",
+      "cacheReadTokens": "<redacted>",
+      "cacheWriteTokens": "<redacted>"
+     },
+     "cacheHit": {
+      "inputTokens": "<redacted>",
+      "cacheReadTokens": "<redacted>",
+      "cacheWriteTokens": "<redacted>",
+      "latestHitRate": 0.9985439318092444,
+      "hitRate": 0.4994843113696052,
+      "hitRateRequestCount": 2,
+      "totalInputTokens": "<redacted>",
+      "totalCacheReadTokens": "<redacted>",
+      "totalCacheWriteTokens": "<redacted>"
+     },
+     "contextUsageBreakdown": [
+      {
+       "source": "system_prompt",
+       "chars": 2961
+      },
+      {
+       "source": "meta_user_context",
+       "chars": 2861
+      },
+      {
+       "source": "skills",
+       "chars": 19074
+      },
+      {
+       "source": "system_tool_schemas",
+       "chars": 86131
+      },
+      {
+       "source": "mcp_tool_schemas",
+       "chars": 422316
+      },
+      {
+       "source": "messages",
+       "chars": 495
+      }
+     ],
+     "toolCallCount": 0
+    },
+    "seq": 42,
+    "sessionId": "sess_dffa09cd-f50a-45f8-a606-a3c2c65c9f9b",
+    "timestamp": 1794151076011,
+    "traceId": "462b6186-9de4-45bf-af76-0410243d262f",
+    "turnId": "turn_233a8a57-2f5d-4bc4-b460-d92e35c874d3",
+    "type": "session.updated"
+   }
+  },
+  {
+   "method": "session/event",
+   "params": {
+    "deliveryKind": "desktop-continuous",
+    "eventId": "bb7f1377-94f0-4426-8fdb-00220a5863d0",
+    "payload": {
+     "descriptor": {
+      "clientVisible": true,
+      "commandDisplay": "node \"C:\\\\Users\\\\Rt\\\\.zcode\\\\cli\\\\plugins\\\\cache\\\\zcode-plugins-official\\\\mimosa\\\\1.0.4/hooks/run-hook.cjs\" stop-hook.mjs Stop",
+      "executionMode": "foreground",
+      "executionType": "process",
+      "pluginId": "mimosa@zcode-plugins-official",
+      "pluginName": "mimosa",
+      "sourceKind": "plugin",
+      "sourcePath": "C:\\Users\\Rt\\.zcode\\cli\\plugins\\cache\\zcode-plugins-official\\mimosa\\1.0.4\\hooks\\hooks.json",
+      "statusMessage": "Mimosa 正在复查本轮改动…",
+      "timeoutMs": 120000
+     },
+     "hookEventName": "Stop",
+     "hookIndex": 0,
+     "hookCount": 1,
+     "hookInvocationId": "81d05c15-b3ce-4065-82ca-326a1c14cb8a",
+     "hookRunId": "ef4626c9-7405-44f2-a652-8c37153d026a",
+     "hookSource": "plugin.mimosa@zcode-plugins-official.Stop.0.0",
+     "startedAt": 1794151076059
+    },
+    "seq": 43,
+    "sessionId": "sess_dffa09cd-f50a-45f8-a606-a3c2c65c9f9b",
+    "timestamp": 1794151076059,
+    "traceId": "462b6186-9de4-45bf-af76-0410243d262f",
+    "turnId": "turn_233a8a57-2f5d-4bc4-b460-d92e35c874d3",
+    "type": "session.updated"
+   }
+  },
+  {
+   "method": "session/event",
+   "params": {
+    "deliveryKind": "desktop-continuous",
+    "eventId": "28a72eb3-8106-438b-8446-56b7a34bbcd4",
+    "payload": {
+     "descriptor": {
+      "clientVisible": true,
+      "commandDisplay": "node \"C:\\\\Users\\\\Rt\\\\.zcode\\\\cli\\\\plugins\\\\cache\\\\zcode-plugins-official\\\\mimosa\\\\1.0.4/hooks/run-hook.cjs\" stop-hook.mjs Stop",
+      "executionMode": "foreground",
+      "executionType": "process",
+      "pluginId": "mimosa@zcode-plugins-official",
+      "pluginName": "mimosa",
+      "sourceKind": "plugin",
+      "sourcePath": "C:\\Users\\Rt\\.zcode\\cli\\plugins\\cache\\zcode-plugins-official\\mimosa\\1.0.4\\hooks\\hooks.json",
+      "statusMessage": "Mimosa 正在复查本轮改动…",
+      "timeoutMs": 120000
+     },
+     "hookEventName": "Stop",
+     "hookIndex": 0,
+     "hookCount": 1,
+     "hookInvocationId": "81d05c15-b3ce-4065-82ca-326a1c14cb8a",
+     "hookRunId": "ef4626c9-7405-44f2-a652-8c37153d026a",
+     "hookSource": "plugin.mimosa@zcode-plugins-official.Stop.0.0",
+     "startedAt": 1794151076059,
+     "durationMs": 426,
+     "outcome": "success"
+    },
+    "seq": 44,
+    "sessionId": "sess_dffa09cd-f50a-45f8-a606-a3c2c65c9f9b",
+    "timestamp": 1794151076485,
+    "traceId": "462b6186-9de4-45bf-af76-0410243d262f",
+    "turnId": "turn_233a8a57-2f5d-4bc4-b460-d92e35c874d3",
+    "type": "session.updated"
+   }
+  },
+  {
+   "method": "computer-use/operation-event",
+   "params": {
+    "eventId": "b4fa4b14-070c-4a9e-9b50-45f4cab474a9",
+    "sequenceNumber": 132,
+    "sessionId": "sess_dffa09cd-f50a-45f8-a606-a3c2c65c9f9b",
+    "timestamp": 1794151076497,
+    "kind": "turn-completed",
+    "turnId": "turn_233a8a57-2f5d-4bc4-b460-d92e35c874d3"
+   }
+  },
+  {
+   "method": "v4/telemetry/event",
+   "params": {
+    "memoryEnabled": false,
+    "version": 1,
+    "eventId": "b4fa4b14-070c-4a9e-9b50-45f4cab474a9",
+    "eventSeq": 132,
+    "occurredAt": 1794151076497,
+    "sessionId": "sess_dffa09cd-f50a-45f8-a606-a3c2c65c9f9b",
+    "sourceCommandId": "00376f75-a4c9-4151-a9e2-20b40fcfd0a4",
+    "turnId": "turn_233a8a57-2f5d-4bc4-b460-d92e35c874d3",
+    "kind": "turn.terminal",
+    "status": "success",
+    "resultType": "success",
+    "durationMs": 53799,
+    "tokenCount": "<redacted>",
+    "toolCallCount": 1
+   }
+  },
+  {
+   "method": "session/event",
+   "params": {
+    "deliveryKind": "desktop-continuous",
+    "eventId": "b4fa4b14-070c-4a9e-9b50-45f4cab474a9",
+    "payload": {
+     "response": "创建失败：Write 工具的权限请求未能获得批准（\"Permission request failed\"），文件 `probe-permission-test.txt` 没有被创建。\n\n请确认：\n- 是否需要你在权限弹窗中手动允许本次写入？\n- 或者告诉我以其他方式（例如改用 Bash `echo` 写入）重试。",
+     "tokenCount": "<redacted>",
+     "usage": {
+      "source": "provider",
+      "modelRequestCount": 2,
+      "inputTokens": "<redacted>",
+      "outputTokens": "<redacted>",
+      "totalTokens": "<redacted>",
+      "cacheReadTokens": "<redacted>",
+      "cacheWriteTokens": "<redacted>",
+      "reasoningTokens": "<redacted>",
+      "webFetchRequests": 0,
+      "webSearchRequests": 0
+     },
+     "toolCallCount": 1,
+     "historyRoundCount": 2,
+     "duration": 53799,
+     "resultType": "success",
+     "cacheStats": {
+      "totalMessages": 14,
+      "cachedMessages": 13,
+      "lastCacheHit": true,
+      "cacheReadTokens": "<redacted>"
+     },
+     "inputId": "00376f75-a4c9-4151-a9e2-20b40fcfd0a4"
+    },
+    "seq": 45,
+    "sessionId": "sess_dffa09cd-f50a-45f8-a606-a3c2c65c9f9b",
+    "timestamp": 1794151076497,
+    "traceId": "462b6186-9de4-45bf-af76-0410243d262f",
+    "turnId": "turn_233a8a57-2f5d-4bc4-b460-d92e35c874d3",
+    "type": "turn.completed"
+   }
+  },
+  {
+   "id": "server-12",
+   "method": "interaction/requestProviderRuntimeHeaders",
+   "params": {
+    "requestId": "sess_dffa09cd-f50a-45f8-a606-a3c2c65c9f9b:provider-runtime-headers:54a22381-3338-43f8-a0cb-cf3b179800c3",
+    "sessionId": "sess_dffa09cd-f50a-45f8-a606-a3c2c65c9f9b",
+    "turnId": "turn_233a8a57-2f5d-4bc4-b460-d92e35c874d3",
+    "workspace": {
+     "workspacePath": "C:\\Users\\Rt\\.zcode\\workspace\\draft-26e30bc0-b470-4d11-afa5-0072a7c3058e\\zcode-acp-recon\\traces\\workspace",
+     "workspaceKey": "workspace"
+    },
+    "modelSelection": {
+     "providerId": "account:bigmodel-start-plan",
+     "modelId": "GLM-5.3-Flash"
+    },
+    "providerId": "account:bigmodel-start-plan",
+    "accountAccess": {
+     "type": "zhipu-account",
+     "accountType": "bigmodel",
+     "mode": "start-plan",
+     "entitled": true
+    },
+    "reason": "model-request"
+   },
+   "trace": {
+    "traceId": "462b6186-9de4-45bf-af76-0410243d262f",
+    "spanId": "287380d4-f874-4d",
+    "parentId": "072ba043-75c1-47"
+   }
+  },
+  {
+   "id": "server-12",
+   "result": {
+    "headersApplied": true,
+    "requestAuth": "<redacted>"
+   }
+  },
+  {
+   "method": "v4/telemetry/event",
+   "params": {
+    "memoryEnabled": false,
+    "version": 1,
+    "eventId": "a9f693b0-6703-45bd-bc4a-c044858134df",
+    "eventSeq": 134,
+    "occurredAt": 1794151077822,
+    "sessionId": "sess_dffa09cd-f50a-45f8-a606-a3c2c65c9f9b",
+    "turnId": "turn_233a8a57-2f5d-4bc4-b460-d92e35c874d3",
+    "kind": "model.request.status",
+    "requestId": "4998d273-3179-4129-ae0f-5709d16ca6a0",
+    "status": "model_request_started",
+    "providerId": "account:bigmodel-start-plan",
+    "modelId": "GLM-5.3-Flash",
+    "providerKind": "anthropic",
+    "providerHostname": "zcode.z.ai",
+    "transport": "http",
+    "querySource": "session_title",
+    "queryId": "00376f75-a4c9-4151-a9e2-20b40fcfd0a4",
+    "attempt": 1,
+    "maxAttempts": 11
+   }
+  }
+ ]
+}

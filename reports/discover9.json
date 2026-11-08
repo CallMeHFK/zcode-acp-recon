@@ -1,0 +1,45 @@
+{
+  "providerId": "account:bigmodel-start-plan",
+  "modelId": "GLM-5.3-Flash",
+  "steps": {
+    "updateAccountConfig": "{\"receivedRevision\":\"account:[\\\"zcode-builtin:43:c2702b2a39b013c1fbdf9b41e851cac82658c8bfe0300d6e65d2fec5a7085b59\\\",[{\\\"providerId\\\":\\\"account:zai-individual-coding-plan\\\",\\\"config\\\":{\\\"access\\\":{\\\"type\\\":\\\"zhipu-account\\\",\\\"entitled\\\":false}}},{\\\"providerId\\\":\\\"account:zai-team-coding-plan\\\",\\\"conf…(+2568)",
+    "create": {
+      "ok": true,
+      "sessionId": "sess_91b63817-8dd7-468b-b899-09fb3b12794d",
+      "modelSettings": "{\"available\":[{\"ref\":{\"providerId\":\"account:bigmodel-start-plan\",\"modelId\":\"GLM-5.3-Flash\"},\"label\":\"GLM-5.3-Flash\",\"providerLabel\":\"Start Plan\",\"contextWindow\":1000000,\"maxOutputTokens\":128000,\"reasoning\":{\"levels\":[{\"value\":\"low\",\"label\":\"low\"},{\"value\":\"high\",\"label\":\"high\"},{\"value\":\"max\",\"label\":\"max\"}],\"defaultLevel\":\"max\"},\"properties\":{\"inputFormat\":{\"supportsText\":true,\"supportsImage\":true,\"supportsVideo\":true,\"supportsAudio\":false,\"supportsPdf\":true},\"outputFormat\":{\"supportsText\":true…(+168)"
+    },
+    "subscribe": {
+      "ok": true,
+      "eventSeq": 0
+    },
+    "send": {
+      "ok": true,
+      "r": "{\"accepted\":true,\"sessionId\":\"sess_91b63817-8dd7-468b-b899-09fb3b12794d\",\"stateRevision\":2}"
+    },
+    "turn": {
+      "type": "turn.completed",
+      "payload": "{\"response\":\"OK\",\"tokenCount\":93993,\"usage\":{\"source\":\"provider\",\"modelRequestCount\":1,\"inputTokens\":93990,\"outputTokens\":3,\"totalTokens\":93993,\"cacheReadTokens\":0,\"cacheWriteTokens\":0,\"reasoningTokens\":0,\"webFetchRequests\":0,\"webSearchRequests\":0},\"toolCallCount\":0,\"historyRoundCount\":1,\"duration\":26879,\"resultType\":\"success\",\"cacheStats\":{\"totalMessages\":12,\"cachedMessages\":3,\"lastCacheHit\":false},\"inputId\":\"1a7b0ed0-fed5-4a94-a7f3-0bb1e722d1bc\"}"
+    }
+  },
+  "runtimeHeadersAsked": {
+    "reason": "model-request",
+    "providerId": "account:bigmodel-start-plan"
+  },
+  "replyText": "OKOK",
+  "usage": {
+    "source": "provider",
+    "modelRequestCount": 1,
+    "inputTokens": 93990,
+    "outputTokens": 3,
+    "totalTokens": 93993,
+    "cacheReadTokens": 0,
+    "cacheWriteTokens": 0,
+    "reasoningTokens": 0,
+    "webFetchRequests": 0,
+    "webSearchRequests": 0
+  },
+  "terminate": {
+    "mode": "graceful",
+    "gracefulStdinClose": true
+  }
+}

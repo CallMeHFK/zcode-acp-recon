@@ -1,0 +1,187 @@
+{
+ "metadata": {
+  "zcodeVersion": "0.17.1",
+  "runtimeVersion": "v24.20.0",
+  "os": "win32",
+  "arch": "x64",
+  "captureTimestamp": "2026-11-08T15:34:33.250Z",
+  "evidenceLevel": "observed",
+  "redactionVersion": "1",
+  "scenario": "connectivity"
+ },
+ "records": [
+  {
+   "id": 1,
+   "method": "provider/updateAccountConfig",
+   "params": {
+    "revision": "account:zcode-builtin:43:c2702b2a39b013c1fbdf9b41e851cac82658c8bfe0300d6e65d2fec5a7085b59",
+    "basedOnZCodeBuiltinRevision": "zcode-builtin:43:c2702b2a39b013c1fbdf9b41e851cac82658c8bfe0300d6e65d2fec5a7085b59",
+    "providers": {
+     "account:bigmodel-start-plan": {
+      "access": {
+       "type": "zhipu-account",
+       "entitled": true
+      },
+      "builtinModelIds": [
+       "GLM-5.3-Flash"
+      ]
+     }
+    },
+    "states": {
+     "account:bigmodel-start-plan": {
+      "availability": "available",
+      "entitled": true,
+      "current": true
+     }
+    }
+   }
+  },
+  {
+   "method": "startup/storageState",
+   "params": {
+    "schemaVersion": 1,
+    "attemptId": "4d25192a-8e2b-4032-8bd5-e9963b6db7c4",
+    "sequence": 1,
+    "databaseId": "14a7e77cdbb0fc7a0ce22603216f14cf44871306fe2243dd2dc46dabc7c120c3",
+    "databaseKind": "session",
+    "phase": "checking",
+    "elapsedMs": 0
+   }
+  },
+  {
+   "method": "startup/storageState",
+   "params": {
+    "schemaVersion": 1,
+    "attemptId": "4d25192a-8e2b-4032-8bd5-e9963b6db7c4",
+    "sequence": 2,
+    "databaseId": "14a7e77cdbb0fc7a0ce22603216f14cf44871306fe2243dd2dc46dabc7c120c3",
+    "databaseKind": "session",
+    "phase": "checking",
+    "elapsedMs": 0
+   }
+  },
+  {
+   "method": "startup/storageState",
+   "params": {
+    "schemaVersion": 1,
+    "attemptId": "4d25192a-8e2b-4032-8bd5-e9963b6db7c4",
+    "sequence": 3,
+    "databaseId": "14a7e77cdbb0fc7a0ce22603216f14cf44871306fe2243dd2dc46dabc7c120c3",
+    "databaseKind": "session",
+    "phase": "checking",
+    "migration": {
+     "kind": "none",
+     "executedCount": 0,
+     "committedCount": 0
+    },
+    "elapsedMs": 4
+   }
+  },
+  {
+   "method": "startup/storageState",
+   "params": {
+    "schemaVersion": 1,
+    "attemptId": "4d25192a-8e2b-4032-8bd5-e9963b6db7c4",
+    "sequence": 4,
+    "databaseId": "14a7e77cdbb0fc7a0ce22603216f14cf44871306fe2243dd2dc46dabc7c120c3",
+    "databaseKind": "session",
+    "phase": "committing",
+    "migration": {
+     "kind": "none",
+     "executedCount": 0,
+     "committedCount": 0,
+     "lastAppliedMigrationId": "0024_session_database_identity"
+    },
+    "elapsedMs": 6
+   }
+  },
+  {
+   "method": "startup/storageState",
+   "params": {
+    "schemaVersion": 1,
+    "attemptId": "4d25192a-8e2b-4032-8bd5-e9963b6db7c4",
+    "sequence": 5,
+    "databaseId": "14a7e77cdbb0fc7a0ce22603216f14cf44871306fe2243dd2dc46dabc7c120c3",
+    "databaseKind": "session",
+    "phase": "ready",
+    "migration": {
+     "kind": "none",
+     "executedCount": 0,
+     "committedCount": 0,
+     "lastAppliedMigrationId": "0024_session_database_identity"
+    },
+    "elapsedMs": 7
+   }
+  },
+  {
+   "id": 1,
+   "result": {
+    "receivedRevision": "account:zcode-builtin:43:c2702b2a39b013c1fbdf9b41e851cac82658c8bfe0300d6e65d2fec5a7085b59",
+    "providerCount": 1,
+    "status": "received"
+   }
+  },
+  {
+   "id": 2,
+   "method": "provider/testModelConnectivity",
+   "params": {
+    "workspace": {
+     "workspacePath": "C:\\Users\\Rt\\.zcode\\workspace\\draft-26e30bc0-b470-4d11-afa5-0072a7c3058e\\zcode-acp-recon\\traces\\workspace",
+     "workspaceKey": "workspace"
+    },
+    "selection": {
+     "providerId": "account:bigmodel-start-plan",
+     "modelId": "GLM-5.3-Flash",
+     "options": {
+      "reasoningLevel": "high"
+     }
+    }
+   }
+  },
+  {
+   "id": "server-1",
+   "method": "interaction/requestProviderRuntimeHeaders",
+   "params": {
+    "requestId": "sess_0aad4e0b-b03c-4efa-b500-d3c2417cc34b:provider-runtime-headers:f3a34d3f-e696-413e-9409-436cee1f773e",
+    "sessionId": "sess_0aad4e0b-b03c-4efa-b500-d3c2417cc34b",
+    "workspace": {
+     "workspacePath": "C:\\Users\\Rt\\.zcode\\workspace\\draft-26e30bc0-b470-4d11-afa5-0072a7c3058e\\zcode-acp-recon\\traces\\workspace",
+     "workspaceKey": "workspace"
+    },
+    "modelSelection": {
+     "providerId": "account:bigmodel-start-plan",
+     "modelId": "GLM-5.3-Flash"
+    },
+    "providerId": "account:bigmodel-start-plan",
+    "accountAccess": {
+     "type": "zhipu-account",
+     "accountType": "bigmodel",
+     "mode": "start-plan",
+     "entitled": true
+    },
+    "reason": "model-request"
+   },
+   "trace": {
+    "traceId": "1a4c5f42-3216-40eb-a42f-afa865605f06",
+    "spanId": "ed5e9c3d-f1c4-41",
+    "parentId": "d496a641-a5d1-42"
+   }
+  },
+  {
+   "id": "server-1",
+   "result": {}
+  },
+  {
+   "error": {
+    "code": -32603,
+    "data": {
+     "name": "AiSdkModelAdapterError",
+     "stack": "AiSdkModelAdapterError: [\n  {\n    \"code\": \"invalid_union\",\n    \"errors\": [],\n    \"note\": \"No matching discriminator\",\n    \"discriminator\": \"headersApplied\",\n    \"options\": [\n      true,\n      false\n    ],\n    \"path\": [\n      \"headersApplied\"\n    ],\n    \"message\": \"Invalid discriminator value. Expected 'true' | 'false'\"\n  }\n]\n    at toAdapterError (C:\\Program Files\\ZCode\\resources\\glm\\zcode.cjs:2180:8499)\n    at runStreamText (C:\\Program Files\\ZCode\\resources\\glm\\zcode.cjs:2181:23133)\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at async Rmt.streamTextWithResolved (C:\\Program Files\\ZCode\\resources\\glm\\zcode.cjs:2181:44276)\n    at async C:\\Program Files\\ZCode\\resources\\glm\\zcode.cjs:14766:1110\n    at async $D.testModelConnectivity (C:\\Program Files\\ZCode\\resources\\glm\\zcode.cjs:14766:870)\n    at async Object.testModelConnectivity (C:\\Program Files\\ZCode\\resources\\glm\\zcode.cjs:14913:16426)\n    at async testProviderModelConnectivity (C:\\Program Files\\ZCode\\resources\\glm\\zcode.cjs:15533:11490)\n    at async jDt.dispatchRequest (C:\\Program Files\\ZCode\\resources\\glm\\zcode.cjs:15540:107630)\n    at async jDt.handleRequest (C:\\Program Files\\ZCode\\resources\\glm\\zcode.cjs:15540:101043)",
+     "code": "model_request_failed"
+    },
+    "message": "[\n  {\n    \"code\": \"invalid_union\",\n    \"errors\": [],\n    \"note\": \"No matching discriminator\",\n    \"discriminator\": \"headersApplied\",\n    \"options\": [\n      true,\n      false\n    ],\n    \"path\": [\n      \"headersApplied\"\n    ],\n    \"message\": \"Invalid discriminator value. Expected 'true' | 'false'\"\n  }\n]"
+   },
+   "id": 2
+  }
+ ]
+}

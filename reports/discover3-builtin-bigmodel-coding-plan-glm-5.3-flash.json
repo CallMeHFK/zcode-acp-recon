@@ -1,0 +1,10 @@
+{
+  "providerId": "builtin:bigmodel-coding-plan",
+  "modelId": "GLM-5.3-Flash",
+  "steps": {},
+  "fatal": "{\"code\":-32603,\"data\":{\"name\":\"Error\",\"stack\":\"Error: Provider Registry 中不存在 Model: builtin:bigmodel-coding-plan/GLM-5.3-Flash\\n    at Object.setModel (C:\\\\Program Files\\\\ZCode\\\\resources\\\\glm\\\\zcode.cjs:14913:17686)\\n    at C:\\\\Program Files\\\\ZCode\\\\resources\\\\glm\\\\zcode.cjs:15533:81142\"},\"message\":\"Provider Registry 中不存在 Model: builtin:bigmodel-coding-plan/GLM-5.3-Flash\"}",
+  "terminate": {
+    "mode": "graceful",
+    "gracefulStdinClose": true
+  }
+}

@@ -1,0 +1,793 @@
+{
+  "generatedAt": "2026-11-08T14:38:15.161Z",
+  "machine": {
+    "os": "windows",
+    "osVersion": "10.0.26300",
+    "arch": "x64",
+    "hostname": "<redacted>"
+  },
+  "desktop": {
+    "installPath": "C:\\Program Files\\ZCode",
+    "zcodeExeVersion": {
+      "ProductName": "ZCode",
+      "ProductVersion": "3.17.2.9661",
+      "FileVersion": "3.17.2.9661"
+    },
+    "glmTree": [
+      {
+        "path": "C:\\Program Files\\ZCode\\resources\\glm\\.node-bundle-meta.json",
+        "type": "file",
+        "size": 142
+      },
+      {
+        "path": "C:\\Program Files\\ZCode\\resources\\glm\\node-runtime",
+        "type": "dir",
+        "size": null
+      },
+      {
+        "path": "C:\\Program Files\\ZCode\\resources\\glm\\node-runtime\\npm",
+        "type": "dir",
+        "size": null
+      },
+      {
+        "path": "C:\\Program Files\\ZCode\\resources\\glm\\node-runtime\\npm\\bin",
+        "type": "dir",
+        "size": null
+      },
+      {
+        "path": "C:\\Program Files\\ZCode\\resources\\glm\\node-runtime\\npm\\index.js",
+        "type": "file",
+        "size": 145
+      },
+      {
+        "path": "C:\\Program Files\\ZCode\\resources\\glm\\node-runtime\\npm\\lib",
+        "type": "dir",
+        "size": null
+      },
+      {
+        "path": "C:\\Program Files\\ZCode\\resources\\glm\\node-runtime\\npm\\LICENSE",
+        "type": "file",
+        "size": 9742
+      },
+      {
+        "path": "C:\\Program Files\\ZCode\\resources\\glm\\node-runtime\\npm\\node_modules",
+        "type": "dir",
+        "size": null
+      },
+      {
+        "path": "C:\\Program Files\\ZCode\\resources\\glm\\node-runtime\\npm\\package.json",
+        "type": "file",
+        "size": 6860
+      },
+      {
+        "path": "C:\\Program Files\\ZCode\\resources\\glm\\node-runtime\\npm\\README.md",
+        "type": "file",
+        "size": 3352
+      },
+      {
+        "path": "C:\\Program Files\\ZCode\\resources\\glm\\packages",
+        "type": "dir",
+        "size": null
+      },
+      {
+        "path": "C:\\Program Files\\ZCode\\resources\\glm\\packages\\android-emulator-plugin",
+        "type": "dir",
+        "size": null
+      },
+      {
+        "path": "C:\\Program Files\\ZCode\\resources\\glm\\packages\\android-emulator-plugin\\.mcp.json",
+        "type": "file",
+        "size": 784
+      },
+      {
+        "path": "C:\\Program Files\\ZCode\\resources\\glm\\packages\\android-emulator-plugin\\.zcode-plugin",
+        "type": "dir",
+        "size": null
+      },
+      {
+        "path": "C:\\Program Files\\ZCode\\resources\\glm\\packages\\android-emulator-plugin\\commands",
+        "type": "dir",
+        "size": null
+      },
+      {
+        "path": "C:\\Program Files\\ZCode\\resources\\glm\\packages\\android-emulator-plugin\\dist",
+        "type": "dir",
+        "size": null
+      },
+      {
+        "path": "C:\\Program Files\\ZCode\\resources\\glm\\packages\\android-emulator-plugin\\hooks",
+        "type": "dir",
+        "size": null
+      },
+      {
+        "path": "C:\\Program Files\\ZCode\\resources\\glm\\packages\\android-emulator-plugin\\package.json",
+        "type": "file",
+        "size": 887
+      },
+      {
+        "path": "C:\\Program Files\\ZCode\\resources\\glm\\packages\\android-emulator-plugin\\README.md",
+        "type": "file",
+        "size": 4973
+      },
+      {
+        "path": "C:\\Program Files\\ZCode\\resources\\glm\\packages\\android-emulator-plugin\\scripts",
+        "type": "dir",
+        "size": null
+      },
+      {
+        "path": "C:\\Program Files\\ZCode\\resources\\glm\\packages\\android-emulator-plugin\\skills",
+        "type": "dir",
+        "size": null
+      },
+      {
+        "path": "C:\\Program Files\\ZCode\\resources\\glm\\packages\\android-emulator-plugin\\templates",
+        "type": "dir",
+        "size": null
+      },
+      {
+        "path": "C:\\Program Files\\ZCode\\resources\\glm\\packages\\browser-use-plugin",
+        "type": "dir",
+        "size": null
+      },
+      {
+        "path": "C:\\Program Files\\ZCode\\resources\\glm\\packages\\browser-use-plugin\\.zcode-plugin",
+        "type": "dir",
+        "size": null
+      },
+      {
+        "path": "C:\\Program Files\\ZCode\\resources\\glm\\packages\\browser-use-plugin\\docs",
+        "type": "dir",
+        "size": null
+      },
+      {
+        "path": "C:\\Program Files\\ZCode\\resources\\glm\\packages\\browser-use-plugin\\node_modules",
+        "type": "dir",
+        "size": null
+      },
+      {
+        "path": "C:\\Program Files\\ZCode\\resources\\glm\\packages\\browser-use-plugin\\package.json",
+        "type": "file",
+        "size": 1156
+      },
+      {
+        "path": "C:\\Program Files\\ZCode\\resources\\glm\\packages\\browser-use-plugin\\README.md",
+        "type": "file",
+        "size": 2066
+      },
+      {
+        "path": "C:\\Program Files\\ZCode\\resources\\glm\\packages\\browser-use-plugin\\scripts",
+        "type": "dir",
+        "size": null
+      },
+      {
+        "path": "C:\\Program Files\\ZCode\\resources\\glm\\packages\\browser-use-plugin\\skills",
+        "type": "dir",
+        "size": null
+      },
+      {
+        "path": "C:\\Program Files\\ZCode\\resources\\glm\\packages\\bundled-skills",
+        "type": "dir",
+        "size": null
+      },
+      {
+        "path": "C:\\Program Files\\ZCode\\resources\\glm\\packages\\bundled-skills\\README.md",
+        "type": "file",
+        "size": 1918
+      },
+      {
+        "path": "C:\\Program Files\\ZCode\\resources\\glm\\packages\\bundled-skills\\skills",
+        "type": "dir",
+        "size": null
+      },
+      {
+        "path": "C:\\Program Files\\ZCode\\resources\\glm\\packages\\documents-plugin",
+        "type": "dir",
+        "size": null
+      },
+      {
+        "path": "C:\\Program Files\\ZCode\\resources\\glm\\packages\\documents-plugin\\.zcode-plugin",
+        "type": "dir",
+        "size": null
+      },
+      {
+        "path": "C:\\Program Files\\ZCode\\resources\\glm\\packages\\documents-plugin\\agents",
+        "type": "dir",
+        "size": null
+      },
+      {
+        "path": "C:\\Program Files\\ZCode\\resources\\glm\\packages\\documents-plugin\\dist",
+        "type": "dir",
+        "size": null
+      },
+      {
+        "path": "C:\\Program Files\\ZCode\\resources\\glm\\packages\\documents-plugin\\package.json",
+        "type": "file",
+        "size": 770
+      },
+      {
+        "path": "C:\\Program Files\\ZCode\\resources\\glm\\packages\\documents-plugin\\skills",
+        "type": "dir",
+        "size": null
+      },
+      {
+        "path": "C:\\Program Files\\ZCode\\resources\\glm\\packages\\image-search-plugin",
+        "type": "dir",
+        "size": null
+      },
+      {
+        "path": "C:\\Program Files\\ZCode\\resources\\glm\\packages\\image-search-plugin\\.mcp.json",
+        "type": "file",
+        "size": 328
+      },
+      {
+        "path": "C:\\Program Files\\ZCode\\resources\\glm\\packages\\image-search-plugin\\.zcode-plugin",
+        "type": "dir",
+        "size": null
+      },
+      {
+        "path": "C:\\Program Files\\ZCode\\resources\\glm\\packages\\image-search-plugin\\package.json",
+        "type": "file",
+        "size": 284
+      },
+      {
+        "path": "C:\\Program Files\\ZCode\\resources\\glm\\packages\\image-search-plugin\\README.md",
+        "type": "file",
+        "size": 1316
+      },
+      {
+        "path": "C:\\Program Files\\ZCode\\resources\\glm\\packages\\ios-simulator-plugin",
+        "type": "dir",
+        "size": null
+      },
+      {
+        "path": "C:\\Program Files\\ZCode\\resources\\glm\\packages\\ios-simulator-plugin\\.mcp.json",
+        "type": "file",
+        "size": 454
+      },
+      {
+        "path": "C:\\Program Files\\ZCode\\resources\\glm\\packages\\ios-simulator-plugin\\.zcode-plugin",
+        "type": "dir",
+        "size": null
+      },
+      {
+        "path": "C:\\Program Files\\ZCode\\resources\\glm\\packages\\ios-simulator-plugin\\commands",
+        "type": "dir",
+        "size": null
+      },
+      {
+        "path": "C:\\Program Files\\ZCode\\resources\\glm\\packages\\ios-simulator-plugin\\dist",
+        "type": "dir",
+        "size": null
+      },
+      {
+        "path": "C:\\Program Files\\ZCode\\resources\\glm\\packages\\ios-simulator-plugin\\hooks",
+        "type": "dir",
+        "size": null
+      },
+      {
+        "path": "C:\\Program Files\\ZCode\\resources\\glm\\packages\\ios-simulator-plugin\\package.json",
+        "type": "file",
+        "size": 881
+      },
+      {
+        "path": "C:\\Program Files\\ZCode\\resources\\glm\\packages\\ios-simulator-plugin\\README.md",
+        "type": "file",
+        "size": 3780
+      },
+      {
+        "path": "C:\\Program Files\\ZCode\\resources\\glm\\packages\\ios-simulator-plugin\\scripts",
+        "type": "dir",
+        "size": null
+      },
+      {
+        "path": "C:\\Program Files\\ZCode\\resources\\glm\\packages\\ios-simulator-plugin\\skills",
+        "type": "dir",
+        "size": null
+      },
+      {
+        "path": "C:\\Program Files\\ZCode\\resources\\glm\\packages\\ios-simulator-plugin\\templates",
+        "type": "dir",
+        "size": null
+      },
+      {
+        "path": "C:\\Program Files\\ZCode\\resources\\glm\\packages\\node-repl-host",
+        "type": "dir",
+        "size": null
+      },
+      {
+        "path": "C:\\Program Files\\ZCode\\resources\\glm\\packages\\node-repl-host\\.zcode-plugin",
+        "type": "dir",
+        "size": null
+      },
+      {
+        "path": "C:\\Program Files\\ZCode\\resources\\glm\\packages\\node-repl-host\\dist",
+        "type": "dir",
+        "size": null
+      },
+      {
+        "path": "C:\\Program Files\\ZCode\\resources\\glm\\packages\\node-repl-host\\node_modules",
+        "type": "dir",
+        "size": null
+      },
+      {
+        "path": "C:\\Program Files\\ZCode\\resources\\glm\\packages\\node-repl-host\\package.json",
+        "type": "file",
+        "size": 1265
+      },
+      {
+        "path": "C:\\Program Files\\ZCode\\resources\\glm\\packages\\node-repl-host\\README.md",
+        "type": "file",
+        "size": 1289
+      },
+      {
+        "path": "C:\\Program Files\\ZCode\\resources\\glm\\packages\\node-repl-host\\scripts",
+        "type": "dir",
+        "size": null
+      },
+      {
+        "path": "C:\\Program Files\\ZCode\\resources\\glm\\packages\\pdf-plugin",
+        "type": "dir",
+        "size": null
+      },
+      {
+        "path": "C:\\Program Files\\ZCode\\resources\\glm\\packages\\pdf-plugin\\.zcode-plugin",
+        "type": "dir",
+        "size": null
+      },
+      {
+        "path": "C:\\Program Files\\ZCode\\resources\\glm\\packages\\pdf-plugin\\agents",
+        "type": "dir",
+        "size": null
+      },
+      {
+        "path": "C:\\Program Files\\ZCode\\resources\\glm\\packages\\pdf-plugin\\dist",
+        "type": "dir",
+        "size": null
+      },
+      {
+        "path": "C:\\Program Files\\ZCode\\resources\\glm\\packages\\pdf-plugin\\package.json",
+        "type": "file",
+        "size": 738
+      },
+      {
+        "path": "C:\\Program Files\\ZCode\\resources\\glm\\packages\\pdf-plugin\\skills",
+        "type": "dir",
+        "size": null
+      },
+      {
+        "path": "C:\\Program Files\\ZCode\\resources\\glm\\packages\\plugin-creator-plugin",
+        "type": "dir",
+        "size": null
+      },
+      {
+        "path": "C:\\Program Files\\ZCode\\resources\\glm\\packages\\plugin-creator-plugin\\.zcode-plugin",
+        "type": "dir",
+        "size": null
+      },
+      {
+        "path": "C:\\Program Files\\ZCode\\resources\\glm\\packages\\plugin-creator-plugin\\package.json",
+        "type": "file",
+        "size": 371
+      },
+      {
+        "path": "C:\\Program Files\\ZCode\\resources\\glm\\packages\\plugin-creator-plugin\\skills",
+        "type": "dir",
+        "size": null
+      },
+      {
+        "path": "C:\\Program Files\\ZCode\\resources\\glm\\packages\\presentations-plugin",
+        "type": "dir",
+        "size": null
+      },
+      {
+        "path": "C:\\Program Files\\ZCode\\resources\\glm\\packages\\presentations-plugin\\.zcode-plugin",
+        "type": "dir",
+        "size": null
+      },
+      {
+        "path": "C:\\Program Files\\ZCode\\resources\\glm\\packages\\presentations-plugin\\agents",
+        "type": "dir",
+        "size": null
+      },
+      {
+        "path": "C:\\Program Files\\ZCode\\resources\\glm\\packages\\presentations-plugin\\dist",
+        "type": "dir",
+        "size": null
+      },
+      {
+        "path": "C:\\Program Files\\ZCode\\resources\\glm\\packages\\presentations-plugin\\package.json",
+        "type": "file",
+        "size": 789
+      },
+      {
+        "path": "C:\\Program Files\\ZCode\\resources\\glm\\packages\\presentations-plugin\\skills",
+        "type": "dir",
+        "size": null
+      },
+      {
+        "path": "C:\\Program Files\\ZCode\\resources\\glm\\packages\\restore-legacy-sessions-plugin",
+        "type": "dir",
+        "size": null
+      },
+      {
+        "path": "C:\\Program Files\\ZCode\\resources\\glm\\packages\\restore-legacy-sessions-plugin\\.zcode-plugin",
+        "type": "dir",
+        "size": null
+      },
+      {
+        "path": "C:\\Program Files\\ZCode\\resources\\glm\\packages\\restore-legacy-sessions-plugin\\commands",
+        "type": "dir",
+        "size": null
+      },
+      {
+        "path": "C:\\Program Files\\ZCode\\resources\\glm\\packages\\restore-legacy-sessions-plugin\\package.json",
+        "type": "file",
+        "size": 280
+      },
+      {
+        "path": "C:\\Program Files\\ZCode\\resources\\glm\\packages\\restore-legacy-sessions-plugin\\README.md",
+        "type": "file",
+        "size": 1062
+      },
+      {
+        "path": "C:\\Program Files\\ZCode\\resources\\glm\\packages\\restore-legacy-sessions-plugin\\skills",
+        "type": "dir",
+        "size": null
+      },
+      {
+        "path": "C:\\Program Files\\ZCode\\resources\\glm\\packages\\skill-creator-plugin",
+        "type": "dir",
+        "size": null
+      },
+      {
+        "path": "C:\\Program Files\\ZCode\\resources\\glm\\packages\\skill-creator-plugin\\.zcode-plugin",
+        "type": "dir",
+        "size": null
+      },
+      {
+        "path": "C:\\Program Files\\ZCode\\resources\\glm\\packages\\skill-creator-plugin\\package.json",
+        "type": "file",
+        "size": 260
+      },
+      {
+        "path": "C:\\Program Files\\ZCode\\resources\\glm\\packages\\skill-creator-plugin\\skills",
+        "type": "dir",
+        "size": null
+      },
+      {
+        "path": "C:\\Program Files\\ZCode\\resources\\glm\\packages\\spreadsheets-plugin",
+        "type": "dir",
+        "size": null
+      },
+      {
+        "path": "C:\\Program Files\\ZCode\\resources\\glm\\packages\\spreadsheets-plugin\\.zcode-plugin",
+        "type": "dir",
+        "size": null
+      },
+      {
+        "path": "C:\\Program Files\\ZCode\\resources\\glm\\packages\\spreadsheets-plugin\\agents",
+        "type": "dir",
+        "size": null
+      },
+      {
+        "path": "C:\\Program Files\\ZCode\\resources\\glm\\packages\\spreadsheets-plugin\\dist",
+        "type": "dir",
+        "size": null
+      },
+      {
+        "path": "C:\\Program Files\\ZCode\\resources\\glm\\packages\\spreadsheets-plugin\\package.json",
+        "type": "file",
+        "size": 782
+      },
+      {
+        "path": "C:\\Program Files\\ZCode\\resources\\glm\\packages\\spreadsheets-plugin\\skills",
+        "type": "dir",
+        "size": null
+      },
+      {
+        "path": "C:\\Program Files\\ZCode\\resources\\glm\\packages\\visualize-plugin",
+        "type": "dir",
+        "size": null
+      },
+      {
+        "path": "C:\\Program Files\\ZCode\\resources\\glm\\packages\\visualize-plugin\\.zcode-plugin",
+        "type": "dir",
+        "size": null
+      },
+      {
+        "path": "C:\\Program Files\\ZCode\\resources\\glm\\packages\\visualize-plugin\\package.json",
+        "type": "file",
+        "size": 198
+      },
+      {
+        "path": "C:\\Program Files\\ZCode\\resources\\glm\\packages\\visualize-plugin\\skills",
+        "type": "dir",
+        "size": null
+      },
+      {
+        "path": "C:\\Program Files\\ZCode\\resources\\glm\\packages\\zcode-cua-plugin",
+        "type": "dir",
+        "size": null
+      },
+      {
+        "path": "C:\\Program Files\\ZCode\\resources\\glm\\packages\\zcode-cua-plugin\\.zcode-plugin",
+        "type": "dir",
+        "size": null
+      },
+      {
+        "path": "C:\\Program Files\\ZCode\\resources\\glm\\packages\\zcode-cua-plugin\\docs",
+        "type": "dir",
+        "size": null
+      },
+      {
+        "path": "C:\\Program Files\\ZCode\\resources\\glm\\packages\\zcode-cua-plugin\\node_modules",
+        "type": "dir",
+        "size": null
+      },
+      {
+        "path": "C:\\Program Files\\ZCode\\resources\\glm\\packages\\zcode-cua-plugin\\package.json",
+        "type": "file",
+        "size": 1064
+      },
+      {
+        "path": "C:\\Program Files\\ZCode\\resources\\glm\\packages\\zcode-cua-plugin\\scripts",
+        "type": "dir",
+        "size": null
+      },
+      {
+        "path": "C:\\Program Files\\ZCode\\resources\\glm\\packages\\zcode-cua-plugin\\skills",
+        "type": "dir",
+        "size": null
+      },
+      {
+        "path": "C:\\Program Files\\ZCode\\resources\\glm\\packages\\zcode-guide-plugin",
+        "type": "dir",
+        "size": null
+      },
+      {
+        "path": "C:\\Program Files\\ZCode\\resources\\glm\\packages\\zcode-guide-plugin\\.zcode-plugin",
+        "type": "dir",
+        "size": null
+      },
+      {
+        "path": "C:\\Program Files\\ZCode\\resources\\glm\\packages\\zcode-guide-plugin\\package.json",
+        "type": "file",
+        "size": 266
+      },
+      {
+        "path": "C:\\Program Files\\ZCode\\resources\\glm\\packages\\zcode-guide-plugin\\README.md",
+        "type": "file",
+        "size": 1697
+      },
+      {
+        "path": "C:\\Program Files\\ZCode\\resources\\glm\\packages\\zcode-guide-plugin\\skills",
+        "type": "dir",
+        "size": null
+      },
+      {
+        "path": "C:\\Program Files\\ZCode\\resources\\glm\\packages\\zcode-site-plugin",
+        "type": "dir",
+        "size": null
+      },
+      {
+        "path": "C:\\Program Files\\ZCode\\resources\\glm\\packages\\zcode-site-plugin\\.zcode-plugin",
+        "type": "dir",
+        "size": null
+      },
+      {
+        "path": "C:\\Program Files\\ZCode\\resources\\glm\\packages\\zcode-site-plugin\\commands",
+        "type": "dir",
+        "size": null
+      },
+      {
+        "path": "C:\\Program Files\\ZCode\\resources\\glm\\packages\\zcode-site-plugin\\dist",
+        "type": "dir",
+        "size": null
+      },
+      {
+        "path": "C:\\Program Files\\ZCode\\resources\\glm\\packages\\zcode-site-plugin\\package.json",
+        "type": "file",
+        "size": 1233
+      },
+      {
+        "path": "C:\\Program Files\\ZCode\\resources\\glm\\packages\\zcode-site-plugin\\scripts",
+        "type": "dir",
+        "size": null
+      },
+      {
+        "path": "C:\\Program Files\\ZCode\\resources\\glm\\packages\\zcode-site-plugin\\skills",
+        "type": "dir",
+        "size": null
+      },
+      {
+        "path": "C:\\Program Files\\ZCode\\resources\\glm\\zcode.cjs",
+        "type": "file",
+        "size": 15408074
+      }
+    ],
+    "hasNativeBinary": false
+  },
+  "cli": {
+    "path": "C:\\Program Files\\ZCode\\resources\\glm\\zcode.cjs",
+    "sizeBytes": 15405949,
+    "embeddedVersionStrings": [],
+    "zcodeOnPath": false,
+    "versionProbeSystemNode": {
+      "label": "system-node --version",
+      "code": 0,
+      "stdout": "0.17.1",
+      "stderrTail": ""
+    }
+  },
+  "runtimes": {
+    "bridgeNode": {
+      "execPath": "C:\\Program Files\\nodejs\\node.exe",
+      "version": "v24.20.0"
+    },
+    "spawnNodeCandidate": {
+      "execPath": "C:\\Program Files\\nodejs\\node.exe",
+      "version": "v24.20.0"
+    },
+    "bundledNodeCandidates": [],
+    "electron": {
+      "exe": "C:\\Program Files\\ZCode\\ZCode.exe",
+      "versionInfo": {
+        "ProductName": "ZCode",
+        "ProductVersion": "3.17.2.9661",
+        "FileVersion": "3.17.2.9661"
+      }
+    },
+    "spawnNodeSqliteModuleAvailable": true
+  },
+  "credentials": {
+    "cli/config.json": {
+      "exists": true,
+      "size": 1217,
+      "topKeys": {
+        "plugins": "object{2}",
+        "mcp": "object{1}"
+      },
+      "mtime": "2026-11-06T15:25:14.068Z"
+    },
+    "v2/setting.json": {
+      "exists": true,
+      "size": 2749,
+      "topKeys": {
+        "recentProjects": "array(1)",
+        "locale": "string",
+        "localePreference": "string",
+        "terminalInheritSystemProfile": "boolean",
+        "embeddedBrowserAllowInsecureCertificates": "boolean",
+        "embeddedBrowserViewportPreference": "object{3}",
+        "computerUseComposerEntryHidden": "boolean",
+        "taskAutoArchiveEnabled": "boolean",
+        "taskAutoArchiveResetVersion": "number",
+        "taskAutoArchiveOlderThanDays": "number",
+        "closeToTrayOnWindows": "boolean",
+        "closeToTrayOnWindowsMigrationInitialized": "boolean",
+        "closeToTrayLinuxMigrationInitialized": "boolean",
+        "keepAwakeWhileRunning": "boolean",
+        "desktopWindowSize": "object{3}",
+        "desktopChromiumHardwareAccelerationEnabled": "boolean",
+        "messageStreamShowReasoning": "boolean",
+        "messageStreamShowReasoningMigrationInitialized": "boolean",
+        "messageStreamShowTodos": "boolean",
+        "toolGroupingExploreEnabled": "boolean",
+        "toolGroupingTerminalEnabled": "boolean",
+        "toolGroupingChangesEnabled": "boolean",
+        "zcodeInteractionBehavior": "string",
+        "askUserQuestionAutoResolutionEnabled": "boolean",
+        "modelIoFullRetentionEnabled": "boolean",
+        "enabledBuiltinAgentCliProviders": "array(1)",
+        "startPlanRecommendationDismissed": "boolean",
+        "providerFamilyConnectionSelections": "object{1}",
+        "providerFamilyDomain": "string",
+        "providerFamilyDomainUpdatedAt": "number",
+        "providerFamilyDomainMigrated": "boolean",
+        "nativeSearchEnhancementsEnabled": "boolean",
+        "toolSearchMode": "string",
+        "onboardingOccupation": "string",
+        "proactiveSuggestionsEnabled": "boolean",
+        "memoryEnabled": "boolean",
+        "lastWorkspaceSession": "array(1)",
+        "lastActiveWorkspace": "object{3}",
+        "sourceServers": "array(0)",
+        "connectionProfiles": "array(0)",
+        "sourceServerWorkspaceHistory": "array(0)",
+        "sourceServerDirectoryMigrationVersion": "number",
+        "lastActiveTabIndex": "number",
+        "receivePreviewUpdates": "boolean",
+        "autoDownloadAndInstallUpdates": "boolean",
+        "skippedElectronUpdateVersions": "object{0}",
+        "settingsSyncFirstRunPromptHandled": "boolean",
+        "webRemoteControlRelayV2Device": "object{3}",
+        "webRemoteControlLastEnabledContext": "object{1}"
+      },
+      "mtime": "2026-11-08T14:37:44.256Z"
+    },
+    "v2/provider_config.json": {
+      "exists": true,
+      "size": 231,
+      "topKeys": {
+        "schemaVersion": "number",
+        "config": "object{3}"
+      },
+      "mtime": "2026-11-06T15:29:04.572Z"
+    },
+    "v2/credentials.json": {
+      "exists": true,
+      "size": 7533,
+      "topKeys": {
+        "oauth:bigmodel:access_token": "string",
+        "zcodejwttoken": "string",
+        "oauth:bigmodel:user_info": "string",
+        "oauth:active_provider": "string",
+        "mcp:oauth:c9cbca0431ecc147c801630b:discovery_state": "string",
+        "mcp:oauth:c9cbca0431ecc147c801630b:discovery_state_fetched_at": "string",
+        "mcp:oauth:a9c55a40d83913922310f791:discovery_state": "string",
+        "mcp:oauth:a9c55a40d83913922310f791:discovery_state_fetched_at": "string",
+        "bot:bot-17bb29a5-be42-4e57-8a44-d0bc37becd88:credential": "string",
+        "bot-weixin-context-9ba41122c642f66db55f7d5163672f5f0970d35aa7c94fa65f98609cd378d0c3": "string",
+        "project-key-location:v1:%5B%22https%3A%2F%2Fbigmodel.cn%22%2C%22bigmodel%22%2C%2227751724767999931%22%2Cnull%2C1%2C%22non-team%22%5D": "string"
+      },
+      "mtime": "2026-11-08T14:23:07.348Z"
+    },
+    "v2/config.json": {
+      "exists": false,
+      "error": "not_found"
+    },
+    "v2/tasks-index.sqlite": {
+      "exists": true,
+      "size": 700416,
+      "mtime": "2026-11-08T14:30:59.048Z"
+    }
+  },
+  "sqliteEvidence": {
+    "zcodeCjs": {
+      "node:sqlite": {
+        "count": 4,
+        "samples": [
+          "re(\"node:fs/promises\"),hG=require(\"node:path\"),Vmr=require(\"node:sqlite\");Xet();mrs=2,hrs=1024*1024,qXt=\"tables.sqlite\";r(Hmr,\"crea",
+          "e(\"node:fs/promises\"),HXt=require(\"node:path\"),Xmr=require(\"node:sqlite\");Ki();WXt();Xet();vrs=m.object({version:m.literal(1),datab",
+          "e:fs/promises\"),Udn=require(\"node:path\");X4r();uBr=require(\"node:sqlite\");pjr();lct();Ajr();Djr();WNe();Njr();Rdn();f6r();v6r();Ndn",
+          "_threads\",\"zlib\"],c4t=new Set(a4t),cCe=new Set([\"node:sea\",\"node:sqlite\",\"node:test\",\"node:test/reporters\"]),dV=new Set([...a4t,..."
+        ]
+      },
+      "DatabaseSync": {
+        "count": 3,
+        "samples": [
+          "domUUID)()}`),await(0,$I.mkdir)(h,{mode:448});let v=new Vmr.DatabaseSync((0,hG.join)(h,qXt));try{v.exec(\"begin\");for(let S of o)S.co",
+          " new Error(\"Cannot restore a skipped backup\");let o=new Xmr.DatabaseSync((0,HXt.join)(t,qXt),{readOnly:!0}),i=e.prepare(\"pragma fore",
+          "cursive:!0})),Gb({operation:\"sqliteOpen\",path:o}),a=new uBr.DatabaseSync(o,{timeout:i})}catch(c){throw new vP(`Failed to open SQLite"
+        ]
+      },
+      "tasks-index": {
+        "count": 3,
+        "samples": [
+          "databaseId:m.string().min(1).max(128),databaseKind:m.enum([\"tasks-index\",\"session\"]),lastAppliedMigrationId:vOe.nullable().optional",
+          ":m.string().min(1).max(128),databaseKind:m.enum([\"session\",\"tasks-index\"]),phase:m.enum([\"checking\",\"waiting_for_lock\",\"migrating\",",
+          "Oe();E3();dst();bDr=\"controller/workspaces\",SDr=\"controller/tasks-index\",qSs=m.enum([bDr,SDr]),wDr=m.object({sourceServerId:m.strin"
+        ]
+      },
+      "tasks-index.sqlite": {
+        "count": 0,
+        "samples": []
+      },
+      "better-sqlite3": {
+        "count": 0,
+        "samples": []
+      },
+      ".sqlite": {
+        "count": 7,
+        "samples": [
+          "require(\"node:sqlite\");Xet();mrs=2,hrs=1024*1024,qXt=\"tables.sqlite\";r(Hmr,\"createMigrationBackup\");r(grs,\"estimateBytes\");r(Wm",
+          "eof o.errcode==\"number\"&&Number.isSafeInteger(o.errcode)&&(t.sqliteCode=o.errcode),typeof o.code==\"string\"&&/^[A-Z_0-9]{1,64}$/",
+          "1},storage:{dir:\"~/.zcode\",sessionDbPath:\"~/.zcode/cli/db/db.sqlite\"},network:{timeout:18e4},features:{compact:!0,rewind:!0,sub",
+          "return(0,Rjr.join)((0,Pjr.homedir)(),\".zcode\",\"cli\",\"db\",\"db.sqlite\")}var Pjr,Rjr,Djr=V(()=>{\"use strict\";Pjr=require(\"node:os\"",
+          "db.com\",\"redis.io\",\"www.postgresql.org\",\"dev.mysql.com\",\"www.sqlite.org\",\"graphql.org\",\"prisma.io\",\"docs.getdbt.com\",\"docs.aws."
+        ]
+      }
+    }
+  },
+  "notes": []
+}
