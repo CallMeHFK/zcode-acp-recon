@@ -7,7 +7,7 @@
       "code": 0,
       "msg": "",
       "data": {
-        "server_time": 1794152071,
+        "server_time": 1794152619,
         "plans": [
           {
             "user_plan_id": "upl_2118711139584593920",
@@ -36,19 +36,19 @@
           }
         ]
       },
-      "logid": "202611081534316edb8dbfdc28a11a56d4"
+      "logid": "20261108154339e7d857f94c7c4a7566bd"
     },
     "ok": true
   },
   "coexistence": {
     "dbNow": {
       "sqlite": {
-        "size": 753664,
-        "mtime": "2026-11-08T15:31:35.200Z"
+        "size": 770048,
+        "mtime": "2026-11-08T15:41:09.393Z"
       },
       "wal": {
         "size": 4136512,
-        "mtime": "2026-11-08T15:34:31.366Z"
+        "mtime": "2026-11-08T15:43:38.825Z"
       },
       "shm": {
         "size": 32768,
@@ -61,7 +61,7 @@
   "orphanProcesses": [],
   "sanitized": {
     "cancel": {
-      "records": 249,
+      "records": 314,
       "file": "traces\\cancel.sanitized.json"
     },
     "connectivity": {
@@ -69,19 +69,19 @@
       "file": "traces\\connectivity.sanitized.json"
     },
     "crash-reconnect": {
-      "records": 361,
+      "records": 613,
       "file": "traces\\crash-reconnect.sanitized.json"
     },
     "crash": {
-      "records": 57,
+      "records": 114,
       "file": "traces\\crash.sanitized.json"
     },
     "disconnect-probe": {
-      "records": 55,
+      "records": 109,
       "file": "traces\\disconnect-probe.sanitized.json"
     },
     "disconnect-reconnect": {
-      "records": 42,
+      "records": 77,
       "file": "traces\\disconnect-reconnect.sanitized.json"
     },
     "discover": {
@@ -125,38 +125,38 @@
       "file": "traces\\discover9.sanitized.json"
     },
     "normal": {
-      "records": 203,
+      "records": 282,
       "file": "traces\\normal.sanitized.json"
     },
     "permission-allow": {
-      "records": 437,
+      "records": 991,
       "file": "traces\\permission-allow.sanitized.json"
     },
     "permission-deny": {
-      "records": 203,
+      "records": 553,
       "file": "traces\\permission-deny.sanitized.json"
     },
     "resume-force-reconnect": {
-      "records": 72,
+      "records": 144,
       "file": "traces\\resume-force-reconnect.sanitized.json"
     },
     "resume-force": {
-      "records": 95,
+      "records": 195,
       "file": "traces\\resume-force.sanitized.json"
     },
     "resume-graceful-reconnect": {
-      "records": 160,
+      "records": 232,
       "file": "traces\\resume-graceful-reconnect.sanitized.json"
     },
     "resume-graceful": {
-      "records": 243,
+      "records": 324,
       "file": "traces\\resume-graceful.sanitized.json"
     }
   },
   "redaction": {
     "scanCoverage": 1,
     "scanErrors": [],
-    "totalRecords": 3074,
-    "scannedOk": 3074
+    "totalRecords": 4845,
+    "scannedOk": 4845
   }
 }

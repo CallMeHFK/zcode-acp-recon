@@ -28,7 +28,7 @@
 | G8 权限安全与取消语义 | P0 | **PASS** | deny 决策被接受且无文件副作用；cancel：`session/stop`（请求形式）→ turn.completed **resultType="cancelled"**；**断连专项**：客户端断开（stdin 关闭、不杀后端）后 45s 窗口内外部副作用为零、后端未完成回合（等待鉴权头供给）——无失控执行；重连后状态 idle 可继续 | traces/disconnect.sanitized.json；reports/suite-results.json `.fourLayers` |
 | G9 stdout 纪律 | P1 | **PASS**（记录） | 全部 trace 合计 2977+ 行 stdout 消息中 nonJsonLines=0（app-server stdout 每行均为合法 JSON）；stderr 仅在 builtin 配置误配时出现崩溃信息 | probe/jsonl-reader stats（各 trace）；traces/discover5（stderr 样例） |
 | G10 spawn 纪律 | P1 | **PASS**（记录） | launcher 实现：executable+args 分离、shell:false、windowsHide:true、显式 cwd；反例实测：字符串路径含空格在 shell 拼接下会失败（discover5 崩溃样例） | probe/launcher.mjs spawnMeta；traces/raw/discover5.jsonl（本地） |
-| G11 数据安全与可重复性 | P0 | **PASS** | 脱敏导出 2977/2977 记录全扫描（scanCoverage=1.0，scanErrors=[]）；requestAuth 整体脱敏；凭证零修改；孤儿进程 0；桌面状态保持；重复执行不破坏已有会话（resume 场景即证据） | reports/finalize.json `redaction`+`orphanProcesses` |
+| G11 数据安全与可重复性 | P0 | **PASS** | 脱敏导出 4845/4845 记录全扫描（scanCoverage=1.0，scanErrors=[]，含两轮全量运行）；requestAuth 整体脱敏；凭证零修改；孤儿进程 0；桌面状态保持；**全套件二次全量重跑八场景结果一致**（可重复性直接验证） | reports/finalize.json `redaction`+`orphanProcesses`；reports/suite-results.json |
 
 **规则**：任一 P0 项 FAIL 或 UNVERIFIED → 不进入 Phase 1。本报告 P0 全 PASS（G6 的③子方式单列 UNVERIFIED，属场景不可模拟而非能力缺失，已在详录说明）。
 
@@ -91,7 +91,7 @@
 }
 ```
 
-> sensitiveDataDetected=false 来自 2977/2977 记录的结构化扫描；requestAuth（含 apiKey）在导出层整体脱敏；原始 trace（traces/raw/）含凭据材料，**保留在本地并已 gitignore，不入库**。
+> sensitiveDataDetected=false 来自 4845/4845 记录的结构化扫描（两轮全量运行累计）；requestAuth（含 apiKey）在导出层整体脱敏；原始 trace（traces/raw/）含凭据材料，**保留在本地并已 gitignore，不入库**。
 
 ## Trace 清单
 

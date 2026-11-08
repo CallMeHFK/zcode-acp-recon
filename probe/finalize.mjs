@@ -6,7 +6,6 @@ import { execFile } from "node:child_process";
 import { promisify } from "node:util";
 import { fileURLToPath } from "node:url";
 import { decryptCredential, getActiveProvider } from "./credential-reader.mjs";
-import { createRedactor } from "./redact.mjs";
 
 const pexec = promisify(execFile);
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -92,7 +91,6 @@ try {
 } catch (e) { out.orphanProcesses = "unknown:" + String(e && e.message).slice(0, 80); }
 
 // ---------- G11: 脱敏导出 ----------
-const redactor = createRedactor();
 const metaBase = {
   zcodeVersion: "0.17.1",
   runtimeVersion: process.version,

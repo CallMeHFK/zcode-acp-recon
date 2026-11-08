@@ -4,7 +4,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { terminate } from "./launcher.mjs";
-import { launchBootstrapped, createSession, subscribe, sendAndWaitTurnEnd, getMessages, killTree, MODEL, ENV_BUILTIN, builtinBasedOn, buildAccountPayload } from "./session-helper.mjs";
+import { launchBootstrapped, createSession, subscribe, sendAndWaitTurnEnd, getMessages, killTree, MODEL } from "./session-helper.mjs";
 import { createRpcClient } from "./rpc-client.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -298,6 +298,10 @@ async function scenarioDisconnect() {
   if (shouldRun("disconnect")) { console.log("== disconnect =="); await scenarioDisconnect(); console.log(JSON.stringify(results.disconnect)); }
   if (shouldRun("resume-graceful")) { console.log("== resume-graceful =="); await doResumeFlow("graceful"); console.log(JSON.stringify(results["resume-graceful"])); }
   if (shouldRun("resume-force")) { console.log("== resume-force =="); await doResumeFlow("force"); console.log(JSON.stringify(results["resume-force"])); }
-  fs.writeFileSync(path.join(ROOT, "reports", "suite-results.json"), JSON.stringify(results, null, 2));
+  // 读-合-写：允许分多次运行场景（每次只跑部分）而不丢历史结果
+  const resultsFile = path.join(ROOT, "reports", "suite-results.json");
+  const merged = fs.existsSync(resultsFile) ? JSON.parse(fs.readFileSync(resultsFile, "utf8")) : {};
+  Object.assign(merged, results);
+  fs.writeFileSync(resultsFile, JSON.stringify(merged, null, 2));
   console.log("\nwritten: reports/suite-results.json");
 })().catch(e => { console.error("[suite fatal]", e); process.exit(1); });

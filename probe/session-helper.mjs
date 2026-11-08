@@ -52,8 +52,6 @@ export async function launchBootstrapped({ cwd, traceFile, authHeader = "jwt-api
     if (!token) return { headersApplied: false, errorMessage: "probe: decrypt failed" };
     return { headersApplied: true, requestAuth: { apiKey: token } };
   });
-  // 权限/用户输入等其余入站交互：交给场景注册的 handler；无 handler 时挂起等待
-  rpc.onInboundRequest("__default__", () => ({}));
 
   await rpc.request("provider/updateAccountConfig", buildAccountPayload(), { timeoutMs: 15000 });
   return state;

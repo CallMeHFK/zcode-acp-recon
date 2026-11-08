@@ -4,7 +4,7 @@
   "runtimeVersion": "v24.20.0",
   "os": "win32",
   "arch": "x64",
-  "captureTimestamp": "2026-11-08T15:34:33.250Z",
+  "captureTimestamp": "2026-11-08T15:43:40.659Z",
   "evidenceLevel": "observed",
   "redactionVersion": "1",
   "scenario": "disconnect-probe"
@@ -1362,6 +1362,1347 @@
     "mcpSource": "builtin",
     "occurredAt": 1794151853085,
     "platform": "win32"
+   }
+  },
+  {
+   "id": 1,
+   "method": "provider/updateAccountConfig",
+   "params": {
+    "revision": "account:[\"zcode-builtin:43:c2702b2a39b013c1fbdf9b41e851cac82658c8bfe0300d6e65d2fec5a7085b59\",[{\"providerId\":\"account:zai-individual-coding-plan\",\"config\":{\"access\":{\"type\":\"zhipu-account\",\"entitled\":false}}},{\"providerId\":\"account:zai-team-coding-plan\",\"config\":{\"access\":{\"type\":\"zhipu-account\",\"entitled\":false}}},{\"providerId\":\"account:zai-start-plan\",\"config\":{\"access\":{\"type\":\"zhipu-account\",\"entitled\":false}}},{\"providerId\":\"account:zai-offpeak-idle-plan\",\"config\":{\"access\":{\"type\":\"zhipu-account\",\"entitled\":false}}},{\"providerId\":\"account:zai-highspeed-card\",\"config\":{\"access\":{\"type\":\"zhipu-account\",\"entitled\":false}}},{\"providerId\":\"account:bigmodel-individual-coding-plan\",\"config\":{\"access\":{\"type\":\"zhipu-account\",\"entitled\":false}}},{\"providerId\":\"account:bigmodel-team-coding-plan\",\"config\":{\"access\":{\"type\":\"zhipu-account\",\"entitled\":false}}},{\"providerId\":\"account:bigmodel-start-plan\",\"config\":{\"access\":{\"type\":\"zhipu-account\",\"entitled\":true},\"builtinModelIds\":[\"GLM-5.3-Flash\"]}},{\"providerId\":\"account:bigmodel-offpeak-idle-plan\",\"config\":{\"access\":{\"type\":\"zhipu-account\",\"entitled\":false}}},{\"providerId\":\"account:bigmodel-highspeed-card\",\"config\":{\"access\":{\"type\":\"zhipu-account\",\"entitled\":false}}}],{\"account:zai-individual-coding-plan\":{\"availability\":\"unavailable\",\"entitled\":false,\"current\":false,\"unavailableReason\":\"not-connected\"},\"account:zai-team-coding-plan\":{\"availability\":\"unavailable\",\"entitled\":false,\"current\":false,\"unavailableReason\":\"not-connected\"},\"account:zai-start-plan\":{\"availability\":\"unavailable\",\"entitled\":false,\"current\":false,\"unavailableReason\":\"not-connected\"},\"account:zai-offpeak-idle-plan\":{\"availability\":\"unavailable\",\"entitled\":false,\"current\":false,\"unavailableReason\":\"not-connected\"},\"account:zai-highspeed-card\":{\"availability\":\"unavailable\",\"entitled\":false,\"current\":false,\"unavailableReason\":\"not-connected\"},\"account:bigmodel-individual-coding-plan\":{\"availability\":\"unavailable\",\"entitled\":false,\"current\":false,\"unavailableReason\":\"not-entitled\"},\"account:bigmodel-team-coding-plan\":{\"availability\":\"unavailable\",\"entitled\":false,\"current\":false,\"unavailableReason\":\"not-entitled\"},\"account:bigmodel-start-plan\":{\"availability\":\"available\",\"entitled\":true,\"current\":true},\"account:bigmodel-offpeak-idle-plan\":{\"availability\":\"unavailable\",\"entitled\":false,\"current\":false,\"unavailableReason\":\"not-entitled\"},\"account:bigmodel-highspeed-card\":{\"availability\":\"unavailable\",\"entitled\":false,\"current\":false,\"unavailableReason\":\"not-entitled\"}}]",
+    "basedOnZCodeBuiltinRevision": "zcode-builtin:43:c2702b2a39b013c1fbdf9b41e851cac82658c8bfe0300d6e65d2fec5a7085b59",
+    "providers": {
+     "account:zai-individual-coding-plan": {
+      "access": {
+       "type": "zhipu-account",
+       "entitled": false
+      }
+     },
+     "account:zai-team-coding-plan": {
+      "access": {
+       "type": "zhipu-account",
+       "entitled": false
+      }
+     },
+     "account:zai-start-plan": {
+      "access": {
+       "type": "zhipu-account",
+       "entitled": false
+      }
+     },
+     "account:zai-offpeak-idle-plan": {
+      "access": {
+       "type": "zhipu-account",
+       "entitled": false
+      }
+     },
+     "account:zai-highspeed-card": {
+      "access": {
+       "type": "zhipu-account",
+       "entitled": false
+      }
+     },
+     "account:bigmodel-individual-coding-plan": {
+      "access": {
+       "type": "zhipu-account",
+       "entitled": false
+      }
+     },
+     "account:bigmodel-team-coding-plan": {
+      "access": {
+       "type": "zhipu-account",
+       "entitled": false
+      }
+     },
+     "account:bigmodel-start-plan": {
+      "access": {
+       "type": "zhipu-account",
+       "entitled": true
+      },
+      "builtinModelIds": [
+       "GLM-5.3-Flash"
+      ]
+     },
+     "account:bigmodel-offpeak-idle-plan": {
+      "access": {
+       "type": "zhipu-account",
+       "entitled": false
+      }
+     },
+     "account:bigmodel-highspeed-card": {
+      "access": {
+       "type": "zhipu-account",
+       "entitled": false
+      }
+     }
+    },
+    "states": {
+     "account:zai-individual-coding-plan": {
+      "availability": "unavailable",
+      "entitled": false,
+      "current": false,
+      "unavailableReason": "not-connected"
+     },
+     "account:zai-team-coding-plan": {
+      "availability": "unavailable",
+      "entitled": false,
+      "current": false,
+      "unavailableReason": "not-connected"
+     },
+     "account:zai-start-plan": {
+      "availability": "unavailable",
+      "entitled": false,
+      "current": false,
+      "unavailableReason": "not-connected"
+     },
+     "account:zai-offpeak-idle-plan": {
+      "availability": "unavailable",
+      "entitled": false,
+      "current": false,
+      "unavailableReason": "not-connected"
+     },
+     "account:zai-highspeed-card": {
+      "availability": "unavailable",
+      "entitled": false,
+      "current": false,
+      "unavailableReason": "not-connected"
+     },
+     "account:bigmodel-individual-coding-plan": {
+      "availability": "unavailable",
+      "entitled": false,
+      "current": false,
+      "unavailableReason": "not-entitled"
+     },
+     "account:bigmodel-team-coding-plan": {
+      "availability": "unavailable",
+      "entitled": false,
+      "current": false,
+      "unavailableReason": "not-entitled"
+     },
+     "account:bigmodel-start-plan": {
+      "availability": "available",
+      "entitled": true,
+      "current": true
+     },
+     "account:bigmodel-offpeak-idle-plan": {
+      "availability": "unavailable",
+      "entitled": false,
+      "current": false,
+      "unavailableReason": "not-entitled"
+     },
+     "account:bigmodel-highspeed-card": {
+      "availability": "unavailable",
+      "entitled": false,
+      "current": false,
+      "unavailableReason": "not-entitled"
+     }
+    }
+   }
+  },
+  {
+   "method": "startup/storageState",
+   "params": {
+    "schemaVersion": 1,
+    "attemptId": "5eb83c61-ee8f-455a-86a3-14c3b0e2ca1e",
+    "sequence": 1,
+    "databaseId": "14a7e77cdbb0fc7a0ce22603216f14cf44871306fe2243dd2dc46dabc7c120c3",
+    "databaseKind": "session",
+    "phase": "checking",
+    "elapsedMs": 0
+   }
+  },
+  {
+   "method": "startup/storageState",
+   "params": {
+    "schemaVersion": 1,
+    "attemptId": "5eb83c61-ee8f-455a-86a3-14c3b0e2ca1e",
+    "sequence": 2,
+    "databaseId": "14a7e77cdbb0fc7a0ce22603216f14cf44871306fe2243dd2dc46dabc7c120c3",
+    "databaseKind": "session",
+    "phase": "checking",
+    "elapsedMs": 0
+   }
+  },
+  {
+   "method": "startup/storageState",
+   "params": {
+    "schemaVersion": 1,
+    "attemptId": "5eb83c61-ee8f-455a-86a3-14c3b0e2ca1e",
+    "sequence": 3,
+    "databaseId": "14a7e77cdbb0fc7a0ce22603216f14cf44871306fe2243dd2dc46dabc7c120c3",
+    "databaseKind": "session",
+    "phase": "checking",
+    "migration": {
+     "kind": "none",
+     "executedCount": 0,
+     "committedCount": 0
+    },
+    "elapsedMs": 3
+   }
+  },
+  {
+   "method": "startup/storageState",
+   "params": {
+    "schemaVersion": 1,
+    "attemptId": "5eb83c61-ee8f-455a-86a3-14c3b0e2ca1e",
+    "sequence": 4,
+    "databaseId": "14a7e77cdbb0fc7a0ce22603216f14cf44871306fe2243dd2dc46dabc7c120c3",
+    "databaseKind": "session",
+    "phase": "committing",
+    "migration": {
+     "kind": "none",
+     "executedCount": 0,
+     "committedCount": 0,
+     "lastAppliedMigrationId": "0024_session_database_identity"
+    },
+    "elapsedMs": 5
+   }
+  },
+  {
+   "method": "startup/storageState",
+   "params": {
+    "schemaVersion": 1,
+    "attemptId": "5eb83c61-ee8f-455a-86a3-14c3b0e2ca1e",
+    "sequence": 5,
+    "databaseId": "14a7e77cdbb0fc7a0ce22603216f14cf44871306fe2243dd2dc46dabc7c120c3",
+    "databaseKind": "session",
+    "phase": "ready",
+    "migration": {
+     "kind": "none",
+     "executedCount": 0,
+     "committedCount": 0,
+     "lastAppliedMigrationId": "0024_session_database_identity"
+    },
+    "elapsedMs": 6
+   }
+  },
+  {
+   "id": 1,
+   "result": {
+    "receivedRevision": "account:[\"zcode-builtin:43:c2702b2a39b013c1fbdf9b41e851cac82658c8bfe0300d6e65d2fec5a7085b59\",[{\"providerId\":\"account:zai-individual-coding-plan\",\"config\":{\"access\":{\"type\":\"zhipu-account\",\"entitled\":false}}},{\"providerId\":\"account:zai-team-coding-plan\",\"config\":{\"access\":{\"type\":\"zhipu-account\",\"entitled\":false}}},{\"providerId\":\"account:zai-start-plan\",\"config\":{\"access\":{\"type\":\"zhipu-account\",\"entitled\":false}}},{\"providerId\":\"account:zai-offpeak-idle-plan\",\"config\":{\"access\":{\"type\":\"zhipu-account\",\"entitled\":false}}},{\"providerId\":\"account:zai-highspeed-card\",\"config\":{\"access\":{\"type\":\"zhipu-account\",\"entitled\":false}}},{\"providerId\":\"account:bigmodel-individual-coding-plan\",\"config\":{\"access\":{\"type\":\"zhipu-account\",\"entitled\":false}}},{\"providerId\":\"account:bigmodel-team-coding-plan\",\"config\":{\"access\":{\"type\":\"zhipu-account\",\"entitled\":false}}},{\"providerId\":\"account:bigmodel-start-plan\",\"config\":{\"access\":{\"type\":\"zhipu-account\",\"entitled\":true},\"builtinModelIds\":[\"GLM-5.3-Flash\"]}},{\"providerId\":\"account:bigmodel-offpeak-idle-plan\",\"config\":{\"access\":{\"type\":\"zhipu-account\",\"entitled\":false}}},{\"providerId\":\"account:bigmodel-highspeed-card\",\"config\":{\"access\":{\"type\":\"zhipu-account\",\"entitled\":false}}}],{\"account:zai-individual-coding-plan\":{\"availability\":\"unavailable\",\"entitled\":false,\"current\":false,\"unavailableReason\":\"not-connected\"},\"account:zai-team-coding-plan\":{\"availability\":\"unavailable\",\"entitled\":false,\"current\":false,\"unavailableReason\":\"not-connected\"},\"account:zai-start-plan\":{\"availability\":\"unavailable\",\"entitled\":false,\"current\":false,\"unavailableReason\":\"not-connected\"},\"account:zai-offpeak-idle-plan\":{\"availability\":\"unavailable\",\"entitled\":false,\"current\":false,\"unavailableReason\":\"not-connected\"},\"account:zai-highspeed-card\":{\"availability\":\"unavailable\",\"entitled\":false,\"current\":false,\"unavailableReason\":\"not-connected\"},\"account:bigmodel-individual-coding-plan\":{\"availability\":\"unavailable\",\"entitled\":false,\"current\":false,\"unavailableReason\":\"not-entitled\"},\"account:bigmodel-team-coding-plan\":{\"availability\":\"unavailable\",\"entitled\":false,\"current\":false,\"unavailableReason\":\"not-entitled\"},\"account:bigmodel-start-plan\":{\"availability\":\"available\",\"entitled\":true,\"current\":true},\"account:bigmodel-offpeak-idle-plan\":{\"availability\":\"unavailable\",\"entitled\":false,\"current\":false,\"unavailableReason\":\"not-entitled\"},\"account:bigmodel-highspeed-card\":{\"availability\":\"unavailable\",\"entitled\":false,\"current\":false,\"unavailableReason\":\"not-entitled\"}}]",
+    "providerCount": 10,
+    "status": "received"
+   }
+  },
+  {
+   "id": 2,
+   "method": "session/create",
+   "params": {
+    "workspace": {
+     "workspacePath": "C:\\Users\\Rt\\.zcode\\workspace\\draft-26e30bc0-b470-4d11-afa5-0072a7c3058e\\zcode-acp-recon\\traces\\workspace",
+     "workspaceKey": "workspace"
+    },
+    "model": {
+     "providerId": "account:bigmodel-start-plan",
+     "modelId": "GLM-5.3-Flash",
+     "options": {
+      "reasoningLevel": "high"
+     }
+    }
+   }
+  },
+  {
+   "method": "session/lifecycle/changed",
+   "params": {
+    "sessionId": "sess_4c7c1adc-b51d-4f45-81ce-ddc596789d11",
+    "state": "starting",
+    "generation": 1,
+    "revision": 1,
+    "lastError": null
+   }
+  },
+  {
+   "id": "server-1",
+   "method": "session/requestRuntimePreferences",
+   "params": {
+    "sessionId": "sess_4c7c1adc-b51d-4f45-81ce-ddc596789d11",
+    "scope": "runtime-materialization"
+   }
+  },
+  {
+   "id": "server-1",
+   "result": {
+    "nativeSearchEnhancementsEnabled": false,
+    "toolSearchMode": "off",
+    "memoryEnabled": false,
+    "askUserQuestionAutoResolutionEnabled": true,
+    "modelContextBudgetStrategy": "preflight-v1"
+   }
+  },
+  {
+   "id": "server-2",
+   "method": "interaction/requestOfficialMcpAuthHeaders",
+   "params": {
+    "mcpKey": "image_search",
+    "pluginId": "image-search@zcode-plugins-official",
+    "requestId": "official-mcp-auth:1",
+    "targetOrigin": "https://zcode.z.ai/",
+    "workspace": {
+     "workspaceKey": "C:\\Users\\Rt\\.zcode\\workspace\\draft-26e30bc0-b470-4d11-afa5-0072a7c3058e\\zcode-acp-recon\\traces\\workspace",
+     "workspacePath": "C:\\Users\\Rt\\.zcode\\workspace\\draft-26e30bc0-b470-4d11-afa5-0072a7c3058e\\zcode-acp-recon\\traces\\workspace"
+    }
+   }
+  },
+  {
+   "id": "server-2",
+   "result": {}
+  },
+  {
+   "id": "server-3",
+   "method": "interaction/requestOfficialMcpAuthHeaders",
+   "params": {
+    "mcpKey": "sites",
+    "pluginId": "zcode-site@zcode-plugins-official",
+    "requestId": "official-mcp-auth:2",
+    "targetOrigin": "https://zcode.z.ai/",
+    "workspace": {
+     "workspaceKey": "C:\\Users\\Rt\\.zcode\\workspace\\draft-26e30bc0-b470-4d11-afa5-0072a7c3058e\\zcode-acp-recon\\traces\\workspace",
+     "workspacePath": "C:\\Users\\Rt\\.zcode\\workspace\\draft-26e30bc0-b470-4d11-afa5-0072a7c3058e\\zcode-acp-recon\\traces\\workspace"
+    }
+   }
+  },
+  {
+   "id": "server-3",
+   "result": {}
+  },
+  {
+   "id": "server-4",
+   "method": "interaction/requestOfficialMcpAuthHeaders",
+   "params": {
+    "mcpKey": "image_search",
+    "pluginId": "image-search@zcode-plugins-official",
+    "requestId": "official-mcp-auth:3",
+    "targetOrigin": "https://zcode.z.ai/",
+    "workspace": {
+     "workspaceKey": "C:\\Users\\Rt\\.zcode\\workspace\\draft-26e30bc0-b470-4d11-afa5-0072a7c3058e\\zcode-acp-recon\\traces\\workspace",
+     "workspacePath": "C:\\Users\\Rt\\.zcode\\workspace\\draft-26e30bc0-b470-4d11-afa5-0072a7c3058e\\zcode-acp-recon\\traces\\workspace"
+    }
+   }
+  },
+  {
+   "id": "server-4",
+   "result": {}
+  },
+  {
+   "method": "session/lifecycle/changed",
+   "params": {
+    "sessionId": "sess_4c7c1adc-b51d-4f45-81ce-ddc596789d11",
+    "state": "ready",
+    "generation": 1,
+    "revision": 2,
+    "lastError": null
+   }
+  },
+  {
+   "id": 2,
+   "result": {
+    "messages": [],
+    "projection": {
+     "activeToolCalls": [],
+     "backgroundJobs": [],
+     "contextUsed": 0,
+     "contextWindow": 200000,
+     "mode": "build",
+     "pendingPermissions": [],
+     "sessionId": "unknown",
+     "status": "idle",
+     "target": null,
+     "totalTokenCount": "<redacted>",
+     "turnCount": 0
+    },
+    "protocol": {
+     "name": "ZCode Protocol",
+     "version": 1
+    },
+    "runtime": {
+     "eventSeq": 0,
+     "pendingRequestIds": [],
+     "goalVerifications": [],
+     "goalVerificationTimeline": [],
+     "stateRevision": 1
+    },
+    "session": {
+     "createdAt": 1794152440316,
+     "mode": "build",
+     "model": {
+      "providerId": "account:bigmodel-start-plan",
+      "modelId": "GLM-5.3-Flash"
+     },
+     "traceId": "48504e32-4572-48f4-b93b-3e19ea1134cc",
+     "sessionId": "sess_4c7c1adc-b51d-4f45-81ce-ddc596789d11",
+     "sessionKind": "interactive",
+     "status": "idle",
+     "target": null,
+     "title": "",
+     "updatedAt": 1794152440316,
+     "workspace": {
+      "workspacePath": "C:\\Users\\Rt\\.zcode\\workspace\\draft-26e30bc0-b470-4d11-afa5-0072a7c3058e\\zcode-acp-recon\\traces\\workspace",
+      "workspaceKey": "workspace"
+     }
+    },
+    "settings": {
+     "mode": {
+      "current": "build"
+     },
+     "model": {
+      "available": [
+       {
+        "ref": {
+         "providerId": "account:bigmodel-start-plan",
+         "modelId": "GLM-5.3-Flash"
+        },
+        "label": "GLM-5.3-Flash",
+        "providerLabel": "Start Plan",
+        "contextWindow": 1000000,
+        "maxOutputTokens": "<redacted>",
+        "reasoning": {
+         "levels": [
+          {
+           "value": "low",
+           "label": "low"
+          },
+          {
+           "value": "high",
+           "label": "high"
+          },
+          {
+           "value": "max",
+           "label": "max"
+          }
+         ],
+         "defaultLevel": "max"
+        },
+        "properties": {
+         "inputFormat": {
+          "supportsText": true,
+          "supportsImage": true,
+          "supportsVideo": true,
+          "supportsAudio": false,
+          "supportsPdf": true
+         },
+         "outputFormat": {
+          "supportsText": true
+         }
+        }
+       }
+      ],
+      "current": {
+       "providerId": "account:bigmodel-start-plan",
+       "modelId": "GLM-5.3-Flash"
+      },
+      "lastUsed": {
+       "providerId": "account:bigmodel-start-plan",
+       "modelId": "GLM-5.3-Flash"
+      }
+     },
+     "permission": {
+      "mode": "build"
+     },
+     "thoughtLevel": {
+      "available": [
+       {
+        "label": "low",
+        "value": "low"
+       },
+       {
+        "label": "high",
+        "value": "high"
+       },
+       {
+        "label": "max",
+        "value": "max"
+       }
+      ],
+      "enabled": true
+     }
+    },
+    "slashCommands": [
+     {
+      "description": "Show or set the current session goal.",
+      "inputHint": "/goal [pause|resume|clear|replace <objective>|<objective>]",
+      "name": "goal",
+      "source": "builtin"
+     },
+     {
+      "description": "Compact the current conversation with optional instructions.",
+      "inputHint": "/compact [instructions]",
+      "name": "compact",
+      "source": "builtin"
+     },
+     {
+      "description": "Create or update workspace AGENTS.md instructions.",
+      "inputHint": "/init [notes]",
+      "name": "init",
+      "source": "builtin"
+     },
+     {
+      "description": "Run CodeRabbit AI code review on your changes",
+      "inputHint": "/coderabbit-review [type] [--base <branch>] [--dir <path>]",
+      "name": "coderabbit-review",
+      "source": "custom"
+     },
+     {
+      "description": "Reproducible, sealed Mimosa deep security audit. / 执行可复核的 Mimosa 密封深度安全审计。",
+      "inputHint": "/mimosa-deep-audit [项目路径 | project path]",
+      "name": "mimosa-deep-audit",
+      "source": "custom"
+     },
+     {
+      "description": "Fast static security audit with Mimosa. / 用 Mimosa 做快速静态安全审计。",
+      "inputHint": "/mimosa-scan [项目路径 | project path]",
+      "name": "mimosa-scan",
+      "source": "custom"
+     },
+     {
+      "description": "Show Mimosa hook, coverage, and open-finding status for this project. / 查看 Mimosa 当前项目的 Hook、扫描覆盖与未结 finding 状态。",
+      "inputHint": "/mimosa-status",
+      "name": "mimosa-status",
+      "source": "custom"
+     },
+     {
+      "description": "Open VectorCraft and optionally a workspace file",
+      "inputHint": "/open",
+      "name": "open",
+      "source": "custom"
+     },
+     {
+      "description": "Hide or show the ZCode badge on the linked ZCode Sites site.",
+      "inputHint": "/site-badge hide | show",
+      "name": "site-badge",
+      "source": "custom"
+     },
+     {
+      "description": "Deploy this project to ZCode Sites, or redeploy the linked site.",
+      "inputHint": "/site-deploy [site id or notes]",
+      "name": "site-deploy",
+      "source": "custom"
+     },
+     {
+      "description": "Show the logs of a ZCode Sites deployment and explain any failure.",
+      "inputHint": "/site-logs [deployment id]",
+      "name": "site-logs",
+      "source": "custom"
+     },
+     {
+      "description": "Take the linked ZCode Sites site offline.",
+      "inputHint": "/site-offline [site id]",
+      "name": "site-offline",
+      "source": "custom"
+     },
+     {
+      "description": "Bring the linked ZCode Sites site back online.",
+      "inputHint": "/site-online [site id]",
+      "name": "site-online",
+      "source": "custom"
+     },
+     {
+      "description": "Show the ZCode Sites site linked to this project.",
+      "inputHint": "/site-status [site id]",
+      "name": "site-status",
+      "source": "custom"
+     },
+     {
+      "description": "Show ZCode Sites usage and plan limits.",
+      "inputHint": "/site-usage",
+      "name": "site-usage",
+      "source": "custom"
+     }
+    ],
+    "todos": [],
+    "todoGroups": []
+   }
+  },
+  {
+   "id": 3,
+   "method": "session/subscribe",
+   "params": {
+    "sessionId": "sess_4c7c1adc-b51d-4f45-81ce-ddc596789d11",
+    "deliveryKind": "desktop-continuous",
+    "includeSnapshot": true
+   }
+  },
+  {
+   "id": 3,
+   "result": {
+    "eventSeq": 0,
+    "events": [],
+    "sessionId": "sess_4c7c1adc-b51d-4f45-81ce-ddc596789d11",
+    "snapshot": {
+     "messages": [],
+     "projection": {
+      "activeToolCalls": [],
+      "backgroundJobs": [],
+      "contextUsed": 0,
+      "contextWindow": 200000,
+      "mode": "build",
+      "pendingPermissions": [],
+      "sessionId": "unknown",
+      "status": "idle",
+      "target": null,
+      "totalTokenCount": "<redacted>",
+      "turnCount": 0
+     },
+     "protocol": {
+      "name": "ZCode Protocol",
+      "version": 1
+     },
+     "runtime": {
+      "deliveryKind": "desktop-continuous",
+      "eventSeq": 0,
+      "pendingRequestIds": [],
+      "goalVerifications": [],
+      "goalVerificationTimeline": [],
+      "stateRevision": 1
+     },
+     "session": {
+      "createdAt": 1794152440316,
+      "mode": "build",
+      "model": {
+       "providerId": "account:bigmodel-start-plan",
+       "modelId": "GLM-5.3-Flash"
+      },
+      "traceId": "48504e32-4572-48f4-b93b-3e19ea1134cc",
+      "sessionId": "sess_4c7c1adc-b51d-4f45-81ce-ddc596789d11",
+      "sessionKind": "interactive",
+      "status": "idle",
+      "target": null,
+      "title": "",
+      "updatedAt": 1794152440316,
+      "workspace": {
+       "workspacePath": "C:\\Users\\Rt\\.zcode\\workspace\\draft-26e30bc0-b470-4d11-afa5-0072a7c3058e\\zcode-acp-recon\\traces\\workspace",
+       "workspaceKey": "workspace"
+      }
+     },
+     "settings": {
+      "mode": {
+       "current": "build"
+      },
+      "model": {
+       "available": [
+        {
+         "ref": {
+          "providerId": "account:bigmodel-start-plan",
+          "modelId": "GLM-5.3-Flash"
+         },
+         "label": "GLM-5.3-Flash",
+         "providerLabel": "Start Plan",
+         "contextWindow": 200000,
+         "maxOutputTokens": "<redacted>",
+         "reasoning": {
+          "levels": [
+           {
+            "value": "low",
+            "label": "low"
+           },
+           {
+            "value": "high",
+            "label": "high"
+           },
+           {
+            "value": "max",
+            "label": "max"
+           }
+          ],
+          "defaultLevel": "max"
+         },
+         "properties": {
+          "inputFormat": {
+           "supportsText": true,
+           "supportsImage": true,
+           "supportsVideo": true,
+           "supportsAudio": false,
+           "supportsPdf": true
+          },
+          "outputFormat": {
+           "supportsText": true
+          }
+         }
+        }
+       ],
+       "current": {
+        "providerId": "account:bigmodel-start-plan",
+        "modelId": "GLM-5.3-Flash"
+       },
+       "lastUsed": {
+        "providerId": "account:bigmodel-start-plan",
+        "modelId": "GLM-5.3-Flash"
+       }
+      },
+      "permission": {
+       "mode": "build"
+      },
+      "thoughtLevel": {
+       "available": [
+        {
+         "label": "low",
+         "value": "low"
+        },
+        {
+         "label": "high",
+         "value": "high"
+        },
+        {
+         "label": "max",
+         "value": "max"
+        }
+       ],
+       "enabled": true
+      }
+     },
+     "slashCommands": [
+      {
+       "description": "Show or set the current session goal.",
+       "inputHint": "/goal [pause|resume|clear|replace <objective>|<objective>]",
+       "name": "goal",
+       "source": "builtin"
+      },
+      {
+       "description": "Compact the current conversation with optional instructions.",
+       "inputHint": "/compact [instructions]",
+       "name": "compact",
+       "source": "builtin"
+      },
+      {
+       "description": "Create or update workspace AGENTS.md instructions.",
+       "inputHint": "/init [notes]",
+       "name": "init",
+       "source": "builtin"
+      },
+      {
+       "description": "Run CodeRabbit AI code review on your changes",
+       "inputHint": "/coderabbit-review [type] [--base <branch>] [--dir <path>]",
+       "name": "coderabbit-review",
+       "source": "custom"
+      },
+      {
+       "description": "Reproducible, sealed Mimosa deep security audit. / 执行可复核的 Mimosa 密封深度安全审计。",
+       "inputHint": "/mimosa-deep-audit [项目路径 | project path]",
+       "name": "mimosa-deep-audit",
+       "source": "custom"
+      },
+      {
+       "description": "Fast static security audit with Mimosa. / 用 Mimosa 做快速静态安全审计。",
+       "inputHint": "/mimosa-scan [项目路径 | project path]",
+       "name": "mimosa-scan",
+       "source": "custom"
+      },
+      {
+       "description": "Show Mimosa hook, coverage, and open-finding status for this project. / 查看 Mimosa 当前项目的 Hook、扫描覆盖与未结 finding 状态。",
+       "inputHint": "/mimosa-status",
+       "name": "mimosa-status",
+       "source": "custom"
+      },
+      {
+       "description": "Open VectorCraft and optionally a workspace file",
+       "inputHint": "/open",
+       "name": "open",
+       "source": "custom"
+      },
+      {
+       "description": "Hide or show the ZCode badge on the linked ZCode Sites site.",
+       "inputHint": "/site-badge hide | show",
+       "name": "site-badge",
+       "source": "custom"
+      },
+      {
+       "description": "Deploy this project to ZCode Sites, or redeploy the linked site.",
+       "inputHint": "/site-deploy [site id or notes]",
+       "name": "site-deploy",
+       "source": "custom"
+      },
+      {
+       "description": "Show the logs of a ZCode Sites deployment and explain any failure.",
+       "inputHint": "/site-logs [deployment id]",
+       "name": "site-logs",
+       "source": "custom"
+      },
+      {
+       "description": "Take the linked ZCode Sites site offline.",
+       "inputHint": "/site-offline [site id]",
+       "name": "site-offline",
+       "source": "custom"
+      },
+      {
+       "description": "Bring the linked ZCode Sites site back online.",
+       "inputHint": "/site-online [site id]",
+       "name": "site-online",
+       "source": "custom"
+      },
+      {
+       "description": "Show the ZCode Sites site linked to this project.",
+       "inputHint": "/site-status [site id]",
+       "name": "site-status",
+       "source": "custom"
+      },
+      {
+       "description": "Show ZCode Sites usage and plan limits.",
+       "inputHint": "/site-usage",
+       "name": "site-usage",
+       "source": "custom"
+      }
+     ],
+     "todos": [],
+     "todoGroups": []
+    }
+   }
+  },
+  {
+   "id": 4,
+   "method": "session/send",
+   "params": {
+    "sessionId": "sess_4c7c1adc-b51d-4f45-81ce-ddc596789d11",
+    "content": "请创建文件 disconnect-marker.txt，内容为一行文字 done，然后回复 OK。",
+    "modelSelection": {
+     "providerId": "account:bigmodel-start-plan",
+     "modelId": "GLM-5.3-Flash",
+     "options": {
+      "reasoningLevel": "low"
+     }
+    }
+   }
+  },
+  {
+   "id": "server-5",
+   "method": "session/requestRuntimePreferences",
+   "params": {
+    "sessionId": "sess_4c7c1adc-b51d-4f45-81ce-ddc596789d11",
+    "scope": "user-execution"
+   }
+  },
+  {
+   "id": "server-5",
+   "result": {
+    "nativeSearchEnhancementsEnabled": false,
+    "toolSearchMode": "off",
+    "memoryEnabled": false,
+    "askUserQuestionAutoResolutionEnabled": true,
+    "modelContextBudgetStrategy": "preflight-v1"
+   }
+  },
+  {
+   "method": "state.updated",
+   "params": {
+    "patch": {
+     "status": "running"
+    },
+    "reason": "prompt_started",
+    "revision": 2,
+    "scope": "session",
+    "sessionId": "sess_4c7c1adc-b51d-4f45-81ce-ddc596789d11",
+    "type": "state.updated",
+    "workspace": {
+     "workspacePath": "C:\\Users\\Rt\\.zcode\\workspace\\draft-26e30bc0-b470-4d11-afa5-0072a7c3058e\\zcode-acp-recon\\traces\\workspace",
+     "workspaceKey": "workspace"
+    }
+   }
+  },
+  {
+   "id": 4,
+   "result": {
+    "accepted": true,
+    "sessionId": "sess_4c7c1adc-b51d-4f45-81ce-ddc596789d11",
+    "stateRevision": 2
+   }
+  },
+  {
+   "method": "process/mcpTelemetry",
+   "params": {
+    "arch": "x64",
+    "kind": "process_start",
+    "mcpId": "builtin:soundcraft:soundcraft",
+    "mcpInstanceId": "44027091-150b-4d51-8d24-d7c8094156b1",
+    "mcpIsolation": "session",
+    "mcpSource": "builtin",
+    "occurredAt": 1794152442037,
+    "platform": "win32"
+   }
+  },
+  {
+   "method": "process/mcpTelemetry",
+   "params": {
+    "arch": "x64",
+    "kind": "process_start",
+    "mcpId": "builtin:photocraft:photocraft",
+    "mcpInstanceId": "b08bf56d-b97a-4e51-9fa8-c524ad2c66d4",
+    "mcpIsolation": "session",
+    "mcpSource": "builtin",
+    "occurredAt": 1794152442090,
+    "platform": "win32"
+   }
+  },
+  {
+   "method": "process/mcpTelemetry",
+   "params": {
+    "arch": "x64",
+    "kind": "process_start",
+    "mcpId": "builtin:vectorcraft:vectorcraft",
+    "mcpInstanceId": "361e1069-30bf-45e1-a095-8e72a919bf08",
+    "mcpIsolation": "session",
+    "mcpSource": "builtin",
+    "occurredAt": 1794152442111,
+    "platform": "win32"
+   }
+  },
+  {
+   "method": "process/mcpTelemetry",
+   "params": {
+    "arch": "x64",
+    "kind": "process_start",
+    "mcpId": "builtin:designcraft:designcraft",
+    "mcpInstanceId": "88ac41f4-9116-454c-a758-d7699167685d",
+    "mcpIsolation": "session",
+    "mcpSource": "builtin",
+    "occurredAt": 1794152442256,
+    "platform": "win32"
+   }
+  },
+  {
+   "id": "server-6",
+   "method": "interaction/requestOfficialMcpAuthHeaders",
+   "params": {
+    "mcpKey": "sites",
+    "pluginId": "zcode-site@zcode-plugins-official",
+    "requestId": "official-mcp-auth:4",
+    "targetOrigin": "https://zcode.z.ai/",
+    "workspace": {
+     "workspaceKey": "C:\\Users\\Rt\\.zcode\\workspace\\draft-26e30bc0-b470-4d11-afa5-0072a7c3058e\\zcode-acp-recon\\traces\\workspace",
+     "workspacePath": "C:\\Users\\Rt\\.zcode\\workspace\\draft-26e30bc0-b470-4d11-afa5-0072a7c3058e\\zcode-acp-recon\\traces\\workspace"
+    }
+   }
+  },
+  {
+   "id": "server-6",
+   "result": {}
+  },
+  {
+   "method": "process/mcpTelemetry",
+   "params": {
+    "arch": "x64",
+    "kind": "process_start",
+    "mcpId": "builtin:jupyter-notebook:jupyter-notebook",
+    "mcpInstanceId": "2c8db082-e5c3-4408-8656-a6702ab3b1a4",
+    "mcpIsolation": "session",
+    "mcpSource": "builtin",
+    "occurredAt": 1794152442528,
+    "platform": "win32"
+   }
+  },
+  {
+   "method": "process/mcpTelemetry",
+   "params": {
+    "arch": "x64",
+    "kind": "process_start",
+    "mcpId": "builtin:zotero:zotero",
+    "mcpInstanceId": "9a226e3c-0f12-41a4-92ab-8a9d37f22177",
+    "mcpIsolation": "session",
+    "mcpSource": "builtin",
+    "occurredAt": 1794152442676,
+    "platform": "win32"
+   }
+  },
+  {
+   "method": "session/event",
+   "params": {
+    "deliveryKind": "desktop-continuous",
+    "eventId": "4f34e7a2-bbbd-4baf-81ee-6c6e9b5bfcce",
+    "payload": {
+     "descriptor": {
+      "clientVisible": true,
+      "commandDisplay": "node \"C:\\\\Users\\\\Rt\\\\.zcode\\\\cli\\\\plugins\\\\cache\\\\zcode-plugins-official\\\\mimosa\\\\1.0.4/hooks/run-hook.cjs\" session-hook.mjs SessionStart",
+      "executionMode": "foreground",
+      "executionType": "process",
+      "pluginId": "mimosa@zcode-plugins-official",
+      "pluginName": "mimosa",
+      "sourceKind": "plugin",
+      "sourcePath": "C:\\Users\\Rt\\.zcode\\cli\\plugins\\cache\\zcode-plugins-official\\mimosa\\1.0.4\\hooks\\hooks.json",
+      "statusMessage": "Mimosa 正在准备项目安全上下文…",
+      "timeoutMs": 120000
+     },
+     "hookEventName": "SessionStart",
+     "hookIndex": 0,
+     "hookCount": 2,
+     "hookInvocationId": "09683688-7601-4731-a554-04e48b930931",
+     "hookRunId": "0451c1b2-b1aa-43d6-aca9-07358865df52",
+     "hookSource": "plugin.mimosa@zcode-plugins-official.SessionStart.0.0",
+     "startedAt": 1794152442728
+    },
+    "seq": 1,
+    "sessionId": "sess_4c7c1adc-b51d-4f45-81ce-ddc596789d11",
+    "timestamp": 1794152442728,
+    "traceId": "48504e32-4572-48f4-b93b-3e19ea1134cc",
+    "turnId": "turn_60a366d8-3a28-4de1-896f-1d86ef7b0c7a",
+    "type": "session.updated"
+   }
+  },
+  {
+   "method": "process/mcpTelemetry",
+   "params": {
+    "arch": "x64",
+    "kind": "process_start",
+    "mcpId": "builtin:mimosa:mimosa",
+    "mcpInstanceId": "2bebf62a-9d7f-4f29-b24f-07c8868c7709",
+    "mcpIsolation": "session",
+    "mcpSource": "builtin",
+    "occurredAt": 1794152443104,
+    "platform": "win32"
+   }
+  },
+  {
+   "method": "session/event",
+   "params": {
+    "deliveryKind": "desktop-continuous",
+    "eventId": "fbdf1fa0-c1a0-4d33-9f87-e89d41806b75",
+    "payload": {
+     "descriptor": {
+      "clientVisible": true,
+      "commandDisplay": "node \"C:\\\\Users\\\\Rt\\\\.zcode\\\\cli\\\\plugins\\\\cache\\\\zcode-plugins-official\\\\mimosa\\\\1.0.4/hooks/run-hook.cjs\" session-hook.mjs SessionStart",
+      "executionMode": "foreground",
+      "executionType": "process",
+      "pluginId": "mimosa@zcode-plugins-official",
+      "pluginName": "mimosa",
+      "sourceKind": "plugin",
+      "sourcePath": "C:\\Users\\Rt\\.zcode\\cli\\plugins\\cache\\zcode-plugins-official\\mimosa\\1.0.4\\hooks\\hooks.json",
+      "statusMessage": "Mimosa 正在准备项目安全上下文…",
+      "timeoutMs": 120000
+     },
+     "hookEventName": "SessionStart",
+     "hookIndex": 0,
+     "hookCount": 2,
+     "hookInvocationId": "09683688-7601-4731-a554-04e48b930931",
+     "hookRunId": "0451c1b2-b1aa-43d6-aca9-07358865df52",
+     "hookSource": "plugin.mimosa@zcode-plugins-official.SessionStart.0.0",
+     "startedAt": 1794152442728,
+     "durationMs": 431,
+     "outcome": "success"
+    },
+    "seq": 2,
+    "sessionId": "sess_4c7c1adc-b51d-4f45-81ce-ddc596789d11",
+    "timestamp": 1794152443159,
+    "traceId": "48504e32-4572-48f4-b93b-3e19ea1134cc",
+    "turnId": "turn_60a366d8-3a28-4de1-896f-1d86ef7b0c7a",
+    "type": "session.updated"
+   }
+  },
+  {
+   "method": "session/event",
+   "params": {
+    "deliveryKind": "desktop-continuous",
+    "eventId": "4859dd00-31b1-4ee8-bffd-99524d0d213d",
+    "payload": {
+     "descriptor": {
+      "clientVisible": true,
+      "commandDisplay": "node \"C:\\\\Users\\\\Rt\\\\.zcode\\\\cli\\\\plugins\\\\cache\\\\zcode-plugins-official\\\\tripo-3d\\\\0.1.4/hooks/session-start.mjs\"",
+      "executionMode": "foreground",
+      "executionType": "process",
+      "pluginId": "tripo-3d@zcode-plugins-official",
+      "pluginName": "tripo-3d",
+      "sourceKind": "plugin",
+      "sourcePath": "C:\\Users\\Rt\\.zcode\\cli\\plugins\\cache\\zcode-plugins-official\\tripo-3d\\0.1.4\\hooks\\hooks.json",
+      "statusMessage": "tripo-3d: loading Tripo rules…",
+      "timeoutMs": 5000
+     },
+     "hookEventName": "SessionStart",
+     "hookIndex": 1,
+     "hookCount": 2,
+     "hookInvocationId": "09683688-7601-4731-a554-04e48b930931",
+     "hookRunId": "a1a370bf-d259-4c3e-acef-ef7e46661467",
+     "hookSource": "plugin.tripo-3d@zcode-plugins-official.SessionStart.1.0",
+     "matcher": "startup|clear|compact",
+     "startedAt": 1794152443160
+    },
+    "seq": 3,
+    "sessionId": "sess_4c7c1adc-b51d-4f45-81ce-ddc596789d11",
+    "timestamp": 1794152443160,
+    "traceId": "48504e32-4572-48f4-b93b-3e19ea1134cc",
+    "turnId": "turn_60a366d8-3a28-4de1-896f-1d86ef7b0c7a",
+    "type": "session.updated"
+   }
+  },
+  {
+   "id": "server-7",
+   "method": "interaction/requestOfficialMcpAuthHeaders",
+   "params": {
+    "mcpKey": "sites",
+    "pluginId": "zcode-site@zcode-plugins-official",
+    "requestId": "official-mcp-auth:5",
+    "targetOrigin": "https://zcode.z.ai/",
+    "workspace": {
+     "workspaceKey": "C:\\Users\\Rt\\.zcode\\workspace\\draft-26e30bc0-b470-4d11-afa5-0072a7c3058e\\zcode-acp-recon\\traces\\workspace",
+     "workspacePath": "C:\\Users\\Rt\\.zcode\\workspace\\draft-26e30bc0-b470-4d11-afa5-0072a7c3058e\\zcode-acp-recon\\traces\\workspace"
+    }
+   }
+  },
+  {
+   "id": "server-7",
+   "result": {}
+  },
+  {
+   "id": "server-8",
+   "method": "interaction/requestOfficialMcpAuthHeaders",
+   "params": {
+    "mcpKey": "sites",
+    "pluginId": "zcode-site@zcode-plugins-official",
+    "requestId": "official-mcp-auth:6",
+    "targetOrigin": "https://zcode.z.ai/",
+    "workspace": {
+     "workspaceKey": "C:\\Users\\Rt\\.zcode\\workspace\\draft-26e30bc0-b470-4d11-afa5-0072a7c3058e\\zcode-acp-recon\\traces\\workspace",
+     "workspacePath": "C:\\Users\\Rt\\.zcode\\workspace\\draft-26e30bc0-b470-4d11-afa5-0072a7c3058e\\zcode-acp-recon\\traces\\workspace"
+    }
+   }
+  },
+  {
+   "id": "server-8",
+   "result": {}
+  },
+  {
+   "method": "process/mcpTelemetry",
+   "params": {
+    "arch": "x64",
+    "kind": "process_start",
+    "mcpId": "builtin:zcode-site:sites",
+    "mcpInstanceId": "7be7a77e-84b0-40a4-a3a3-647048983463",
+    "mcpIsolation": "session",
+    "mcpSource": "builtin",
+    "occurredAt": 1794152443271,
+    "platform": "win32"
+   }
+  },
+  {
+   "method": "process/mcpTelemetry",
+   "params": {
+    "arch": "x64",
+    "kind": "process_start",
+    "mcpId": "builtin:spreadsheets:spreadsheets",
+    "mcpInstanceId": "dfd1008b-99d0-4dce-8c4e-3d4820db88c6",
+    "mcpIsolation": "workspace",
+    "mcpSource": "builtin",
+    "occurredAt": 1794152443278,
+    "platform": "win32"
+   }
+  },
+  {
+   "method": "process/mcpTelemetry",
+   "params": {
+    "arch": "x64",
+    "kind": "process_start",
+    "mcpId": "builtin:presentations:presentations",
+    "mcpInstanceId": "aaaa24b4-61b6-4939-947e-7331c534ca52",
+    "mcpIsolation": "workspace",
+    "mcpSource": "builtin",
+    "occurredAt": 1794152443281,
+    "platform": "win32"
+   }
+  },
+  {
+   "method": "process/mcpTelemetry",
+   "params": {
+    "arch": "x64",
+    "kind": "process_start",
+    "mcpId": "builtin:documents:documents",
+    "mcpInstanceId": "59346af7-3412-48ea-b200-004125762d23",
+    "mcpIsolation": "workspace",
+    "mcpSource": "builtin",
+    "occurredAt": 1794152443285,
+    "platform": "win32"
+   }
+  },
+  {
+   "method": "process/mcpTelemetry",
+   "params": {
+    "arch": "x64",
+    "kind": "process_start",
+    "mcpId": "builtin:pdf:pdf",
+    "mcpInstanceId": "66f8155f-e30a-403b-9958-343346ca4a25",
+    "mcpIsolation": "workspace",
+    "mcpSource": "builtin",
+    "occurredAt": 1794152443289,
+    "platform": "win32"
+   }
+  },
+  {
+   "method": "session/event",
+   "params": {
+    "deliveryKind": "desktop-continuous",
+    "eventId": "54c966cd-658e-4b53-87d6-055a094158b7",
+    "payload": {
+     "descriptor": {
+      "clientVisible": true,
+      "commandDisplay": "node \"C:\\\\Users\\\\Rt\\\\.zcode\\\\cli\\\\plugins\\\\cache\\\\zcode-plugins-official\\\\tripo-3d\\\\0.1.4/hooks/session-start.mjs\"",
+      "executionMode": "foreground",
+      "executionType": "process",
+      "pluginId": "tripo-3d@zcode-plugins-official",
+      "pluginName": "tripo-3d",
+      "sourceKind": "plugin",
+      "sourcePath": "C:\\Users\\Rt\\.zcode\\cli\\plugins\\cache\\zcode-plugins-official\\tripo-3d\\0.1.4\\hooks\\hooks.json",
+      "statusMessage": "tripo-3d: loading Tripo rules…",
+      "timeoutMs": 5000
+     },
+     "hookEventName": "SessionStart",
+     "hookIndex": 1,
+     "hookCount": 2,
+     "hookInvocationId": "09683688-7601-4731-a554-04e48b930931",
+     "hookRunId": "a1a370bf-d259-4c3e-acef-ef7e46661467",
+     "hookSource": "plugin.tripo-3d@zcode-plugins-official.SessionStart.1.0",
+     "matcher": "startup|clear|compact",
+     "startedAt": 1794152443160,
+     "durationMs": 177,
+     "outcome": "success"
+    },
+    "seq": 4,
+    "sessionId": "sess_4c7c1adc-b51d-4f45-81ce-ddc596789d11",
+    "timestamp": 1794152443337,
+    "traceId": "48504e32-4572-48f4-b93b-3e19ea1134cc",
+    "turnId": "turn_60a366d8-3a28-4de1-896f-1d86ef7b0c7a",
+    "type": "session.updated"
+   }
+  },
+  {
+   "method": "session/event",
+   "params": {
+    "deliveryKind": "desktop-continuous",
+    "eventId": "12b0ea32-4b03-442e-9b93-bc3dd28a44a1",
+    "payload": {
+     "previousTitle": "",
+     "source": "first_input",
+     "title": "请创建文件 disconnect-marker.txt，内容为一行文字 done，然后回复 OK。"
+    },
+    "seq": 5,
+    "sessionId": "sess_4c7c1adc-b51d-4f45-81ce-ddc596789d11",
+    "timestamp": 1794152443354,
+    "traceId": "48504e32-4572-48f4-b93b-3e19ea1134cc",
+    "turnId": "turn_60a366d8-3a28-4de1-896f-1d86ef7b0c7a",
+    "type": "session.titleUpdated"
+   }
+  },
+  {
+   "method": "session/event",
+   "params": {
+    "deliveryKind": "desktop-continuous",
+    "eventId": "818975f8-0c25-4ef4-95b1-1fbebbc4ebd9",
+    "payload": {
+     "contextWindow": 1000000,
+     "modelSelection": {
+      "providerId": "account:bigmodel-start-plan",
+      "modelId": "GLM-5.3-Flash",
+      "options": {
+       "reasoningLevel": "low"
+      }
+     },
+     "effectiveReasoningLevel": "low",
+     "previousModelSelection": {
+      "providerId": "account:bigmodel-start-plan",
+      "modelId": "GLM-5.3-Flash"
+     },
+     "supportedThoughtLevels": [
+      "low",
+      "high",
+      "max"
+     ]
+    },
+    "seq": 6,
+    "sessionId": "sess_4c7c1adc-b51d-4f45-81ce-ddc596789d11",
+    "timestamp": 1794152443360,
+    "traceId": "48504e32-4572-48f4-b93b-3e19ea1134cc",
+    "type": "session.updated"
+   }
+  },
+  {
+   "method": "computer-use/operation-event",
+   "params": {
+    "eventId": "5568e121-651a-4581-a5da-20563bb11ee5",
+    "sequenceNumber": 7,
+    "sessionId": "sess_4c7c1adc-b51d-4f45-81ce-ddc596789d11",
+    "timestamp": 1794152443363,
+    "kind": "turn-started",
+    "turnId": "turn_60a366d8-3a28-4de1-896f-1d86ef7b0c7a"
+   }
+  },
+  {
+   "method": "v4/telemetry/event",
+   "params": {
+    "memoryEnabled": false,
+    "version": 1,
+    "eventId": "5568e121-651a-4581-a5da-20563bb11ee5",
+    "eventSeq": 7,
+    "occurredAt": 1794152443363,
+    "sessionId": "sess_4c7c1adc-b51d-4f45-81ce-ddc596789d11",
+    "sourceCommandId": "26b0d17c-3e99-4bf1-aa38-182e3ca9ebd6",
+    "turnId": "turn_60a366d8-3a28-4de1-896f-1d86ef7b0c7a",
+    "kind": "turn.started",
+    "modelName": "GLM-5.3-Flash",
+    "modelProvider": "account:bigmodel-start-plan"
+   }
+  },
+  {
+   "method": "session/event",
+   "params": {
+    "deliveryKind": "desktop-continuous",
+    "eventId": "5568e121-651a-4581-a5da-20563bb11ee5",
+    "payload": {
+     "executionStartedAt": 1794152441869.0908,
+     "turnNumber": 0,
+     "input": "请创建文件 disconnect-marker.txt，内容为一行文字 done，然后回复 OK。",
+     "messageId": "msg_mw801hb7_0563eb96-4cc4-417e-8205-b1c422f3b42a",
+     "inputId": "26b0d17c-3e99-4bf1-aa38-182e3ca9ebd6",
+     "foregroundExecutionId": "runtime_command_1",
+     "queryId": "26b0d17c-3e99-4bf1-aa38-182e3ca9ebd6",
+     "intent": {
+      "sourceCommandId": "26b0d17c-3e99-4bf1-aa38-182e3ca9ebd6",
+      "queueItemId": "queue_26b0d17c-3e99-4bf1-aa38-182e3ca9ebd6",
+      "clientId": "legacy-session-send",
+      "kind": "sendText",
+      "text": "请创建文件 disconnect-marker.txt，内容为一行文字 done，然后回复 OK。",
+      "modelSelection": {
+       "providerId": "account:bigmodel-start-plan",
+       "modelId": "GLM-5.3-Flash",
+       "options": {
+        "reasoningLevel": "low"
+       }
+      },
+      "admissionSeq": 0,
+      "admittedAt": 1794152441858,
+      "requestedDelivery": "startNow",
+      "admittedDelivery": "startNow"
+     }
+    },
+    "seq": 7,
+    "sessionId": "sess_4c7c1adc-b51d-4f45-81ce-ddc596789d11",
+    "timestamp": 1794152443363,
+    "traceId": "48504e32-4572-48f4-b93b-3e19ea1134cc",
+    "turnId": "turn_60a366d8-3a28-4de1-896f-1d86ef7b0c7a",
+    "type": "turn.started"
+   }
+  },
+  {
+   "method": "session/event",
+   "params": {
+    "deliveryKind": "desktop-continuous",
+    "eventId": "cffdda4d-670a-4acf-96aa-3b4a0a4007c7",
+    "payload": {
+     "descriptor": {
+      "clientVisible": true,
+      "commandDisplay": "node \"C:\\\\Users\\\\Rt\\\\.zcode\\\\cli\\\\plugins\\\\cache\\\\zcode-plugins-official\\\\mimosa\\\\1.0.4/hooks/run-hook.cjs\" prompt-hook.mjs UserPromptSubmit",
+      "executionMode": "foreground",
+      "executionType": "process",
+      "pluginId": "mimosa@zcode-plugins-official",
+      "pluginName": "mimosa",
+      "sourceKind": "plugin",
+      "sourcePath": "C:\\Users\\Rt\\.zcode\\cli\\plugins\\cache\\zcode-plugins-official\\mimosa\\1.0.4\\hooks\\hooks.json",
+      "timeoutMs": 30000
+     },
+     "hookEventName": "UserPromptSubmit",
+     "hookIndex": 0,
+     "hookCount": 1,
+     "hookInvocationId": "d06f9d94-b703-4601-a73c-0baf5034bc54",
+     "hookRunId": "75fe1cbf-b950-4a7c-9757-4261daf09ac7",
+     "hookSource": "plugin.mimosa@zcode-plugins-official.UserPromptSubmit.0.0",
+     "startedAt": 1794152443382
+    },
+    "seq": 8,
+    "sessionId": "sess_4c7c1adc-b51d-4f45-81ce-ddc596789d11",
+    "timestamp": 1794152443382,
+    "traceId": "48504e32-4572-48f4-b93b-3e19ea1134cc",
+    "turnId": "turn_60a366d8-3a28-4de1-896f-1d86ef7b0c7a",
+    "type": "session.updated"
    }
   }
  ]

@@ -1,7 +1,7 @@
 {
   "disconnect": {
     "turnStartedBeforeDisconnect": true,
-    "disconnectAfterMs": 1541,
+    "disconnectAfterMs": 1523,
     "markerCreatedWhileDisconnected": false,
     "projectionAfterReconnect": {
       "status": "idle",
@@ -14,6 +14,390 @@
       "externalSideEffect": false,
       "reconnectState": "idle"
     },
+    "terminate": {
+      "mode": "graceful",
+      "gracefulStdinClose": true
+    }
+  },
+  "normal": {
+    "ok": true,
+    "reply": "OKOKOK",
+    "turnEnd": {
+      "type": "turn.completed",
+      "resultType": "success",
+      "usageSource": "provider"
+    },
+    "seq": {
+      "count": 18,
+      "continuous": true
+    },
+    "eventTypes": [
+      "session.updated",
+      "session.titleUpdated",
+      "turn.started",
+      "model.streaming",
+      "turn.completed"
+    ],
+    "terminate": {
+      "mode": "graceful",
+      "gracefulStdinClose": true
+    }
+  },
+  "permission-allow": {
+    "ok": true,
+    "permissionAsked": true,
+    "permissionRequestShape": {
+      "keys": [
+        "input",
+        "reason",
+        "requestId",
+        "riskLevel",
+        "sessionId",
+        "options",
+        "toolCallId",
+        "toolName",
+        "turnId"
+      ],
+      "toolName": "Bash",
+      "options": [
+        {
+          "optionId": "allow_once",
+          "kind": "allow_once",
+          "name": "Allow once"
+        },
+        {
+          "optionId": "allow_project",
+          "kind": "allow_always",
+          "name": "Always allow in this project"
+        },
+        {
+          "optionId": "deny",
+          "kind": "deny",
+          "name": "Deny"
+        }
+      ]
+    },
+    "decisionSent": "allow",
+    "toolKinds": [
+      "scheduled",
+      "batch",
+      "scheduled",
+      "batch"
+    ],
+    "toolNames": [
+      "Write",
+      null,
+      "Bash"
+    ],
+    "turnEnd": {
+      "type": "turn.completed",
+      "resultType": "success"
+    },
+    "fileCreated": false,
+    "inboundLog": [
+      {
+        "method": "interaction/requestProviderRuntimeHeaders",
+        "reason": "model-request"
+      },
+      {
+        "method": "interaction/requestPermission",
+        "toolName": "Write",
+        "requestId": "perm_91bb3ea4-a9cf-4dbf-97f7-e01b0c32b743",
+        "options": [
+          {
+            "optionId": "allow_once",
+            "kind": "allow_once",
+            "name": "Allow once"
+          },
+          {
+            "optionId": "allow_project",
+            "kind": "allow_always",
+            "name": "Always allow in this project"
+          },
+          {
+            "optionId": "deny",
+            "kind": "deny",
+            "name": "Deny"
+          }
+        ]
+      },
+      {
+        "method": "interaction/requestProviderRuntimeHeaders",
+        "reason": "model-request"
+      },
+      {
+        "method": "interaction/requestPermission",
+        "toolName": "Bash",
+        "requestId": "perm_ebd2762c-2bf7-4521-b83c-8b21f3eaf05d",
+        "options": [
+          {
+            "optionId": "allow_once",
+            "kind": "allow_once",
+            "name": "Allow once"
+          },
+          {
+            "optionId": "allow_project",
+            "kind": "allow_always",
+            "name": "Always allow in this project"
+          },
+          {
+            "optionId": "deny",
+            "kind": "deny",
+            "name": "Deny"
+          }
+        ]
+      },
+      {
+        "method": "interaction/requestProviderRuntimeHeaders",
+        "reason": "model-request"
+      },
+      {
+        "method": "interaction/requestProviderRuntimeHeaders",
+        "reason": "model-request"
+      }
+    ],
+    "fullPermissionRequest": {
+      "input": {
+        "command": "printf 'hello' > probe-permission-test.txt && ls -l probe-permission-test.txt",
+        "description": "Create probe-permission-test.txt in test workspace"
+      },
+      "reason": "High risk tools require explicit approval",
+      "requestId": "perm_ebd2762c-2bf7-4521-b83c-8b21f3eaf05d",
+      "riskLevel": "high",
+      "sessionId": "sess_d939f858-5c34-4af6-82f5-610e0a6a36fb",
+      "options": [
+        {
+          "kind": "allow_once",
+          "name": "Allow once",
+          "optionId": "allow_once",
+          "response": {
+            "decision": "allow",
+            "reason": "Approved once"
+          }
+        },
+        {
+          "description": "Do not ask again for matching requests in this project",
+          "kind": "allow_always",
+          "name": "Always allow in this project",
+          "optionId": "allow_project",
+          "response": {
+            "decision": "allow",
+            "permissionUpdates": [
+              {
+                "behavior": "allow",
+                "rules": [
+                  {
+                    "ruleContent": "printf 'hello' > probe-permission-test.txt && ls -l probe-permission-test.txt",
+                    "toolName": "Bash"
+                  }
+                ],
+                "type": "addRules"
+              }
+            ],
+            "reason": "Approved for this project"
+          }
+        },
+        {
+          "kind": "deny",
+          "name": "Deny",
+          "optionId": "deny",
+          "response": {
+            "decision": "deny",
+            "reason": "The user doesn't want to proceed with this tool use. The tool use was rejected (eg. if it was a file edit, the new_string was NOT written to the file). STOP what you are doing and wait for the user to tell you how to proceed."
+          }
+        }
+      ],
+      "toolCallId": "call_62c42e1a1ed04cbfb59fd87c",
+      "toolName": "Bash",
+      "turnId": "turn_6c29bf2f-5873-43e8-b124-193db1a8a063"
+    },
+    "terminate": {
+      "mode": "graceful",
+      "gracefulStdinClose": true
+    }
+  },
+  "permission-deny": {
+    "ok": true,
+    "permissionAsked": true,
+    "permissionRequestShape": {
+      "keys": [
+        "input",
+        "reason",
+        "requestId",
+        "riskLevel",
+        "sessionId",
+        "options",
+        "toolCallId",
+        "toolName",
+        "turnId"
+      ],
+      "toolName": "Write",
+      "options": [
+        {
+          "optionId": "allow_once",
+          "kind": "allow_once",
+          "name": "Allow once"
+        },
+        {
+          "optionId": "allow_project",
+          "kind": "allow_always",
+          "name": "Always allow in this project"
+        },
+        {
+          "optionId": "deny",
+          "kind": "deny",
+          "name": "Deny"
+        }
+      ]
+    },
+    "decisionSent": "deny",
+    "toolKinds": [
+      "scheduled",
+      "batch"
+    ],
+    "toolNames": [
+      "Write",
+      null
+    ],
+    "turnEnd": {
+      "type": "turn.completed",
+      "resultType": "success"
+    },
+    "fileCreated": false,
+    "inboundLog": [
+      {
+        "method": "interaction/requestProviderRuntimeHeaders",
+        "reason": "model-request"
+      },
+      {
+        "method": "interaction/requestPermission",
+        "toolName": "Write",
+        "requestId": "perm_bdb89c44-da8d-4a19-8957-7be36c060761",
+        "options": [
+          {
+            "optionId": "allow_once",
+            "kind": "allow_once",
+            "name": "Allow once"
+          },
+          {
+            "optionId": "allow_project",
+            "kind": "allow_always",
+            "name": "Always allow in this project"
+          },
+          {
+            "optionId": "deny",
+            "kind": "deny",
+            "name": "Deny"
+          }
+        ]
+      },
+      {
+        "method": "interaction/requestProviderRuntimeHeaders",
+        "reason": "model-request"
+      },
+      {
+        "method": "interaction/requestProviderRuntimeHeaders",
+        "reason": "model-request"
+      }
+    ],
+    "terminate": {
+      "mode": "graceful",
+      "gracefulStdinClose": true
+    }
+  },
+  "cancel": {
+    "startedBeforeCancel": true,
+    "cancelAfterMs": 6531,
+    "stopResponse": "{}",
+    "turnEndAfterCancel": {
+      "type": "turn.completed",
+      "resultType": "cancelled",
+      "errorMessage": ""
+    },
+    "postCancelEventCount": 11,
+    "postCancelEventTypes": [
+      "session.updated",
+      "turn.started",
+      "session.updated",
+      "session.updated",
+      "session.updated",
+      "turn.completed"
+    ],
+    "terminate": {
+      "mode": "graceful",
+      "gracefulStdinClose": true
+    }
+  },
+  "crash": {
+    "turnStartedBeforeKill": true,
+    "killedAtMs": 2153,
+    "resumeCall": {
+      "ok": true
+    },
+    "snapshotProjection": {
+      "status": "idle",
+      "turnCount": 0
+    },
+    "continueAfterCrash": {
+      "ok": true,
+      "resultType": "success",
+      "reply": "11\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n"
+    },
+    "ok": true,
+    "terminate": {
+      "mode": "graceful",
+      "gracefulStdinClose": true
+    }
+  },
+  "resume-graceful": {
+    "firstTurn": {
+      "ok": true,
+      "reply": "OKOKOK"
+    },
+    "exitMode": "graceful",
+    "reconnectSubscribe": {
+      "eventSeq": 5,
+      "snapshotMessages": 10
+    },
+    "historyCompare": {
+      "beforeCount": 10,
+      "afterCount": 10,
+      "sameCount": true,
+      "preserved": true
+    },
+    "continueTurn": {
+      "ok": true,
+      "reply": "474747",
+      "rememberedCorrect": true
+    },
+    "ok": true,
+    "terminate": {
+      "mode": "graceful",
+      "gracefulStdinClose": true
+    }
+  },
+  "resume-force": {
+    "firstTurn": {
+      "ok": true,
+      "reply": "OKOK\n\n（已记住：47。后续需要时OK\n\n（已记住：47。后续需要时请随时提"
+    },
+    "exitMode": "force",
+    "reconnectSubscribe": {
+      "eventSeq": 5,
+      "snapshotMessages": 10
+    },
+    "historyCompare": {
+      "beforeCount": 10,
+      "afterCount": 10,
+      "sameCount": true,
+      "preserved": true
+    },
+    "continueTurn": {
+      "ok": true,
+      "reply": "474747",
+      "rememberedCorrect": true
+    },
+    "ok": true,
     "terminate": {
       "mode": "graceful",
       "gracefulStdinClose": true
