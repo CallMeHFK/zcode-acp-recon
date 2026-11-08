@@ -9,7 +9,7 @@ and this project adheres to [Conventional Commits](https://www.conventionalcommi
 
 ### Added
 
-- Phase 1 upstream audit and fork baseline (): repository audit across three candidate repos (william0wang confirmed as the single active upstream; BrokkAi/haowei2000 are frozen forks), baseline locked at  (v0.82.3), Windows test baseline 2333/2440 with failure-class taxonomy, and the Windows adaptation architecture note (module boundaries, maintenance strategy).
+- Phase 1 upstream audit and fork baseline (reports/phase1/): repository audit across three candidate repos (william0wang confirmed as the single active upstream; BrokkAi/haowei2000 are frozen forks), baseline locked at commit ccc5104 (v0.82.3), Windows test baseline 2333/2440 with failure-class taxonomy, and the Windows adaptation architecture note (module boundaries, maintenance strategy).
 
 ## [0.1.0] - 2026-11-08
 
