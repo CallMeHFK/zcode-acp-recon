@@ -49,5 +49,5 @@
 | S1 | Gate Matrix 报告：G1–G11 四态 + 每条证据引用 + Go/No-Go 建议 | reports/gate-matrix.md + .json | ✅ |
 | S2 | 若 No-Go：停止，仅交付证据；若 Go：Phase 1 待用户另行批准 | — | ✅ |
 
-## Phase 1（**本次不执行**，仅备忘）
+## Phase 1（2026-11-09 已执行，产出见 reports/phase1/）
 1A 三仓库静态审计（william0wang 主基线候选 / BrokkAi 第二参考 / haowei2000 下游）→ 1B 锁定审计 Commit SHA（npm 版本/锁文件/engines）→ 1C Fork + 测试基线 → 1D Windows 改造边界设计（platform/windows/* + runtime/* 隔离）。
