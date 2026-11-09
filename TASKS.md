@@ -50,4 +50,6 @@
 | S2 | 若 No-Go：停止，仅交付证据；若 Go：Phase 1 待用户另行批准 | — | ✅ |
 
 ## Phase 1（2026-11-09 已执行，产出见 reports/phase1/）
+
+> **Phase 2 亦已执行**（用户批准继续）：Windows MVP 达成——分支 phase2-windows @ e24e95e，四组修复 + ACP e2e 真实推理成功，见 [reports/phase2/windows-mvp.md](reports/phase2/windows-mvp.md)。
 1A 三仓库静态审计（william0wang 主基线候选 / BrokkAi 第二参考 / haowei2000 下游）→ 1B 锁定审计 Commit SHA（npm 版本/锁文件/engines）→ 1C Fork + 测试基线 → 1D Windows 改造边界设计（platform/windows/* + runtime/* 隔离）。

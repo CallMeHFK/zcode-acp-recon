@@ -1,0 +1,21 @@
+{
+  "initialize": {
+    "protocolVersion": 1,
+    "authMethods": [
+      "ZCode built-in credentials"
+    ],
+    "hasAgentCapabilities": true
+  },
+  "sessionNew": {
+    "sessionId": "6061d806-abf…"
+  },
+  "prompt": {
+    "stopReason": "end_turn",
+    "replyText": "OK",
+    "streamedChunkEvents": 1,
+    "durationMs": 33843
+  },
+  "ok": true,
+  "stderrTail": "stOfficialMcpAuthHeaders (id=server-6)\n[zcode-acp]   ⚠ unhandled server→client request: interaction/requestOfficialMcpAuthHeaders (id=server-7)\n[zcode-acp]   ⚠ unhandled server→client request: interaction/requestOfficialMcpAuthHeaders (id=server-8)\n[zcode-acp] backend: reader exited (stdout closed)\n",
+  "nonJsonStdout": 0
+}

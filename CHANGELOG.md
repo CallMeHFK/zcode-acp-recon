@@ -5,6 +5,13 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/).
 
+## [0.3.0] - 2026-11-09
+
+### Added
+
+- Phase 2 Windows MVP validation (reports/phase2/windows-mvp.md): four fix groups on the fork baseline (CLI/node discovery, process-tree reap + windowsHide, graceful file-URI fallback, start-plan entitlement + JWT request auth), verified with a scripted ACP client end-to-end — real inference through the plan gateway, stopReason end_turn, reply "OK".
+- ACP e2e probe (probe/acp-e2e.mjs) speaking the Agent Client Protocol directly to the adapter over stdio.
+
 ## [0.2.0] - 2026-11-09
 
 ### Added
