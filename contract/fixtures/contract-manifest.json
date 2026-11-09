@@ -1,0 +1,352 @@
+{
+  "schema": 1,
+  "sourceRepo": "CallMeHFK/zcode-acp-recon",
+  "source": "Phase 0 sanitized golden traces (traces/*.sanitized.json)",
+  "note": "Invariants only; full replay scripts stay in the recon repo.",
+  "fixtures": [
+    {
+      "scenario": "normal",
+      "trace": "traces/normal.sanitized.json",
+      "traceSha256": "e5f714daac4fd35a50cb77e5778a26825aed15a6417c0b953a240afc037e2d72",
+      "zcodeVersion": "0.17.1",
+      "records": 282,
+      "expectedTerminal": "success",
+      "syntheticTerminal": false,
+      "syntheticFrameCount": 0,
+      "seqCount": 18,
+      "seqContiguous": true,
+      "terminalEventType": "turn.completed",
+      "terminalResultType": "success",
+      "stopMustBeRequest": true,
+      "stdoutMustBeJsonLines": true,
+      "hostAsks": [
+        {
+          "method": "session/requestRuntimePreferences",
+          "answered": true,
+          "answer": {
+            "nativeSearchEnhancementsEnabled": false,
+            "toolSearchMode": "off",
+            "memoryEnabled": false,
+            "askUserQuestionAutoResolutionEnabled": true,
+            "modelContextBudgetStrategy": "preflight-v1"
+          }
+        },
+        {
+          "method": "interaction/requestOfficialMcpAuthHeaders",
+          "answered": true,
+          "answer": {}
+        },
+        {
+          "method": "interaction/requestProviderRuntimeHeaders",
+          "answered": true,
+          "answer": {
+            "headersApplied": true,
+            "requestAuth": "<redacted>"
+          }
+        }
+      ]
+    },
+    {
+      "scenario": "permission-allow",
+      "trace": "traces/permission-allow.sanitized.json",
+      "traceSha256": "74ac7e243a0077b3ef090965f33ea5c09df2e60906af87f1f4bef4883adb31a3",
+      "zcodeVersion": "0.17.1",
+      "records": 991,
+      "expectedTerminal": "success",
+      "syntheticTerminal": false,
+      "syntheticFrameCount": 0,
+      "seqCount": 92,
+      "seqContiguous": true,
+      "terminalEventType": "turn.completed",
+      "terminalResultType": "success",
+      "stopMustBeRequest": true,
+      "stdoutMustBeJsonLines": true,
+      "hostAsks": [
+        {
+          "method": "session/requestRuntimePreferences",
+          "answered": true,
+          "answer": {
+            "nativeSearchEnhancementsEnabled": false,
+            "toolSearchMode": "off",
+            "memoryEnabled": false,
+            "askUserQuestionAutoResolutionEnabled": true,
+            "modelContextBudgetStrategy": "preflight-v1"
+          }
+        },
+        {
+          "method": "interaction/requestOfficialMcpAuthHeaders",
+          "answered": true,
+          "answer": {}
+        },
+        {
+          "method": "interaction/requestProviderRuntimeHeaders",
+          "answered": true,
+          "answer": {
+            "headersApplied": true,
+            "requestAuth": "<redacted>"
+          }
+        },
+        {
+          "method": "interaction/requestPermission",
+          "answered": true,
+          "answer": {
+            "optionId": "allow_once"
+          },
+          "options": [
+            "allow_once",
+            "allow_always",
+            "deny"
+          ]
+        }
+      ]
+    },
+    {
+      "scenario": "permission-deny",
+      "trace": "traces/permission-deny.sanitized.json",
+      "traceSha256": "c16cc3cd82d0b1f870d8cd3997c4e76b2d88a3fb2e5111252feb0b398d4038bc",
+      "zcodeVersion": "0.17.1",
+      "records": 553,
+      "expectedTerminal": "success",
+      "syntheticTerminal": false,
+      "syntheticFrameCount": 0,
+      "seqCount": 56,
+      "seqContiguous": true,
+      "terminalEventType": "turn.completed",
+      "terminalResultType": "success",
+      "stopMustBeRequest": true,
+      "stdoutMustBeJsonLines": true,
+      "hostAsks": [
+        {
+          "method": "session/requestRuntimePreferences",
+          "answered": true,
+          "answer": {
+            "nativeSearchEnhancementsEnabled": false,
+            "toolSearchMode": "off",
+            "memoryEnabled": false,
+            "askUserQuestionAutoResolutionEnabled": true,
+            "modelContextBudgetStrategy": "preflight-v1"
+          }
+        },
+        {
+          "method": "interaction/requestOfficialMcpAuthHeaders",
+          "answered": true,
+          "answer": {}
+        },
+        {
+          "method": "interaction/requestProviderRuntimeHeaders",
+          "answered": true,
+          "answer": {
+            "headersApplied": true,
+            "requestAuth": "<redacted>"
+          }
+        },
+        {
+          "method": "interaction/requestPermission",
+          "answered": true,
+          "answer": {
+            "optionId": "deny"
+          },
+          "options": [
+            "allow_once",
+            "allow_always",
+            "deny"
+          ]
+        }
+      ]
+    },
+    {
+      "scenario": "cancel",
+      "trace": "traces/cancel.sanitized.json",
+      "traceSha256": "6232a2f82261c754163ec8a3b0b9116d86aeb7202ddb3d096949caa32ea08795",
+      "zcodeVersion": "0.17.1",
+      "records": 314,
+      "expectedTerminal": "cancelled",
+      "syntheticTerminal": false,
+      "syntheticFrameCount": 0,
+      "seqCount": 11,
+      "seqContiguous": true,
+      "terminalEventType": "turn.completed",
+      "terminalResultType": "cancelled",
+      "stopMustBeRequest": true,
+      "stdoutMustBeJsonLines": true,
+      "hostAsks": [
+        {
+          "method": "session/requestRuntimePreferences",
+          "answered": true,
+          "answer": {
+            "nativeSearchEnhancementsEnabled": false,
+            "toolSearchMode": "off",
+            "memoryEnabled": false,
+            "askUserQuestionAutoResolutionEnabled": true,
+            "modelContextBudgetStrategy": "preflight-v1"
+          }
+        },
+        {
+          "method": "interaction/requestOfficialMcpAuthHeaders",
+          "answered": true,
+          "answer": {}
+        },
+        {
+          "method": "interaction/requestProviderRuntimeHeaders",
+          "answered": true,
+          "answer": {
+            "headersApplied": true,
+            "requestAuth": "<redacted>"
+          }
+        }
+      ]
+    },
+    {
+      "scenario": "crash",
+      "trace": "traces/crash.sanitized.json",
+      "traceSha256": "9a7921753765ce3be2cd6607ea3d15d756aaaedb140740f07885fe2ffd448d5a",
+      "zcodeVersion": "0.17.1",
+      "records": 114,
+      "expectedTerminal": "none",
+      "syntheticTerminal": true,
+      "syntheticFrameCount": 1,
+      "seqCount": 10,
+      "seqContiguous": true,
+      "terminalEventType": "session.updated",
+      "terminalResultType": null,
+      "stopMustBeRequest": true,
+      "stdoutMustBeJsonLines": true,
+      "hostAsks": [
+        {
+          "method": "session/requestRuntimePreferences",
+          "answered": true,
+          "answer": {
+            "nativeSearchEnhancementsEnabled": false,
+            "toolSearchMode": "off",
+            "memoryEnabled": false,
+            "askUserQuestionAutoResolutionEnabled": true,
+            "modelContextBudgetStrategy": "preflight-v1"
+          }
+        },
+        {
+          "method": "interaction/requestOfficialMcpAuthHeaders",
+          "answered": true,
+          "answer": {}
+        }
+      ]
+    },
+    {
+      "scenario": "resume-graceful",
+      "trace": "traces/resume-graceful.sanitized.json",
+      "traceSha256": "c25af8e760014e93e4049795c787f2cd5a37d240ffbc76b01ba31f0cc3f722ad",
+      "zcodeVersion": "0.17.1",
+      "records": 324,
+      "expectedTerminal": "success",
+      "syntheticTerminal": false,
+      "syntheticFrameCount": 0,
+      "seqCount": 18,
+      "seqContiguous": true,
+      "terminalEventType": "turn.completed",
+      "terminalResultType": "success",
+      "stopMustBeRequest": true,
+      "stdoutMustBeJsonLines": true,
+      "hostAsks": [
+        {
+          "method": "session/requestRuntimePreferences",
+          "answered": true,
+          "answer": {
+            "nativeSearchEnhancementsEnabled": false,
+            "toolSearchMode": "off",
+            "memoryEnabled": false,
+            "askUserQuestionAutoResolutionEnabled": true,
+            "modelContextBudgetStrategy": "preflight-v1"
+          }
+        },
+        {
+          "method": "interaction/requestOfficialMcpAuthHeaders",
+          "answered": true,
+          "answer": {}
+        },
+        {
+          "method": "interaction/requestProviderRuntimeHeaders",
+          "answered": true,
+          "answer": {
+            "headersApplied": true,
+            "requestAuth": "<redacted>"
+          }
+        }
+      ]
+    },
+    {
+      "scenario": "resume-force",
+      "trace": "traces/resume-force.sanitized.json",
+      "traceSha256": "c7a48f50ce248e24a71dd48d4d803711f66f439f857e5e4754d60ff1011ce044",
+      "zcodeVersion": "0.17.1",
+      "records": 195,
+      "expectedTerminal": "success",
+      "syntheticTerminal": false,
+      "syntheticFrameCount": 0,
+      "seqCount": 20,
+      "seqContiguous": true,
+      "terminalEventType": "turn.completed",
+      "terminalResultType": "success",
+      "stopMustBeRequest": true,
+      "stdoutMustBeJsonLines": true,
+      "hostAsks": [
+        {
+          "method": "session/requestRuntimePreferences",
+          "answered": true,
+          "answer": {
+            "nativeSearchEnhancementsEnabled": false,
+            "toolSearchMode": "off",
+            "memoryEnabled": false,
+            "askUserQuestionAutoResolutionEnabled": true,
+            "modelContextBudgetStrategy": "preflight-v1"
+          }
+        },
+        {
+          "method": "interaction/requestOfficialMcpAuthHeaders",
+          "answered": true,
+          "answer": {}
+        },
+        {
+          "method": "interaction/requestProviderRuntimeHeaders",
+          "answered": true,
+          "answer": {
+            "headersApplied": true,
+            "requestAuth": "<redacted>"
+          }
+        }
+      ]
+    },
+    {
+      "scenario": "disconnect",
+      "trace": "traces/disconnect-probe.sanitized.json",
+      "traceSha256": "0d769dc1d19601e4dc05759aa568d6a67668f728a1906208930883ecae44ed10",
+      "zcodeVersion": "0.17.1",
+      "records": 109,
+      "expectedTerminal": "none",
+      "syntheticTerminal": true,
+      "syntheticFrameCount": 1,
+      "seqCount": 8,
+      "seqContiguous": true,
+      "terminalEventType": "session.updated",
+      "terminalResultType": null,
+      "stopMustBeRequest": true,
+      "stdoutMustBeJsonLines": true,
+      "hostAsks": [
+        {
+          "method": "session/requestRuntimePreferences",
+          "answered": true,
+          "answer": {
+            "nativeSearchEnhancementsEnabled": false,
+            "toolSearchMode": "off",
+            "memoryEnabled": false,
+            "askUserQuestionAutoResolutionEnabled": true,
+            "modelContextBudgetStrategy": "preflight-v1"
+          }
+        },
+        {
+          "method": "interaction/requestOfficialMcpAuthHeaders",
+          "answered": true,
+          "answer": {}
+        }
+      ]
+    }
+  ]
+}

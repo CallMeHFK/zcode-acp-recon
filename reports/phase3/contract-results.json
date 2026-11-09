@@ -1,0 +1,387 @@
+{
+  "phase": 3,
+  "generatedAt": "2026-11-09T16:57:24.771Z",
+  "ok": true,
+  "environment": {
+    "node": "v22.22.2",
+    "platform": "win32",
+    "arch": "x64",
+    "adapterDist": "C:\\Users\\Rt\\.zcode\\workspace\\zcode-acp\\dist\\index.js",
+    "fakeBackend": "C:\\Users\\Rt\\.zcode\\workspace\\draft-26e30bc0-b470-4d11-afa5-0072a7c3058e\\zcode-acp-recon\\contract\\fake-app-server.mjs",
+    "networkDependency": false,
+    "liveAccountDependency": false
+  },
+  "commits": {
+    "recon": "3b4dfb2",
+    "fork": "e24e95e"
+  },
+  "layers": {
+    "L0": {
+      "file": "contract/build-fixtures.mjs --check",
+      "exitCode": 0
+    },
+    "L1": {
+      "file": "contract/trace-contract.test.mjs",
+      "tests": 36,
+      "pass": 36,
+      "fail": 0,
+      "durationMs": 940.4053,
+      "exitCode": 0
+    },
+    "L2": {
+      "file": "contract/adapter-contract.test.mjs",
+      "tests": 14,
+      "pass": 14,
+      "fail": 0,
+      "durationMs": 60596.2511,
+      "exitCode": 0
+    }
+  },
+  "scenarios": {
+    "normal": {
+      "sessionUpdateKinds": [
+        "available_commands_update",
+        "session_info_update",
+        "config_option_update",
+        "agent_message_chunk",
+        "plan"
+      ],
+      "agentMessageChunks": 1,
+      "harnessClosed": false,
+      "stopReason": "end_turn",
+      "nonJsonStdoutLines": 0,
+      "hostAnswers": [
+        {
+          "id": "server-1",
+          "method": "session/requestRuntimePreferences"
+        },
+        {
+          "id": "server-2",
+          "method": "interaction/requestOfficialMcpAuthHeaders"
+        },
+        {
+          "id": "server-9",
+          "method": "interaction/requestProviderRuntimeHeaders"
+        }
+      ],
+      "syntheticTerminal": false,
+      "scriptComplete": true,
+      "matchedSteps": 3,
+      "expectedSteps": 3,
+      "defaultedMethods": [
+        "workspace/updateDynamicWorkflowPolicy",
+        "session/messages"
+      ]
+    },
+    "permission-allow": {
+      "sessionUpdateKinds": [
+        "available_commands_update",
+        "session_info_update",
+        "tool_call",
+        "config_option_update",
+        "agent_thought_chunk",
+        "tool_call_update",
+        "agent_message_chunk",
+        "plan"
+      ],
+      "agentMessageChunks": 27,
+      "harnessClosed": false,
+      "stopReason": "end_turn",
+      "nonJsonStdoutLines": 0,
+      "hostAnswers": [
+        {
+          "id": "server-1",
+          "method": "session/requestRuntimePreferences"
+        },
+        {
+          "id": "server-2",
+          "method": "interaction/requestOfficialMcpAuthHeaders"
+        },
+        {
+          "id": "server-9",
+          "method": "interaction/requestProviderRuntimeHeaders"
+        },
+        {
+          "id": "server-10",
+          "method": "interaction/requestPermission"
+        }
+      ],
+      "syntheticTerminal": false,
+      "scriptComplete": true,
+      "matchedSteps": 3,
+      "expectedSteps": 3,
+      "defaultedMethods": [
+        "workspace/updateDynamicWorkflowPolicy",
+        "session/messages",
+        "session/read"
+      ]
+    },
+    "permission-deny": {
+      "sessionUpdateKinds": [
+        "available_commands_update",
+        "session_info_update",
+        "tool_call",
+        "config_option_update",
+        "agent_thought_chunk",
+        "tool_call_update",
+        "agent_message_chunk",
+        "plan"
+      ],
+      "agentMessageChunks": 9,
+      "harnessClosed": false,
+      "stopReason": "end_turn",
+      "nonJsonStdoutLines": 0,
+      "hostAnswers": [
+        {
+          "id": "server-1",
+          "method": "session/requestRuntimePreferences"
+        },
+        {
+          "id": "server-2",
+          "method": "interaction/requestOfficialMcpAuthHeaders"
+        },
+        {
+          "id": "server-9",
+          "method": "interaction/requestProviderRuntimeHeaders"
+        },
+        {
+          "id": "server-10",
+          "method": "interaction/requestPermission"
+        }
+      ],
+      "syntheticTerminal": false,
+      "scriptComplete": true,
+      "matchedSteps": 3,
+      "expectedSteps": 3,
+      "defaultedMethods": [
+        "workspace/updateDynamicWorkflowPolicy",
+        "session/messages",
+        "session/read"
+      ]
+    },
+    "cancel": {
+      "sessionUpdateKinds": [
+        "available_commands_update",
+        "session_info_update",
+        "config_option_update",
+        "agent_thought_chunk",
+        "agent_message_chunk"
+      ],
+      "agentMessageChunks": 1,
+      "harnessClosed": false,
+      "stopReason": "cancelled",
+      "nonJsonStdoutLines": 0,
+      "hostAnswers": [
+        {
+          "id": "server-1",
+          "method": "session/requestRuntimePreferences"
+        },
+        {
+          "id": "server-2",
+          "method": "interaction/requestOfficialMcpAuthHeaders"
+        },
+        {
+          "id": "server-9",
+          "method": "interaction/requestProviderRuntimeHeaders"
+        }
+      ],
+      "syntheticTerminal": false,
+      "scriptComplete": true,
+      "matchedSteps": 3,
+      "expectedSteps": 3,
+      "defaultedMethods": [
+        "workspace/updateDynamicWorkflowPolicy",
+        "session/messages",
+        "session/read"
+      ]
+    },
+    "crash": {
+      "sessionUpdateKinds": [
+        "available_commands_update",
+        "session_info_update",
+        "config_option_update",
+        "agent_message_chunk",
+        "plan"
+      ],
+      "agentMessageChunks": 1,
+      "harnessClosed": true,
+      "stopReason": null,
+      "nonJsonStdoutLines": 0,
+      "hostAnswers": [
+        {
+          "id": "server-1",
+          "method": "session/requestRuntimePreferences"
+        },
+        {
+          "id": "server-2",
+          "method": "interaction/requestOfficialMcpAuthHeaders"
+        }
+      ],
+      "syntheticTerminal": true,
+      "scriptComplete": true,
+      "matchedSteps": 3,
+      "expectedSteps": 3,
+      "defaultedMethods": [
+        "workspace/updateDynamicWorkflowPolicy",
+        "session/messages"
+      ]
+    },
+    "resume-graceful": {
+      "sessionUpdateKinds": [
+        "available_commands_update",
+        "session_info_update",
+        "config_option_update",
+        "agent_message_chunk",
+        "plan"
+      ],
+      "agentMessageChunks": 1,
+      "harnessClosed": false,
+      "stopReason": "end_turn",
+      "nonJsonStdoutLines": 0,
+      "hostAnswers": [
+        {
+          "id": "server-1",
+          "method": "session/requestRuntimePreferences"
+        },
+        {
+          "id": "server-2",
+          "method": "interaction/requestOfficialMcpAuthHeaders"
+        },
+        {
+          "id": "server-9",
+          "method": "interaction/requestProviderRuntimeHeaders"
+        }
+      ],
+      "syntheticTerminal": false,
+      "scriptComplete": true,
+      "matchedSteps": 3,
+      "expectedSteps": 3,
+      "defaultedMethods": [
+        "workspace/updateDynamicWorkflowPolicy"
+      ]
+    },
+    "resume-force": {
+      "sessionUpdateKinds": [
+        "available_commands_update",
+        "session_info_update",
+        "config_option_update",
+        "agent_message_chunk",
+        "plan"
+      ],
+      "agentMessageChunks": 3,
+      "harnessClosed": false,
+      "stopReason": "end_turn",
+      "nonJsonStdoutLines": 0,
+      "hostAnswers": [
+        {
+          "id": "server-1",
+          "method": "session/requestRuntimePreferences"
+        },
+        {
+          "id": "server-2",
+          "method": "interaction/requestOfficialMcpAuthHeaders"
+        },
+        {
+          "id": "server-9",
+          "method": "interaction/requestProviderRuntimeHeaders"
+        }
+      ],
+      "syntheticTerminal": false,
+      "scriptComplete": true,
+      "matchedSteps": 3,
+      "expectedSteps": 3,
+      "defaultedMethods": [
+        "workspace/updateDynamicWorkflowPolicy"
+      ]
+    },
+    "disconnect": {
+      "sessionUpdateKinds": [
+        "available_commands_update",
+        "session_info_update",
+        "config_option_update",
+        "agent_message_chunk",
+        "plan"
+      ],
+      "agentMessageChunks": 1,
+      "harnessClosed": true,
+      "stopReason": null,
+      "nonJsonStdoutLines": 0,
+      "hostAnswers": [
+        {
+          "id": "server-1",
+          "method": "session/requestRuntimePreferences"
+        },
+        {
+          "id": "server-2",
+          "method": "interaction/requestOfficialMcpAuthHeaders"
+        }
+      ],
+      "syntheticTerminal": true,
+      "scriptComplete": true,
+      "matchedSteps": 3,
+      "expectedSteps": 3,
+      "defaultedMethods": [
+        "workspace/updateDynamicWorkflowPolicy",
+        "session/messages"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "scenario": "normal",
+      "trace": "traces/normal.sanitized.json",
+      "records": 282,
+      "sha256": "e5f714daac4fd35a50cb77e5778a26825aed15a6417c0b953a240afc037e2d72",
+      "syntheticFrameCount": 0
+    },
+    {
+      "scenario": "permission-allow",
+      "trace": "traces/permission-allow.sanitized.json",
+      "records": 991,
+      "sha256": "74ac7e243a0077b3ef090965f33ea5c09df2e60906af87f1f4bef4883adb31a3",
+      "syntheticFrameCount": 0
+    },
+    {
+      "scenario": "permission-deny",
+      "trace": "traces/permission-deny.sanitized.json",
+      "records": 553,
+      "sha256": "c16cc3cd82d0b1f870d8cd3997c4e76b2d88a3fb2e5111252feb0b398d4038bc",
+      "syntheticFrameCount": 0
+    },
+    {
+      "scenario": "cancel",
+      "trace": "traces/cancel.sanitized.json",
+      "records": 314,
+      "sha256": "6232a2f82261c754163ec8a3b0b9116d86aeb7202ddb3d096949caa32ea08795",
+      "syntheticFrameCount": 0
+    },
+    {
+      "scenario": "crash",
+      "trace": "traces/crash.sanitized.json",
+      "records": 114,
+      "sha256": "9a7921753765ce3be2cd6607ea3d15d756aaaedb140740f07885fe2ffd448d5a",
+      "syntheticFrameCount": 1
+    },
+    {
+      "scenario": "resume-graceful",
+      "trace": "traces/resume-graceful.sanitized.json",
+      "records": 324,
+      "sha256": "c25af8e760014e93e4049795c787f2cd5a37d240ffbc76b01ba31f0cc3f722ad",
+      "syntheticFrameCount": 0
+    },
+    {
+      "scenario": "resume-force",
+      "trace": "traces/resume-force.sanitized.json",
+      "records": 195,
+      "sha256": "c7a48f50ce248e24a71dd48d4d803711f66f439f857e5e4754d60ff1011ce044",
+      "syntheticFrameCount": 0
+    },
+    {
+      "scenario": "disconnect",
+      "trace": "traces/disconnect-probe.sanitized.json",
+      "records": 109,
+      "sha256": "0d769dc1d19601e4dc05759aa568d6a67668f728a1906208930883ecae44ed10",
+      "syntheticFrameCount": 1
+    }
+  ]
+}

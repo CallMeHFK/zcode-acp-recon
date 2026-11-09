@@ -5,6 +5,19 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/).
 
+## [0.4.0] - 2026-11-10
+
+### Added
+
+- Phase 3 protocol contract suite (`contract/`): golden-trace fixtures with SHA-256 evidence chain for all eight Phase 0 scenarios, a hermetic fake app-server injected via `ZCODE_BIN`, a minimal ACP client, and two test layers — L1 trace/evidence invariants (24 tests) and L2 real-adapter process contract (14 tests). Fully offline: no network, no account plan, no live credentials, no ZCode CLI binary.
+- One-shot contract gate (`contract/run.mjs`) producing `reports/phase3/contract-results.json`; compact invariant manifest export for the fork's vitest suite.
+- Phase 3 acceptance report (`reports/phase3/contract-tests.md`) and suite documentation (`contract/README.md`) including seven explicit design trade-offs.
+
+### Fixed
+
+- The contract suite reproduced and drove the fix for `interaction/requestOfficialMcpAuthHeaders`: the fork answered `-32601 bridge unsupported` while all eight golden traces record the desktop host replying `{}`. The bridge now auto-replies at frame arrival; a fork vitest unit test guards the behaviour.
+- Review round: the first replay engine let a 1.2s optional step stall the sequential driver, so scripted requests were answered out of order by the generic path and `step.reply` was dead code. All `on:` steps now pre-register waiters at startup; L2 asserts replay fidelity. Assertions were moved onto the raw traces (seq/terminal/host-ask re-pairing), synthetic terminals are non-success and no longer asserted as product outcomes, and fixture derivation is verified byte-for-byte via `--check`.
+
 ## [0.3.0] - 2026-11-09
 
 ### Added

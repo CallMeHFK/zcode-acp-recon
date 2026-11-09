@@ -1,0 +1,86 @@
+{
+  "schema": 1,
+  "generatedAt": "2026-11-09T16:56:21.276Z",
+  "fixtures": [
+    {
+      "scenario": "normal",
+      "file": "contract/fixtures/normal.json",
+      "sha256": "01b2b17d4de6a493e78e6ada0aed9bfc3d1c08b15be1ce9c239f7f088ba5a0aa",
+      "sourceSha256": "e5f714daac4fd35a50cb77e5778a26825aed15a6417c0b953a240afc037e2d72",
+      "records": 282,
+      "hostAsks": 3,
+      "turnEvents": 18,
+      "syntheticFrameCount": 0
+    },
+    {
+      "scenario": "permission-allow",
+      "file": "contract/fixtures/permission-allow.json",
+      "sha256": "237b3380b8f0a9cb4568ebca5ecd926b6dc22b0dc6a4c6d104052cc87f516820",
+      "sourceSha256": "74ac7e243a0077b3ef090965f33ea5c09df2e60906af87f1f4bef4883adb31a3",
+      "records": 991,
+      "hostAsks": 4,
+      "turnEvents": 92,
+      "syntheticFrameCount": 0
+    },
+    {
+      "scenario": "permission-deny",
+      "file": "contract/fixtures/permission-deny.json",
+      "sha256": "7254255c1190285529efd238a88e3371bcba3114569ba5c2c9da862d44eb3975",
+      "sourceSha256": "c16cc3cd82d0b1f870d8cd3997c4e76b2d88a3fb2e5111252feb0b398d4038bc",
+      "records": 553,
+      "hostAsks": 4,
+      "turnEvents": 56,
+      "syntheticFrameCount": 0
+    },
+    {
+      "scenario": "cancel",
+      "file": "contract/fixtures/cancel.json",
+      "sha256": "d7fb30f773f982e86900dc1d4ecb019d734d331e68f95f67317a8653e95e0572",
+      "sourceSha256": "6232a2f82261c754163ec8a3b0b9116d86aeb7202ddb3d096949caa32ea08795",
+      "records": 314,
+      "hostAsks": 3,
+      "turnEvents": 11,
+      "syntheticFrameCount": 0
+    },
+    {
+      "scenario": "crash",
+      "file": "contract/fixtures/crash.json",
+      "sha256": "90a8445ed37e24bcbfc4cc0275db433a4d4f6701e50ba6d9a2d3a156a4a87c8f",
+      "sourceSha256": "9a7921753765ce3be2cd6607ea3d15d756aaaedb140740f07885fe2ffd448d5a",
+      "records": 114,
+      "hostAsks": 2,
+      "turnEvents": 10,
+      "syntheticFrameCount": 1
+    },
+    {
+      "scenario": "resume-graceful",
+      "file": "contract/fixtures/resume-graceful.json",
+      "sha256": "177ac49e7d9e0a5e8661a95276982d0174967c6532d31093d01c90ad5c4b21b3",
+      "sourceSha256": "c25af8e760014e93e4049795c787f2cd5a37d240ffbc76b01ba31f0cc3f722ad",
+      "records": 324,
+      "hostAsks": 3,
+      "turnEvents": 18,
+      "syntheticFrameCount": 0
+    },
+    {
+      "scenario": "resume-force",
+      "file": "contract/fixtures/resume-force.json",
+      "sha256": "25a7586524b54a80ecb1624da496c240e97c740af950ce19b93a256c075dd5b6",
+      "sourceSha256": "c7a48f50ce248e24a71dd48d4d803711f66f439f857e5e4754d60ff1011ce044",
+      "records": 195,
+      "hostAsks": 3,
+      "turnEvents": 20,
+      "syntheticFrameCount": 0
+    },
+    {
+      "scenario": "disconnect",
+      "file": "contract/fixtures/disconnect.json",
+      "sha256": "9323722f167126fd8ff9e9101bd7fc6a93d235077011b2184116e93a8be49724",
+      "sourceSha256": "0d769dc1d19601e4dc05759aa568d6a67668f728a1906208930883ecae44ed10",
+      "records": 109,
+      "hostAsks": 2,
+      "turnEvents": 8,
+      "syntheticFrameCount": 1
+    }
+  ]
+}

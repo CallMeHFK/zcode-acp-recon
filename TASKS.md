@@ -53,3 +53,17 @@
 
 > **Phase 2 亦已执行**（用户批准继续）：Windows MVP 达成——分支 phase2-windows @ e24e95e，四组修复 + ACP e2e 真实推理成功，见 [reports/phase2/windows-mvp.md](reports/phase2/windows-mvp.md)。
 1A 三仓库静态审计（william0wang 主基线候选 / BrokkAi 第二参考 / haowei2000 下游）→ 1B 锁定审计 Commit SHA（npm 版本/锁文件/engines）→ 1C Fork + 测试基线 → 1D Windows 改造边界设计（platform/windows/* + runtime/* 隔离）。
+
+## Phase 3（2026-11-09/10 已执行，产出见 reports/phase3/ 与 contract/）
+
+> 用户批准「继续 Phase 3 契约测试」。协议契约测试达成——L0 `--check` PASS、L1 36/36、L2 14/14、fork vitest 新增 11/11；并复现+修复 `interaction/requestOfficialMcpAuthHeaders` 被拒服务（-32601→`{}`）。Review 轮发现并修掉「顺序复放被可选步骤卡住、脚本应答成死代码」的阻塞级缺陷。见 [reports/phase3/contract-tests.md](reports/phase3/contract-tests.md) 与 [contract/README.md](contract/README.md)。
+
+| # | 任务 | 证据 | 状态 |
+|---|---|---|---|
+| 3A | golden trace 结构盘点 + 适配器后端协议注入点分析（`ZCODE_BIN`、宿主三必答、seq/stop 语义） | contract/README.md「诚实的设计取舍」 | ✅ |
+| 3B | 从八场景 trace 生成紧凑复放夹具，记录源 trace SHA-256 证据链 | contract/fixtures/*.json + manifest.json | ✅ |
+| 3C | 离线假 app-server + 最小 ACP 客户端（隔离 ZCODE_HOME，零网络/零账户依赖） | contract/fake-app-server.mjs、acp-client.mjs | ✅ |
+| 3D | L1 证据契约 + L2 真机契约两层测试套件 + 一键门禁报告 | contract/*.test.mjs、run.mjs、reports/phase3/contract-results.json | ✅ |
+| 3E | 契约测试暴露的产品缺陷修复 + fork vitest 回归网 + 全量回归对照 | fork `phase3-contract`、tests/contract/golden-contract.test.ts | ✅ |
+
+Phase 4（生产加固）/ Phase 5（发布回供上游）待用户逐阶段授权。

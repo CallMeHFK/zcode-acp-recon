@@ -44,5 +44,17 @@ node probe/finalize.mjs   # billing 取证 + 并存观察 + 脱敏导出
 
 - [reports/gate-matrix.md](reports/gate-matrix.md) — P0 门禁十项 + 证据引用 + Go/No-Go
 - [reports/runtime-compat.md](reports/runtime-compat.md) — 运行时与凭证链路盘点
-- [TASKS.md](TASKS.md) — 任务书（三轮评审冻结的 v4.1）
+- [reports/phase1/](reports/phase1/baseline-decision.md) — 上游审计、基线锁定、Windows 改造边界
+- [reports/phase2/windows-mvp.md](reports/phase2/windows-mvp.md) — Windows MVP 验收
+- [reports/phase3/contract-tests.md](reports/phase3/contract-tests.md) — 协议契约测试验收
+- [TASKS.md](TASKS.md) — 任务书（三轮评审冻结的 v4.1）+ 各阶段执行记录
 - 原始 trace（`traces/raw/`）含凭据材料，**仅保留在本地、已 gitignore、不入库**（见 AGENTS.md G11）。
+
+## Phase 3 契约测试（离线、可回归）
+
+```bash
+node contract/build-fixtures.mjs   # golden trace → 复放夹具（含 SHA-256 证据链）
+node contract/run.mjs              # L1 + L2 两层测试 → reports/phase3/contract-results.json
+```
+
+`contract/` 以 `ZCODE_BIN` 注入假 app-server，驱动**真实适配器进程**复放八场景；不依赖网络、账户计划包、桌面登录态或 ZCode CLI 二进制。详见 [contract/README.md](contract/README.md)。

@@ -17,3 +17,6 @@ dist/
 # 会话工具状态 / 一次性测试工作区（不入库）
 .mimosa/
 traces/workspace/
+
+# Phase 3 契约测试的逐帧运行日志（本地证据，不入库；报告已聚合）
+contract/logs/

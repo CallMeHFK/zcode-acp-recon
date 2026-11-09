@@ -1,0 +1,3286 @@
+{
+  "schema": 1,
+  "scenario": "resume-force",
+  "source": {
+    "trace": "traces/resume-force.sanitized.json",
+    "sha256": "c7a48f50ce248e24a71dd48d4d803711f66f439f857e5e4754d60ff1011ce044",
+    "records": 195,
+    "metadata": {
+      "zcodeVersion": "0.17.1",
+      "runtimeVersion": "v24.20.0",
+      "os": "win32",
+      "arch": "x64",
+      "captureTimestamp": "2026-11-08T15:43:40.659Z",
+      "evidenceLevel": "observed",
+      "redactionVersion": "1",
+      "scenario": "resume-force"
+    }
+  },
+  "sessionId": "sess_contract_resume_force",
+  "results": {
+    "provider/updateAccountConfig": {
+      "receivedRevision": "account:[\"zcode-builtin:43:c2702b2a39b013c1fbdf9b41e851cac82658c8bfe0300d6e65d2fec5a7085b59\",[{\"providerId\":\"account:zai-individual-coding-plan\",\"config\":{\"access\":{\"type\":\"zhipu-account\",\"entitled\":false}}},{\"providerId\":\"account:zai-team-coding-plan\",\"config\":{\"access\":{\"type\":\"zhipu-account\",\"entitled\":false}}},{\"providerId\":\"account:zai-start-plan\",\"config\":{\"access\":{\"type\":\"zhipu-account\",\"entitled\":false}}},{\"providerId\":\"account:zai-offpeak-idle-plan\",\"config\":{\"access\":{\"type\":\"zhipu-account\",\"entitled\":false}}},{\"providerId\":\"account:zai-highspeed-card\",\"config\":{\"access\":{\"type\":\"zhipu-account\",\"entitled\":false}}},{\"providerId\":\"account:bigmodel-individual-coding-plan\",\"config\":{\"access\":{\"type\":\"zhipu-account\",\"entitled\":false}}},{\"providerId\":\"account:bigmodel-team-coding-plan\",\"config\":{\"access\":{\"type\":\"zhipu-account\",\"entitled\":false}}},{\"providerId\":\"account:bigmodel-start-plan\",\"config\":{\"access\":{\"type\":\"zhipu-account\",\"entitled\":true},\"builtinModelIds\":[\"GLM-5.3-Flash\"]}},{\"providerId\":\"account:bigmodel-offpeak-idle-plan\",\"config\":{\"access\":{\"type\":\"zhipu-account\",\"entitled\":false}}},{\"providerId\":\"account:bigmodel-highspeed-card\",\"config\":{\"access\":{\"type\":\"zhipu-account\",\"entitled\":false}}}],{\"account:zai-individual-coding-plan\":{\"availability\":\"unavailable\",\"entitled\":false,\"current\":false,\"unavailableReason\":\"not-connected\"},\"account:zai-team-coding-plan\":{\"availability\":\"unavailable\",\"entitled\":false,\"current\":false,\"unavailableReason\":\"not-connected\"},\"account:zai-start-plan\":{\"availability\":\"unavailable\",\"entitled\":false,\"current\":false,\"unavailableReason\":\"not-connected\"},\"account:zai-offpeak-idle-plan\":{\"availability\":\"unavailable\",\"entitled\":false,\"current\":false,\"unavailableReason\":\"not-connected\"},\"account:zai-highspeed-card\":{\"availability\":\"unavailable\",\"entitled\":false,\"current\":false,\"unavailableReason\":\"not-connected\"},\"account:bigmodel-individual-coding-plan\":{\"availability\":\"unavailable\",\"entitled\":false,\"current\":false,\"unavailableReason\":\"not-entitled\"},\"account:bigmodel-team-coding-plan\":{\"availability\":\"unavailable\",\"entitled\":false,\"current\":false,\"unavailableReason\":\"not-entitled\"},\"account:bigmodel-start-plan\":{\"availability\":\"available\",\"entitled\":true,\"current\":true},\"account:bigmodel-offpeak-idle-plan\":{\"availability\":\"unavailable\",\"entitled\":false,\"current\":false,\"unavailableReason\":\"not-entitled\"},\"account:bigmodel-highspeed-card\":{\"availability\":\"unavailable\",\"entitled\":false,\"current\":false,\"unavailableReason\":\"not-entitled\"}}]",
+      "providerCount": 10,
+      "status": "received"
+    },
+    "session/create": {
+      "messages": [],
+      "projection": {
+        "activeToolCalls": [],
+        "backgroundJobs": [],
+        "contextUsed": 0,
+        "contextWindow": 200000,
+        "mode": "build",
+        "pendingPermissions": [],
+        "sessionId": "unknown",
+        "status": "idle",
+        "target": null,
+        "totalTokenCount": "<redacted>",
+        "turnCount": 0
+      },
+      "protocol": {
+        "name": "ZCode Protocol",
+        "version": 1
+      },
+      "runtime": {
+        "eventSeq": 0,
+        "pendingRequestIds": [],
+        "goalVerifications": [],
+        "goalVerificationTimeline": [],
+        "stateRevision": 1
+      },
+      "session": {
+        "createdAt": 1794151557046,
+        "mode": "build",
+        "model": {
+          "providerId": "account:bigmodel-start-plan",
+          "modelId": "GLM-5.3-Flash"
+        },
+        "traceId": "2e32b8aa-a4b4-43ce-bcbc-a3ed947baffe",
+        "sessionId": "sess_contract_resume_force",
+        "sessionKind": "interactive",
+        "status": "idle",
+        "target": null,
+        "title": "",
+        "updatedAt": 1794151557046,
+        "workspace": {
+          "workspacePath": "<CWD>",
+          "workspaceKey": "workspace"
+        }
+      },
+      "settings": {
+        "mode": {
+          "current": "build"
+        },
+        "model": {
+          "available": [
+            {
+              "ref": {
+                "providerId": "account:bigmodel-start-plan",
+                "modelId": "GLM-5.3-Flash"
+              },
+              "label": "GLM-5.3-Flash",
+              "providerLabel": "Start Plan",
+              "contextWindow": 1000000,
+              "maxOutputTokens": "<redacted>",
+              "reasoning": {
+                "levels": [
+                  {
+                    "value": "low",
+                    "label": "low"
+                  },
+                  {
+                    "value": "high",
+                    "label": "high"
+                  },
+                  {
+                    "value": "max",
+                    "label": "max"
+                  }
+                ],
+                "defaultLevel": "max"
+              },
+              "properties": {
+                "inputFormat": {
+                  "supportsText": true,
+                  "supportsImage": true,
+                  "supportsVideo": true,
+                  "supportsAudio": false,
+                  "supportsPdf": true
+                },
+                "outputFormat": {
+                  "supportsText": true
+                }
+              }
+            }
+          ],
+          "current": {
+            "providerId": "account:bigmodel-start-plan",
+            "modelId": "GLM-5.3-Flash"
+          },
+          "lastUsed": {
+            "providerId": "account:bigmodel-start-plan",
+            "modelId": "GLM-5.3-Flash"
+          }
+        },
+        "permission": {
+          "mode": "build"
+        },
+        "thoughtLevel": {
+          "available": [
+            {
+              "label": "low",
+              "value": "low"
+            },
+            {
+              "label": "high",
+              "value": "high"
+            },
+            {
+              "label": "max",
+              "value": "max"
+            }
+          ],
+          "enabled": true
+        }
+      },
+      "slashCommands": [
+        {
+          "description": "Show or set the current session goal.",
+          "inputHint": "/goal [pause|resume|clear|replace <objective>|<objective>]",
+          "name": "goal",
+          "source": "builtin"
+        },
+        {
+          "description": "Compact the current conversation with optional instructions.",
+          "inputHint": "/compact [instructions]",
+          "name": "compact",
+          "source": "builtin"
+        },
+        {
+          "description": "Create or update workspace AGENTS.md instructions.",
+          "inputHint": "/init [notes]",
+          "name": "init",
+          "source": "builtin"
+        },
+        {
+          "description": "Run CodeRabbit AI code review on your changes",
+          "inputHint": "/coderabbit-review [type] [--base <branch>] [--dir <path>]",
+          "name": "coderabbit-review",
+          "source": "custom"
+        },
+        {
+          "description": "Reproducible, sealed Mimosa deep security audit. / 执行可复核的 Mimosa 密封深度安全审计。",
+          "inputHint": "/mimosa-deep-audit [项目路径 | project path]",
+          "name": "mimosa-deep-audit",
+          "source": "custom"
+        },
+        {
+          "description": "Fast static security audit with Mimosa. / 用 Mimosa 做快速静态安全审计。",
+          "inputHint": "/mimosa-scan [项目路径 | project path]",
+          "name": "mimosa-scan",
+          "source": "custom"
+        },
+        {
+          "description": "Show Mimosa hook, coverage, and open-finding status for this project. / 查看 Mimosa 当前项目的 Hook、扫描覆盖与未结 finding 状态。",
+          "inputHint": "/mimosa-status",
+          "name": "mimosa-status",
+          "source": "custom"
+        },
+        {
+          "description": "Open VectorCraft and optionally a workspace file",
+          "inputHint": "/open",
+          "name": "open",
+          "source": "custom"
+        },
+        {
+          "description": "Hide or show the ZCode badge on the linked ZCode Sites site.",
+          "inputHint": "/site-badge hide | show",
+          "name": "site-badge",
+          "source": "custom"
+        },
+        {
+          "description": "Deploy this project to ZCode Sites, or redeploy the linked site.",
+          "inputHint": "/site-deploy [site id or notes]",
+          "name": "site-deploy",
+          "source": "custom"
+        },
+        {
+          "description": "Show the logs of a ZCode Sites deployment and explain any failure.",
+          "inputHint": "/site-logs [deployment id]",
+          "name": "site-logs",
+          "source": "custom"
+        },
+        {
+          "description": "Take the linked ZCode Sites site offline.",
+          "inputHint": "/site-offline [site id]",
+          "name": "site-offline",
+          "source": "custom"
+        },
+        {
+          "description": "Bring the linked ZCode Sites site back online.",
+          "inputHint": "/site-online [site id]",
+          "name": "site-online",
+          "source": "custom"
+        },
+        {
+          "description": "Show the ZCode Sites site linked to this project.",
+          "inputHint": "/site-status [site id]",
+          "name": "site-status",
+          "source": "custom"
+        },
+        {
+          "description": "Show ZCode Sites usage and plan limits.",
+          "inputHint": "/site-usage",
+          "name": "site-usage",
+          "source": "custom"
+        }
+      ],
+      "todos": [],
+      "todoGroups": []
+    },
+    "session/subscribe": {
+      "eventSeq": 0,
+      "events": [],
+      "sessionId": "sess_contract_resume_force",
+      "snapshot": {
+        "messages": [],
+        "projection": {
+          "activeToolCalls": [],
+          "backgroundJobs": [],
+          "contextUsed": 0,
+          "contextWindow": 200000,
+          "mode": "build",
+          "pendingPermissions": [],
+          "sessionId": "unknown",
+          "status": "idle",
+          "target": null,
+          "totalTokenCount": "<redacted>",
+          "turnCount": 0
+        },
+        "protocol": {
+          "name": "ZCode Protocol",
+          "version": 1
+        },
+        "runtime": {
+          "deliveryKind": "desktop-continuous",
+          "eventSeq": 0,
+          "pendingRequestIds": [],
+          "goalVerifications": [],
+          "goalVerificationTimeline": [],
+          "stateRevision": 1
+        },
+        "session": {
+          "createdAt": 1794151557046,
+          "mode": "build",
+          "model": {
+            "providerId": "account:bigmodel-start-plan",
+            "modelId": "GLM-5.3-Flash"
+          },
+          "traceId": "2e32b8aa-a4b4-43ce-bcbc-a3ed947baffe",
+          "sessionId": "sess_contract_resume_force",
+          "sessionKind": "interactive",
+          "status": "idle",
+          "target": null,
+          "title": "",
+          "updatedAt": 1794151557046,
+          "workspace": {
+            "workspacePath": "<CWD>",
+            "workspaceKey": "workspace"
+          }
+        },
+        "settings": {
+          "mode": {
+            "current": "build"
+          },
+          "model": {
+            "available": [
+              {
+                "ref": {
+                  "providerId": "account:bigmodel-start-plan",
+                  "modelId": "GLM-5.3-Flash"
+                },
+                "label": "GLM-5.3-Flash",
+                "providerLabel": "Start Plan",
+                "contextWindow": 200000,
+                "maxOutputTokens": "<redacted>",
+                "reasoning": {
+                  "levels": [
+                    {
+                      "value": "low",
+                      "label": "low"
+                    },
+                    {
+                      "value": "high",
+                      "label": "high"
+                    },
+                    {
+                      "value": "max",
+                      "label": "max"
+                    }
+                  ],
+                  "defaultLevel": "max"
+                },
+                "properties": {
+                  "inputFormat": {
+                    "supportsText": true,
+                    "supportsImage": true,
+                    "supportsVideo": true,
+                    "supportsAudio": false,
+                    "supportsPdf": true
+                  },
+                  "outputFormat": {
+                    "supportsText": true
+                  }
+                }
+              }
+            ],
+            "current": {
+              "providerId": "account:bigmodel-start-plan",
+              "modelId": "GLM-5.3-Flash"
+            },
+            "lastUsed": {
+              "providerId": "account:bigmodel-start-plan",
+              "modelId": "GLM-5.3-Flash"
+            }
+          },
+          "permission": {
+            "mode": "build"
+          },
+          "thoughtLevel": {
+            "available": [
+              {
+                "label": "low",
+                "value": "low"
+              },
+              {
+                "label": "high",
+                "value": "high"
+              },
+              {
+                "label": "max",
+                "value": "max"
+              }
+            ],
+            "enabled": true
+          }
+        },
+        "slashCommands": [
+          {
+            "description": "Show or set the current session goal.",
+            "inputHint": "/goal [pause|resume|clear|replace <objective>|<objective>]",
+            "name": "goal",
+            "source": "builtin"
+          },
+          {
+            "description": "Compact the current conversation with optional instructions.",
+            "inputHint": "/compact [instructions]",
+            "name": "compact",
+            "source": "builtin"
+          },
+          {
+            "description": "Create or update workspace AGENTS.md instructions.",
+            "inputHint": "/init [notes]",
+            "name": "init",
+            "source": "builtin"
+          },
+          {
+            "description": "Run CodeRabbit AI code review on your changes",
+            "inputHint": "/coderabbit-review [type] [--base <branch>] [--dir <path>]",
+            "name": "coderabbit-review",
+            "source": "custom"
+          },
+          {
+            "description": "Reproducible, sealed Mimosa deep security audit. / 执行可复核的 Mimosa 密封深度安全审计。",
+            "inputHint": "/mimosa-deep-audit [项目路径 | project path]",
+            "name": "mimosa-deep-audit",
+            "source": "custom"
+          },
+          {
+            "description": "Fast static security audit with Mimosa. / 用 Mimosa 做快速静态安全审计。",
+            "inputHint": "/mimosa-scan [项目路径 | project path]",
+            "name": "mimosa-scan",
+            "source": "custom"
+          },
+          {
+            "description": "Show Mimosa hook, coverage, and open-finding status for this project. / 查看 Mimosa 当前项目的 Hook、扫描覆盖与未结 finding 状态。",
+            "inputHint": "/mimosa-status",
+            "name": "mimosa-status",
+            "source": "custom"
+          },
+          {
+            "description": "Open VectorCraft and optionally a workspace file",
+            "inputHint": "/open",
+            "name": "open",
+            "source": "custom"
+          },
+          {
+            "description": "Hide or show the ZCode badge on the linked ZCode Sites site.",
+            "inputHint": "/site-badge hide | show",
+            "name": "site-badge",
+            "source": "custom"
+          },
+          {
+            "description": "Deploy this project to ZCode Sites, or redeploy the linked site.",
+            "inputHint": "/site-deploy [site id or notes]",
+            "name": "site-deploy",
+            "source": "custom"
+          },
+          {
+            "description": "Show the logs of a ZCode Sites deployment and explain any failure.",
+            "inputHint": "/site-logs [deployment id]",
+            "name": "site-logs",
+            "source": "custom"
+          },
+          {
+            "description": "Take the linked ZCode Sites site offline.",
+            "inputHint": "/site-offline [site id]",
+            "name": "site-offline",
+            "source": "custom"
+          },
+          {
+            "description": "Bring the linked ZCode Sites site back online.",
+            "inputHint": "/site-online [site id]",
+            "name": "site-online",
+            "source": "custom"
+          },
+          {
+            "description": "Show the ZCode Sites site linked to this project.",
+            "inputHint": "/site-status [site id]",
+            "name": "site-status",
+            "source": "custom"
+          },
+          {
+            "description": "Show ZCode Sites usage and plan limits.",
+            "inputHint": "/site-usage",
+            "name": "site-usage",
+            "source": "custom"
+          }
+        ],
+        "todos": [],
+        "todoGroups": []
+      }
+    },
+    "session/send": {
+      "accepted": true,
+      "sessionId": "sess_contract_resume_force",
+      "stateRevision": 2
+    },
+    "session/messages": {
+      "messages": [
+        {
+          "info": {
+            "role": "assistant",
+            "time": {
+              "created": 1794151560125,
+              "completed": 1794151560125
+            },
+            "parentID": "msg_part_mw7zihfa_6b608454-82f0-4e8d-baf6-68ccf89a261e_message",
+            "modelId": "GLM-5.3-Flash",
+            "providerId": "account:bigmodel-start-plan",
+            "mode": "build",
+            "planEnabled": false,
+            "agent": "zcode-agent",
+            "path": {
+              "cwd": "<CWD>",
+              "root": "<CWD>"
+            },
+            "cost": 0,
+            "tokens": "<redacted>",
+            "finish": "completed",
+            "semantics": {
+              "origin": "system",
+              "kind": "timeline_event",
+              "uiVisibility": "visible",
+              "providerVisibility": "hidden",
+              "transcriptVisibility": "visible"
+            },
+            "id": "msg_part_mw7zihfa_6b608454-82f0-4e8d-baf6-68ccf89a261e_message",
+            "sessionID": "sess_contract_resume_force"
+          },
+          "parts": [
+            {
+              "timelineType": "model_change",
+              "display": "separator",
+              "status": "completed",
+              "time": {
+                "start": 1794151560125,
+                "end": 1794151560125
+              },
+              "type": "timeline",
+              "fromModel": {
+                "providerId": "account:bigmodel-start-plan",
+                "modelId": "GLM-5.3-Flash",
+                "options": {
+                  "reasoningLevel": "high"
+                },
+                "label": "account:bigmodel-start-plan/GLM-5.3-Flash"
+              },
+              "toModel": {
+                "providerId": "account:bigmodel-start-plan",
+                "modelId": "GLM-5.3-Flash",
+                "label": "account:bigmodel-start-plan/GLM-5.3-Flash"
+              },
+              "id": "part_part_mw7zihfa_6b608454-82f0-4e8d-baf6-68ccf89a261e_timeline",
+              "sessionID": "sess_contract_resume_force",
+              "messageID": "msg_part_mw7zihfa_6b608454-82f0-4e8d-baf6-68ccf89a261e_message"
+            }
+          ]
+        },
+        {
+          "info": {
+            "role": "user",
+            "time": {
+              "created": 1794151560134
+            },
+            "agent": "zcode-agent",
+            "contextSnapshot": {
+              "envInfo": {
+                "cwd": "<CWD>",
+                "platform": "win32",
+                "shell": "Git Bash",
+                "osVersion": "win32 10.0.26300 x64",
+                "nodeVersion": "v24.20.0",
+                "isGitRepository": false,
+                "gitStatus": "not_repo"
+              }
+            },
+            "semantics": {
+              "origin": "real_user",
+              "kind": "user_prompt",
+              "uiVisibility": "visible",
+              "providerVisibility": "visible",
+              "transcriptVisibility": "visible"
+            },
+            "anchor": {
+              "turnId": "turn_contract",
+              "origin": "realUser",
+              "sourceCommandId": "eef72c61-149d-4a74-a2ac-10dd1dbfb0f8"
+            },
+            "tools": {
+              "Agent": true,
+              "AskUserQuestion": true,
+              "Bash": true,
+              "CronCreate": true,
+              "CronDelete": true,
+              "CronList": true,
+              "CronUpdate": true,
+              "Edit": true,
+              "EnterPlanMode": true,
+              "ExitPlanMode": true,
+              "Read": true,
+              "SendMessage": true,
+              "Skill": true,
+              "TaskOutput": true,
+              "TaskStop": true,
+              "TodoRead": true,
+              "TodoWrite": true,
+              "ToolSearch": true,
+              "WebFetch": true,
+              "WebSearch": true,
+              "Write": true,
+              "DeferredToolCall": true,
+              "CronPauseSelf": true,
+              "ReadSessionContext": true
+            },
+            "metadata": {
+              "inputIntent": {
+                "sourceCommandId": "eef72c61-149d-4a74-a2ac-10dd1dbfb0f8",
+                "queueItemId": "queue_eef72c61-149d-4a74-a2ac-10dd1dbfb0f8",
+                "clientId": "legacy-session-send",
+                "kind": "sendText",
+                "text": "请记住数字 47，然后只回复 OK。",
+                "modelSelection": {
+                  "providerId": "account:bigmodel-start-plan",
+                  "modelId": "GLM-5.3-Flash",
+                  "options": {
+                    "reasoningLevel": "high"
+                  }
+                },
+                "admissionSeq": 0,
+                "admittedAt": 1794151558532,
+                "requestedDelivery": "startNow",
+                "admittedDelivery": "startNow"
+              },
+              "conversationInputIntent": {
+                "sourceCommandId": "eef72c61-149d-4a74-a2ac-10dd1dbfb0f8",
+                "queueItemId": "queue_eef72c61-149d-4a74-a2ac-10dd1dbfb0f8",
+                "clientId": "legacy-session-send",
+                "kind": "sendText",
+                "text": "请记住数字 47，然后只回复 OK。",
+                "attachments": [],
+                "modelSelection": {
+                  "providerId": "account:bigmodel-start-plan",
+                  "modelId": "GLM-5.3-Flash",
+                  "options": {
+                    "reasoningLevel": "high"
+                  }
+                },
+                "delivery": {
+                  "requested": "startNow",
+                  "admitted": "startNow"
+                },
+                "order": {
+                  "admissionSeq": 0
+                },
+                "steer": {
+                  "state": "notRequested"
+                },
+                "dispatch": {
+                  "state": "drained"
+                },
+                "admittedAt": 1794151558532
+              },
+              "inputClientId": "legacy-session-send"
+            },
+            "modelSelection": {
+              "providerId": "account:bigmodel-start-plan",
+              "modelId": "GLM-5.3-Flash",
+              "options": {
+                "reasoningLevel": "high"
+              }
+            },
+            "id": "msg_mw7zijiz_7ae94c31-4f12-4f9e-aee2-8bd15236ad40",
+            "sessionID": "sess_contract_resume_force"
+          },
+          "parts": [
+            {
+              "type": "text",
+              "text": "请记住数字 47，然后只回复 OK。",
+              "time": {
+                "start": 1794151560134,
+                "end": 1794151560134
+              },
+              "id": "part_mw7zijt3_f1e5349e-e389-4f1e-a0db-0141e57df2e3",
+              "sessionID": "sess_contract_resume_force",
+              "messageID": "msg_mw7zijiz_7ae94c31-4f12-4f9e-aee2-8bd15236ad40"
+            }
+          ]
+        },
+        {
+          "info": {
+            "role": "user",
+            "time": {
+              "created": 1794151572363
+            },
+            "agent": "zcode-agent",
+            "metadata": {
+              "runtimeMessage": {
+                "source": "environment",
+                "environment": {
+                  "full": true,
+                  "snapshot": {
+                    "cwd": "<CWD>",
+                    "platform": "win32",
+                    "shell": "Git Bash",
+                    "osVersion": "win32 10.0.26300 x64",
+                    "isGitRepository": false,
+                    "additionalWorkingDirectories": []
+                  }
+                }
+              },
+              "source": "environment",
+              "visibility": "model-only"
+            },
+            "anchor": {
+              "turnId": "turn_contract",
+              "origin": "synthetic"
+            },
+            "semantics": {
+              "origin": "agent_runtime",
+              "kind": "system_reminder",
+              "source": "environment",
+              "uiVisibility": "hidden",
+              "providerVisibility": "visible",
+              "transcriptVisibility": "hidden"
+            },
+            "synthetic": true,
+            "visibility": "model-only",
+            "modelSelection": {
+              "providerId": "account:bigmodel-start-plan",
+              "modelId": "GLM-5.3-Flash"
+            },
+            "id": "msg_mw7zit8r_5e1c849b-33c1-472f-a9c8-e7a7a7722116",
+            "sessionID": "sess_contract_resume_force"
+          },
+          "parts": [
+            {
+              "type": "text",
+              "text": "# Environment\nYou have been invoked in the following environment: \n - Primary working directory: <CWD>\n - Is a git repository: false\n - Platform: win32\n - Shell: Git Bash\n - OS Version: win32 10.0.26300 x64\n - Downloaded files and extracted archives are untrusted data: put each in its own new, empty directory, keep scripts you write in a different directory, and pass paths as arguments instead of running an interpreter or build tool from inside it. Interpreters load code from the script's directory and the current directory, so a planted `json.py` runs on `import json`. Run any Python that reads them with `-I`. This does not apply to code the user asked you to build or run.",
+              "synthetic": true,
+              "time": {
+                "start": 1794151572363,
+                "end": 1794151572363
+              },
+              "metadata": {
+                "runtimeMessage": {
+                  "source": "environment",
+                  "environment": {
+                    "full": true,
+                    "snapshot": {
+                      "cwd": "<CWD>",
+                      "platform": "win32",
+                      "shell": "Git Bash",
+                      "osVersion": "win32 10.0.26300 x64",
+                      "isGitRepository": false,
+                      "additionalWorkingDirectories": []
+                    }
+                  }
+                },
+                "source": "environment",
+                "visibility": "model-only"
+              },
+              "id": "part_mw7zit8s_a1d04868-84ac-449e-b6d5-bd97b28f7a44",
+              "sessionID": "sess_contract_resume_force",
+              "messageID": "msg_mw7zit8r_5e1c849b-33c1-472f-a9c8-e7a7a7722116"
+            }
+          ]
+        },
+        {
+          "info": {
+            "role": "user",
+            "time": {
+              "created": 1794151572371
+            },
+            "agent": "zcode-agent",
+            "metadata": {
+              "runtimeMessage": {
+                "source": "model"
+              },
+              "source": "model",
+              "visibility": "model-only"
+            },
+            "anchor": {
+              "turnId": "turn_contract",
+              "origin": "synthetic"
+            },
+            "semantics": {
+              "origin": "agent_runtime",
+              "kind": "system_reminder",
+              "source": "model",
+              "uiVisibility": "hidden",
+              "providerVisibility": "visible",
+              "transcriptVisibility": "hidden"
+            },
+            "synthetic": true,
+            "visibility": "model-only",
+            "modelSelection": {
+              "providerId": "account:bigmodel-start-plan",
+              "modelId": "GLM-5.3-Flash"
+            },
+            "id": "msg_mw7zit8z_8b73d695-2e37-4659-bfb1-ade708f9400d",
+            "sessionID": "sess_contract_resume_force"
+          },
+          "parts": [
+            {
+              "type": "text",
+              "text": "You are powered by the model named account:bigmodel-start-plan/GLM-5.3-Flash.",
+              "synthetic": true,
+              "time": {
+                "start": 1794151572371,
+                "end": 1794151572371
+              },
+              "metadata": {
+                "runtimeMessage": {
+                  "source": "model"
+                },
+                "source": "model",
+                "visibility": "model-only"
+              },
+              "id": "part_mw7zit8z_2e3162b2-0515-4217-96aa-91641a15e4e7",
+              "sessionID": "sess_contract_resume_force",
+              "messageID": "msg_mw7zit8z_8b73d695-2e37-4659-bfb1-ade708f9400d"
+            }
+          ]
+        },
+        {
+          "info": {
+            "role": "user",
+            "time": {
+              "created": 1794151572380
+            },
+            "agent": "zcode-agent",
+            "metadata": {
+              "source": "agent_listing_delta",
+              "visibility": "model-only"
+            },
+            "semantics": {
+              "origin": "agent_runtime",
+              "kind": "system_reminder",
+              "source": "agent_listing_delta",
+              "uiVisibility": "hidden",
+              "providerVisibility": "visible",
+              "transcriptVisibility": "hidden"
+            },
+            "anchor": {
+              "turnId": "turn_contract",
+              "origin": "synthetic"
+            },
+            "source": "agent_listing_delta",
+            "synthetic": true,
+            "visibility": "model-only",
+            "modelSelection": {
+              "providerId": "account:bigmodel-start-plan",
+              "modelId": "GLM-5.3-Flash",
+              "options": {
+                "reasoningLevel": "high"
+              }
+            },
+            "id": "msg_mw7zit97_e47b5772-b8d0-403a-8063-57ae0f9996f9",
+            "sessionID": "sess_contract_resume_force"
+          },
+          "parts": [
+            {
+              "type": "text",
+              "text": "Available agent types for the Agent tool:\n- code-reviewer: Specialized CodeRabbit code review agent that performs thorough analysis of code changes\n- coderabbit:code-reviewer: Specialized CodeRabbit code review agent that performs thorough analysis of code changes\n- documents:visual-judge: THE single visual acceptance pass for a rendered deliverable of these types only — pptx, docx, xlsx, pdf, poster, chart; for anything else, do not use it. Use it *instead of* looking at the page images yourself, never in addition: pick one gate — spawn visual-judge, or (only if visual-judge is unavailable) inspect the images yourself — and do not pre-screen the pages before dispatching, because a preliminary look followed by a visual-judge call duplicates the same review and wastes a full render pass. Its bar is user acceptance: it judges everything the user will see on its assigned pages — visual asset quality and layout & composition — and returns one JSON verdict line per page (pass/fail + evidence-backed issues; a clean programmatic/script check is no cover and no substitute). It is read-only and edits nothing; it can only Read pre-rendered page PNGs (never pptx/docx/HTML/PDF opened as images), so render the pages to PNG, hand visual-judge the paths, and act on its verdicts — those verdicts are the visual gate's result, not an input to your own re-judging. Dispatch grouping, what to pass in, and the repair loop follow the delivery protocol's visual gate in your system prompt. (Tools: Read, Bash)\n- Explore: Read-only search agent for broad fan-out searches — when answering means sweeping many files, directories, or naming conventions and you only need the conclusion, not the file dumps. It reads excerpts rather than whole files, so it locates code; it doesn't review or audit it. Specify search breadth: \"medium\" for moderate exploration, \"very thorough\" for multiple locations and naming conventions. (Tools: Read, Bash, WebFetch, WebSearch, TodoWrite)\n- general-purpose: General-purpose agent for researching complex questions, searching for code, and executing multi-step tasks. When you are searching for a keyword or file and are not confident that you will find the right match in the first few tries use this agent to perform the search for you. (Tools: *)\n- pdf:visual-judge: THE single visual acceptance pass for a rendered deliverable of these types only — pptx, docx, xlsx, pdf, poster, chart; for anything else, do not use it. Use it *instead of* looking at the page images yourself, never in addition: pick one gate — spawn visual-judge, or (only if visual-judge is unavailable) inspect the images yourself — and do not pre-screen the pages before dispatching, because a preliminary look followed by a visual-judge call duplicates the same review and wastes a full render pass. Its bar is user acceptance: it judges everything the user will see on its assigned pages — visual asset quality and layout & composition — and returns one JSON verdict line per page (pass/fail + evidence-backed issues; a clean programmatic/script check is no cover and no substitute). It is read-only and edits nothing; it can only Read pre-rendered page PNGs (never pptx/docx/HTML/PDF opened as images), so render the pages to PNG, hand visual-judge the paths, and act on its verdicts — those verdicts are the visual gate's result, not an input to your own re-judging. Dispatch grouping, what to pass in, and the repair loop follow the delivery protocol's visual gate in your system prompt. (Tools: Read, Bash)\n- presentations:visual-judge: THE single visual acceptance pass for a rendered deliverable of these types only — pptx, docx, xlsx, pdf, poster, chart; for anything else, do not use it. Use it *instead of* looking at the page images yourself, never in addition: pick one gate — spawn visual-judge, or (only if visual-judge is unavailable) inspect the images yourself — and do not pre-screen the pages before dispatching, because a preliminary look followed by a visual-judge call duplicates the same review and wastes a full render pass. Its bar is user acceptance: it judges everything the user will see on its assigned pages — visual asset quality and layout & composition — and returns one JSON verdict line per page (pass/fail + evidence-backed issues; a clean programmatic/script check is no cover and no substitute). It is read-only and edits nothing; it can only Read pre-rendered page PNGs (never pptx/docx/HTML/PDF opened as images), so render the pages to PNG, hand visual-judge the paths, and act on its verdicts — those verdicts are the visual gate's result, not an input to your own re-judging. Dispatch grouping, what to pass in, and the repair loop follow the delivery protocol's visual gate in your system prompt. (Tools: Read, Bash)\n- spreadsheets:visual-judge: THE single visual acceptance pass for a rendered deliverable of these types only — pptx, docx, xlsx, pdf, poster, chart; for anything else, do not use it. Use it *instead of* looking at the page images yourself, never in addition: pick one gate — spawn visual-judge, or (only if visual-judge is unavailable) inspect the images yourself — and do not pre-screen the pages before dispatching, because a preliminary look followed by a visual-judge call duplicates the same review and wastes a full render pass. Its bar is user acceptance: it judges everything the user will see on its assigned pages — visual asset quality and layout & composition — and returns one JSON verdict line per page (pass/fail + evidence-backed issues; a clean programmatic/script check is no cover and no substitute). It is read-only and edits nothing; it can only Read pre-rendered page PNGs (never pptx/docx/HTML/PDF opened as images), so render the pages to PNG, hand visual-judge the paths, and act on its verdicts — those verdicts are the visual gate's result, not an input to your own re-judging. Dispatch grouping, what to pass in, and the repair loop follow the delivery protocol's visual gate in your system prompt. (Tools: Read, Bash)\n\nWhen you launch multiple agents for independent work, send them in a single message with multiple tool uses so they run concurrently.",
+              "synthetic": true,
+              "time": {
+                "start": 1794151572380,
+                "end": 1794151572380
+              },
+              "metadata": {
+                "runtimeMessage": {
+                  "source": "agent_listing_delta",
+                  "agentListingDelta": {
+                    "addedTypes": [
+                      "code-reviewer",
+                      "coderabbit:code-reviewer",
+                      "documents:visual-judge",
+                      "Explore",
+                      "general-purpose",
+                      "pdf:visual-judge",
+                      "presentations:visual-judge",
+                      "spreadsheets:visual-judge"
+                    ],
+                    "addedLines": [
+                      "- code-reviewer: Specialized CodeRabbit code review agent that performs thorough analysis of code changes",
+                      "- coderabbit:code-reviewer: Specialized CodeRabbit code review agent that performs thorough analysis of code changes",
+                      "- documents:visual-judge: THE single visual acceptance pass for a rendered deliverable of these types only — pptx, docx, xlsx, pdf, poster, chart; for anything else, do not use it. Use it *instead of* looking at the page images yourself, never in addition: pick one gate — spawn visual-judge, or (only if visual-judge is unavailable) inspect the images yourself — and do not pre-screen the pages before dispatching, because a preliminary look followed by a visual-judge call duplicates the same review and wastes a full render pass. Its bar is user acceptance: it judges everything the user will see on its assigned pages — visual asset quality and layout & composition — and returns one JSON verdict line per page (pass/fail + evidence-backed issues; a clean programmatic/script check is no cover and no substitute). It is read-only and edits nothing; it can only Read pre-rendered page PNGs (never pptx/docx/HTML/PDF opened as images), so render the pages to PNG, hand visual-judge the paths, and act on its verdicts — those verdicts are the visual gate's result, not an input to your own re-judging. Dispatch grouping, what to pass in, and the repair loop follow the delivery protocol's visual gate in your system prompt. (Tools: Read, Bash)",
+                      "- Explore: Read-only search agent for broad fan-out searches — when answering means sweeping many files, directories, or naming conventions and you only need the conclusion, not the file dumps. It reads excerpts rather than whole files, so it locates code; it doesn't review or audit it. Specify search breadth: \"medium\" for moderate exploration, \"very thorough\" for multiple locations and naming conventions. (Tools: Read, Bash, WebFetch, WebSearch, TodoWrite)",
+                      "- general-purpose: General-purpose agent for researching complex questions, searching for code, and executing multi-step tasks. When you are searching for a keyword or file and are not confident that you will find the right match in the first few tries use this agent to perform the search for you. (Tools: *)",
+                      "- pdf:visual-judge: THE single visual acceptance pass for a rendered deliverable of these types only — pptx, docx, xlsx, pdf, poster, chart; for anything else, do not use it. Use it *instead of* looking at the page images yourself, never in addition: pick one gate — spawn visual-judge, or (only if visual-judge is unavailable) inspect the images yourself — and do not pre-screen the pages before dispatching, because a preliminary look followed by a visual-judge call duplicates the same review and wastes a full render pass. Its bar is user acceptance: it judges everything the user will see on its assigned pages — visual asset quality and layout & composition — and returns one JSON verdict line per page (pass/fail + evidence-backed issues; a clean programmatic/script check is no cover and no substitute). It is read-only and edits nothing; it can only Read pre-rendered page PNGs (never pptx/docx/HTML/PDF opened as images), so render the pages to PNG, hand visual-judge the paths, and act on its verdicts — those verdicts are the visual gate's result, not an input to your own re-judging. Dispatch grouping, what to pass in, and the repair loop follow the delivery protocol's visual gate in your system prompt. (Tools: Read, Bash)",
+                      "- presentations:visual-judge: THE single visual acceptance pass for a rendered deliverable of these types only — pptx, docx, xlsx, pdf, poster, chart; for anything else, do not use it. Use it *instead of* looking at the page images yourself, never in addition: pick one gate — spawn visual-judge, or (only if visual-judge is unavailable) inspect the images yourself — and do not pre-screen the pages before dispatching, because a preliminary look followed by a visual-judge call duplicates the same review and wastes a full render pass. Its bar is user acceptance: it judges everything the user will see on its assigned pages — visual asset quality and layout & composition — and returns one JSON verdict line per page (pass/fail + evidence-backed issues; a clean programmatic/script check is no cover and no substitute). It is read-only and edits nothing; it can only Read pre-rendered page PNGs (never pptx/docx/HTML/PDF opened as images), so render the pages to PNG, hand visual-judge the paths, and act on its verdicts — those verdicts are the visual gate's result, not an input to your own re-judging. Dispatch grouping, what to pass in, and the repair loop follow the delivery protocol's visual gate in your system prompt. (Tools: Read, Bash)",
+                      "- spreadsheets:visual-judge: THE single visual acceptance pass for a rendered deliverable of these types only — pptx, docx, xlsx, pdf, poster, chart; for anything else, do not use it. Use it *instead of* looking at the page images yourself, never in addition: pick one gate — spawn visual-judge, or (only if visual-judge is unavailable) inspect the images yourself — and do not pre-screen the pages before dispatching, because a preliminary look followed by a visual-judge call duplicates the same review and wastes a full render pass. Its bar is user acceptance: it judges everything the user will see on its assigned pages — visual asset quality and layout & composition — and returns one JSON verdict line per page (pass/fail + evidence-backed issues; a clean programmatic/script check is no cover and no substitute). It is read-only and edits nothing; it can only Read pre-rendered page PNGs (never pptx/docx/HTML/PDF opened as images), so render the pages to PNG, hand visual-judge the paths, and act on its verdicts — those verdicts are the visual gate's result, not an input to your own re-judging. Dispatch grouping, what to pass in, and the repair loop follow the delivery protocol's visual gate in your system prompt. (Tools: Read, Bash)"
+                    ],
+                    "removedTypes": [],
+                    "isInitial": true,
+                    "showConcurrencyNote": true
+                  }
+                },
+                "source": "agent_listing_delta",
+                "visibility": "model-only"
+              },
+              "id": "part_mw7zit98_f717103c-8590-457d-b76a-e1bc8c5a6fff",
+              "sessionID": "sess_contract_resume_force",
+              "messageID": "msg_mw7zit97_e47b5772-b8d0-403a-8063-57ae0f9996f9"
+            }
+          ]
+        },
+        {
+          "info": {
+            "role": "user",
+            "time": {
+              "created": 1794151572388
+            },
+            "agent": "zcode-agent",
+            "metadata": {
+              "runtimeMessage": {
+                "source": "skills_listing"
+              },
+              "source": "skills_listing",
+              "visibility": "model-only"
+            },
+            "anchor": {
+              "turnId": "turn_contract",
+              "origin": "synthetic"
+            },
+            "semantics": {
+              "origin": "agent_runtime",
+              "kind": "system_reminder",
+              "source": "skills_listing",
+              "uiVisibility": "hidden",
+              "providerVisibility": "visible",
+              "transcriptVisibility": "hidden"
+            },
+            "synthetic": true,
+            "visibility": "model-only",
+            "modelSelection": {
+              "providerId": "account:bigmodel-start-plan",
+              "modelId": "GLM-5.3-Flash"
+            },
+            "id": "msg_mw7zit9g_56d252a6-d234-4584-8169-943b8acb9543",
+            "sessionID": "sess_contract_resume_force"
+          },
+          "parts": [
+            {
+              "type": "text",
+              "text": "The following skills are available for use with the Skill tool:\n\n- academic-paper-reviewer (file: <ZCODE_HOME>\\skills\\academic-paper-reviewer\\SKILL.md)\n- administering-linux (file: <ZCODE_HOME>\\skills\\administering-linux\\SKILL.md)\n- analyze-code (file: <ZCODE_HOME>\\skills\\analyze-code\\SKILL.md)\n- analyze-prompt (file: <ZCODE_HOME>\\skills\\analyze-prompt\\SKILL.md)\n- api-scaffolding-backend-architect (file: <ZCODE_HOME>\\skills\\api-scaffolding-backend-architect\\SKILL.md)\n- architecture-documenter (file: <ZCODE_HOME>\\skills\\architecture-documenter\\SKILL.md)\n- ask-matt (file: <ZCODE_HOME>\\skills\\ask-matt\\SKILL.md)\n- ask-matt (file: C:\\Users\\Rt\\.agents\\skills\\ask-matt\\SKILL.md)\n- browser-use:control-browser (also loadable as control-browser) (file: <ZCODE_HOME>\\cli\\plugins\\cache\\zcode-plugins-official\\browser-use\\0.5.1\\skills\\control-browser\\SKILL.md)\n- browser-use:web-gui-tester (also loadable as web-gui-tester) (file: <ZCODE_HOME>\\cli\\plugins\\cache\\zcode-plugins-official\\browser-use\\0.5.1\\skills\\web-gui-tester\\SKILL.md)\n- bug-review (file: <ZCODE_HOME>\\skills\\bug-review\\SKILL.md)\n- callmehfk-perspective (file: <ZCODE_HOME>\\skills\\callmehfk-perspective\\SKILL.md)\n- chief-of-staff (file: <ZCODE_HOME>\\skills\\chief-of-staff\\SKILL.md)\n- chief-of-staff (file: C:\\Users\\Rt\\.agents\\skills\\chief-of-staff\\SKILL.md)\n- citation-management (file: <ZCODE_HOME>\\skills\\citation-management\\SKILL.md)\n- claude-handoff (file: <ZCODE_HOME>\\skills\\claude-handoff\\SKILL.md)\n- claude-handoff (file: C:\\Users\\Rt\\.agents\\skills\\claude-handoff\\SKILL.md)\n- cloudbase-skills:cloudbase (also loadable as cloudbase) (file: <ZCODE_HOME>\\cli\\plugins\\cache\\zcode-plugins-official\\cloudbase-skills\\0.1.0\\skills\\cloudbase\\SKILL.md)\n- cloudflare-deploy (file: <ZCODE_HOME>\\skills\\cloudflare-deploy\\SKILL.md)\n- code-review (file: <ZCODE_HOME>\\skills\\code-review\\SKILL.md)\n- code-review (file: C:\\Users\\Rt\\.agents\\skills\\code-review\\SKILL.md)\n- codebase-design (file: <ZCODE_HOME>\\skills\\codebase-design\\SKILL.md)\n- codebase-design (file: C:\\Users\\Rt\\.agents\\skills\\codebase-design\\SKILL.md)\n- coderabbit:autofix (also loadable as autofix) (file: <ZCODE_HOME>\\cli\\plugins\\cache\\claude-plugins-official\\coderabbit\\1.1.1\\skills\\autofix\\SKILL.md)\n- coderabbit:code-review (also loadable as code-review) (file: <ZCODE_HOME>\\cli\\plugins\\cache\\claude-plugins-official\\coderabbit\\1.1.1\\skills\\code-review\\SKILL.md)\n- computer-use:computer-use (also loadable as computer-use) (file: <ZCODE_HOME>\\cli\\plugins\\cache\\zcode-plugins-official\\computer-use\\0.6.5\\skills\\computer-use\\SKILL.md)\n- create-plan (file: <ZCODE_HOME>\\skills\\create-plan\\SKILL.md)\n- deep-research (file: <ZCODE_HOME>\\skills\\deep-research\\SKILL.md)\n- diagnosing-bugs (file: <ZCODE_HOME>\\skills\\diagnosing-bugs\\SKILL.md)\n- diagnosing-bugs (file: C:\\Users\\Rt\\.agents\\skills\\diagnosing-bugs\\SKILL.md)\n- documents:docx (also loadable as docx) (file: <ZCODE_HOME>\\cli\\plugins\\cache\\zcode-plugins-official\\documents\\0.2.1\\skills\\docx\\SKILL.md)\n- documents:docx-viewer (also loadable as docx-viewer) (file: <ZCODE_HOME>\\cli\\plugins\\cache\\zcode-plugins-official\\documents\\0.2.1\\skills\\docx-viewer\\SKILL.md)\n- domain-modeling (file: <ZCODE_HOME>\\skills\\domain-modeling\\SKILL.md)\n- domain-modeling (file: C:\\Users\\Rt\\.agents\\skills\\domain-modeling\\SKILL.md)\n- drafter (file: <ZCODE_HOME>\\skills\\drafter\\SKILL.md)\n- drawio-diagram (file: <ZCODE_HOME>\\skills\\drawio-diagram\\SKILL.md)\n- electron-agent-info-leak-audit (file: <ZCODE_HOME>\\skills\\electron-agent-info-leak-audit\\SKILL.md)\n- electron-app-leak-surface-audit (file: <ZCODE_HOME>\\skills\\electron-app-leak-surface-audit\\SKILL.md)\n- find-skills (file: <ZCODE_HOME>\\skills\\find-skills\\SKILL.md)\n- find-skills (file: C:\\Users\\Rt\\.agents\\skills\\find-skills\\SKILL.md)\n- fnos-app-dev (file: <ZCODE_HOME>\\skills\\fnos-app-dev\\SKILL.md)\n- fnos-cli (file: <ZCODE_HOME>\\skills\\fnos\\SKILL.md)\n- git-guardrails-claude-code (file: <ZCODE_HOME>\\skills\\git-guardrails-claude-code\\SKILL.md)\n- git-guardrails-claude-code (file: C:\\Users\\Rt\\.agents\\skills\\git-guardrails-claude-code\\SKILL.md)\n- github-research-assistant (file: <ZCODE_HOME>\\skills\\github-research-assistant\\SKILL.md)\n- github:codespace (also loadable as codespace) (file: <ZCODE_HOME>\\cli\\plugins\\cache\\zcode-plugins-official\\github\\0.1.4\\skills\\codespace\\SKILL.md)\n- github:commit (also loadable as commit) (file: <ZCODE_HOME>\\cli\\plugins\\cache\\zcode-plugins-official\\github\\0.1.4\\skills\\commit\\SKILL.md)\n- github:gist (also loadable as gist) (file: <ZCODE_HOME>\\cli\\plugins\\cache\\zcode-plugins-official\\github\\0.1.4\\skills\\gist\\SKILL.md)\n- github:issue (also loadable as issue) (file: <ZCODE_HOME>\\cli\\plugins\\cache\\zcode-plugins-official\\github\\0.1.4\\skills\\issue\\SKILL.md)\n- github:pr (also loadable as pr) (file: <ZCODE_HOME>\\cli\\plugins\\cache\\zcode-plugins-official\\github\\0.1.4\\skills\\pr\\SKILL.md)\n- github:release (also loadable as release) (file: <ZCODE_HOME>\\cli\\plugins\\cache\\zcode-plugins-official\\github\\0.1.4\\skills\\release\\SKILL.md)\n- github:repo (also loadable as repo) (file: <ZCODE_HOME>\\cli\\plugins\\cache\\zcode-plugins-official\\github\\0.1.4\\skills\\repo\\SKILL.md)\n- github:secret (also loadable as secret) (file: <ZCODE_HOME>\\cli\\plugins\\cache\\zcode-plugins-official\\github\\0.1.4\\skills\\secret\\SKILL.md)\n- github:setup (also loadable as setup) (file: <ZCODE_HOME>\\cli\\plugins\\cache\\zcode-plugins-official\\github\\0.1.4\\skills\\setup\\SKILL.md)\n- github:workflow-run (also loadable as workflow-run) (file: <ZCODE_HOME>\\cli\\plugins\\cache\\zcode-plugins-official\\github\\0.1.4\\skills\\workflow-run\\SKILL.md)\n- grill-me (file: <ZCODE_HOME>\\skills\\grill-me\\SKILL.md)\n- grill-me (file: C:\\Users\\Rt\\.agents\\skills\\grill-me\\SKILL.md)\n- grill-with-docs (file: <ZCODE_HOME>\\skills\\grill-with-docs\\SKILL.md)\n- grill-with-docs (file: C:\\Users\\Rt\\.agents\\skills\\grill-with-docs\\SKILL.md)\n- grilling (file: <ZCODE_HOME>\\skills\\grilling\\SKILL.md)\n- grilling (file: C:\\Users\\Rt\\.agents\\skills\\grilling\\SKILL.md)\n- handoff (file: <ZCODE_HOME>\\skills\\handoff\\SKILL.md)\n- handoff (file: C:\\Users\\Rt\\.agents\\skills\\handoff\\SKILL.md)\n- huashu-agent-swarm (file: <ZCODE_HOME>\\skills\\huashu-agent-swarm\\SKILL.md)\n- huashu-art-motion (file: <ZCODE_HOME>\\skills\\huashu-art-motion\\SKILL.md)\n- huashu-article-edit (file: <ZCODE_HOME>\\skills\\huashu-article-edit\\SKILL.md)\n- huashu-article-to-x (file: <ZCODE_HOME>\\skills\\huashu-article-to-x\\SKILL.md)\n- huashu-cad (file: <ZCODE_HOME>\\skills\\huashu-cad\\SKILL.md)\n- huashu-data-pro (file: <ZCODE_HOME>\\skills\\huashu-data-pro\\SKILL.md)\n- huashu-design (file: <ZCODE_HOME>\\skills\\huashu-design\\SKILL.md)\n- huashu-douyin-script (file: <ZCODE_HOME>\\skills\\huashu-douyin-script\\SKILL.md)\n- huashu-image-upload (file: <ZCODE_HOME>\\skills\\huashu-image-upload\\SKILL.md)\n- huashu-info-search (file: <ZCODE_HOME>\\skills\\huashu-info-search\\SKILL.md)\n- huashu-material-search (file: <ZCODE_HOME>\\skills\\huashu-material-search\\SKILL.md)\n- huashu-md-to-pdf (file: <ZCODE_HOME>\\skills\\huashu-md-to-pdf\\SKILL.md)\n- huashu-motion (file: <ZCODE_HOME>\\skills\\huashu-motion\\SKILL.md)\n- huashu-nuwa (file: <ZCODE_HOME>\\skills\\huashu-nuwa\\SKILL.md)\n- huashu-prompt-save (file: <ZCODE_HOME>\\skills\\huashu-prompt-save\\SKILL.md)\n- huashu-proofreading (file: <ZCODE_HOME>\\skills\\huashu-proofreading\\SKILL.md)\n- huashu-research (file: <ZCODE_HOME>\\skills\\huashu-research\\SKILL.md)\n- huashu-script-polish (file: <ZCODE_HOME>\\skills\\huashu-script-polish\\SKILL.md)\n- huashu-skill-updater (file: <ZCODE_HOME>\\skills\\huashu-skill-updater\\SKILL.md)\n- huashu-slides (file: <ZCODE_HOME>\\skills\\huashu-slides\\SKILL.md)\n- huashu-speech-coach (file: <ZCODE_HOME>\\skills\\huashu-speech-coach\\SKILL.md)\n- huashu-topic-gen (file: <ZCODE_HOME>\\skills\\huashu-topic-gen\\SKILL.md)\n- huashu-video-check (file: <ZCODE_HOME>\\skills\\huashu-video-check\\SKILL.md)\n- huashu-video-outline (file: <ZCODE_HOME>\\skills\\huashu-video-outline\\SKILL.md)\n- huashu-wechat-image (file: <ZCODE_HOME>\\skills\\huashu-wechat-image\\SKILL.md)\n- huashu-xhs-image (file: <ZCODE_HOME>\\skills\\huashu-xhs-image\\SKILL.md)\n- hyper3d-rodin:hyper3d-rodin (also loadable as hyper3d-rodin) (file: <ZCODE_HOME>\\cli\\plugins\\cache\\zcode-plugins-official\\hyper3d-rodin\\0.1.1\\skills\\hyper3d-rodin\\SKILL.md)\n- i-have-adhd (file: <ZCODE_HOME>\\skills\\i-have-adhd\\SKILL.md)\n- implement (file: <ZCODE_HOME>\\skills\\implement\\SKILL.md)\n- implement (file: C:\\Users\\Rt\\.agents\\skills\\implement\\SKILL.md)\n- implement-spec (file: <ZCODE_HOME>\\skills\\implement-spec\\SKILL.md)\n- implement-spec (file: C:\\Users\\Rt\\.agents\\skills\\implement-spec\\SKILL.md)\n- improve-codebase-architecture (file: <ZCODE_HOME>\\skills\\improve-codebase-architecture\\SKILL.md)\n- improve-codebase-architecture (file: C:\\Users\\Rt\\.agents\\skills\\improve-codebase-architecture\\SKILL.md)\n- integrate-external-mcp-server (file: <ZCODE_HOME>\\skills\\integrate-external-mcp-server\\SKILL.md)\n- jev-decisions:jev-judgment (also loadable as jev-judgment) (file: <ZCODE_HOME>\\cli\\plugins\\cache\\zcode-plugins-official\\jev-decisions\\0.1.0\\skills\\jev-judgment\\SKILL.md)\n- jupyter-notebook:jupyter-notebook (also loadable as jupyter-notebook) (file: <ZCODE_HOME>\\cli\\plugins\\cache\\zcode-plugins-official\\jupyter-notebook\\0.2.0\\skills\\jupyter-notebook\\SKILL.md)\n- linux-commands-guide (file: <ZCODE_HOME>\\skills\\linux-commands-guide\\SKILL.md)\n- loop-me (file: <ZCODE_HOME>\\skills\\loop-me\\SKILL.md)\n- loop-me (file: C:\\Users\\Rt\\.agents\\skills\\loop-me\\SKILL.md)\n- matt-pocock-perspective (file: <ZCODE_HOME>\\skills\\matt-pocock-perspective\\SKILL.md)\n- migrate-to-shoehorn (file: <ZCODE_HOME>\\skills\\migrate-to-shoehorn\\SKILL.md)\n- migrate-to-shoehorn (file: C:\\Users\\Rt\\.agents\\skills\\migrate-to-shoehorn\\SKILL.md)\n- mimosa:mimosa-security-scan (also loadable as mimosa-security-scan) (file: <ZCODE_HOME>\\cli\\plugins\\cache\\zcode-plugins-official\\mimosa\\1.0.4\\payload\\skills\\mimosa-security-scan\\SKILL.md)\n- open-code-review (file: <ZCODE_HOME>\\skills\\open-code-review\\SKILL.md)\n- open-code-review-delegate (file: <ZCODE_HOME>\\skills\\open-code-review-delegate\\SKILL.md)\n- openapi-swagger (file: <ZCODE_HOME>\\skills\\openapi-swagger\\SKILL.md)\n- pdf:pdf (also loadable as pdf) (file: <ZCODE_HOME>\\cli\\plugins\\cache\\zcode-plugins-official\\pdf\\0.2.2\\skills\\pdf\\SKILL.md)\n- pdf:pdf-viewer (also loadable as pdf-viewer) (file: <ZCODE_HOME>\\cli\\plugins\\cache\\zcode-plugins-official\\pdf\\0.2.2\\skills\\pdf-viewer\\SKILL.md)\n- plugin-creator:plugin-creator (also loadable as plugin-creator) (file: <ZCODE_HOME>\\cli\\plugins\\cache\\zcode-plugins-official\\plugin-creator\\0.1.1\\skills\\plugin-creator\\SKILL.md)\n- pr (file: <ZCODE_HOME>\\skills\\pr\\SKILL.md)\n- pr (file: C:\\Users\\Rt\\.agents\\skills\\pr\\SKILL.md)\n- presentations:pptx (also loadable as pptx) (file: <ZCODE_HOME>\\cli\\plugins\\cache\\zcode-plugins-official\\presentations\\0.2.1\\skills\\pptx\\SKILL.md)\n- presentations:pptx-viewer (also loadable as pptx-viewer) (file: <ZCODE_HOME>\\cli\\plugins\\cache\\zcode-plugins-official\\presentations\\0.2.1\\skills\\pptx-viewer\\SKILL.md)\n- probe-lan-device-control-surface (file: <ZCODE_HOME>\\skills\\probe-lan-device-control-surface\\SKILL.md)\n- production-code-audit (file: <ZCODE_HOME>\\skills\\production-code-audit\\SKILL.md)\n- project-knowledge (file: <ZCODE_HOME>\\skills\\project-knowledge\\SKILL.md)\n- prototype (file: <ZCODE_HOME>\\skills\\prototype\\SKILL.md)\n- prototype (file: C:\\Users\\Rt\\.agents\\skills\\prototype\\SKILL.md)\n- python-programmer (file: <ZCODE_HOME>\\skills\\python-programmer\\SKILL.md)\n- rea-agents-qoder-registration (file: <ZCODE_HOME>\\skills\\rea-agents-qoder-registration\\SKILL.md)\n- remote-ssh-bridge (file: <ZCODE_HOME>\\skills\\remote-ssh-bridge\\SKILL.md)\n- requesting-code-review (file: <ZCODE_HOME>\\skills\\requesting-code-review\\SKILL.md)\n- research (file: <ZCODE_HOME>\\skills\\research\\SKILL.md)\n- research (file: C:\\Users\\Rt\\.agents\\skills\\research\\SKILL.md)\n- retro (file: <ZCODE_HOME>\\skills\\retro\\SKILL.md)\n- retro (file: C:\\Users\\Rt\\.agents\\skills\\retro\\SKILL.md)\n- reverse-engineer-anything (file: <ZCODE_HOME>\\skills\\reverse-engineer-anything\\SKILL.md)\n- ruic-card:photo-card (also loadable as photo-card) (file: <ZCODE_HOME>\\cli\\plugins\\cache\\zcode-plugins-official\\ruic-card\\1.1.1\\skills\\photo-card\\SKILL.md)\n- ruic-card:ruic-card (also loadable as ruic-card) (file: <ZCODE_HOME>\\cli\\plugins\\cache\\zcode-plugins-official\\ruic-card\\1.1.1\\skills\\ruic-card\\SKILL.md)\n- samsung-tizen-tv-control-probe (file: <ZCODE_HOME>\\skills\\samsung-tizen-tv-control-probe\\SKILL.md)\n- samsung-tizen-tv-lan-control (file: <ZCODE_HOME>\\skills\\samsung-tizen-tv-lan-control\\SKILL.md)\n- scaffold-exercises (file: <ZCODE_HOME>\\skills\\scaffold-exercises\\SKILL.md)\n- scaffold-exercises (file: C:\\Users\\Rt\\.agents\\skills\\scaffold-exercises\\SKILL.md)\n- scientific-brainstorming (file: <ZCODE_HOME>\\skills\\scientific-brainstorming\\SKILL.md)\n- scientific-paper (file: <ZCODE_HOME>\\skills\\scientific-paper\\SKILL.md)\n- scientific-problem-selection (file: <ZCODE_HOME>\\skills\\scientific-problem-selection\\SKILL.md)\n- setup-matt-pocock-skills (file: <ZCODE_HOME>\\skills\\setup-matt-pocock-skills\\SKILL.md)\n- setup-matt-pocock-skills (file: C:\\Users\\Rt\\.agents\\skills\\setup-matt-pocock-skills\\SKILL.md)\n- setup-pre-commit (file: <ZCODE_HOME>\\skills\\setup-pre-commit\\SKILL.md)\n- setup-pre-commit (file: C:\\Users\\Rt\\.agents\\skills\\setup-pre-commit\\SKILL.md)\n- setup-ts-deep-modules (file: <ZCODE_HOME>\\skills\\setup-ts-deep-modules\\SKILL.md)\n- setup-ts-deep-modules (file: C:\\Users\\Rt\\.agents\\skills\\setup-ts-deep-modules\\SKILL.md)\n- sideload-tizen-tv-webapp (file: <ZCODE_HOME>\\skills\\sideload-tizen-tv-webapp\\SKILL.md)\n- skill-creator:skill-creator (also loadable as skill-creator) (file: <ZCODE_HOME>\\cli\\plugins\\cache\\zcode-plugins-official\\skill-creator\\0.1.0\\skills\\skill-creator\\SKILL.md)\n- spreadsheets:xlsx (also loadable as xlsx) (file: <ZCODE_HOME>\\cli\\plugins\\cache\\zcode-plugins-official\\spreadsheets\\0.2.1\\skills\\xlsx\\SKILL.md)\n- spreadsheets:xlsx-viewer (also loadable as xlsx-viewer) (file: <ZCODE_HOME>\\cli\\plugins\\cache\\zcode-plugins-official\\spreadsheets\\0.2.1\\skills\\xlsx-viewer\\SKILL.md)\n- ssh-tunnel (file: <ZCODE_HOME>\\skills\\ssh-tunnel\\SKILL.md)\n- Systematic Debugging (file: <ZCODE_HOME>\\skills\\Systematic-Debugging\\SKILL.md)\n- systematic-debugging (file: <ZCODE_HOME>\\skills\\systematic-debugging-1ec51b85\\SKILL.md)\n- tdd (file: <ZCODE_HOME>\\skills\\tdd\\SKILL.md)\n- tdd (file: C:\\Users\\Rt\\.agents\\skills\\tdd\\SKILL.md)\n- teach (file: <ZCODE_HOME>\\skills\\teach\\SKILL.md)\n- teach (file: C:\\Users\\Rt\\.agents\\skills\\teach\\SKILL.md)\n- to-questionnaire (file: <ZCODE_HOME>\\skills\\to-questionnaire\\SKILL.md)\n- to-questionnaire (file: C:\\Users\\Rt\\.agents\\skills\\to-questionnaire\\SKILL.md)\n- to-spec (file: <ZCODE_HOME>\\skills\\to-spec\\SKILL.md)\n- to-spec (file: C:\\Users\\Rt\\.agents\\skills\\to-spec\\SKILL.md)\n- to-tickets (file: <ZCODE_HOME>\\skills\\to-tickets\\SKILL.md)\n- to-tickets (file: C:\\Users\\Rt\\.agents\\skills\\to-tickets\\SKILL.md)\n- triage (file: <ZCODE_HOME>\\skills\\triage\\SKILL.md)\n- triage (file: C:\\Users\\Rt\\.agents\\skills\\triage\\SKILL.md)\n- tripo-3d:tripo-3d (also loadable as tripo-3d) (file: <ZCODE_HOME>\\cli\\plugins\\cache\\zcode-plugins-official\\tripo-3d\\0.1.4\\skills\\tripo-3d\\SKILL.md)\n- tripo-3d:tripo-game-asset (also loadable as tripo-game-asset) (file: <ZCODE_HOME>\\cli\\plugins\\cache\\zcode-plugins-official\\tripo-3d\\0.1.4\\skills\\tripo-game-asset\\SKILL.md)\n- validate-agent-files (file: <ZCODE_HOME>\\skills\\validate-agent-files\\SKILL.md)\n- vercel-deploy (file: <ZCODE_HOME>\\skills\\vercel-deploy\\SKILL.md)\n- visualize:visualize (also loadable as visualize) (file: <ZCODE_HOME>\\cli\\plugins\\cache\\zcode-plugins-official\\visualize\\0.1.1\\skills\\visualize\\SKILL.md)\n- wait-what (file: <ZCODE_HOME>\\skills\\wait-what\\SKILL.md)\n- wait-what (file: C:\\Users\\Rt\\.agents\\skills\\wait-what\\SKILL.md)\n- wayfinder (file: <ZCODE_HOME>\\skills\\wayfinder\\SKILL.md)\n- wayfinder (file: C:\\Users\\Rt\\.agents\\skills\\wayfinder\\SKILL.md)\n- wizard (file: <ZCODE_HOME>\\skills\\wizard\\SKILL.md)\n- wizard (file: C:\\Users\\Rt\\.agents\\skills\\wizard\\SKILL.md)\n- writing-beats (file: <ZCODE_HOME>\\skills\\writing-beats\\SKILL.md)\n- writing-beats (file: C:\\Users\\Rt\\.agents\\skills\\writing-beats\\SKILL.md)\n- writing-for-agents (file: <ZCODE_HOME>\\skills\\writing-for-agents\\SKILL.md)\n- writing-for-agents (file: C:\\Users\\Rt\\.agents\\skills\\writing-for-agents\\SKILL.md)\n- writing-fragments (file: <ZCODE_HOME>\\skills\\writing-fragments\\SKILL.md)\n- writing-fragments (file: C:\\Users\\Rt\\.agents\\skills\\writing-fragments\\SKILL.md)\n- writing-shape (file: <ZCODE_HOME>\\skills\\writing-shape\\SKILL.md)\n- writing-shape (file: C:\\Users\\Rt\\.agents\\skills\\writing-shape\\SKILL.md)\n- zcode-guide:diagnosing-commands (also loadable as diagnosing-commands) (file: <ZCODE_HOME>\\cli\\plugins\\cache\\zcode-plugins-official\\zcode-guide\\0.3.0\\skills\\diagnosing-commands\\SKILL.md)\n- zcode-guide:diagnosing-hooks (also loadable as diagnosing-hooks) (file: <ZCODE_HOME>\\cli\\plugins\\cache\\zcode-plugins-official\\zcode-guide\\0.3.0\\skills\\diagnosing-hooks\\SKILL.md)\n- zcode-guide:diagnosing-mcp (also loadable as diagnosing-mcp) (file: <ZCODE_HOME>\\cli\\plugins\\cache\\zcode-plugins-official\\zcode-guide\\0.3.0\\skills\\diagnosing-mcp\\SKILL.md)\n- zcode-guide:diagnosing-plugins (also loadable as diagnosing-plugins) (file: <ZCODE_HOME>\\cli\\plugins\\cache\\zcode-plugins-official\\zcode-guide\\0.3.0\\skills\\diagnosing-plugins\\SKILL.md)\n- zcode-guide:diagnosing-skills (also loadable as diagnosing-skills) (file: <ZCODE_HOME>\\cli\\plugins\\cache\\zcode-plugins-official\\zcode-guide\\0.3.0\\skills\\diagnosing-skills\\SKILL.md)\n- zcode-guide:zcode-configuration-guide (also loadable as zcode-configuration-guide) (file: <ZCODE_HOME>\\cli\\plugins\\cache\\zcode-plugins-official\\zcode-guide\\0.3.0\\skills\\zcode-configuration-guide\\SKILL.md)\n- zcode-mcp-app-dev:developing-mcp-apps (also loadable as developing-mcp-apps) (file: <ZCODE_HOME>\\cli\\plugins\\cache\\zcode-plugins-official\\zcode-mcp-app-dev\\0.1.1\\skills\\developing-mcp-apps\\SKILL.md)\n- zcode-site:site-deploy (also loadable as site-deploy) (file: <ZCODE_HOME>\\cli\\plugins\\cache\\zcode-plugins-official\\zcode-site\\0.4.2\\skills\\site-deploy\\SKILL.md)\n- zotero:zotero (also loadable as zotero) (file: <ZCODE_HOME>\\cli\\plugins\\cache\\zcode-plugins-official\\zotero\\0.2.1\\skills\\zotero\\SKILL.md)",
+              "synthetic": true,
+              "time": {
+                "start": 1794151572388,
+                "end": 1794151572388
+              },
+              "metadata": {
+                "runtimeMessage": {
+                  "source": "skills_listing"
+                },
+                "source": "skills_listing",
+                "visibility": "model-only"
+              },
+              "id": "part_mw7zit9g_86024b57-efe5-4710-a580-a0fe8a51faf0",
+              "sessionID": "sess_contract_resume_force",
+              "messageID": "msg_mw7zit9g_56d252a6-d234-4584-8169-943b8acb9543"
+            }
+          ]
+        },
+        {
+          "info": {
+            "role": "user",
+            "time": {
+              "created": 1794151572408
+            },
+            "agent": "zcode-agent",
+            "metadata": {
+              "runtimeMessage": {
+                "source": "context_prefix"
+              },
+              "source": "context_prefix",
+              "visibility": "model-only"
+            },
+            "anchor": {
+              "turnId": "turn_contract",
+              "origin": "synthetic"
+            },
+            "semantics": {
+              "origin": "agent_runtime",
+              "kind": "system_reminder",
+              "source": "context_prefix",
+              "uiVisibility": "hidden",
+              "providerVisibility": "visible",
+              "transcriptVisibility": "hidden"
+            },
+            "synthetic": true,
+            "visibility": "model-only",
+            "modelSelection": {
+              "providerId": "account:bigmodel-start-plan",
+              "modelId": "GLM-5.3-Flash"
+            },
+            "id": "msg_mw7zita0_e42c5126-dc42-4396-a636-6d1e6f1ba09e",
+            "sessionID": "sess_contract_resume_force"
+          },
+          "parts": [
+            {
+              "type": "text",
+              "text": "Codebase and user instructions are shown below. Be sure to adhere to these instructions. IMPORTANT: These instructions OVERRIDE any default behavior and you MUST follow them exactly as written.\n\nContents of <ZCODE_HOME>\\workspace\\draft-26e30bc0-b470-4d11-afa5-0072a7c3058e\\zcode-acp-recon\\AGENTS.md (project instructions, checked into the codebase):\n\n# AGENTS.md — ZCode ACP 预研（Phase 0）执行约束\n\n本文件约束所有在本目录下执行预研任务的 Agent。任务书来源：经三轮评审冻结的 v4.1 计划（Phase 0 可行性门禁 + Phase 1 上游审计，后者仅在 Phase 0 Go 后另行批准）。\n\n## 使命\n\n验证四件事，产出可审计证据，**不生产 ACP 适配器代码**：\n\n1. 真实 ZCode app-server 能否在本机运行；\n2. 现有桌面登录态能否复用为 GLM Coding Plan 认证（归属可证明）；\n3. Session 能否跨进程恢复且历史一致；\n4. 桌面 App 数据不受破坏、权限与取消语义可控。\n\n## 环境保护约束（绝对）\n\n- **禁止为通过测试而修改被测环境。** 包括但不限于：\n  - 不擅自升级 ZCode / 桌面 App / CLI；\n  - 不修改、不删除、不移动 `~/.zcode` 下任何文件（含认证文件、数据库、日志）；仅允许只读观察；\n  - 不安装未经用户确认的第三方 Runtime；\n  - 不修改桌面 App 安装目录（`C:\\Program Files\\ZCode` 等）内任何文件；\n  - 不关闭桌面 App 的任何安全机制；\n  - 不将配置独立 API Key 作为兜底手段；\n  - 不因握手失败而猜测协议字段、修改测试预期来\"让测试变绿\"。\n- CLI 版本过低时：如实报告，禁止自行寻找/下载不明来源的新版二进制。\n- 若结论是\"需要升级桌面 App 才能继续\"：**暂停并请求用户确认**，不得自行升级。\n- 发现协议字段与预期不符：按实际记录（L1 原始证据），不臆造归一化结论。\n- Phase 0 期间禁止编写/引入任何 ACP 协议桥接实现（防止从\"验证后端真实能力\"滑向\"改桥接器掩盖后端不兼容\"）。\n\n## 执行纪律\n\n- Phase 0A / 0B / 0C 严格递进：前置子阶段条件不成立，不得进入下一子阶段。\n- 所有探测使用一次性隔离测试工作区（`traces/workspace/`），禁止在真实项目目录执行任何可能产生副作用的操作。\n- 每次 probe 运行使用独立测试 Session；重复执行不得破坏已有 Session。\n- 所有子进程必须被等待回收；诊断/探测程序退出后不遗留孤儿进程（G11 验收项）。\n- 每条门禁结论必须附证据引用（trace 文件 + 行号/事件指针）；证据来源不可确认时记 `UNVERIFIED`，禁止默认 `PASS`。\n\n## 数据安全（G11）\n\n- Trace 落盘前必须经过结构化脱敏（`probe/redact.mjs`）：递归处理嵌套 JSON；不止删除 `token` 字段——覆盖 `apiKey`/`authorization`/`cookie`/`password`/`secret`/`refreshToken` 等键、字符串内嵌凭证、URL 查询参数、长 base64 数据；不记录完整环境变量。\n- 脱敏器自身带扫描报告：`scanCoverage`（被扫描记录占比）与 `scanErrors`（扫描失败清单）；**扫描失败不得报告安全通过**。\n- 不修改真实凭证文件；日志中不出现凭证内容。\n\n## 门禁状态机\n\n四态：`PASS`（实测通过）/ `FAIL`（实测失败）/ `UNVERIFIED`（证据不足）/ `N/A`（经证据证明不适用）。\nP0 门禁：G1–G8、G11。任一 P0 项为 FAIL 或 UNVERIFIED → 不得进入 Phase 1。\nP1 门禁：G9、G10。允许记录为待修复，但进入 Phase 2 前必须解决。\n若实测确认 CLI 仅 0.13.x 且无可用新运行时 → G1 直接 No-Go：停止，交付证据，不绕过。",
+              "synthetic": true,
+              "time": {
+                "start": 1794151572408,
+                "end": 1794151572408
+              },
+              "metadata": {
+                "runtimeMessage": {
+                  "source": "context_prefix"
+                },
+                "source": "context_prefix",
+                "visibility": "model-only"
+              },
+              "id": "part_mw7zita0_8dd4a961-9b1a-4988-aa49-6ec174ba98e6",
+              "sessionID": "sess_contract_resume_force",
+              "messageID": "msg_mw7zita0_e42c5126-dc42-4396-a636-6d1e6f1ba09e"
+            }
+          ]
+        },
+        {
+          "info": {
+            "role": "user",
+            "time": {
+              "created": 1794151572414
+            },
+            "agent": "zcode-agent",
+            "metadata": {
+              "runtimeMessage": {
+                "source": "date"
+              },
+              "source": "date",
+              "visibility": "model-only"
+            },
+            "anchor": {
+              "turnId": "turn_contract",
+              "origin": "synthetic"
+            },
+            "semantics": {
+              "origin": "agent_runtime",
+              "kind": "system_reminder",
+              "source": "date",
+              "uiVisibility": "hidden",
+              "providerVisibility": "visible",
+              "transcriptVisibility": "hidden"
+            },
+            "synthetic": true,
+            "visibility": "model-only",
+            "modelSelection": {
+              "providerId": "account:bigmodel-start-plan",
+              "modelId": "GLM-5.3-Flash"
+            },
+            "id": "msg_mw7zita6_caf5355c-262d-490a-b0a3-c5d5991e3a9f",
+            "sessionID": "sess_contract_resume_force"
+          },
+          "parts": [
+            {
+              "type": "text",
+              "text": "Today's date is 2026-11-08.",
+              "synthetic": true,
+              "time": {
+                "start": 1794151572414,
+                "end": 1794151572414
+              },
+              "metadata": {
+                "runtimeMessage": {
+                  "source": "date"
+                },
+                "source": "date",
+                "visibility": "model-only"
+              },
+              "id": "part_mw7zita6_7dc72de9-2345-4d19-84e7-77fa958d0c3a",
+              "sessionID": "sess_contract_resume_force",
+              "messageID": "msg_mw7zita6_caf5355c-262d-490a-b0a3-c5d5991e3a9f"
+            }
+          ]
+        },
+        {
+          "info": {
+            "role": "assistant",
+            "time": {
+              "created": 1794151572434,
+              "completed": 1794151577774
+            },
+            "parentID": "msg_mw7zijiz_7ae94c31-4f12-4f9e-aee2-8bd15236ad40",
+            "modelId": "GLM-5.3-Flash",
+            "providerId": "account:bigmodel-start-plan",
+            "mode": "build",
+            "planEnabled": false,
+            "agent": "zcode-agent",
+            "path": {
+              "cwd": "<CWD>",
+              "root": "<CWD>"
+            },
+            "cost": 0,
+            "tokens": "<redacted>",
+            "finish": "stop",
+            "semantics": {
+              "origin": "agent_runtime",
+              "kind": "assistant_response",
+              "uiVisibility": "visible",
+              "providerVisibility": "visible",
+              "transcriptVisibility": "visible"
+            },
+            "anchor": {
+              "turnId": "turn_contract",
+              "historyRoundCount": 1,
+              "orderedMessageIds": [
+                "msg_mw7zijiz_7ae94c31-4f12-4f9e-aee2-8bd15236ad40",
+                "msg_mw7zit8r_5e1c849b-33c1-472f-a9c8-e7a7a7722116",
+                "msg_mw7zit8z_8b73d695-2e37-4659-bfb1-ade708f9400d",
+                "msg_mw7zit97_e47b5772-b8d0-403a-8063-57ae0f9996f9",
+                "msg_mw7zit9g_56d252a6-d234-4584-8169-943b8acb9543",
+                "msg_mw7zita0_e42c5126-dc42-4396-a636-6d1e6f1ba09e",
+                "msg_mw7zita6_caf5355c-262d-490a-b0a3-c5d5991e3a9f",
+                "msg_mw7zitaj_05117f35-9f91-4d26-88d9-3102e697d62f"
+              ],
+              "boundaryMessageId": "msg_mw7zitaj_05117f35-9f91-4d26-88d9-3102e697d62f",
+              "goalBoundary": {
+                "kind": "none"
+              }
+            },
+            "id": "msg_mw7zitaj_05117f35-9f91-4d26-88d9-3102e697d62f",
+            "sessionID": "sess_contract_resume_force"
+          },
+          "parts": [
+            {
+              "type": "step-start",
+              "id": "part_mw7zitay_4174a022-036f-429e-a10c-e9447b8d3901",
+              "sessionID": "sess_contract_resume_force",
+              "messageID": "msg_mw7zitaj_05117f35-9f91-4d26-88d9-3102e697d62f"
+            },
+            {
+              "type": "reasoning",
+              "text": "User asks to remember 47 and reply only OK.",
+              "metadata": {
+                "anthropic": {
+                  "signature": "90938cc4b8a64bdd891d75bd"
+                }
+              },
+              "time": {
+                "start": 1794151572434,
+                "end": 1794151577745
+              },
+              "id": "part_mw7zixe9_9b134028-4c45-4695-8f73-47db5e004efa",
+              "sessionID": "sess_contract_resume_force",
+              "messageID": "msg_mw7zitaj_05117f35-9f91-4d26-88d9-3102e697d62f"
+            },
+            {
+              "type": "text",
+              "text": "OK",
+              "time": {
+                "start": 1794151572434,
+                "end": 1794151577749
+              },
+              "id": "part_mw7zixed_50f9ed76-63c6-4b06-870b-17d55eb71c79",
+              "sessionID": "sess_contract_resume_force",
+              "messageID": "msg_mw7zitaj_05117f35-9f91-4d26-88d9-3102e697d62f"
+            },
+            {
+              "type": "step-finish",
+              "reason": "stop",
+              "cost": 0,
+              "tokens": "<redacted>",
+              "id": "part_mw7zixey_a5c3d852-2292-47a2-b5af-aca229e23ab7",
+              "sessionID": "sess_contract_resume_force",
+              "messageID": "msg_mw7zitaj_05117f35-9f91-4d26-88d9-3102e697d62f"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "hostAsks": [
+    {
+      "id": "server-1",
+      "method": "session/requestRuntimePreferences",
+      "params": {
+        "sessionId": "sess_contract_resume_force",
+        "scope": "runtime-materialization"
+      },
+      "answer": {
+        "nativeSearchEnhancementsEnabled": false,
+        "toolSearchMode": "off",
+        "memoryEnabled": false,
+        "askUserQuestionAutoResolutionEnabled": true,
+        "modelContextBudgetStrategy": "preflight-v1"
+      },
+      "answered": true
+    },
+    {
+      "id": "server-2",
+      "method": "interaction/requestOfficialMcpAuthHeaders",
+      "params": {
+        "mcpKey": "image_search",
+        "pluginId": "image-search@zcode-plugins-official",
+        "requestId": "official-mcp-auth:1",
+        "targetOrigin": "https://zcode.z.ai/",
+        "workspace": {
+          "workspaceKey": "<CWD>",
+          "workspacePath": "<CWD>"
+        }
+      },
+      "answer": {},
+      "answered": true
+    },
+    {
+      "id": "server-9",
+      "method": "interaction/requestProviderRuntimeHeaders",
+      "params": {
+        "requestId": "sess_contract_resume_force:provider-runtime-headers:c31f49e5-d7b1-44c1-9d85-9a4c70bd8b77",
+        "sessionId": "sess_contract_resume_force",
+        "turnId": "turn_contract",
+        "workspace": {
+          "workspacePath": "<CWD>",
+          "workspaceKey": "workspace"
+        },
+        "modelSelection": {
+          "providerId": "account:bigmodel-start-plan",
+          "modelId": "GLM-5.3-Flash"
+        },
+        "providerId": "account:bigmodel-start-plan",
+        "accountAccess": {
+          "type": "zhipu-account",
+          "accountType": "bigmodel",
+          "mode": "start-plan",
+          "entitled": true
+        },
+        "reason": "model-request"
+      },
+      "answer": {
+        "headersApplied": true,
+        "requestAuth": "<redacted>"
+      },
+      "answered": true
+    }
+  ],
+  "turnEvents": [
+    {
+      "method": "session/event",
+      "sourceSeq": 1,
+      "params": {
+        "deliveryKind": "desktop-continuous",
+        "eventId": "a34623e8-84e6-4e2b-b67b-08a386bebc41",
+        "payload": {
+          "descriptor": {
+            "clientVisible": true,
+            "commandDisplay": "node \"<ZCODE_HOME>\\\\cli\\\\plugins\\\\cache\\\\zcode-plugins-official\\\\mimosa\\\\1.0.4/hooks/run-hook.cjs\" session-hook.mjs SessionStart",
+            "executionMode": "foreground",
+            "executionType": "process",
+            "pluginId": "mimosa@zcode-plugins-official",
+            "pluginName": "mimosa",
+            "sourceKind": "plugin",
+            "sourcePath": "<ZCODE_HOME>\\cli\\plugins\\cache\\zcode-plugins-official\\mimosa\\1.0.4\\hooks\\hooks.json",
+            "statusMessage": "Mimosa 正在准备项目安全上下文…",
+            "timeoutMs": 120000
+          },
+          "hookEventName": "SessionStart",
+          "hookIndex": 0,
+          "hookCount": 2,
+          "hookInvocationId": "4ce7c610-09a5-46db-b02f-40d1bd380faa",
+          "hookRunId": "791bb7ac-984c-4b9f-ae6f-b25e1f47eee2",
+          "hookSource": "plugin.mimosa@zcode-plugins-official.SessionStart.0.0",
+          "startedAt": 1794152556957
+        },
+        "seq": 1,
+        "sessionId": "sess_contract_resume_force",
+        "timestamp": 1794152556957,
+        "traceId": "995fddb2-7791-4a17-b055-e9e1491c136c",
+        "turnId": "turn_contract",
+        "type": "session.updated"
+      }
+    },
+    {
+      "method": "session/event",
+      "sourceSeq": 2,
+      "params": {
+        "deliveryKind": "desktop-continuous",
+        "eventId": "353c1468-b947-4f10-bfbb-8ad2f3367df7",
+        "payload": {
+          "descriptor": {
+            "clientVisible": true,
+            "commandDisplay": "node \"<ZCODE_HOME>\\\\cli\\\\plugins\\\\cache\\\\zcode-plugins-official\\\\mimosa\\\\1.0.4/hooks/run-hook.cjs\" session-hook.mjs SessionStart",
+            "executionMode": "foreground",
+            "executionType": "process",
+            "pluginId": "mimosa@zcode-plugins-official",
+            "pluginName": "mimosa",
+            "sourceKind": "plugin",
+            "sourcePath": "<ZCODE_HOME>\\cli\\plugins\\cache\\zcode-plugins-official\\mimosa\\1.0.4\\hooks\\hooks.json",
+            "statusMessage": "Mimosa 正在准备项目安全上下文…",
+            "timeoutMs": 120000
+          },
+          "hookEventName": "SessionStart",
+          "hookIndex": 0,
+          "hookCount": 2,
+          "hookInvocationId": "4ce7c610-09a5-46db-b02f-40d1bd380faa",
+          "hookRunId": "791bb7ac-984c-4b9f-ae6f-b25e1f47eee2",
+          "hookSource": "plugin.mimosa@zcode-plugins-official.SessionStart.0.0",
+          "startedAt": 1794152556957,
+          "durationMs": 603,
+          "outcome": "success"
+        },
+        "seq": 2,
+        "sessionId": "sess_contract_resume_force",
+        "timestamp": 1794152557561,
+        "traceId": "995fddb2-7791-4a17-b055-e9e1491c136c",
+        "turnId": "turn_contract",
+        "type": "session.updated"
+      }
+    },
+    {
+      "method": "session/event",
+      "sourceSeq": 3,
+      "params": {
+        "deliveryKind": "desktop-continuous",
+        "eventId": "c45aaa81-7fae-468e-9bba-e4abd4fc0cff",
+        "payload": {
+          "descriptor": {
+            "clientVisible": true,
+            "commandDisplay": "node \"<ZCODE_HOME>\\\\cli\\\\plugins\\\\cache\\\\zcode-plugins-official\\\\tripo-3d\\\\0.1.4/hooks/session-start.mjs\"",
+            "executionMode": "foreground",
+            "executionType": "process",
+            "pluginId": "tripo-3d@zcode-plugins-official",
+            "pluginName": "tripo-3d",
+            "sourceKind": "plugin",
+            "sourcePath": "<ZCODE_HOME>\\cli\\plugins\\cache\\zcode-plugins-official\\tripo-3d\\0.1.4\\hooks\\hooks.json",
+            "statusMessage": "tripo-3d: loading Tripo rules…",
+            "timeoutMs": 5000
+          },
+          "hookEventName": "SessionStart",
+          "hookIndex": 1,
+          "hookCount": 2,
+          "hookInvocationId": "4ce7c610-09a5-46db-b02f-40d1bd380faa",
+          "hookRunId": "3591b3d2-d72d-4e6c-ae6c-ee254e8abdfd",
+          "hookSource": "plugin.tripo-3d@zcode-plugins-official.SessionStart.1.0",
+          "matcher": "startup|clear|compact",
+          "startedAt": 1794152557562
+        },
+        "seq": 3,
+        "sessionId": "sess_contract_resume_force",
+        "timestamp": 1794152557562,
+        "traceId": "995fddb2-7791-4a17-b055-e9e1491c136c",
+        "turnId": "turn_contract",
+        "type": "session.updated"
+      }
+    },
+    {
+      "method": "session/event",
+      "sourceSeq": 4,
+      "params": {
+        "deliveryKind": "desktop-continuous",
+        "eventId": "9e2e02a3-51d8-4fa0-a178-5e10529cff96",
+        "payload": {
+          "descriptor": {
+            "clientVisible": true,
+            "commandDisplay": "node \"<ZCODE_HOME>\\\\cli\\\\plugins\\\\cache\\\\zcode-plugins-official\\\\tripo-3d\\\\0.1.4/hooks/session-start.mjs\"",
+            "executionMode": "foreground",
+            "executionType": "process",
+            "pluginId": "tripo-3d@zcode-plugins-official",
+            "pluginName": "tripo-3d",
+            "sourceKind": "plugin",
+            "sourcePath": "<ZCODE_HOME>\\cli\\plugins\\cache\\zcode-plugins-official\\tripo-3d\\0.1.4\\hooks\\hooks.json",
+            "statusMessage": "tripo-3d: loading Tripo rules…",
+            "timeoutMs": 5000
+          },
+          "hookEventName": "SessionStart",
+          "hookIndex": 1,
+          "hookCount": 2,
+          "hookInvocationId": "4ce7c610-09a5-46db-b02f-40d1bd380faa",
+          "hookRunId": "3591b3d2-d72d-4e6c-ae6c-ee254e8abdfd",
+          "hookSource": "plugin.tripo-3d@zcode-plugins-official.SessionStart.1.0",
+          "matcher": "startup|clear|compact",
+          "startedAt": 1794152557562,
+          "durationMs": 411,
+          "outcome": "success"
+        },
+        "seq": 4,
+        "sessionId": "sess_contract_resume_force",
+        "timestamp": 1794152557973,
+        "traceId": "995fddb2-7791-4a17-b055-e9e1491c136c",
+        "turnId": "turn_contract",
+        "type": "session.updated"
+      }
+    },
+    {
+      "method": "session/event",
+      "sourceSeq": 5,
+      "params": {
+        "deliveryKind": "desktop-continuous",
+        "eventId": "a9f31467-b290-4afa-b3a9-e4f5aad5d30c",
+        "payload": {
+          "previousTitle": "",
+          "source": "first_input",
+          "title": "请记住数字 47，然后只回复 OK。"
+        },
+        "seq": 5,
+        "sessionId": "sess_contract_resume_force",
+        "timestamp": 1794152558004,
+        "traceId": "995fddb2-7791-4a17-b055-e9e1491c136c",
+        "turnId": "turn_contract",
+        "type": "session.titleUpdated"
+      }
+    },
+    {
+      "method": "session/event",
+      "sourceSeq": 6,
+      "params": {
+        "deliveryKind": "desktop-continuous",
+        "eventId": "df4ee9f0-2499-4a89-a1e7-d5d02bf18a12",
+        "payload": {
+          "contextWindow": 1000000,
+          "modelSelection": {
+            "providerId": "account:bigmodel-start-plan",
+            "modelId": "GLM-5.3-Flash",
+            "options": {
+              "reasoningLevel": "high"
+            }
+          },
+          "effectiveReasoningLevel": "high",
+          "previousModelSelection": {
+            "providerId": "account:bigmodel-start-plan",
+            "modelId": "GLM-5.3-Flash"
+          },
+          "supportedThoughtLevels": [
+            "low",
+            "high",
+            "max"
+          ]
+        },
+        "seq": 6,
+        "sessionId": "sess_contract_resume_force",
+        "timestamp": 1794152558036,
+        "traceId": "995fddb2-7791-4a17-b055-e9e1491c136c",
+        "type": "session.updated"
+      }
+    },
+    {
+      "method": "session/event",
+      "sourceSeq": 7,
+      "params": {
+        "deliveryKind": "desktop-continuous",
+        "eventId": "15715b02-1ba2-4d50-9bd4-be64efe86e1c",
+        "payload": {
+          "executionStartedAt": 1794152556172.9177,
+          "turnNumber": 0,
+          "input": "请记住数字 47，然后只回复 OK。",
+          "messageId": "msg_mw803xsn_2c53db03-1bfb-4fae-9784-c892d5afd2d3",
+          "inputId": "468e24ac-e9a5-41c9-a027-701f0d6e005a",
+          "foregroundExecutionId": "runtime_command_1",
+          "queryId": "468e24ac-e9a5-41c9-a027-701f0d6e005a",
+          "intent": {
+            "sourceCommandId": "468e24ac-e9a5-41c9-a027-701f0d6e005a",
+            "queueItemId": "queue_468e24ac-e9a5-41c9-a027-701f0d6e005a",
+            "clientId": "legacy-session-send",
+            "kind": "sendText",
+            "text": "请记住数字 47，然后只回复 OK。",
+            "modelSelection": {
+              "providerId": "account:bigmodel-start-plan",
+              "modelId": "GLM-5.3-Flash",
+              "options": {
+                "reasoningLevel": "high"
+              }
+            },
+            "admissionSeq": 0,
+            "admittedAt": 1794152556149,
+            "requestedDelivery": "startNow",
+            "admittedDelivery": "startNow"
+          }
+        },
+        "seq": 7,
+        "sessionId": "sess_contract_resume_force",
+        "timestamp": 1794152558039,
+        "traceId": "995fddb2-7791-4a17-b055-e9e1491c136c",
+        "turnId": "turn_contract",
+        "type": "turn.started"
+      }
+    },
+    {
+      "method": "session/event",
+      "sourceSeq": 8,
+      "params": {
+        "deliveryKind": "desktop-continuous",
+        "eventId": "1e264fdf-1ed4-40a8-9284-a6ae11187a24",
+        "payload": {
+          "descriptor": {
+            "clientVisible": true,
+            "commandDisplay": "node \"<ZCODE_HOME>\\\\cli\\\\plugins\\\\cache\\\\zcode-plugins-official\\\\mimosa\\\\1.0.4/hooks/run-hook.cjs\" prompt-hook.mjs UserPromptSubmit",
+            "executionMode": "foreground",
+            "executionType": "process",
+            "pluginId": "mimosa@zcode-plugins-official",
+            "pluginName": "mimosa",
+            "sourceKind": "plugin",
+            "sourcePath": "<ZCODE_HOME>\\cli\\plugins\\cache\\zcode-plugins-official\\mimosa\\1.0.4\\hooks\\hooks.json",
+            "timeoutMs": 30000
+          },
+          "hookEventName": "UserPromptSubmit",
+          "hookIndex": 0,
+          "hookCount": 1,
+          "hookInvocationId": "5cb0e8ca-51ec-43eb-88e1-d335a6369ebd",
+          "hookRunId": "ad69d7fb-ac59-4722-be48-bbca64b310f1",
+          "hookSource": "plugin.mimosa@zcode-plugins-official.UserPromptSubmit.0.0",
+          "startedAt": 1794152558084
+        },
+        "seq": 8,
+        "sessionId": "sess_contract_resume_force",
+        "timestamp": 1794152558084,
+        "traceId": "995fddb2-7791-4a17-b055-e9e1491c136c",
+        "turnId": "turn_contract",
+        "type": "session.updated"
+      }
+    },
+    {
+      "method": "session/event",
+      "sourceSeq": 9,
+      "params": {
+        "deliveryKind": "desktop-continuous",
+        "eventId": "d17f3b60-053d-44e3-9ee0-c3308d0961d1",
+        "payload": {
+          "descriptor": {
+            "clientVisible": true,
+            "commandDisplay": "node \"<ZCODE_HOME>\\\\cli\\\\plugins\\\\cache\\\\zcode-plugins-official\\\\mimosa\\\\1.0.4/hooks/run-hook.cjs\" prompt-hook.mjs UserPromptSubmit",
+            "executionMode": "foreground",
+            "executionType": "process",
+            "pluginId": "mimosa@zcode-plugins-official",
+            "pluginName": "mimosa",
+            "sourceKind": "plugin",
+            "sourcePath": "<ZCODE_HOME>\\cli\\plugins\\cache\\zcode-plugins-official\\mimosa\\1.0.4\\hooks\\hooks.json",
+            "timeoutMs": 30000
+          },
+          "hookEventName": "UserPromptSubmit",
+          "hookIndex": 0,
+          "hookCount": 1,
+          "hookInvocationId": "5cb0e8ca-51ec-43eb-88e1-d335a6369ebd",
+          "hookRunId": "ad69d7fb-ac59-4722-be48-bbca64b310f1",
+          "hookSource": "plugin.mimosa@zcode-plugins-official.UserPromptSubmit.0.0",
+          "startedAt": 1794152558084,
+          "durationMs": 549,
+          "outcome": "success"
+        },
+        "seq": 9,
+        "sessionId": "sess_contract_resume_force",
+        "timestamp": 1794152558633,
+        "traceId": "995fddb2-7791-4a17-b055-e9e1491c136c",
+        "turnId": "turn_contract",
+        "type": "session.updated"
+      }
+    },
+    {
+      "method": "session/event",
+      "sourceSeq": 10,
+      "params": {
+        "deliveryKind": "desktop-continuous",
+        "eventId": "3773d337-a231-4af9-8fd9-5ee5639f32e8",
+        "payload": {
+          "pendingInputId": "queue_468e24ac-e9a5-41c9-a027-701f0d6e005a",
+          "sourceCommandId": "468e24ac-e9a5-41c9-a027-701f0d6e005a",
+          "messageId": "msg_mw803xsn_2c53db03-1bfb-4fae-9784-c892d5afd2d3"
+        },
+        "seq": 10,
+        "sessionId": "sess_contract_resume_force",
+        "timestamp": 1794152558654,
+        "traceId": "995fddb2-7791-4a17-b055-e9e1491c136c",
+        "turnId": "turn_contract",
+        "type": "session.updated"
+      }
+    },
+    {
+      "method": "session/event",
+      "sourceSeq": 11,
+      "params": {
+        "deliveryKind": "desktop-continuous",
+        "eventId": "44e47735-d92d-4676-a37d-88ca6ceb38bf",
+        "payload": {
+          "messageCount": 7,
+          "providerId": "account:bigmodel-start-plan",
+          "modelId": "GLM-5.3-Flash",
+          "toolCount": 244,
+          "iteration": 0
+        },
+        "seq": 11,
+        "sessionId": "sess_contract_resume_force",
+        "timestamp": 1794152568846,
+        "traceId": "995fddb2-7791-4a17-b055-e9e1491c136c",
+        "turnId": "turn_contract",
+        "type": "session.updated"
+      }
+    },
+    {
+      "method": "session/event",
+      "sourceSeq": 12,
+      "params": {
+        "deliveryKind": "desktop-continuous",
+        "eventId": "a315060a-d28b-45ad-a1f5-89367771b0e7",
+        "payload": {
+          "baseURL": "https://zcode.z.ai/api/v1/zcode-plan/anthropic",
+          "maxAttempts": 11,
+          "providerId": "account:bigmodel-start-plan",
+          "modelId": "GLM-5.3-Flash",
+          "modelRequestSessionType": "main",
+          "requestId": "6144b724-3b06-4595-9d0f-3920ad22268b",
+          "sessionId": "sess_contract_resume_force",
+          "spanId": "78ad4e7a-1a2d-43",
+          "parentSpanId": "0534d656-2d31-42",
+          "querySource": "main_turn",
+          "queryId": "468e24ac-e9a5-41c9-a027-701f0d6e005a",
+          "traceId": "995fddb2-7791-4a17-b055-e9e1491c136c",
+          "providerKind": "anthropic",
+          "transport": "sse",
+          "turnId": "turn_contract",
+          "modelCall": {
+            "operation": "agent_step",
+            "actorKind": "main",
+            "operationId": "78ad4e7a-1a2d-43",
+            "reasoning": {
+              "capability": "unknown",
+              "requestedControl": "provider_default",
+              "requestedState": "provider_default",
+              "requestedLevel": "high",
+              "effectiveControl": "unknown",
+              "effectiveState": "unknown",
+              "effectiveLevel": "unknown"
+            },
+            "logicalCallId": "1c583acd-adb7-4756-8958-66cd44414000",
+            "stepIndex": 0
+          },
+          "attempt": 1,
+          "requestHeaderCount": 17,
+          "requestHeaders": {
+            "http-referer": "https://zcode.z.ai/",
+            "user-agent": "ZCode/3.17.2",
+            "x-zcode-app-version": "3.17.2",
+            "x-title": "Z Code@electron",
+            "x-release-channel": "production",
+            "x-client-language": "zh-CN",
+            "x-client-timezone": "Asia/Shanghai",
+            "x-zcode-agent": "glm",
+            "x-platform": "win32-x64",
+            "x-os-category": "windows",
+            "x-os-version": "10.0.26300",
+            "x-request-id": "6144b724-3b06-4595-9d0f-3920ad22268b",
+            "x-zcode-session-type": "main",
+            "x-zcode-trace-id": "995fddb2-7791-4a17-b055-e9e1491c136c",
+            "x-query-id": "468e24ac-e9a5-41c9-a027-701f0d6e005a",
+            "x-zcode-query-source": "main_turn",
+            "x-session-id": "42e8f0bb-2032-4134-be79-0ae7ff18ea49"
+          },
+          "timestamp": "2026-11-08T15:42:48.880Z",
+          "type": "model_request_started",
+          "_meta": {
+            "zcode": {
+              "apiRetry": null
+            }
+          }
+        },
+        "seq": 12,
+        "sessionId": "sess_contract_resume_force",
+        "timestamp": 1794152568904,
+        "traceId": "995fddb2-7791-4a17-b055-e9e1491c136c",
+        "turnId": "turn_contract",
+        "type": "session.updated"
+      }
+    },
+    {
+      "method": "session/event",
+      "sourceSeq": 13,
+      "params": {
+        "deliveryKind": "desktop-continuous",
+        "eventId": "ad6a97c0-0e4e-4539-8b2b-626109f2c65d",
+        "payload": {
+          "assistantMessageId": "msg_mw80464l_e848cb74-d38d-4ac4-8deb-94e332ba48a5",
+          "delta": "OK",
+          "done": false,
+          "kind": "text_delta"
+        },
+        "seq": 13,
+        "sessionId": "sess_contract_resume_force",
+        "timestamp": 1794152574165,
+        "traceId": "995fddb2-7791-4a17-b055-e9e1491c136c",
+        "turnId": "turn_contract",
+        "type": "model.streaming"
+      }
+    },
+    {
+      "method": "session/event",
+      "sourceSeq": 14,
+      "params": {
+        "deliveryKind": "desktop-continuous",
+        "eventId": "2bcb627c-b245-41a1-bfea-7ab02ae8fa3f",
+        "payload": {
+          "assistantMessageId": "msg_mw80464l_e848cb74-d38d-4ac4-8deb-94e332ba48a5",
+          "delta": "\n\n（已记住：47。后续需要时",
+          "done": false,
+          "kind": "text_delta"
+        },
+        "seq": 14,
+        "sessionId": "sess_contract_resume_force",
+        "timestamp": 1794152574466,
+        "traceId": "995fddb2-7791-4a17-b055-e9e1491c136c",
+        "turnId": "turn_contract",
+        "type": "model.streaming"
+      }
+    },
+    {
+      "method": "session/event",
+      "sourceSeq": 15,
+      "params": {
+        "deliveryKind": "desktop-continuous",
+        "eventId": "6ba5bdb3-cad8-4029-9ffc-75ee0fa06988",
+        "payload": {
+          "assistantMessageId": "msg_mw80464l_e848cb74-d38d-4ac4-8deb-94e332ba48a5",
+          "delta": "请随时提醒我核对。）",
+          "done": false,
+          "kind": "text_delta"
+        },
+        "seq": 15,
+        "sessionId": "sess_contract_resume_force",
+        "timestamp": 1794152574756,
+        "traceId": "995fddb2-7791-4a17-b055-e9e1491c136c",
+        "turnId": "turn_contract",
+        "type": "model.streaming"
+      }
+    },
+    {
+      "method": "session/event",
+      "sourceSeq": 16,
+      "params": {
+        "deliveryKind": "desktop-continuous",
+        "eventId": "086861f0-8777-4ff2-84c3-67e6d459220d",
+        "payload": {
+          "baseURL": "https://zcode.z.ai/api/v1/zcode-plan/anthropic",
+          "maxAttempts": 11,
+          "providerId": "account:bigmodel-start-plan",
+          "modelId": "GLM-5.3-Flash",
+          "modelRequestSessionType": "main",
+          "requestId": "6144b724-3b06-4595-9d0f-3920ad22268b",
+          "sessionId": "sess_contract_resume_force",
+          "spanId": "78ad4e7a-1a2d-43",
+          "parentSpanId": "0534d656-2d31-42",
+          "querySource": "main_turn",
+          "queryId": "468e24ac-e9a5-41c9-a027-701f0d6e005a",
+          "traceId": "995fddb2-7791-4a17-b055-e9e1491c136c",
+          "providerKind": "anthropic",
+          "transport": "sse",
+          "turnId": "turn_contract",
+          "modelCall": {
+            "operation": "agent_step",
+            "actorKind": "main",
+            "operationId": "78ad4e7a-1a2d-43",
+            "reasoning": {
+              "capability": "unknown",
+              "requestedControl": "provider_default",
+              "requestedState": "provider_default",
+              "requestedLevel": "high",
+              "effectiveControl": "unknown",
+              "effectiveState": "unknown",
+              "effectiveLevel": "unknown"
+            },
+            "logicalCallId": "1c583acd-adb7-4756-8958-66cd44414000",
+            "stepIndex": 0
+          },
+          "attempt": 1,
+          "durationMs": 5907,
+          "requestHeaderCount": 17,
+          "requestHeaders": {
+            "http-referer": "https://zcode.z.ai/",
+            "user-agent": "ZCode/3.17.2",
+            "x-zcode-app-version": "3.17.2",
+            "x-title": "Z Code@electron",
+            "x-release-channel": "production",
+            "x-client-language": "zh-CN",
+            "x-client-timezone": "Asia/Shanghai",
+            "x-zcode-agent": "glm",
+            "x-platform": "win32-x64",
+            "x-os-category": "windows",
+            "x-os-version": "10.0.26300",
+            "x-request-id": "6144b724-3b06-4595-9d0f-3920ad22268b",
+            "x-zcode-session-type": "main",
+            "x-zcode-trace-id": "995fddb2-7791-4a17-b055-e9e1491c136c",
+            "x-query-id": "468e24ac-e9a5-41c9-a027-701f0d6e005a",
+            "x-zcode-query-source": "main_turn",
+            "x-session-id": "42e8f0bb-2032-4134-be79-0ae7ff18ea49"
+          },
+          "responseHeaderCount": 15,
+          "responseHeaders": {
+            "cache-control": "no-cache",
+            "connection": "keep-alive",
+            "content-type": "text/event-stream; charset=utf-8",
+            "date": "Sun, 08 Nov 2026 15:42:49 GMT",
+            "eagleid": "8ccf3f6717941525689977581e",
+            "server": "ESA",
+            "set-cookie": "<redacted>",
+            "timing-allow-origin": "*",
+            "transfer-encoding": "chunked",
+            "vary": "Accept-Encoding",
+            "via": "ens-cache1.l2eo166-17[287,0,DP], ens-cache19.cn7369[290,0,DP], ens-cache19.cn7369[291,0]",
+            "x-content-type-options": "nosniff",
+            "x-log-id": "202611082342497628f05a38694d14",
+            "x-request-id": "2026110815424987a73f4eff344cebd027",
+            "x-site-cache-status": "DYNAMIC"
+          },
+          "providerRequestId": "2026110815424987a73f4eff344cebd027",
+          "finishReason": "stop",
+          "usage": {
+            "inputTokens": "<redacted>",
+            "outputTokens": "<redacted>",
+            "totalTokens": "<redacted>",
+            "cacheReadTokens": "<redacted>",
+            "cacheWriteTokens": "<redacted>"
+          },
+          "timeToFirstProviderEventMs": 63,
+          "timeToFirstContentMs": 5267,
+          "timeToFirstTextMs": 5282,
+          "streamStallCount": 0,
+          "streamOutputCommitted": true,
+          "timestamp": "2026-11-08T15:42:54.787Z",
+          "type": "model_request_completed",
+          "_meta": {
+            "zcode": {
+              "apiRetry": null
+            }
+          }
+        },
+        "seq": 16,
+        "sessionId": "sess_contract_resume_force",
+        "timestamp": 1794152574793,
+        "traceId": "995fddb2-7791-4a17-b055-e9e1491c136c",
+        "turnId": "turn_contract",
+        "type": "session.updated"
+      }
+    },
+    {
+      "method": "session/event",
+      "sourceSeq": 17,
+      "params": {
+        "deliveryKind": "desktop-continuous",
+        "eventId": "32a5dd38-8a53-4baf-976c-ff1ff9d3aeef",
+        "payload": {
+          "content": "OK\n\n（已记住：47。后续需要时请随时提醒我核对。）",
+          "contextWindow": 1000000,
+          "querySource": "main_turn",
+          "stopReason": "stop",
+          "usage": {
+            "inputTokens": "<redacted>",
+            "outputTokens": "<redacted>",
+            "totalTokens": "<redacted>",
+            "cacheReadTokens": "<redacted>",
+            "cacheWriteTokens": "<redacted>"
+          },
+          "cacheHit": {
+            "inputTokens": "<redacted>",
+            "cacheReadTokens": "<redacted>",
+            "cacheWriteTokens": "<redacted>",
+            "latestHitRate": 0.9993630843700905,
+            "hitRate": 0.9993630843700905,
+            "hitRateRequestCount": 1,
+            "totalInputTokens": "<redacted>",
+            "totalCacheReadTokens": "<redacted>",
+            "totalCacheWriteTokens": "<redacted>"
+          },
+          "contextUsageBreakdown": [
+            {
+              "source": "system_prompt",
+              "chars": 2961
+            },
+            {
+              "source": "meta_user_context",
+              "chars": 3679
+            },
+            {
+              "source": "skills",
+              "chars": 19074
+            },
+            {
+              "source": "system_tool_schemas",
+              "chars": 86131
+            },
+            {
+              "source": "mcp_tool_schemas",
+              "chars": 422316
+            },
+            {
+              "source": "messages",
+              "chars": 46
+            }
+          ],
+          "toolCallCount": 0
+        },
+        "seq": 17,
+        "sessionId": "sess_contract_resume_force",
+        "timestamp": 1794152574845,
+        "traceId": "995fddb2-7791-4a17-b055-e9e1491c136c",
+        "turnId": "turn_contract",
+        "type": "session.updated"
+      }
+    },
+    {
+      "method": "session/event",
+      "sourceSeq": 18,
+      "params": {
+        "deliveryKind": "desktop-continuous",
+        "eventId": "96a20aaa-225d-4c20-a8a6-db70a1a1686e",
+        "payload": {
+          "descriptor": {
+            "clientVisible": true,
+            "commandDisplay": "node \"<ZCODE_HOME>\\\\cli\\\\plugins\\\\cache\\\\zcode-plugins-official\\\\mimosa\\\\1.0.4/hooks/run-hook.cjs\" stop-hook.mjs Stop",
+            "executionMode": "foreground",
+            "executionType": "process",
+            "pluginId": "mimosa@zcode-plugins-official",
+            "pluginName": "mimosa",
+            "sourceKind": "plugin",
+            "sourcePath": "<ZCODE_HOME>\\cli\\plugins\\cache\\zcode-plugins-official\\mimosa\\1.0.4\\hooks\\hooks.json",
+            "statusMessage": "Mimosa 正在复查本轮改动…",
+            "timeoutMs": 120000
+          },
+          "hookEventName": "Stop",
+          "hookIndex": 0,
+          "hookCount": 1,
+          "hookInvocationId": "cabad254-88d4-4dc7-a482-6ca96b403ccf",
+          "hookRunId": "4a5586c7-60bd-4028-b370-fd925ab68427",
+          "hookSource": "plugin.mimosa@zcode-plugins-official.Stop.0.0",
+          "startedAt": 1794152574892
+        },
+        "seq": 18,
+        "sessionId": "sess_contract_resume_force",
+        "timestamp": 1794152574892,
+        "traceId": "995fddb2-7791-4a17-b055-e9e1491c136c",
+        "turnId": "turn_contract",
+        "type": "session.updated"
+      }
+    },
+    {
+      "method": "session/event",
+      "sourceSeq": 19,
+      "params": {
+        "deliveryKind": "desktop-continuous",
+        "eventId": "074f11f8-0f85-4872-9407-2c128305012f",
+        "payload": {
+          "descriptor": {
+            "clientVisible": true,
+            "commandDisplay": "node \"<ZCODE_HOME>\\\\cli\\\\plugins\\\\cache\\\\zcode-plugins-official\\\\mimosa\\\\1.0.4/hooks/run-hook.cjs\" stop-hook.mjs Stop",
+            "executionMode": "foreground",
+            "executionType": "process",
+            "pluginId": "mimosa@zcode-plugins-official",
+            "pluginName": "mimosa",
+            "sourceKind": "plugin",
+            "sourcePath": "<ZCODE_HOME>\\cli\\plugins\\cache\\zcode-plugins-official\\mimosa\\1.0.4\\hooks\\hooks.json",
+            "statusMessage": "Mimosa 正在复查本轮改动…",
+            "timeoutMs": 120000
+          },
+          "hookEventName": "Stop",
+          "hookIndex": 0,
+          "hookCount": 1,
+          "hookInvocationId": "cabad254-88d4-4dc7-a482-6ca96b403ccf",
+          "hookRunId": "4a5586c7-60bd-4028-b370-fd925ab68427",
+          "hookSource": "plugin.mimosa@zcode-plugins-official.Stop.0.0",
+          "startedAt": 1794152574892,
+          "durationMs": 460,
+          "outcome": "success"
+        },
+        "seq": 19,
+        "sessionId": "sess_contract_resume_force",
+        "timestamp": 1794152575352,
+        "traceId": "995fddb2-7791-4a17-b055-e9e1491c136c",
+        "turnId": "turn_contract",
+        "type": "session.updated"
+      }
+    },
+    {
+      "method": "session/event",
+      "sourceSeq": 20,
+      "params": {
+        "deliveryKind": "desktop-continuous",
+        "eventId": "732549e6-fb1b-475f-a75e-cd4b278b9ee2",
+        "payload": {
+          "response": "OK\n\n（已记住：47。后续需要时请随时提醒我核对。）",
+          "tokenCount": "<redacted>",
+          "usage": {
+            "source": "provider",
+            "modelRequestCount": 1,
+            "inputTokens": "<redacted>",
+            "outputTokens": "<redacted>",
+            "totalTokens": "<redacted>",
+            "cacheReadTokens": "<redacted>",
+            "cacheWriteTokens": "<redacted>",
+            "reasoningTokens": "<redacted>",
+            "webFetchRequests": 0,
+            "webSearchRequests": 0
+          },
+          "toolCallCount": 0,
+          "historyRoundCount": 1,
+          "duration": 19199,
+          "resultType": "success",
+          "cacheStats": {
+            "totalMessages": 13,
+            "cachedMessages": 12,
+            "lastCacheHit": true,
+            "cacheReadTokens": "<redacted>"
+          },
+          "inputId": "468e24ac-e9a5-41c9-a027-701f0d6e005a"
+        },
+        "seq": 20,
+        "sessionId": "sess_contract_resume_force",
+        "timestamp": 1794152575364,
+        "traceId": "995fddb2-7791-4a17-b055-e9e1491c136c",
+        "turnId": "turn_contract",
+        "type": "turn.completed"
+      }
+    }
+  ],
+  "contract": {
+    "expectedTerminal": "success",
+    "syntheticTerminal": false,
+    "seqContinuous": true,
+    "stopMustBeRequest": true,
+    "stdoutMustBeJsonLines": true
+  },
+  "steps": [
+    {
+      "on": "session/create",
+      "timeout": 15000,
+      "emit": [
+        {
+          "method": "session/lifecycle/changed",
+          "params": {
+            "sessionId": "sess_contract_resume_force",
+            "state": "ready",
+            "generation": 1,
+            "revision": 2,
+            "lastError": null
+          }
+        },
+        {
+          "id": "server-1",
+          "method": "session/requestRuntimePreferences",
+          "params": {
+            "sessionId": "sess_contract_resume_force",
+            "scope": "runtime-materialization"
+          }
+        },
+        {
+          "id": "server-2",
+          "method": "interaction/requestOfficialMcpAuthHeaders",
+          "params": {
+            "mcpKey": "image_search",
+            "pluginId": "image-search@zcode-plugins-official",
+            "requestId": "official-mcp-auth:1",
+            "targetOrigin": "https://zcode.z.ai/",
+            "workspace": {
+              "workspaceKey": "<CWD>",
+              "workspacePath": "<CWD>"
+            }
+          }
+        }
+      ],
+      "waitAnswers": [
+        "server-1"
+      ],
+      "reply": {
+        "messages": [],
+        "projection": {
+          "activeToolCalls": [],
+          "backgroundJobs": [],
+          "contextUsed": 0,
+          "contextWindow": 200000,
+          "mode": "build",
+          "pendingPermissions": [],
+          "sessionId": "unknown",
+          "status": "idle",
+          "target": null,
+          "totalTokenCount": "<redacted>",
+          "turnCount": 0
+        },
+        "protocol": {
+          "name": "ZCode Protocol",
+          "version": 1
+        },
+        "runtime": {
+          "eventSeq": 0,
+          "pendingRequestIds": [],
+          "goalVerifications": [],
+          "goalVerificationTimeline": [],
+          "stateRevision": 1
+        },
+        "session": {
+          "createdAt": 1794151557046,
+          "mode": "build",
+          "model": {
+            "providerId": "account:bigmodel-start-plan",
+            "modelId": "GLM-5.3-Flash"
+          },
+          "traceId": "2e32b8aa-a4b4-43ce-bcbc-a3ed947baffe",
+          "sessionId": "sess_contract_resume_force",
+          "sessionKind": "interactive",
+          "status": "idle",
+          "target": null,
+          "title": "",
+          "updatedAt": 1794151557046,
+          "workspace": {
+            "workspacePath": "<CWD>",
+            "workspaceKey": "workspace"
+          }
+        },
+        "settings": {
+          "mode": {
+            "current": "build"
+          },
+          "model": {
+            "available": [
+              {
+                "ref": {
+                  "providerId": "account:bigmodel-start-plan",
+                  "modelId": "GLM-5.3-Flash"
+                },
+                "label": "GLM-5.3-Flash",
+                "providerLabel": "Start Plan",
+                "contextWindow": 1000000,
+                "maxOutputTokens": "<redacted>",
+                "reasoning": {
+                  "levels": [
+                    {
+                      "value": "low",
+                      "label": "low"
+                    },
+                    {
+                      "value": "high",
+                      "label": "high"
+                    },
+                    {
+                      "value": "max",
+                      "label": "max"
+                    }
+                  ],
+                  "defaultLevel": "max"
+                },
+                "properties": {
+                  "inputFormat": {
+                    "supportsText": true,
+                    "supportsImage": true,
+                    "supportsVideo": true,
+                    "supportsAudio": false,
+                    "supportsPdf": true
+                  },
+                  "outputFormat": {
+                    "supportsText": true
+                  }
+                }
+              }
+            ],
+            "current": {
+              "providerId": "account:bigmodel-start-plan",
+              "modelId": "GLM-5.3-Flash"
+            },
+            "lastUsed": {
+              "providerId": "account:bigmodel-start-plan",
+              "modelId": "GLM-5.3-Flash"
+            }
+          },
+          "permission": {
+            "mode": "build"
+          },
+          "thoughtLevel": {
+            "available": [
+              {
+                "label": "low",
+                "value": "low"
+              },
+              {
+                "label": "high",
+                "value": "high"
+              },
+              {
+                "label": "max",
+                "value": "max"
+              }
+            ],
+            "enabled": true
+          }
+        },
+        "slashCommands": [
+          {
+            "description": "Show or set the current session goal.",
+            "inputHint": "/goal [pause|resume|clear|replace <objective>|<objective>]",
+            "name": "goal",
+            "source": "builtin"
+          },
+          {
+            "description": "Compact the current conversation with optional instructions.",
+            "inputHint": "/compact [instructions]",
+            "name": "compact",
+            "source": "builtin"
+          },
+          {
+            "description": "Create or update workspace AGENTS.md instructions.",
+            "inputHint": "/init [notes]",
+            "name": "init",
+            "source": "builtin"
+          },
+          {
+            "description": "Run CodeRabbit AI code review on your changes",
+            "inputHint": "/coderabbit-review [type] [--base <branch>] [--dir <path>]",
+            "name": "coderabbit-review",
+            "source": "custom"
+          },
+          {
+            "description": "Reproducible, sealed Mimosa deep security audit. / 执行可复核的 Mimosa 密封深度安全审计。",
+            "inputHint": "/mimosa-deep-audit [项目路径 | project path]",
+            "name": "mimosa-deep-audit",
+            "source": "custom"
+          },
+          {
+            "description": "Fast static security audit with Mimosa. / 用 Mimosa 做快速静态安全审计。",
+            "inputHint": "/mimosa-scan [项目路径 | project path]",
+            "name": "mimosa-scan",
+            "source": "custom"
+          },
+          {
+            "description": "Show Mimosa hook, coverage, and open-finding status for this project. / 查看 Mimosa 当前项目的 Hook、扫描覆盖与未结 finding 状态。",
+            "inputHint": "/mimosa-status",
+            "name": "mimosa-status",
+            "source": "custom"
+          },
+          {
+            "description": "Open VectorCraft and optionally a workspace file",
+            "inputHint": "/open",
+            "name": "open",
+            "source": "custom"
+          },
+          {
+            "description": "Hide or show the ZCode badge on the linked ZCode Sites site.",
+            "inputHint": "/site-badge hide | show",
+            "name": "site-badge",
+            "source": "custom"
+          },
+          {
+            "description": "Deploy this project to ZCode Sites, or redeploy the linked site.",
+            "inputHint": "/site-deploy [site id or notes]",
+            "name": "site-deploy",
+            "source": "custom"
+          },
+          {
+            "description": "Show the logs of a ZCode Sites deployment and explain any failure.",
+            "inputHint": "/site-logs [deployment id]",
+            "name": "site-logs",
+            "source": "custom"
+          },
+          {
+            "description": "Take the linked ZCode Sites site offline.",
+            "inputHint": "/site-offline [site id]",
+            "name": "site-offline",
+            "source": "custom"
+          },
+          {
+            "description": "Bring the linked ZCode Sites site back online.",
+            "inputHint": "/site-online [site id]",
+            "name": "site-online",
+            "source": "custom"
+          },
+          {
+            "description": "Show the ZCode Sites site linked to this project.",
+            "inputHint": "/site-status [site id]",
+            "name": "site-status",
+            "source": "custom"
+          },
+          {
+            "description": "Show ZCode Sites usage and plan limits.",
+            "inputHint": "/site-usage",
+            "name": "site-usage",
+            "source": "custom"
+          }
+        ],
+        "todos": [],
+        "todoGroups": []
+      }
+    },
+    {
+      "on": "session/subscribe",
+      "optional": true,
+      "timeout": 15000,
+      "emit": [],
+      "reply": {
+        "eventSeq": 0,
+        "events": [],
+        "sessionId": "sess_contract_resume_force",
+        "snapshot": {
+          "messages": [],
+          "projection": {
+            "activeToolCalls": [],
+            "backgroundJobs": [],
+            "contextUsed": 0,
+            "contextWindow": 200000,
+            "mode": "build",
+            "pendingPermissions": [],
+            "sessionId": "unknown",
+            "status": "idle",
+            "target": null,
+            "totalTokenCount": "<redacted>",
+            "turnCount": 0
+          },
+          "protocol": {
+            "name": "ZCode Protocol",
+            "version": 1
+          },
+          "runtime": {
+            "deliveryKind": "desktop-continuous",
+            "eventSeq": 0,
+            "pendingRequestIds": [],
+            "goalVerifications": [],
+            "goalVerificationTimeline": [],
+            "stateRevision": 1
+          },
+          "session": {
+            "createdAt": 1794151557046,
+            "mode": "build",
+            "model": {
+              "providerId": "account:bigmodel-start-plan",
+              "modelId": "GLM-5.3-Flash"
+            },
+            "traceId": "2e32b8aa-a4b4-43ce-bcbc-a3ed947baffe",
+            "sessionId": "sess_contract_resume_force",
+            "sessionKind": "interactive",
+            "status": "idle",
+            "target": null,
+            "title": "",
+            "updatedAt": 1794151557046,
+            "workspace": {
+              "workspacePath": "<CWD>",
+              "workspaceKey": "workspace"
+            }
+          },
+          "settings": {
+            "mode": {
+              "current": "build"
+            },
+            "model": {
+              "available": [
+                {
+                  "ref": {
+                    "providerId": "account:bigmodel-start-plan",
+                    "modelId": "GLM-5.3-Flash"
+                  },
+                  "label": "GLM-5.3-Flash",
+                  "providerLabel": "Start Plan",
+                  "contextWindow": 200000,
+                  "maxOutputTokens": "<redacted>",
+                  "reasoning": {
+                    "levels": [
+                      {
+                        "value": "low",
+                        "label": "low"
+                      },
+                      {
+                        "value": "high",
+                        "label": "high"
+                      },
+                      {
+                        "value": "max",
+                        "label": "max"
+                      }
+                    ],
+                    "defaultLevel": "max"
+                  },
+                  "properties": {
+                    "inputFormat": {
+                      "supportsText": true,
+                      "supportsImage": true,
+                      "supportsVideo": true,
+                      "supportsAudio": false,
+                      "supportsPdf": true
+                    },
+                    "outputFormat": {
+                      "supportsText": true
+                    }
+                  }
+                }
+              ],
+              "current": {
+                "providerId": "account:bigmodel-start-plan",
+                "modelId": "GLM-5.3-Flash"
+              },
+              "lastUsed": {
+                "providerId": "account:bigmodel-start-plan",
+                "modelId": "GLM-5.3-Flash"
+              }
+            },
+            "permission": {
+              "mode": "build"
+            },
+            "thoughtLevel": {
+              "available": [
+                {
+                  "label": "low",
+                  "value": "low"
+                },
+                {
+                  "label": "high",
+                  "value": "high"
+                },
+                {
+                  "label": "max",
+                  "value": "max"
+                }
+              ],
+              "enabled": true
+            }
+          },
+          "slashCommands": [
+            {
+              "description": "Show or set the current session goal.",
+              "inputHint": "/goal [pause|resume|clear|replace <objective>|<objective>]",
+              "name": "goal",
+              "source": "builtin"
+            },
+            {
+              "description": "Compact the current conversation with optional instructions.",
+              "inputHint": "/compact [instructions]",
+              "name": "compact",
+              "source": "builtin"
+            },
+            {
+              "description": "Create or update workspace AGENTS.md instructions.",
+              "inputHint": "/init [notes]",
+              "name": "init",
+              "source": "builtin"
+            },
+            {
+              "description": "Run CodeRabbit AI code review on your changes",
+              "inputHint": "/coderabbit-review [type] [--base <branch>] [--dir <path>]",
+              "name": "coderabbit-review",
+              "source": "custom"
+            },
+            {
+              "description": "Reproducible, sealed Mimosa deep security audit. / 执行可复核的 Mimosa 密封深度安全审计。",
+              "inputHint": "/mimosa-deep-audit [项目路径 | project path]",
+              "name": "mimosa-deep-audit",
+              "source": "custom"
+            },
+            {
+              "description": "Fast static security audit with Mimosa. / 用 Mimosa 做快速静态安全审计。",
+              "inputHint": "/mimosa-scan [项目路径 | project path]",
+              "name": "mimosa-scan",
+              "source": "custom"
+            },
+            {
+              "description": "Show Mimosa hook, coverage, and open-finding status for this project. / 查看 Mimosa 当前项目的 Hook、扫描覆盖与未结 finding 状态。",
+              "inputHint": "/mimosa-status",
+              "name": "mimosa-status",
+              "source": "custom"
+            },
+            {
+              "description": "Open VectorCraft and optionally a workspace file",
+              "inputHint": "/open",
+              "name": "open",
+              "source": "custom"
+            },
+            {
+              "description": "Hide or show the ZCode badge on the linked ZCode Sites site.",
+              "inputHint": "/site-badge hide | show",
+              "name": "site-badge",
+              "source": "custom"
+            },
+            {
+              "description": "Deploy this project to ZCode Sites, or redeploy the linked site.",
+              "inputHint": "/site-deploy [site id or notes]",
+              "name": "site-deploy",
+              "source": "custom"
+            },
+            {
+              "description": "Show the logs of a ZCode Sites deployment and explain any failure.",
+              "inputHint": "/site-logs [deployment id]",
+              "name": "site-logs",
+              "source": "custom"
+            },
+            {
+              "description": "Take the linked ZCode Sites site offline.",
+              "inputHint": "/site-offline [site id]",
+              "name": "site-offline",
+              "source": "custom"
+            },
+            {
+              "description": "Bring the linked ZCode Sites site back online.",
+              "inputHint": "/site-online [site id]",
+              "name": "site-online",
+              "source": "custom"
+            },
+            {
+              "description": "Show the ZCode Sites site linked to this project.",
+              "inputHint": "/site-status [site id]",
+              "name": "site-status",
+              "source": "custom"
+            },
+            {
+              "description": "Show ZCode Sites usage and plan limits.",
+              "inputHint": "/site-usage",
+              "name": "site-usage",
+              "source": "custom"
+            }
+          ],
+          "todos": [],
+          "todoGroups": []
+        }
+      }
+    },
+    {
+      "on": "session/send",
+      "timeout": 15000,
+      "emit": [
+        {
+          "method": "state.updated",
+          "params": {
+            "patch": {
+              "status": "running"
+            },
+            "reason": "prompt_started",
+            "revision": 2,
+            "scope": "session",
+            "sessionId": "sess_contract_resume_force",
+            "type": "state.updated",
+            "workspace": {
+              "workspacePath": "<CWD>",
+              "workspaceKey": "workspace"
+            }
+          }
+        },
+        {
+          "id": "server-9",
+          "method": "interaction/requestProviderRuntimeHeaders",
+          "params": {
+            "requestId": "sess_contract_resume_force:provider-runtime-headers:c31f49e5-d7b1-44c1-9d85-9a4c70bd8b77",
+            "sessionId": "sess_contract_resume_force",
+            "turnId": "turn_contract",
+            "workspace": {
+              "workspacePath": "<CWD>",
+              "workspaceKey": "workspace"
+            },
+            "modelSelection": {
+              "providerId": "account:bigmodel-start-plan",
+              "modelId": "GLM-5.3-Flash"
+            },
+            "providerId": "account:bigmodel-start-plan",
+            "accountAccess": {
+              "type": "zhipu-account",
+              "accountType": "bigmodel",
+              "mode": "start-plan",
+              "entitled": true
+            },
+            "reason": "model-request"
+          }
+        }
+      ],
+      "waitAnswers": [
+        "server-9"
+      ],
+      "reply": {
+        "accepted": true,
+        "sessionId": "sess_contract_resume_force",
+        "stateRevision": 2
+      }
+    },
+    {
+      "emit": [
+        {
+          "method": "session/event",
+          "params": {
+            "deliveryKind": "desktop-continuous",
+            "eventId": "a34623e8-84e6-4e2b-b67b-08a386bebc41",
+            "payload": {
+              "descriptor": {
+                "clientVisible": true,
+                "commandDisplay": "node \"<ZCODE_HOME>\\\\cli\\\\plugins\\\\cache\\\\zcode-plugins-official\\\\mimosa\\\\1.0.4/hooks/run-hook.cjs\" session-hook.mjs SessionStart",
+                "executionMode": "foreground",
+                "executionType": "process",
+                "pluginId": "mimosa@zcode-plugins-official",
+                "pluginName": "mimosa",
+                "sourceKind": "plugin",
+                "sourcePath": "<ZCODE_HOME>\\cli\\plugins\\cache\\zcode-plugins-official\\mimosa\\1.0.4\\hooks\\hooks.json",
+                "statusMessage": "Mimosa 正在准备项目安全上下文…",
+                "timeoutMs": 120000
+              },
+              "hookEventName": "SessionStart",
+              "hookIndex": 0,
+              "hookCount": 2,
+              "hookInvocationId": "4ce7c610-09a5-46db-b02f-40d1bd380faa",
+              "hookRunId": "791bb7ac-984c-4b9f-ae6f-b25e1f47eee2",
+              "hookSource": "plugin.mimosa@zcode-plugins-official.SessionStart.0.0",
+              "startedAt": 1794152556957
+            },
+            "seq": 1,
+            "sessionId": "sess_contract_resume_force",
+            "timestamp": 1794152556957,
+            "traceId": "995fddb2-7791-4a17-b055-e9e1491c136c",
+            "turnId": "turn_contract",
+            "type": "session.updated"
+          }
+        },
+        {
+          "method": "session/event",
+          "params": {
+            "deliveryKind": "desktop-continuous",
+            "eventId": "353c1468-b947-4f10-bfbb-8ad2f3367df7",
+            "payload": {
+              "descriptor": {
+                "clientVisible": true,
+                "commandDisplay": "node \"<ZCODE_HOME>\\\\cli\\\\plugins\\\\cache\\\\zcode-plugins-official\\\\mimosa\\\\1.0.4/hooks/run-hook.cjs\" session-hook.mjs SessionStart",
+                "executionMode": "foreground",
+                "executionType": "process",
+                "pluginId": "mimosa@zcode-plugins-official",
+                "pluginName": "mimosa",
+                "sourceKind": "plugin",
+                "sourcePath": "<ZCODE_HOME>\\cli\\plugins\\cache\\zcode-plugins-official\\mimosa\\1.0.4\\hooks\\hooks.json",
+                "statusMessage": "Mimosa 正在准备项目安全上下文…",
+                "timeoutMs": 120000
+              },
+              "hookEventName": "SessionStart",
+              "hookIndex": 0,
+              "hookCount": 2,
+              "hookInvocationId": "4ce7c610-09a5-46db-b02f-40d1bd380faa",
+              "hookRunId": "791bb7ac-984c-4b9f-ae6f-b25e1f47eee2",
+              "hookSource": "plugin.mimosa@zcode-plugins-official.SessionStart.0.0",
+              "startedAt": 1794152556957,
+              "durationMs": 603,
+              "outcome": "success"
+            },
+            "seq": 2,
+            "sessionId": "sess_contract_resume_force",
+            "timestamp": 1794152557561,
+            "traceId": "995fddb2-7791-4a17-b055-e9e1491c136c",
+            "turnId": "turn_contract",
+            "type": "session.updated"
+          }
+        },
+        {
+          "method": "session/event",
+          "params": {
+            "deliveryKind": "desktop-continuous",
+            "eventId": "c45aaa81-7fae-468e-9bba-e4abd4fc0cff",
+            "payload": {
+              "descriptor": {
+                "clientVisible": true,
+                "commandDisplay": "node \"<ZCODE_HOME>\\\\cli\\\\plugins\\\\cache\\\\zcode-plugins-official\\\\tripo-3d\\\\0.1.4/hooks/session-start.mjs\"",
+                "executionMode": "foreground",
+                "executionType": "process",
+                "pluginId": "tripo-3d@zcode-plugins-official",
+                "pluginName": "tripo-3d",
+                "sourceKind": "plugin",
+                "sourcePath": "<ZCODE_HOME>\\cli\\plugins\\cache\\zcode-plugins-official\\tripo-3d\\0.1.4\\hooks\\hooks.json",
+                "statusMessage": "tripo-3d: loading Tripo rules…",
+                "timeoutMs": 5000
+              },
+              "hookEventName": "SessionStart",
+              "hookIndex": 1,
+              "hookCount": 2,
+              "hookInvocationId": "4ce7c610-09a5-46db-b02f-40d1bd380faa",
+              "hookRunId": "3591b3d2-d72d-4e6c-ae6c-ee254e8abdfd",
+              "hookSource": "plugin.tripo-3d@zcode-plugins-official.SessionStart.1.0",
+              "matcher": "startup|clear|compact",
+              "startedAt": 1794152557562
+            },
+            "seq": 3,
+            "sessionId": "sess_contract_resume_force",
+            "timestamp": 1794152557562,
+            "traceId": "995fddb2-7791-4a17-b055-e9e1491c136c",
+            "turnId": "turn_contract",
+            "type": "session.updated"
+          }
+        },
+        {
+          "method": "session/event",
+          "params": {
+            "deliveryKind": "desktop-continuous",
+            "eventId": "9e2e02a3-51d8-4fa0-a178-5e10529cff96",
+            "payload": {
+              "descriptor": {
+                "clientVisible": true,
+                "commandDisplay": "node \"<ZCODE_HOME>\\\\cli\\\\plugins\\\\cache\\\\zcode-plugins-official\\\\tripo-3d\\\\0.1.4/hooks/session-start.mjs\"",
+                "executionMode": "foreground",
+                "executionType": "process",
+                "pluginId": "tripo-3d@zcode-plugins-official",
+                "pluginName": "tripo-3d",
+                "sourceKind": "plugin",
+                "sourcePath": "<ZCODE_HOME>\\cli\\plugins\\cache\\zcode-plugins-official\\tripo-3d\\0.1.4\\hooks\\hooks.json",
+                "statusMessage": "tripo-3d: loading Tripo rules…",
+                "timeoutMs": 5000
+              },
+              "hookEventName": "SessionStart",
+              "hookIndex": 1,
+              "hookCount": 2,
+              "hookInvocationId": "4ce7c610-09a5-46db-b02f-40d1bd380faa",
+              "hookRunId": "3591b3d2-d72d-4e6c-ae6c-ee254e8abdfd",
+              "hookSource": "plugin.tripo-3d@zcode-plugins-official.SessionStart.1.0",
+              "matcher": "startup|clear|compact",
+              "startedAt": 1794152557562,
+              "durationMs": 411,
+              "outcome": "success"
+            },
+            "seq": 4,
+            "sessionId": "sess_contract_resume_force",
+            "timestamp": 1794152557973,
+            "traceId": "995fddb2-7791-4a17-b055-e9e1491c136c",
+            "turnId": "turn_contract",
+            "type": "session.updated"
+          }
+        },
+        {
+          "method": "session/event",
+          "params": {
+            "deliveryKind": "desktop-continuous",
+            "eventId": "a9f31467-b290-4afa-b3a9-e4f5aad5d30c",
+            "payload": {
+              "previousTitle": "",
+              "source": "first_input",
+              "title": "请记住数字 47，然后只回复 OK。"
+            },
+            "seq": 5,
+            "sessionId": "sess_contract_resume_force",
+            "timestamp": 1794152558004,
+            "traceId": "995fddb2-7791-4a17-b055-e9e1491c136c",
+            "turnId": "turn_contract",
+            "type": "session.titleUpdated"
+          }
+        },
+        {
+          "method": "session/event",
+          "params": {
+            "deliveryKind": "desktop-continuous",
+            "eventId": "df4ee9f0-2499-4a89-a1e7-d5d02bf18a12",
+            "payload": {
+              "contextWindow": 1000000,
+              "modelSelection": {
+                "providerId": "account:bigmodel-start-plan",
+                "modelId": "GLM-5.3-Flash",
+                "options": {
+                  "reasoningLevel": "high"
+                }
+              },
+              "effectiveReasoningLevel": "high",
+              "previousModelSelection": {
+                "providerId": "account:bigmodel-start-plan",
+                "modelId": "GLM-5.3-Flash"
+              },
+              "supportedThoughtLevels": [
+                "low",
+                "high",
+                "max"
+              ]
+            },
+            "seq": 6,
+            "sessionId": "sess_contract_resume_force",
+            "timestamp": 1794152558036,
+            "traceId": "995fddb2-7791-4a17-b055-e9e1491c136c",
+            "type": "session.updated"
+          }
+        },
+        {
+          "method": "session/event",
+          "params": {
+            "deliveryKind": "desktop-continuous",
+            "eventId": "15715b02-1ba2-4d50-9bd4-be64efe86e1c",
+            "payload": {
+              "executionStartedAt": 1794152556172.9177,
+              "turnNumber": 0,
+              "input": "请记住数字 47，然后只回复 OK。",
+              "messageId": "msg_mw803xsn_2c53db03-1bfb-4fae-9784-c892d5afd2d3",
+              "inputId": "468e24ac-e9a5-41c9-a027-701f0d6e005a",
+              "foregroundExecutionId": "runtime_command_1",
+              "queryId": "468e24ac-e9a5-41c9-a027-701f0d6e005a",
+              "intent": {
+                "sourceCommandId": "468e24ac-e9a5-41c9-a027-701f0d6e005a",
+                "queueItemId": "queue_468e24ac-e9a5-41c9-a027-701f0d6e005a",
+                "clientId": "legacy-session-send",
+                "kind": "sendText",
+                "text": "请记住数字 47，然后只回复 OK。",
+                "modelSelection": {
+                  "providerId": "account:bigmodel-start-plan",
+                  "modelId": "GLM-5.3-Flash",
+                  "options": {
+                    "reasoningLevel": "high"
+                  }
+                },
+                "admissionSeq": 0,
+                "admittedAt": 1794152556149,
+                "requestedDelivery": "startNow",
+                "admittedDelivery": "startNow"
+              }
+            },
+            "seq": 7,
+            "sessionId": "sess_contract_resume_force",
+            "timestamp": 1794152558039,
+            "traceId": "995fddb2-7791-4a17-b055-e9e1491c136c",
+            "turnId": "turn_contract",
+            "type": "turn.started"
+          }
+        },
+        {
+          "method": "session/event",
+          "params": {
+            "deliveryKind": "desktop-continuous",
+            "eventId": "1e264fdf-1ed4-40a8-9284-a6ae11187a24",
+            "payload": {
+              "descriptor": {
+                "clientVisible": true,
+                "commandDisplay": "node \"<ZCODE_HOME>\\\\cli\\\\plugins\\\\cache\\\\zcode-plugins-official\\\\mimosa\\\\1.0.4/hooks/run-hook.cjs\" prompt-hook.mjs UserPromptSubmit",
+                "executionMode": "foreground",
+                "executionType": "process",
+                "pluginId": "mimosa@zcode-plugins-official",
+                "pluginName": "mimosa",
+                "sourceKind": "plugin",
+                "sourcePath": "<ZCODE_HOME>\\cli\\plugins\\cache\\zcode-plugins-official\\mimosa\\1.0.4\\hooks\\hooks.json",
+                "timeoutMs": 30000
+              },
+              "hookEventName": "UserPromptSubmit",
+              "hookIndex": 0,
+              "hookCount": 1,
+              "hookInvocationId": "5cb0e8ca-51ec-43eb-88e1-d335a6369ebd",
+              "hookRunId": "ad69d7fb-ac59-4722-be48-bbca64b310f1",
+              "hookSource": "plugin.mimosa@zcode-plugins-official.UserPromptSubmit.0.0",
+              "startedAt": 1794152558084
+            },
+            "seq": 8,
+            "sessionId": "sess_contract_resume_force",
+            "timestamp": 1794152558084,
+            "traceId": "995fddb2-7791-4a17-b055-e9e1491c136c",
+            "turnId": "turn_contract",
+            "type": "session.updated"
+          }
+        },
+        {
+          "method": "session/event",
+          "params": {
+            "deliveryKind": "desktop-continuous",
+            "eventId": "d17f3b60-053d-44e3-9ee0-c3308d0961d1",
+            "payload": {
+              "descriptor": {
+                "clientVisible": true,
+                "commandDisplay": "node \"<ZCODE_HOME>\\\\cli\\\\plugins\\\\cache\\\\zcode-plugins-official\\\\mimosa\\\\1.0.4/hooks/run-hook.cjs\" prompt-hook.mjs UserPromptSubmit",
+                "executionMode": "foreground",
+                "executionType": "process",
+                "pluginId": "mimosa@zcode-plugins-official",
+                "pluginName": "mimosa",
+                "sourceKind": "plugin",
+                "sourcePath": "<ZCODE_HOME>\\cli\\plugins\\cache\\zcode-plugins-official\\mimosa\\1.0.4\\hooks\\hooks.json",
+                "timeoutMs": 30000
+              },
+              "hookEventName": "UserPromptSubmit",
+              "hookIndex": 0,
+              "hookCount": 1,
+              "hookInvocationId": "5cb0e8ca-51ec-43eb-88e1-d335a6369ebd",
+              "hookRunId": "ad69d7fb-ac59-4722-be48-bbca64b310f1",
+              "hookSource": "plugin.mimosa@zcode-plugins-official.UserPromptSubmit.0.0",
+              "startedAt": 1794152558084,
+              "durationMs": 549,
+              "outcome": "success"
+            },
+            "seq": 9,
+            "sessionId": "sess_contract_resume_force",
+            "timestamp": 1794152558633,
+            "traceId": "995fddb2-7791-4a17-b055-e9e1491c136c",
+            "turnId": "turn_contract",
+            "type": "session.updated"
+          }
+        },
+        {
+          "method": "session/event",
+          "params": {
+            "deliveryKind": "desktop-continuous",
+            "eventId": "3773d337-a231-4af9-8fd9-5ee5639f32e8",
+            "payload": {
+              "pendingInputId": "queue_468e24ac-e9a5-41c9-a027-701f0d6e005a",
+              "sourceCommandId": "468e24ac-e9a5-41c9-a027-701f0d6e005a",
+              "messageId": "msg_mw803xsn_2c53db03-1bfb-4fae-9784-c892d5afd2d3"
+            },
+            "seq": 10,
+            "sessionId": "sess_contract_resume_force",
+            "timestamp": 1794152558654,
+            "traceId": "995fddb2-7791-4a17-b055-e9e1491c136c",
+            "turnId": "turn_contract",
+            "type": "session.updated"
+          }
+        },
+        {
+          "method": "session/event",
+          "params": {
+            "deliveryKind": "desktop-continuous",
+            "eventId": "44e47735-d92d-4676-a37d-88ca6ceb38bf",
+            "payload": {
+              "messageCount": 7,
+              "providerId": "account:bigmodel-start-plan",
+              "modelId": "GLM-5.3-Flash",
+              "toolCount": 244,
+              "iteration": 0
+            },
+            "seq": 11,
+            "sessionId": "sess_contract_resume_force",
+            "timestamp": 1794152568846,
+            "traceId": "995fddb2-7791-4a17-b055-e9e1491c136c",
+            "turnId": "turn_contract",
+            "type": "session.updated"
+          }
+        },
+        {
+          "method": "session/event",
+          "params": {
+            "deliveryKind": "desktop-continuous",
+            "eventId": "a315060a-d28b-45ad-a1f5-89367771b0e7",
+            "payload": {
+              "baseURL": "https://zcode.z.ai/api/v1/zcode-plan/anthropic",
+              "maxAttempts": 11,
+              "providerId": "account:bigmodel-start-plan",
+              "modelId": "GLM-5.3-Flash",
+              "modelRequestSessionType": "main",
+              "requestId": "6144b724-3b06-4595-9d0f-3920ad22268b",
+              "sessionId": "sess_contract_resume_force",
+              "spanId": "78ad4e7a-1a2d-43",
+              "parentSpanId": "0534d656-2d31-42",
+              "querySource": "main_turn",
+              "queryId": "468e24ac-e9a5-41c9-a027-701f0d6e005a",
+              "traceId": "995fddb2-7791-4a17-b055-e9e1491c136c",
+              "providerKind": "anthropic",
+              "transport": "sse",
+              "turnId": "turn_contract",
+              "modelCall": {
+                "operation": "agent_step",
+                "actorKind": "main",
+                "operationId": "78ad4e7a-1a2d-43",
+                "reasoning": {
+                  "capability": "unknown",
+                  "requestedControl": "provider_default",
+                  "requestedState": "provider_default",
+                  "requestedLevel": "high",
+                  "effectiveControl": "unknown",
+                  "effectiveState": "unknown",
+                  "effectiveLevel": "unknown"
+                },
+                "logicalCallId": "1c583acd-adb7-4756-8958-66cd44414000",
+                "stepIndex": 0
+              },
+              "attempt": 1,
+              "requestHeaderCount": 17,
+              "requestHeaders": {
+                "http-referer": "https://zcode.z.ai/",
+                "user-agent": "ZCode/3.17.2",
+                "x-zcode-app-version": "3.17.2",
+                "x-title": "Z Code@electron",
+                "x-release-channel": "production",
+                "x-client-language": "zh-CN",
+                "x-client-timezone": "Asia/Shanghai",
+                "x-zcode-agent": "glm",
+                "x-platform": "win32-x64",
+                "x-os-category": "windows",
+                "x-os-version": "10.0.26300",
+                "x-request-id": "6144b724-3b06-4595-9d0f-3920ad22268b",
+                "x-zcode-session-type": "main",
+                "x-zcode-trace-id": "995fddb2-7791-4a17-b055-e9e1491c136c",
+                "x-query-id": "468e24ac-e9a5-41c9-a027-701f0d6e005a",
+                "x-zcode-query-source": "main_turn",
+                "x-session-id": "42e8f0bb-2032-4134-be79-0ae7ff18ea49"
+              },
+              "timestamp": "2026-11-08T15:42:48.880Z",
+              "type": "model_request_started",
+              "_meta": {
+                "zcode": {
+                  "apiRetry": null
+                }
+              }
+            },
+            "seq": 12,
+            "sessionId": "sess_contract_resume_force",
+            "timestamp": 1794152568904,
+            "traceId": "995fddb2-7791-4a17-b055-e9e1491c136c",
+            "turnId": "turn_contract",
+            "type": "session.updated"
+          }
+        },
+        {
+          "method": "session/event",
+          "params": {
+            "deliveryKind": "desktop-continuous",
+            "eventId": "ad6a97c0-0e4e-4539-8b2b-626109f2c65d",
+            "payload": {
+              "assistantMessageId": "msg_mw80464l_e848cb74-d38d-4ac4-8deb-94e332ba48a5",
+              "delta": "OK",
+              "done": false,
+              "kind": "text_delta"
+            },
+            "seq": 13,
+            "sessionId": "sess_contract_resume_force",
+            "timestamp": 1794152574165,
+            "traceId": "995fddb2-7791-4a17-b055-e9e1491c136c",
+            "turnId": "turn_contract",
+            "type": "model.streaming"
+          }
+        },
+        {
+          "method": "session/event",
+          "params": {
+            "deliveryKind": "desktop-continuous",
+            "eventId": "2bcb627c-b245-41a1-bfea-7ab02ae8fa3f",
+            "payload": {
+              "assistantMessageId": "msg_mw80464l_e848cb74-d38d-4ac4-8deb-94e332ba48a5",
+              "delta": "\n\n（已记住：47。后续需要时",
+              "done": false,
+              "kind": "text_delta"
+            },
+            "seq": 14,
+            "sessionId": "sess_contract_resume_force",
+            "timestamp": 1794152574466,
+            "traceId": "995fddb2-7791-4a17-b055-e9e1491c136c",
+            "turnId": "turn_contract",
+            "type": "model.streaming"
+          }
+        },
+        {
+          "method": "session/event",
+          "params": {
+            "deliveryKind": "desktop-continuous",
+            "eventId": "6ba5bdb3-cad8-4029-9ffc-75ee0fa06988",
+            "payload": {
+              "assistantMessageId": "msg_mw80464l_e848cb74-d38d-4ac4-8deb-94e332ba48a5",
+              "delta": "请随时提醒我核对。）",
+              "done": false,
+              "kind": "text_delta"
+            },
+            "seq": 15,
+            "sessionId": "sess_contract_resume_force",
+            "timestamp": 1794152574756,
+            "traceId": "995fddb2-7791-4a17-b055-e9e1491c136c",
+            "turnId": "turn_contract",
+            "type": "model.streaming"
+          }
+        },
+        {
+          "method": "session/event",
+          "params": {
+            "deliveryKind": "desktop-continuous",
+            "eventId": "086861f0-8777-4ff2-84c3-67e6d459220d",
+            "payload": {
+              "baseURL": "https://zcode.z.ai/api/v1/zcode-plan/anthropic",
+              "maxAttempts": 11,
+              "providerId": "account:bigmodel-start-plan",
+              "modelId": "GLM-5.3-Flash",
+              "modelRequestSessionType": "main",
+              "requestId": "6144b724-3b06-4595-9d0f-3920ad22268b",
+              "sessionId": "sess_contract_resume_force",
+              "spanId": "78ad4e7a-1a2d-43",
+              "parentSpanId": "0534d656-2d31-42",
+              "querySource": "main_turn",
+              "queryId": "468e24ac-e9a5-41c9-a027-701f0d6e005a",
+              "traceId": "995fddb2-7791-4a17-b055-e9e1491c136c",
+              "providerKind": "anthropic",
+              "transport": "sse",
+              "turnId": "turn_contract",
+              "modelCall": {
+                "operation": "agent_step",
+                "actorKind": "main",
+                "operationId": "78ad4e7a-1a2d-43",
+                "reasoning": {
+                  "capability": "unknown",
+                  "requestedControl": "provider_default",
+                  "requestedState": "provider_default",
+                  "requestedLevel": "high",
+                  "effectiveControl": "unknown",
+                  "effectiveState": "unknown",
+                  "effectiveLevel": "unknown"
+                },
+                "logicalCallId": "1c583acd-adb7-4756-8958-66cd44414000",
+                "stepIndex": 0
+              },
+              "attempt": 1,
+              "durationMs": 5907,
+              "requestHeaderCount": 17,
+              "requestHeaders": {
+                "http-referer": "https://zcode.z.ai/",
+                "user-agent": "ZCode/3.17.2",
+                "x-zcode-app-version": "3.17.2",
+                "x-title": "Z Code@electron",
+                "x-release-channel": "production",
+                "x-client-language": "zh-CN",
+                "x-client-timezone": "Asia/Shanghai",
+                "x-zcode-agent": "glm",
+                "x-platform": "win32-x64",
+                "x-os-category": "windows",
+                "x-os-version": "10.0.26300",
+                "x-request-id": "6144b724-3b06-4595-9d0f-3920ad22268b",
+                "x-zcode-session-type": "main",
+                "x-zcode-trace-id": "995fddb2-7791-4a17-b055-e9e1491c136c",
+                "x-query-id": "468e24ac-e9a5-41c9-a027-701f0d6e005a",
+                "x-zcode-query-source": "main_turn",
+                "x-session-id": "42e8f0bb-2032-4134-be79-0ae7ff18ea49"
+              },
+              "responseHeaderCount": 15,
+              "responseHeaders": {
+                "cache-control": "no-cache",
+                "connection": "keep-alive",
+                "content-type": "text/event-stream; charset=utf-8",
+                "date": "Sun, 08 Nov 2026 15:42:49 GMT",
+                "eagleid": "8ccf3f6717941525689977581e",
+                "server": "ESA",
+                "set-cookie": "<redacted>",
+                "timing-allow-origin": "*",
+                "transfer-encoding": "chunked",
+                "vary": "Accept-Encoding",
+                "via": "ens-cache1.l2eo166-17[287,0,DP], ens-cache19.cn7369[290,0,DP], ens-cache19.cn7369[291,0]",
+                "x-content-type-options": "nosniff",
+                "x-log-id": "202611082342497628f05a38694d14",
+                "x-request-id": "2026110815424987a73f4eff344cebd027",
+                "x-site-cache-status": "DYNAMIC"
+              },
+              "providerRequestId": "2026110815424987a73f4eff344cebd027",
+              "finishReason": "stop",
+              "usage": {
+                "inputTokens": "<redacted>",
+                "outputTokens": "<redacted>",
+                "totalTokens": "<redacted>",
+                "cacheReadTokens": "<redacted>",
+                "cacheWriteTokens": "<redacted>"
+              },
+              "timeToFirstProviderEventMs": 63,
+              "timeToFirstContentMs": 5267,
+              "timeToFirstTextMs": 5282,
+              "streamStallCount": 0,
+              "streamOutputCommitted": true,
+              "timestamp": "2026-11-08T15:42:54.787Z",
+              "type": "model_request_completed",
+              "_meta": {
+                "zcode": {
+                  "apiRetry": null
+                }
+              }
+            },
+            "seq": 16,
+            "sessionId": "sess_contract_resume_force",
+            "timestamp": 1794152574793,
+            "traceId": "995fddb2-7791-4a17-b055-e9e1491c136c",
+            "turnId": "turn_contract",
+            "type": "session.updated"
+          }
+        },
+        {
+          "method": "session/event",
+          "params": {
+            "deliveryKind": "desktop-continuous",
+            "eventId": "32a5dd38-8a53-4baf-976c-ff1ff9d3aeef",
+            "payload": {
+              "content": "OK\n\n（已记住：47。后续需要时请随时提醒我核对。）",
+              "contextWindow": 1000000,
+              "querySource": "main_turn",
+              "stopReason": "stop",
+              "usage": {
+                "inputTokens": "<redacted>",
+                "outputTokens": "<redacted>",
+                "totalTokens": "<redacted>",
+                "cacheReadTokens": "<redacted>",
+                "cacheWriteTokens": "<redacted>"
+              },
+              "cacheHit": {
+                "inputTokens": "<redacted>",
+                "cacheReadTokens": "<redacted>",
+                "cacheWriteTokens": "<redacted>",
+                "latestHitRate": 0.9993630843700905,
+                "hitRate": 0.9993630843700905,
+                "hitRateRequestCount": 1,
+                "totalInputTokens": "<redacted>",
+                "totalCacheReadTokens": "<redacted>",
+                "totalCacheWriteTokens": "<redacted>"
+              },
+              "contextUsageBreakdown": [
+                {
+                  "source": "system_prompt",
+                  "chars": 2961
+                },
+                {
+                  "source": "meta_user_context",
+                  "chars": 3679
+                },
+                {
+                  "source": "skills",
+                  "chars": 19074
+                },
+                {
+                  "source": "system_tool_schemas",
+                  "chars": 86131
+                },
+                {
+                  "source": "mcp_tool_schemas",
+                  "chars": 422316
+                },
+                {
+                  "source": "messages",
+                  "chars": 46
+                }
+              ],
+              "toolCallCount": 0
+            },
+            "seq": 17,
+            "sessionId": "sess_contract_resume_force",
+            "timestamp": 1794152574845,
+            "traceId": "995fddb2-7791-4a17-b055-e9e1491c136c",
+            "turnId": "turn_contract",
+            "type": "session.updated"
+          }
+        },
+        {
+          "method": "session/event",
+          "params": {
+            "deliveryKind": "desktop-continuous",
+            "eventId": "96a20aaa-225d-4c20-a8a6-db70a1a1686e",
+            "payload": {
+              "descriptor": {
+                "clientVisible": true,
+                "commandDisplay": "node \"<ZCODE_HOME>\\\\cli\\\\plugins\\\\cache\\\\zcode-plugins-official\\\\mimosa\\\\1.0.4/hooks/run-hook.cjs\" stop-hook.mjs Stop",
+                "executionMode": "foreground",
+                "executionType": "process",
+                "pluginId": "mimosa@zcode-plugins-official",
+                "pluginName": "mimosa",
+                "sourceKind": "plugin",
+                "sourcePath": "<ZCODE_HOME>\\cli\\plugins\\cache\\zcode-plugins-official\\mimosa\\1.0.4\\hooks\\hooks.json",
+                "statusMessage": "Mimosa 正在复查本轮改动…",
+                "timeoutMs": 120000
+              },
+              "hookEventName": "Stop",
+              "hookIndex": 0,
+              "hookCount": 1,
+              "hookInvocationId": "cabad254-88d4-4dc7-a482-6ca96b403ccf",
+              "hookRunId": "4a5586c7-60bd-4028-b370-fd925ab68427",
+              "hookSource": "plugin.mimosa@zcode-plugins-official.Stop.0.0",
+              "startedAt": 1794152574892
+            },
+            "seq": 18,
+            "sessionId": "sess_contract_resume_force",
+            "timestamp": 1794152574892,
+            "traceId": "995fddb2-7791-4a17-b055-e9e1491c136c",
+            "turnId": "turn_contract",
+            "type": "session.updated"
+          }
+        },
+        {
+          "method": "session/event",
+          "params": {
+            "deliveryKind": "desktop-continuous",
+            "eventId": "074f11f8-0f85-4872-9407-2c128305012f",
+            "payload": {
+              "descriptor": {
+                "clientVisible": true,
+                "commandDisplay": "node \"<ZCODE_HOME>\\\\cli\\\\plugins\\\\cache\\\\zcode-plugins-official\\\\mimosa\\\\1.0.4/hooks/run-hook.cjs\" stop-hook.mjs Stop",
+                "executionMode": "foreground",
+                "executionType": "process",
+                "pluginId": "mimosa@zcode-plugins-official",
+                "pluginName": "mimosa",
+                "sourceKind": "plugin",
+                "sourcePath": "<ZCODE_HOME>\\cli\\plugins\\cache\\zcode-plugins-official\\mimosa\\1.0.4\\hooks\\hooks.json",
+                "statusMessage": "Mimosa 正在复查本轮改动…",
+                "timeoutMs": 120000
+              },
+              "hookEventName": "Stop",
+              "hookIndex": 0,
+              "hookCount": 1,
+              "hookInvocationId": "cabad254-88d4-4dc7-a482-6ca96b403ccf",
+              "hookRunId": "4a5586c7-60bd-4028-b370-fd925ab68427",
+              "hookSource": "plugin.mimosa@zcode-plugins-official.Stop.0.0",
+              "startedAt": 1794152574892,
+              "durationMs": 460,
+              "outcome": "success"
+            },
+            "seq": 19,
+            "sessionId": "sess_contract_resume_force",
+            "timestamp": 1794152575352,
+            "traceId": "995fddb2-7791-4a17-b055-e9e1491c136c",
+            "turnId": "turn_contract",
+            "type": "session.updated"
+          }
+        },
+        {
+          "method": "session/event",
+          "params": {
+            "deliveryKind": "desktop-continuous",
+            "eventId": "732549e6-fb1b-475f-a75e-cd4b278b9ee2",
+            "payload": {
+              "response": "OK\n\n（已记住：47。后续需要时请随时提醒我核对。）",
+              "tokenCount": "<redacted>",
+              "usage": {
+                "source": "provider",
+                "modelRequestCount": 1,
+                "inputTokens": "<redacted>",
+                "outputTokens": "<redacted>",
+                "totalTokens": "<redacted>",
+                "cacheReadTokens": "<redacted>",
+                "cacheWriteTokens": "<redacted>",
+                "reasoningTokens": "<redacted>",
+                "webFetchRequests": 0,
+                "webSearchRequests": 0
+              },
+              "toolCallCount": 0,
+              "historyRoundCount": 1,
+              "duration": 19199,
+              "resultType": "success",
+              "cacheStats": {
+                "totalMessages": 13,
+                "cachedMessages": 12,
+                "lastCacheHit": true,
+                "cacheReadTokens": "<redacted>"
+              },
+              "inputId": "468e24ac-e9a5-41c9-a027-701f0d6e005a"
+            },
+            "seq": 20,
+            "sessionId": "sess_contract_resume_force",
+            "timestamp": 1794152575364,
+            "traceId": "995fddb2-7791-4a17-b055-e9e1491c136c",
+            "turnId": "turn_contract",
+            "type": "turn.completed"
+          }
+        }
+      ]
+    }
+  ]
+}
