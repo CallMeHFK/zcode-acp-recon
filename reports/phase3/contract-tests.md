@@ -58,7 +58,7 @@
 | 失败文件 | 26 | 27 | **27** | **0** |
 | 失败文件集 | — | 27 个 | **27 个完全相同**（差集双向为空） | **零回归** |
 
-Phase 3 连续跑了两轮全量，结果均为 2341/2451、27 失败文件、失败集逐文件一致；不是随机 flake。失败仍集中在 Phase 1 归类的 Seatbelt N/A、测试内 POSIX 路径 / home fixture 家族（含 `quota-thresholds` 的临时目录与超时、`crash-guards` 的子进程退出码），这些对 Node 版本与 FS shim 敏感 —— 历史记录多出的 2 个失败由此解释。Phase 2 修掉的目标类（`resolve` / `prompt-content`）未复活；`turn-state.test.ts` 现在失败的用例是「goal-loop 二进制 prompt 的临时目录残留」，与 Phase 2 修掉的 file-URI 用例不是同一个。
+Phase 3 一共跑了三轮全量（review 整改前后各轮），结果均为 2341/2451、27 失败文件、失败集逐文件一致；不是随机 flake。最终一轮在两仓提交后完成，失败集与干净基线仍双向零差异。失败仍集中在 Phase 1 归类的 Seatbelt N/A、测试内 POSIX 路径 / home fixture 家族（含 `quota-thresholds` 的临时目录与超时、`crash-guards` 的子进程退出码），这些对 Node 版本与 FS shim 敏感 —— 历史记录多出的 2 个失败由此解释。Phase 2 修掉的目标类（`resolve` / `prompt-content`）未复活；`turn-state.test.ts` 现在失败的用例是「goal-loop 二进制 prompt 的临时目录残留」，与 Phase 2 修掉的 file-URI 用例不是同一个。
 
 ## 本阶段发现并修复的产品缺陷
 

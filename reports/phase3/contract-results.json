@@ -1,6 +1,6 @@
 {
   "phase": 3,
-  "generatedAt": "2026-11-09T16:57:24.771Z",
+  "generatedAt": "2026-11-09T17:05:59.005Z",
   "ok": true,
   "environment": {
     "node": "v22.22.2",
@@ -12,8 +12,8 @@
     "liveAccountDependency": false
   },
   "commits": {
-    "recon": "3b4dfb2",
-    "fork": "e24e95e"
+    "recon": "c7f8e1c",
+    "fork": "60df459"
   },
   "layers": {
     "L0": {
@@ -25,7 +25,7 @@
       "tests": 36,
       "pass": 36,
       "fail": 0,
-      "durationMs": 940.4053,
+      "durationMs": 957.5023,
       "exitCode": 0
     },
     "L2": {
@@ -33,7 +33,7 @@
       "tests": 14,
       "pass": 14,
       "fail": 0,
-      "durationMs": 60596.2511,
+      "durationMs": 59704.5042,
       "exitCode": 0
     }
   },
