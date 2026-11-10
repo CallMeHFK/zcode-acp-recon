@@ -4,7 +4,7 @@
   "runtimeVersion": "v24.20.0",
   "os": "win32",
   "arch": "x64",
-  "captureTimestamp": "2026-11-08T15:43:40.659Z",
+  "captureTimestamp": "2026-11-10T15:14:50.824Z",
   "evidenceLevel": "observed",
   "redactionVersion": "1",
   "scenario": "permission-deny"
@@ -352,7 +352,7 @@
      "sessionId": "unknown",
      "status": "idle",
      "target": null,
-     "totalTokenCount": "<redacted>",
+     "totalTokenCount": 0,
      "turnCount": 0
     },
     "protocol": {
@@ -399,7 +399,7 @@
         "label": "GLM-5.3-Flash",
         "providerLabel": "Start Plan",
         "contextWindow": 1000000,
-        "maxOutputTokens": "<redacted>",
+        "maxOutputTokens": 128000,
         "reasoning": {
          "levels": [
           {
@@ -584,7 +584,7 @@
       "sessionId": "unknown",
       "status": "idle",
       "target": null,
-      "totalTokenCount": "<redacted>",
+      "totalTokenCount": 0,
       "turnCount": 0
      },
      "protocol": {
@@ -632,7 +632,7 @@
          "label": "GLM-5.3-Flash",
          "providerLabel": "Start Plan",
          "contextWindow": 200000,
-         "maxOutputTokens": "<redacted>",
+         "maxOutputTokens": 128000,
          "reasoning": {
           "levels": [
            {
@@ -1825,11 +1825,11 @@
      "providerRequestId": "202611081517154c0cb64404ffb03fd2a0",
      "finishReason": "tool-calls",
      "usage": {
-      "inputTokens": "<redacted>",
-      "outputTokens": "<redacted>",
-      "totalTokens": "<redacted>",
-      "cacheReadTokens": "<redacted>",
-      "cacheWriteTokens": "<redacted>"
+      "inputTokens": 94009,
+      "outputTokens": 73,
+      "totalTokens": 94082,
+      "cacheReadTokens": 0,
+      "cacheWriteTokens": 0
      },
      "timeToFirstProviderEventMs": 69,
      "timeToFirstContentMs": 33567,
@@ -1868,12 +1868,12 @@
     "modelId": "GLM-5.3-Flash",
     "providerKind": "anthropic",
     "providerHostname": "zcode.z.ai",
-    "inputTokens": "<redacted>",
-    "outputTokens": "<redacted>",
-    "totalTokens": "<redacted>",
-    "reasoningTokens": "<redacted>",
-    "cacheReadTokens": "<redacted>",
-    "cacheWriteTokens": "<redacted>"
+    "inputTokens": 94009,
+    "outputTokens": 73,
+    "totalTokens": 94082,
+    "reasoningTokens": 0,
+    "cacheReadTokens": 0,
+    "cacheWriteTokens": 0
    }
   },
   {
@@ -1887,22 +1887,22 @@
      "querySource": "main_turn",
      "stopReason": "tool-calls",
      "usage": {
-      "inputTokens": "<redacted>",
-      "outputTokens": "<redacted>",
-      "totalTokens": "<redacted>",
-      "cacheReadTokens": "<redacted>",
-      "cacheWriteTokens": "<redacted>"
+      "inputTokens": 94009,
+      "outputTokens": 73,
+      "totalTokens": 94082,
+      "cacheReadTokens": 0,
+      "cacheWriteTokens": 0
      },
      "cacheHit": {
-      "inputTokens": "<redacted>",
-      "cacheReadTokens": "<redacted>",
-      "cacheWriteTokens": "<redacted>",
+      "inputTokens": 94009,
+      "cacheReadTokens": 0,
+      "cacheWriteTokens": 0,
       "latestHitRate": 0,
       "hitRate": 0,
       "hitRateRequestCount": 1,
-      "totalInputTokens": "<redacted>",
-      "totalCacheReadTokens": "<redacted>",
-      "totalCacheWriteTokens": "<redacted>"
+      "totalInputTokens": 94009,
+      "totalCacheReadTokens": 0,
+      "totalCacheWriteTokens": 0
      },
      "contextUsageBreakdown": [
       {
@@ -4383,11 +4383,11 @@
      "providerRequestId": "20261108151750a4e2bd0e6a2059182a28",
      "finishReason": "stop",
      "usage": {
-      "inputTokens": "<redacted>",
-      "outputTokens": "<redacted>",
-      "totalTokens": "<redacted>",
-      "cacheReadTokens": "<redacted>",
-      "cacheWriteTokens": "<redacted>"
+      "inputTokens": 94089,
+      "outputTokens": 89,
+      "totalTokens": 94178,
+      "cacheReadTokens": 93952,
+      "cacheWriteTokens": 0
      },
      "timeToFirstProviderEventMs": 17,
      "timeToFirstContentMs": 2512,
@@ -4427,12 +4427,12 @@
     "modelId": "GLM-5.3-Flash",
     "providerKind": "anthropic",
     "providerHostname": "zcode.z.ai",
-    "inputTokens": "<redacted>",
-    "outputTokens": "<redacted>",
-    "totalTokens": "<redacted>",
-    "reasoningTokens": "<redacted>",
-    "cacheReadTokens": "<redacted>",
-    "cacheWriteTokens": "<redacted>"
+    "inputTokens": 94089,
+    "outputTokens": 89,
+    "totalTokens": 94178,
+    "reasoningTokens": 0,
+    "cacheReadTokens": 93952,
+    "cacheWriteTokens": 0
    }
   },
   {
@@ -4446,22 +4446,22 @@
      "querySource": "main_turn",
      "stopReason": "stop",
      "usage": {
-      "inputTokens": "<redacted>",
-      "outputTokens": "<redacted>",
-      "totalTokens": "<redacted>",
-      "cacheReadTokens": "<redacted>",
-      "cacheWriteTokens": "<redacted>"
+      "inputTokens": 94089,
+      "outputTokens": 89,
+      "totalTokens": 94178,
+      "cacheReadTokens": 93952,
+      "cacheWriteTokens": 0
      },
      "cacheHit": {
-      "inputTokens": "<redacted>",
-      "cacheReadTokens": "<redacted>",
-      "cacheWriteTokens": "<redacted>",
+      "inputTokens": 94089,
+      "cacheReadTokens": 93952,
+      "cacheWriteTokens": 0,
       "latestHitRate": 0.9985439318092444,
       "hitRate": 0.4994843113696052,
       "hitRateRequestCount": 2,
-      "totalInputTokens": "<redacted>",
-      "totalCacheReadTokens": "<redacted>",
-      "totalCacheWriteTokens": "<redacted>"
+      "totalInputTokens": 188098,
+      "totalCacheReadTokens": 93952,
+      "totalCacheWriteTokens": 0
      },
      "contextUsageBreakdown": [
       {
@@ -4595,7 +4595,7 @@
     "status": "success",
     "resultType": "success",
     "durationMs": 53799,
-    "tokenCount": "<redacted>",
+    "tokenCount": 188260,
     "toolCallCount": 1
    }
   },
@@ -4606,16 +4606,16 @@
     "eventId": "b4fa4b14-070c-4a9e-9b50-45f4cab474a9",
     "payload": {
      "response": "创建失败：Write 工具的权限请求未能获得批准（\"Permission request failed\"），文件 `probe-permission-test.txt` 没有被创建。\n\n请确认：\n- 是否需要你在权限弹窗中手动允许本次写入？\n- 或者告诉我以其他方式（例如改用 Bash `echo` 写入）重试。",
-     "tokenCount": "<redacted>",
+     "tokenCount": 188260,
      "usage": {
       "source": "provider",
       "modelRequestCount": 2,
-      "inputTokens": "<redacted>",
-      "outputTokens": "<redacted>",
-      "totalTokens": "<redacted>",
-      "cacheReadTokens": "<redacted>",
-      "cacheWriteTokens": "<redacted>",
-      "reasoningTokens": "<redacted>",
+      "inputTokens": 188098,
+      "outputTokens": 162,
+      "totalTokens": 188260,
+      "cacheReadTokens": 93952,
+      "cacheWriteTokens": 0,
+      "reasoningTokens": 0,
       "webFetchRequests": 0,
       "webSearchRequests": 0
      },
@@ -4627,7 +4627,7 @@
       "totalMessages": 14,
       "cachedMessages": 13,
       "lastCacheHit": true,
-      "cacheReadTokens": "<redacted>"
+      "cacheReadTokens": 93952
      },
      "inputId": "00376f75-a4c9-4151-a9e2-20b40fcfd0a4"
     },
@@ -5042,7 +5042,7 @@
      "sessionId": "unknown",
      "status": "idle",
      "target": null,
-     "totalTokenCount": "<redacted>",
+     "totalTokenCount": 0,
      "turnCount": 0
     },
     "protocol": {
@@ -5089,7 +5089,7 @@
         "label": "GLM-5.3-Flash",
         "providerLabel": "Start Plan",
         "contextWindow": 1000000,
-        "maxOutputTokens": "<redacted>",
+        "maxOutputTokens": 128000,
         "reasoning": {
          "levels": [
           {
@@ -5331,7 +5331,7 @@
       "sessionId": "unknown",
       "status": "idle",
       "target": null,
-      "totalTokenCount": "<redacted>",
+      "totalTokenCount": 0,
       "turnCount": 0
      },
      "protocol": {
@@ -5379,7 +5379,7 @@
          "label": "GLM-5.3-Flash",
          "providerLabel": "Start Plan",
          "contextWindow": 200000,
-         "maxOutputTokens": "<redacted>",
+         "maxOutputTokens": 128000,
          "reasoning": {
           "levels": [
            {
@@ -6950,11 +6950,11 @@
      "providerRequestId": "2026110815392102a756d242e9f8bff31d",
      "finishReason": "tool-calls",
      "usage": {
-      "inputTokens": "<redacted>",
-      "outputTokens": "<redacted>",
-      "totalTokens": "<redacted>",
-      "cacheReadTokens": "<redacted>",
-      "cacheWriteTokens": "<redacted>"
+      "inputTokens": 94217,
+      "outputTokens": 93,
+      "totalTokens": 94310,
+      "cacheReadTokens": 0,
+      "cacheWriteTokens": 0
      },
      "timeToFirstProviderEventMs": 65,
      "timeToFirstContentMs": 10362,
@@ -6993,12 +6993,12 @@
     "modelId": "GLM-5.3-Flash",
     "providerKind": "anthropic",
     "providerHostname": "zcode.z.ai",
-    "inputTokens": "<redacted>",
-    "outputTokens": "<redacted>",
-    "totalTokens": "<redacted>",
-    "reasoningTokens": "<redacted>",
-    "cacheReadTokens": "<redacted>",
-    "cacheWriteTokens": "<redacted>"
+    "inputTokens": 94217,
+    "outputTokens": 93,
+    "totalTokens": 94310,
+    "reasoningTokens": 0,
+    "cacheReadTokens": 0,
+    "cacheWriteTokens": 0
    }
   },
   {
@@ -7012,22 +7012,22 @@
      "querySource": "main_turn",
      "stopReason": "tool-calls",
      "usage": {
-      "inputTokens": "<redacted>",
-      "outputTokens": "<redacted>",
-      "totalTokens": "<redacted>",
-      "cacheReadTokens": "<redacted>",
-      "cacheWriteTokens": "<redacted>"
+      "inputTokens": 94217,
+      "outputTokens": 93,
+      "totalTokens": 94310,
+      "cacheReadTokens": 0,
+      "cacheWriteTokens": 0
      },
      "cacheHit": {
-      "inputTokens": "<redacted>",
-      "cacheReadTokens": "<redacted>",
-      "cacheWriteTokens": "<redacted>",
+      "inputTokens": 94217,
+      "cacheReadTokens": 0,
+      "cacheWriteTokens": 0,
       "latestHitRate": 0,
       "hitRate": 0,
       "hitRateRequestCount": 1,
-      "totalInputTokens": "<redacted>",
-      "totalCacheReadTokens": "<redacted>",
-      "totalCacheWriteTokens": "<redacted>"
+      "totalInputTokens": 94217,
+      "totalCacheReadTokens": 0,
+      "totalCacheWriteTokens": 0
      },
      "contextUsageBreakdown": [
       {
@@ -11730,11 +11730,11 @@
      "providerRequestId": "20261108153933c8920c281f7aad69d5d9",
      "finishReason": "stop",
      "usage": {
-      "inputTokens": "<redacted>",
-      "outputTokens": "<redacted>",
-      "totalTokens": "<redacted>",
-      "cacheReadTokens": "<redacted>",
-      "cacheWriteTokens": "<redacted>"
+      "inputTokens": 94317,
+      "outputTokens": 205,
+      "totalTokens": 94522,
+      "cacheReadTokens": 94208,
+      "cacheWriteTokens": 0
      },
      "timeToFirstProviderEventMs": 18,
      "timeToFirstContentMs": 2477,
@@ -11774,12 +11774,12 @@
     "modelId": "GLM-5.3-Flash",
     "providerKind": "anthropic",
     "providerHostname": "zcode.z.ai",
-    "inputTokens": "<redacted>",
-    "outputTokens": "<redacted>",
-    "totalTokens": "<redacted>",
-    "reasoningTokens": "<redacted>",
-    "cacheReadTokens": "<redacted>",
-    "cacheWriteTokens": "<redacted>"
+    "inputTokens": 94317,
+    "outputTokens": 205,
+    "totalTokens": 94522,
+    "reasoningTokens": 0,
+    "cacheReadTokens": 94208,
+    "cacheWriteTokens": 0
    }
   },
   {
@@ -11793,22 +11793,22 @@
      "querySource": "main_turn",
      "stopReason": "stop",
      "usage": {
-      "inputTokens": "<redacted>",
-      "outputTokens": "<redacted>",
-      "totalTokens": "<redacted>",
-      "cacheReadTokens": "<redacted>",
-      "cacheWriteTokens": "<redacted>"
+      "inputTokens": 94317,
+      "outputTokens": 205,
+      "totalTokens": 94522,
+      "cacheReadTokens": 94208,
+      "cacheWriteTokens": 0
      },
      "cacheHit": {
-      "inputTokens": "<redacted>",
-      "cacheReadTokens": "<redacted>",
-      "cacheWriteTokens": "<redacted>",
+      "inputTokens": 94317,
+      "cacheReadTokens": 94208,
+      "cacheWriteTokens": 0,
       "latestHitRate": 0.9988443228686239,
       "hitRate": 0.4996870590980937,
       "hitRateRequestCount": 2,
-      "totalInputTokens": "<redacted>",
-      "totalCacheReadTokens": "<redacted>",
-      "totalCacheWriteTokens": "<redacted>"
+      "totalInputTokens": 188534,
+      "totalCacheReadTokens": 94208,
+      "totalCacheWriteTokens": 0
      },
      "contextUsageBreakdown": [
       {
@@ -11942,7 +11942,7 @@
     "status": "success",
     "resultType": "success",
     "durationMs": 33370,
-    "tokenCount": "<redacted>",
+    "tokenCount": 188832,
     "toolCallCount": 1
    }
   },
@@ -11953,16 +11953,16 @@
     "eventId": "1f5ab721-c37c-4d7f-83a9-ec53dbe78159",
     "payload": {
      "response": "创建失败了。我尝试在当前目录 `traces\\workspace` 下写入 `probe-permission-test.txt`，但工具调用的权限请求未能通过（报错：`Permission request failed`），文件没有被创建。\n\n这可能是因为本次会话的权限模式阻止了写入操作，或权限确认弹窗未能送达。你可以在权限设置中允许对该目录的写入后让我重试，或者手动创建该文件。",
-     "tokenCount": "<redacted>",
+     "tokenCount": 188832,
      "usage": {
       "source": "provider",
       "modelRequestCount": 2,
-      "inputTokens": "<redacted>",
-      "outputTokens": "<redacted>",
-      "totalTokens": "<redacted>",
-      "cacheReadTokens": "<redacted>",
-      "cacheWriteTokens": "<redacted>",
-      "reasoningTokens": "<redacted>",
+      "inputTokens": 188534,
+      "outputTokens": 298,
+      "totalTokens": 188832,
+      "cacheReadTokens": 94208,
+      "cacheWriteTokens": 0,
+      "reasoningTokens": 0,
       "webFetchRequests": 0,
       "webSearchRequests": 0
      },
@@ -11974,7 +11974,7 @@
       "totalMessages": 15,
       "cachedMessages": 14,
       "lastCacheHit": true,
-      "cacheReadTokens": "<redacted>"
+      "cacheReadTokens": 94208
      },
      "inputId": "5fa83e99-7370-4ce3-bdd9-2f7d295cf1cb"
     },

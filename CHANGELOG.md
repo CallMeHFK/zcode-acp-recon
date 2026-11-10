@@ -18,6 +18,17 @@ and this project adheres to [Conventional Commits](https://www.conventionalcommi
 - The contract suite reproduced and drove the fix for `interaction/requestOfficialMcpAuthHeaders`: the fork answered `-32601 bridge unsupported` while all eight golden traces record the desktop host replying `{}`. The bridge now auto-replies at frame arrival; a fork vitest unit test guards the behaviour.
 - Review round: the first replay engine let a 1.2s optional step stall the sequential driver, so scripted requests were answered out of order by the generic path and `step.reply` was dead code. All `on:` steps now pre-register waiters at startup; L2 asserts replay fidelity. Assertions were moved onto the raw traces (seq/terminal/host-ask re-pairing), synthetic terminals are non-success and no longer asserted as product outcomes, and fixture derivation is verified byte-for-byte via `--check`.
 
+## [0.4.0] - 2026-11-10
+
+### Added
+
+- Phase 3 protocol contract layer: real-backend replay fixtures extracted into the fork (tests/fixtures/protocol-contract, six scenarios) with semantic contract tests through the production EventTranslator (70/70 green with the surrounding suites).
+- Protocol Compatibility Matrix (reports/phase3/protocol-compatibility-matrix.md): every observed protocol surface mapped to adapter behavior with evidence levels (Confirmed/Observed/Inferred/Unknown) and an explicit evidence-gap list.
+
+### Fixed
+
+- Trace sanitizer exempted numeric *tokens counts (billing-grade usage evidence was being redacted as credentials).
+
 ## [0.3.0] - 2026-11-09
 
 ### Added

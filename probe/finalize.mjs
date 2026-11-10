@@ -30,7 +30,12 @@ function redactValue(v, depth = 0) {
   if (Array.isArray(v)) return v.map(x => redactValue(x, depth + 1));
   const o = {};
   for (const [k, val] of Object.entries(v)) {
-    if (/(requestauth|authorization|cookie|password|secret|refreshtoken|accesstoken|jwttoken|zcodejwttoken|apikey|api_key|credential|token|connectionkey)/i.test(k.replace(/[-_\s]/g, ""))) o[k] = "<redacted>";
+    // 数值型 *tokens 计数是证据（billing 级用量），不是凭据——豁免
+    const numericCount = /token/i.test(k) && typeof val === "number";
+    const sensitive =
+      /(requestauth|authorization|cookie|password|secret|refreshtoken|accesstoken|jwttoken|zcodejwttoken|apikey|api_key|credential)/i.test(k.replace(/[-_\s]/g, "")) ||
+      (/token|connectionkey/i.test(k) && !numericCount);
+    if (sensitive) o[k] = "<redacted>";
     else o[k] = redactValue(val, depth + 1);
   }
   return o;

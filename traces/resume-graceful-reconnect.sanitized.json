@@ -4,7 +4,7 @@
   "runtimeVersion": "v24.20.0",
   "os": "win32",
   "arch": "x64",
-  "captureTimestamp": "2026-11-08T15:43:40.659Z",
+  "captureTimestamp": "2026-11-10T15:14:50.824Z",
   "evidenceLevel": "observed",
   "redactionVersion": "1",
   "scenario": "resume-graceful-reconnect"
@@ -1330,7 +1330,7 @@
      "sessionId": "sess_366d66dc-62c9-4b90-b130-5a3ecaa377a9",
      "status": "idle",
      "target": null,
-     "totalTokenCount": "<redacted>",
+     "totalTokenCount": 0,
      "turnCount": 0
     },
     "protocol": {
@@ -1342,15 +1342,15 @@
      "pendingRequestIds": [],
      "contextUsage": {
       "cache": {
-       "inputTokens": "<redacted>",
-       "cacheReadTokens": "<redacted>",
-       "cacheWriteTokens": "<redacted>",
+       "inputTokens": 93996,
+       "cacheReadTokens": 93952,
+       "cacheWriteTokens": 0,
        "latestHitRate": 0.9995318949742542,
        "hitRate": 0.9995318949742542,
        "hitRateRequestCount": 1,
-       "totalInputTokens": "<redacted>",
-       "totalCacheReadTokens": "<redacted>",
-       "totalCacheWriteTokens": "<redacted>"
+       "totalInputTokens": 93996,
+       "totalCacheReadTokens": 93952,
+       "totalCacheWriteTokens": 0
       },
       "cost": null,
       "size": 200000,
@@ -1394,7 +1394,7 @@
         "label": "GLM-5.3-Flash",
         "providerLabel": "Start Plan",
         "contextWindow": 1000000,
-        "maxOutputTokens": "<redacted>",
+        "maxOutputTokens": 128000,
         "reasoning": {
          "levels": [
           {
@@ -2150,7 +2150,7 @@
       "sessionId": "sess_366d66dc-62c9-4b90-b130-5a3ecaa377a9",
       "status": "idle",
       "target": null,
-      "totalTokenCount": "<redacted>",
+      "totalTokenCount": 0,
       "turnCount": 0
      },
      "protocol": {
@@ -2163,15 +2163,15 @@
       "pendingRequestIds": [],
       "contextUsage": {
        "cache": {
-        "inputTokens": "<redacted>",
-        "cacheReadTokens": "<redacted>",
-        "cacheWriteTokens": "<redacted>",
+        "inputTokens": 93996,
+        "cacheReadTokens": 93952,
+        "cacheWriteTokens": 0,
         "latestHitRate": 0.9995318949742542,
         "hitRate": 0.9995318949742542,
         "hitRateRequestCount": 1,
-        "totalInputTokens": "<redacted>",
-        "totalCacheReadTokens": "<redacted>",
-        "totalCacheWriteTokens": "<redacted>"
+        "totalInputTokens": 93996,
+        "totalCacheReadTokens": 93952,
+        "totalCacheWriteTokens": 0
        },
        "cost": null,
        "size": 200000,
@@ -2215,7 +2215,7 @@
          "label": "GLM-5.3-Flash",
          "providerLabel": "Start Plan",
          "contextWindow": 200000,
-         "maxOutputTokens": "<redacted>",
+         "maxOutputTokens": 128000,
          "reasoning": {
           "levels": [
            {
@@ -3736,11 +3736,11 @@
      "providerRequestId": "20261108152421c79714002282dd1667f0",
      "finishReason": "stop",
      "usage": {
-      "inputTokens": "<redacted>",
-      "outputTokens": "<redacted>",
-      "totalTokens": "<redacted>",
-      "cacheReadTokens": "<redacted>",
-      "cacheWriteTokens": "<redacted>"
+      "inputTokens": 93490,
+      "outputTokens": 4,
+      "totalTokens": 93494,
+      "cacheReadTokens": 64704,
+      "cacheWriteTokens": 0
      },
      "timeToFirstProviderEventMs": 64,
      "timeToFirstContentMs": 4078,
@@ -3780,12 +3780,12 @@
     "modelId": "GLM-5.3-Flash",
     "providerKind": "anthropic",
     "providerHostname": "zcode.z.ai",
-    "inputTokens": "<redacted>",
-    "outputTokens": "<redacted>",
-    "totalTokens": "<redacted>",
-    "reasoningTokens": "<redacted>",
-    "cacheReadTokens": "<redacted>",
-    "cacheWriteTokens": "<redacted>"
+    "inputTokens": 93490,
+    "outputTokens": 4,
+    "totalTokens": 93494,
+    "reasoningTokens": 0,
+    "cacheReadTokens": 64704,
+    "cacheWriteTokens": 0
    }
   },
   {
@@ -3799,22 +3799,22 @@
      "querySource": "main_turn",
      "stopReason": "stop",
      "usage": {
-      "inputTokens": "<redacted>",
-      "outputTokens": "<redacted>",
-      "totalTokens": "<redacted>",
-      "cacheReadTokens": "<redacted>",
-      "cacheWriteTokens": "<redacted>"
+      "inputTokens": 93490,
+      "outputTokens": 4,
+      "totalTokens": 93494,
+      "cacheReadTokens": 64704,
+      "cacheWriteTokens": 0
      },
      "cacheHit": {
-      "inputTokens": "<redacted>",
-      "cacheReadTokens": "<redacted>",
-      "cacheWriteTokens": "<redacted>",
+      "inputTokens": 93490,
+      "cacheReadTokens": 64704,
+      "cacheWriteTokens": 0,
       "latestHitRate": 0.692095411273933,
       "hitRate": 0.8462285183960402,
       "hitRateRequestCount": 2,
-      "totalInputTokens": "<redacted>",
-      "totalCacheReadTokens": "<redacted>",
-      "totalCacheWriteTokens": "<redacted>"
+      "totalInputTokens": 187486,
+      "totalCacheReadTokens": 158656,
+      "totalCacheWriteTokens": 0
      },
      "contextUsageBreakdown": [
       {
@@ -3948,7 +3948,7 @@
     "status": "success",
     "resultType": "success",
     "durationMs": 16599,
-    "tokenCount": "<redacted>",
+    "tokenCount": 93494,
     "toolCallCount": 0
    }
   },
@@ -3959,16 +3959,16 @@
     "eventId": "c1f885a7-5d69-4587-9a89-5dd12f70ef3c",
     "payload": {
      "response": "47",
-     "tokenCount": "<redacted>",
+     "tokenCount": 93494,
      "usage": {
       "source": "provider",
       "modelRequestCount": 1,
-      "inputTokens": "<redacted>",
-      "outputTokens": "<redacted>",
-      "totalTokens": "<redacted>",
-      "cacheReadTokens": "<redacted>",
-      "cacheWriteTokens": "<redacted>",
-      "reasoningTokens": "<redacted>",
+      "inputTokens": 93490,
+      "outputTokens": 4,
+      "totalTokens": 93494,
+      "cacheReadTokens": 64704,
+      "cacheWriteTokens": 0,
+      "reasoningTokens": 0,
       "webFetchRequests": 0,
       "webSearchRequests": 0
      },
@@ -3980,7 +3980,7 @@
       "totalMessages": 13,
       "cachedMessages": 12,
       "lastCacheHit": true,
-      "cacheReadTokens": "<redacted>"
+      "cacheReadTokens": 64704
      },
      "inputId": "b8869e11-e071-492b-a913-f53ec93226aa"
     },
@@ -5028,7 +5028,7 @@
      "sessionId": "sess_0cf6fa21-2c28-447c-b4c5-5403b433586a",
      "status": "idle",
      "target": null,
-     "totalTokenCount": "<redacted>",
+     "totalTokenCount": 0,
      "turnCount": 0
     },
     "protocol": {
@@ -5040,15 +5040,15 @@
      "pendingRequestIds": [],
      "contextUsage": {
       "cache": {
-       "inputTokens": "<redacted>",
-       "cacheReadTokens": "<redacted>",
-       "cacheWriteTokens": "<redacted>",
+       "inputTokens": 93996,
+       "cacheReadTokens": 0,
+       "cacheWriteTokens": 0,
        "latestHitRate": 0,
        "hitRate": 0,
        "hitRateRequestCount": 1,
-       "totalInputTokens": "<redacted>",
-       "totalCacheReadTokens": "<redacted>",
-       "totalCacheWriteTokens": "<redacted>"
+       "totalInputTokens": 93996,
+       "totalCacheReadTokens": 0,
+       "totalCacheWriteTokens": 0
       },
       "cost": null,
       "size": 200000,
@@ -5092,7 +5092,7 @@
         "label": "GLM-5.3-Flash",
         "providerLabel": "Start Plan",
         "contextWindow": 1000000,
-        "maxOutputTokens": "<redacted>",
+        "maxOutputTokens": 128000,
         "reasoning": {
          "levels": [
           {
@@ -5910,7 +5910,7 @@
       "sessionId": "sess_0cf6fa21-2c28-447c-b4c5-5403b433586a",
       "status": "idle",
       "target": null,
-      "totalTokenCount": "<redacted>",
+      "totalTokenCount": 0,
       "turnCount": 0
      },
      "protocol": {
@@ -5923,15 +5923,15 @@
       "pendingRequestIds": [],
       "contextUsage": {
        "cache": {
-        "inputTokens": "<redacted>",
-        "cacheReadTokens": "<redacted>",
-        "cacheWriteTokens": "<redacted>",
+        "inputTokens": 93996,
+        "cacheReadTokens": 0,
+        "cacheWriteTokens": 0,
         "latestHitRate": 0,
         "hitRate": 0,
         "hitRateRequestCount": 1,
-        "totalInputTokens": "<redacted>",
-        "totalCacheReadTokens": "<redacted>",
-        "totalCacheWriteTokens": "<redacted>"
+        "totalInputTokens": 93996,
+        "totalCacheReadTokens": 0,
+        "totalCacheWriteTokens": 0
        },
        "cost": null,
        "size": 200000,
@@ -5975,7 +5975,7 @@
          "label": "GLM-5.3-Flash",
          "providerLabel": "Start Plan",
          "contextWindow": 200000,
-         "maxOutputTokens": "<redacted>",
+         "maxOutputTokens": 128000,
          "reasoning": {
           "levels": [
            {
@@ -7392,11 +7392,11 @@
      "providerRequestId": "20261108152541eff55fca52293037b072",
      "finishReason": "stop",
      "usage": {
-      "inputTokens": "<redacted>",
-      "outputTokens": "<redacted>",
-      "totalTokens": "<redacted>",
-      "cacheReadTokens": "<redacted>",
-      "cacheWriteTokens": "<redacted>"
+      "inputTokens": 93490,
+      "outputTokens": 3,
+      "totalTokens": 93493,
+      "cacheReadTokens": 64320,
+      "cacheWriteTokens": 0
      },
      "timeToFirstProviderEventMs": 79,
      "timeToFirstContentMs": 4793,
@@ -7436,12 +7436,12 @@
     "modelId": "GLM-5.3-Flash",
     "providerKind": "anthropic",
     "providerHostname": "zcode.z.ai",
-    "inputTokens": "<redacted>",
-    "outputTokens": "<redacted>",
-    "totalTokens": "<redacted>",
-    "reasoningTokens": "<redacted>",
-    "cacheReadTokens": "<redacted>",
-    "cacheWriteTokens": "<redacted>"
+    "inputTokens": 93490,
+    "outputTokens": 3,
+    "totalTokens": 93493,
+    "reasoningTokens": 0,
+    "cacheReadTokens": 64320,
+    "cacheWriteTokens": 0
    }
   },
   {
@@ -7455,22 +7455,22 @@
      "querySource": "main_turn",
      "stopReason": "stop",
      "usage": {
-      "inputTokens": "<redacted>",
-      "outputTokens": "<redacted>",
-      "totalTokens": "<redacted>",
-      "cacheReadTokens": "<redacted>",
-      "cacheWriteTokens": "<redacted>"
+      "inputTokens": 93490,
+      "outputTokens": 3,
+      "totalTokens": 93493,
+      "cacheReadTokens": 64320,
+      "cacheWriteTokens": 0
      },
      "cacheHit": {
-      "inputTokens": "<redacted>",
-      "cacheReadTokens": "<redacted>",
-      "cacheWriteTokens": "<redacted>",
+      "inputTokens": 93490,
+      "cacheReadTokens": 64320,
+      "cacheWriteTokens": 0,
       "latestHitRate": 0.6879880201091025,
       "hitRate": 0.34306561556596227,
       "hitRateRequestCount": 2,
-      "totalInputTokens": "<redacted>",
-      "totalCacheReadTokens": "<redacted>",
-      "totalCacheWriteTokens": "<redacted>"
+      "totalInputTokens": 187486,
+      "totalCacheReadTokens": 64320,
+      "totalCacheWriteTokens": 0
      },
      "contextUsageBreakdown": [
       {
@@ -7604,7 +7604,7 @@
     "status": "success",
     "resultType": "success",
     "durationMs": 17277,
-    "tokenCount": "<redacted>",
+    "tokenCount": 93493,
     "toolCallCount": 0
    }
   },
@@ -7615,16 +7615,16 @@
     "eventId": "858ec3ef-8cf0-475b-9b1a-49314d35af9b",
     "payload": {
      "response": "47",
-     "tokenCount": "<redacted>",
+     "tokenCount": 93493,
      "usage": {
       "source": "provider",
       "modelRequestCount": 1,
-      "inputTokens": "<redacted>",
-      "outputTokens": "<redacted>",
-      "totalTokens": "<redacted>",
-      "cacheReadTokens": "<redacted>",
-      "cacheWriteTokens": "<redacted>",
-      "reasoningTokens": "<redacted>",
+      "inputTokens": 93490,
+      "outputTokens": 3,
+      "totalTokens": 93493,
+      "cacheReadTokens": 64320,
+      "cacheWriteTokens": 0,
+      "reasoningTokens": 0,
       "webFetchRequests": 0,
       "webSearchRequests": 0
      },
@@ -7636,7 +7636,7 @@
       "totalMessages": 13,
       "cachedMessages": 12,
       "lastCacheHit": true,
-      "cacheReadTokens": "<redacted>"
+      "cacheReadTokens": 64320
      },
      "inputId": "88157311-39cb-4e97-9bd4-28a0dd694548"
     },
@@ -8821,7 +8821,7 @@
      "sessionId": "sess_970d76f3-0da3-4de1-85cd-8cc19ec4e27b",
      "status": "idle",
      "target": null,
-     "totalTokenCount": "<redacted>",
+     "totalTokenCount": 0,
      "turnCount": 0
     },
     "protocol": {
@@ -8833,15 +8833,15 @@
      "pendingRequestIds": [],
      "contextUsage": {
       "cache": {
-       "inputTokens": "<redacted>",
-       "cacheReadTokens": "<redacted>",
-       "cacheWriteTokens": "<redacted>",
+       "inputTokens": 94204,
+       "cacheReadTokens": 0,
+       "cacheWriteTokens": 0,
        "latestHitRate": 0,
        "hitRate": 0,
        "hitRateRequestCount": 1,
-       "totalInputTokens": "<redacted>",
-       "totalCacheReadTokens": "<redacted>",
-       "totalCacheWriteTokens": "<redacted>"
+       "totalInputTokens": 94204,
+       "totalCacheReadTokens": 0,
+       "totalCacheWriteTokens": 0
       },
       "cost": null,
       "size": 200000,
@@ -8885,7 +8885,7 @@
         "label": "GLM-5.3-Flash",
         "providerLabel": "Start Plan",
         "contextWindow": 1000000,
-        "maxOutputTokens": "<redacted>",
+        "maxOutputTokens": 128000,
         "reasoning": {
          "levels": [
           {
@@ -9703,7 +9703,7 @@
       "sessionId": "sess_970d76f3-0da3-4de1-85cd-8cc19ec4e27b",
       "status": "idle",
       "target": null,
-      "totalTokenCount": "<redacted>",
+      "totalTokenCount": 0,
       "turnCount": 0
      },
      "protocol": {
@@ -9716,15 +9716,15 @@
       "pendingRequestIds": [],
       "contextUsage": {
        "cache": {
-        "inputTokens": "<redacted>",
-        "cacheReadTokens": "<redacted>",
-        "cacheWriteTokens": "<redacted>",
+        "inputTokens": 94204,
+        "cacheReadTokens": 0,
+        "cacheWriteTokens": 0,
         "latestHitRate": 0,
         "hitRate": 0,
         "hitRateRequestCount": 1,
-        "totalInputTokens": "<redacted>",
-        "totalCacheReadTokens": "<redacted>",
-        "totalCacheWriteTokens": "<redacted>"
+        "totalInputTokens": 94204,
+        "totalCacheReadTokens": 0,
+        "totalCacheWriteTokens": 0
        },
        "cost": null,
        "size": 200000,
@@ -9768,7 +9768,7 @@
          "label": "GLM-5.3-Flash",
          "providerLabel": "Start Plan",
          "contextWindow": 200000,
-         "maxOutputTokens": "<redacted>",
+         "maxOutputTokens": 128000,
          "reasoning": {
           "levels": [
            {
@@ -11217,11 +11217,11 @@
      "providerRequestId": "2026110815422303724cca042ca95ac92f",
      "finishReason": "stop",
      "usage": {
-      "inputTokens": "<redacted>",
-      "outputTokens": "<redacted>",
-      "totalTokens": "<redacted>",
-      "cacheReadTokens": "<redacted>",
-      "cacheWriteTokens": "<redacted>"
+      "inputTokens": 93698,
+      "outputTokens": 3,
+      "totalTokens": 93701,
+      "cacheReadTokens": 64064,
+      "cacheWriteTokens": 0
      },
      "timeToFirstProviderEventMs": 22,
      "timeToFirstContentMs": 4843,
@@ -11261,12 +11261,12 @@
     "modelId": "GLM-5.3-Flash",
     "providerKind": "anthropic",
     "providerHostname": "zcode.z.ai",
-    "inputTokens": "<redacted>",
-    "outputTokens": "<redacted>",
-    "totalTokens": "<redacted>",
-    "reasoningTokens": "<redacted>",
-    "cacheReadTokens": "<redacted>",
-    "cacheWriteTokens": "<redacted>"
+    "inputTokens": 93698,
+    "outputTokens": 3,
+    "totalTokens": 93701,
+    "reasoningTokens": 0,
+    "cacheReadTokens": 64064,
+    "cacheWriteTokens": 0
    }
   },
   {
@@ -11280,22 +11280,22 @@
      "querySource": "main_turn",
      "stopReason": "stop",
      "usage": {
-      "inputTokens": "<redacted>",
-      "outputTokens": "<redacted>",
-      "totalTokens": "<redacted>",
-      "cacheReadTokens": "<redacted>",
-      "cacheWriteTokens": "<redacted>"
+      "inputTokens": 93698,
+      "outputTokens": 3,
+      "totalTokens": 93701,
+      "cacheReadTokens": 64064,
+      "cacheWriteTokens": 0
      },
      "cacheHit": {
-      "inputTokens": "<redacted>",
-      "cacheReadTokens": "<redacted>",
-      "cacheWriteTokens": "<redacted>",
+      "inputTokens": 93698,
+      "cacheReadTokens": 64064,
+      "cacheWriteTokens": 0,
       "latestHitRate": 0.6837285747828129,
       "hitRate": 0.3409436834094368,
       "hitRateRequestCount": 2,
-      "totalInputTokens": "<redacted>",
-      "totalCacheReadTokens": "<redacted>",
-      "totalCacheWriteTokens": "<redacted>"
+      "totalInputTokens": 187902,
+      "totalCacheReadTokens": 64064,
+      "totalCacheWriteTokens": 0
      },
      "contextUsageBreakdown": [
       {
@@ -11429,7 +11429,7 @@
     "status": "success",
     "resultType": "success",
     "durationMs": 16970,
-    "tokenCount": "<redacted>",
+    "tokenCount": 93701,
     "toolCallCount": 0
    }
   },
@@ -11440,16 +11440,16 @@
     "eventId": "73d3673d-b044-4e7a-b443-1dd62008b0c5",
     "payload": {
      "response": "47",
-     "tokenCount": "<redacted>",
+     "tokenCount": 93701,
      "usage": {
       "source": "provider",
       "modelRequestCount": 1,
-      "inputTokens": "<redacted>",
-      "outputTokens": "<redacted>",
-      "totalTokens": "<redacted>",
-      "cacheReadTokens": "<redacted>",
-      "cacheWriteTokens": "<redacted>",
-      "reasoningTokens": "<redacted>",
+      "inputTokens": 93698,
+      "outputTokens": 3,
+      "totalTokens": 93701,
+      "cacheReadTokens": 64064,
+      "cacheWriteTokens": 0,
+      "reasoningTokens": 0,
       "webFetchRequests": 0,
       "webSearchRequests": 0
      },
@@ -11461,7 +11461,7 @@
       "totalMessages": 14,
       "cachedMessages": 13,
       "lastCacheHit": true,
-      "cacheReadTokens": "<redacted>"
+      "cacheReadTokens": 64064
      },
      "inputId": "16c742ea-6d17-4faa-9cde-d2ea223ef2b4"
     },

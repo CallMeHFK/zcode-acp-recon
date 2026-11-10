@@ -4,7 +4,7 @@
   "runtimeVersion": "v24.20.0",
   "os": "win32",
   "arch": "x64",
-  "captureTimestamp": "2026-11-08T15:43:40.659Z",
+  "captureTimestamp": "2026-11-10T15:14:50.824Z",
   "evidenceLevel": "observed",
   "redactionVersion": "1",
   "scenario": "crash-reconnect"
@@ -584,7 +584,7 @@
      "sessionId": "sess_2853e7d7-90f7-4d5a-b78f-2581eb7e9787",
      "status": "idle",
      "target": null,
-     "totalTokenCount": "<redacted>",
+     "totalTokenCount": 0,
      "turnCount": 0
     },
     "protocol": {
@@ -632,7 +632,7 @@
         "label": "GLM-5.3-Flash",
         "providerLabel": "Start Plan",
         "contextWindow": 1000000,
-        "maxOutputTokens": "<redacted>",
+        "maxOutputTokens": 128000,
         "reasoning": {
          "levels": [
           {
@@ -1043,7 +1043,7 @@
       "sessionId": "sess_2853e7d7-90f7-4d5a-b78f-2581eb7e9787",
       "status": "idle",
       "target": null,
-      "totalTokenCount": "<redacted>",
+      "totalTokenCount": 0,
       "turnCount": 0
      },
      "protocol": {
@@ -1092,7 +1092,7 @@
          "label": "GLM-5.3-Flash",
          "providerLabel": "Start Plan",
          "contextWindow": 200000,
-         "maxOutputTokens": "<redacted>",
+         "maxOutputTokens": 128000,
          "reasoning": {
           "levels": [
            {
@@ -7168,11 +7168,11 @@
      "providerRequestId": "20261108152750c5824e18dbc4504ac87c",
      "finishReason": "stop",
      "usage": {
-      "inputTokens": "<redacted>",
-      "outputTokens": "<redacted>",
-      "totalTokens": "<redacted>",
-      "cacheReadTokens": "<redacted>",
-      "cacheWriteTokens": "<redacted>"
+      "inputTokens": 93492,
+      "outputTokens": 277,
+      "totalTokens": 93769,
+      "cacheReadTokens": 64704,
+      "cacheWriteTokens": 0
      },
      "timeToFirstProviderEventMs": 69,
      "timeToFirstContentMs": 4126,
@@ -7212,12 +7212,12 @@
     "modelId": "GLM-5.3-Flash",
     "providerKind": "anthropic",
     "providerHostname": "zcode.z.ai",
-    "inputTokens": "<redacted>",
-    "outputTokens": "<redacted>",
-    "totalTokens": "<redacted>",
-    "reasoningTokens": "<redacted>",
-    "cacheReadTokens": "<redacted>",
-    "cacheWriteTokens": "<redacted>"
+    "inputTokens": 93492,
+    "outputTokens": 277,
+    "totalTokens": 93769,
+    "reasoningTokens": 0,
+    "cacheReadTokens": 64704,
+    "cacheWriteTokens": 0
    }
   },
   {
@@ -7231,22 +7231,22 @@
      "querySource": "main_turn",
      "stopReason": "stop",
      "usage": {
-      "inputTokens": "<redacted>",
-      "outputTokens": "<redacted>",
-      "totalTokens": "<redacted>",
-      "cacheReadTokens": "<redacted>",
-      "cacheWriteTokens": "<redacted>"
+      "inputTokens": 93492,
+      "outputTokens": 277,
+      "totalTokens": 93769,
+      "cacheReadTokens": 64704,
+      "cacheWriteTokens": 0
      },
      "cacheHit": {
-      "inputTokens": "<redacted>",
-      "cacheReadTokens": "<redacted>",
-      "cacheWriteTokens": "<redacted>",
+      "inputTokens": 93492,
+      "cacheReadTokens": 64704,
+      "cacheWriteTokens": 0,
       "latestHitRate": 0.6920806058272365,
       "hitRate": 0.6920806058272365,
       "hitRateRequestCount": 1,
-      "totalInputTokens": "<redacted>",
-      "totalCacheReadTokens": "<redacted>",
-      "totalCacheWriteTokens": "<redacted>"
+      "totalInputTokens": 93492,
+      "totalCacheReadTokens": 64704,
+      "totalCacheWriteTokens": 0
      },
      "contextUsageBreakdown": [
       {
@@ -7380,7 +7380,7 @@
     "status": "success",
     "resultType": "success",
     "durationMs": 20591,
-    "tokenCount": "<redacted>",
+    "tokenCount": 93769,
     "toolCallCount": 0
    }
   },
@@ -7391,16 +7391,16 @@
     "eventId": "670d1632-210e-4999-8e85-dbb915a7c3a4",
     "payload": {
      "response": "1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n32\n33\n34\n35\n36\n37\n38\n39\n40\n41\n42\n43\n44\n45\n46\n47\n48\n49\n50\n51\n52\n53\n54\n55\n56\n57\n58\n59\n60\n\n接下来从 1 数到 5：\n\n1\n2\n3\n4\n5",
-     "tokenCount": "<redacted>",
+     "tokenCount": 93769,
      "usage": {
       "source": "provider",
       "modelRequestCount": 1,
-      "inputTokens": "<redacted>",
-      "outputTokens": "<redacted>",
-      "totalTokens": "<redacted>",
-      "cacheReadTokens": "<redacted>",
-      "cacheWriteTokens": "<redacted>",
-      "reasoningTokens": "<redacted>",
+      "inputTokens": 93492,
+      "outputTokens": 277,
+      "totalTokens": 93769,
+      "cacheReadTokens": 64704,
+      "cacheWriteTokens": 0,
+      "reasoningTokens": 0,
       "webFetchRequests": 0,
       "webSearchRequests": 0
      },
@@ -7412,7 +7412,7 @@
       "totalMessages": 12,
       "cachedMessages": 11,
       "lastCacheHit": true,
-      "cacheReadTokens": "<redacted>"
+      "cacheReadTokens": 64704
      },
      "inputId": "a6f7cb62-cb17-409a-ad17-dcb096b2f7b1"
     },
@@ -8024,7 +8024,7 @@
      "sessionId": "sess_b235b138-815f-4158-9e37-2477e48a6e78",
      "status": "idle",
      "target": null,
-     "totalTokenCount": "<redacted>",
+     "totalTokenCount": 0,
      "turnCount": 0
     },
     "protocol": {
@@ -8072,7 +8072,7 @@
         "label": "GLM-5.3-Flash",
         "providerLabel": "Start Plan",
         "contextWindow": 1000000,
-        "maxOutputTokens": "<redacted>",
+        "maxOutputTokens": 128000,
         "reasoning": {
          "levels": [
           {
@@ -8457,7 +8457,7 @@
       "sessionId": "sess_b235b138-815f-4158-9e37-2477e48a6e78",
       "status": "idle",
       "target": null,
-      "totalTokenCount": "<redacted>",
+      "totalTokenCount": 0,
       "turnCount": 0
      },
      "protocol": {
@@ -8506,7 +8506,7 @@
          "label": "GLM-5.3-Flash",
          "providerLabel": "Start Plan",
          "contextWindow": 200000,
-         "maxOutputTokens": "<redacted>",
+         "maxOutputTokens": 128000,
          "reasoning": {
           "levels": [
            {
@@ -12615,11 +12615,11 @@
      "providerRequestId": "20261108154028afba3cf74d095a6bed74",
      "finishReason": "stop",
      "usage": {
-      "inputTokens": "<redacted>",
-      "outputTokens": "<redacted>",
-      "totalTokens": "<redacted>",
-      "cacheReadTokens": "<redacted>",
-      "cacheWriteTokens": "<redacted>"
+      "inputTokens": 93700,
+      "outputTokens": 175,
+      "totalTokens": 93875,
+      "cacheReadTokens": 320,
+      "cacheWriteTokens": 0
      },
      "timeToFirstProviderEventMs": 64,
      "timeToFirstContentMs": 5786,
@@ -12659,12 +12659,12 @@
     "modelId": "GLM-5.3-Flash",
     "providerKind": "anthropic",
     "providerHostname": "zcode.z.ai",
-    "inputTokens": "<redacted>",
-    "outputTokens": "<redacted>",
-    "totalTokens": "<redacted>",
-    "reasoningTokens": "<redacted>",
-    "cacheReadTokens": "<redacted>",
-    "cacheWriteTokens": "<redacted>"
+    "inputTokens": 93700,
+    "outputTokens": 175,
+    "totalTokens": 93875,
+    "reasoningTokens": 0,
+    "cacheReadTokens": 320,
+    "cacheWriteTokens": 0
    }
   },
   {
@@ -12678,22 +12678,22 @@
      "querySource": "main_turn",
      "stopReason": "stop",
      "usage": {
-      "inputTokens": "<redacted>",
-      "outputTokens": "<redacted>",
-      "totalTokens": "<redacted>",
-      "cacheReadTokens": "<redacted>",
-      "cacheWriteTokens": "<redacted>"
+      "inputTokens": 93700,
+      "outputTokens": 175,
+      "totalTokens": 93875,
+      "cacheReadTokens": 320,
+      "cacheWriteTokens": 0
      },
      "cacheHit": {
-      "inputTokens": "<redacted>",
-      "cacheReadTokens": "<redacted>",
-      "cacheWriteTokens": "<redacted>",
+      "inputTokens": 93700,
+      "cacheReadTokens": 320,
+      "cacheWriteTokens": 0,
       "latestHitRate": 0.003415154749199573,
       "hitRate": 0.003415154749199573,
       "hitRateRequestCount": 1,
-      "totalInputTokens": "<redacted>",
-      "totalCacheReadTokens": "<redacted>",
-      "totalCacheWriteTokens": "<redacted>"
+      "totalInputTokens": 93700,
+      "totalCacheReadTokens": 320,
+      "totalCacheWriteTokens": 0
      },
      "contextUsageBreakdown": [
       {
@@ -12827,7 +12827,7 @@
     "status": "success",
     "resultType": "success",
     "durationMs": 21118,
-    "tokenCount": "<redacted>",
+    "tokenCount": 93875,
     "toolCallCount": 0
    }
   },
@@ -12838,16 +12838,16 @@
     "eventId": "029adcaa-ff69-45dd-af52-2b9603a26919",
     "payload": {
      "response": "1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n32\n33\n34\n35\n36\n37\n38\n39\n40\n41\n42\n43\n44\n45\n46\n47\n48\n49\n50\n51\n52\n53\n54\n55\n56\n57\n58\n59\n60\n\n---\n\n继续部分，从 1 数到 5：\n\n1\n2\n3\n4\n5",
-     "tokenCount": "<redacted>",
+     "tokenCount": 93875,
      "usage": {
       "source": "provider",
       "modelRequestCount": 1,
-      "inputTokens": "<redacted>",
-      "outputTokens": "<redacted>",
-      "totalTokens": "<redacted>",
-      "cacheReadTokens": "<redacted>",
-      "cacheWriteTokens": "<redacted>",
-      "reasoningTokens": "<redacted>",
+      "inputTokens": 93700,
+      "outputTokens": 175,
+      "totalTokens": 93875,
+      "cacheReadTokens": 320,
+      "cacheWriteTokens": 0,
+      "reasoningTokens": 0,
       "webFetchRequests": 0,
       "webSearchRequests": 0
      },
@@ -12859,7 +12859,7 @@
       "totalMessages": 13,
       "cachedMessages": 12,
       "lastCacheHit": true,
-      "cacheReadTokens": "<redacted>"
+      "cacheReadTokens": 320
      },
      "inputId": "fe3ee537-34bc-4096-a418-58f87af3738c"
     },

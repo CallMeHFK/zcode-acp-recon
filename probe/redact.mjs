@@ -48,8 +48,9 @@ export function createRedactor() {
       const out = {};
       for (const [k, val] of Object.entries(v)) {
         const kl = k.toLowerCase().replace(/[-_\s]/g, "");
-        if (KEY_BLOCKLIST.includes(kl)) out[k] = "<redacted>";
-        else if (SENSITIVE_KEY_HINT.test(k) && typeof val === "string" && val.length > 0) out[k] = "<redacted:key-hint>";
+        const numericCount = /token/i.test(k) && typeof val === "number"; // 计数字段非凭据（如 outputTokens）
+        if (KEY_BLOCKLIST.includes(kl) && !numericCount) out[k] = "<redacted>";
+        else if (SENSITIVE_KEY_HINT.test(k) && !numericCount && typeof val === "string" && val.length > 0) out[k] = "<redacted:key-hint>";
         else out[k] = walk(val, `${keyPath}.${k}`, depth + 1);
       }
       return out;

@@ -7,48 +7,48 @@
       "code": 0,
       "msg": "",
       "data": {
-        "server_time": 1794152619,
+        "server_time": 1794323689,
         "plans": [
           {
-            "user_plan_id": "upl_2118711139584593920",
-            "plan_id": "zcode-v3-start-plan-1106-wk",
-            "name": "ZCODE WEEKEND BUILD",
+            "user_plan_id": "upl_2120154331925086208",
+            "plan_id": "zcode-v3-start-plan-1110-nt",
+            "name": "ZCODE GLOBAL BUILD",
             "description": "",
-            "priority": 101,
+            "priority": 111,
             "status": "active",
-            "starts_at": 1793975074,
-            "ends_at": 1794186000,
+            "starts_at": 1794319157,
+            "ends_at": 1794358800,
             "entitlements": [
               {
-                "entitlement_id": "ent-zcode-v3-start-plan-1106-wk-1",
+                "entitlement_id": "ent-zcode-v3-start-plan-1110-nt-1",
                 "show_name": "GLM-5.3-Flash",
                 "meter": "model_usage",
                 "unit_type": "token",
                 "capabilities": [
                   "model:glm-5.3-flash"
                 ],
-                "grant_units": 500000000,
+                "grant_units": 300000000,
                 "period": "one_time",
                 "priority": 101,
-                "effective_at": 1793977200
+                "effective_at": 1794322800
               }
             ]
           }
         ]
       },
-      "logid": "20261108154339e7d857f94c7c4a7566bd"
+      "logid": "20261110151449dcc8aad9958b4e63f6df"
     },
     "ok": true
   },
   "coexistence": {
     "dbNow": {
       "sqlite": {
-        "size": 770048,
-        "mtime": "2026-11-08T15:41:09.393Z"
+        "size": 802816,
+        "mtime": "2026-11-10T15:13:06.031Z"
       },
       "wal": {
         "size": 4136512,
-        "mtime": "2026-11-08T15:43:38.825Z"
+        "mtime": "2026-11-10T15:14:48.958Z"
       },
       "shm": {
         "size": 32768,
@@ -60,6 +60,10 @@
   },
   "orphanProcesses": [],
   "sanitized": {
+    "acp-e2e": {
+      "records": 144,
+      "file": "traces\\acp-e2e.sanitized.json"
+    },
     "cancel": {
       "records": 314,
       "file": "traces\\cancel.sanitized.json"
@@ -156,7 +160,7 @@
   "redaction": {
     "scanCoverage": 1,
     "scanErrors": [],
-    "totalRecords": 4845,
-    "scannedOk": 4845
+    "totalRecords": 4989,
+    "scannedOk": 4989
   }
 }

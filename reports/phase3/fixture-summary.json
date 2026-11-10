@@ -1,0 +1,67 @@
+{
+  "normal": {
+    "events": 18,
+    "types": {
+      "session.updated": 14,
+      "session.titleUpdated": 1,
+      "turn.started": 1,
+      "model.streaming": 1,
+      "turn.completed": 1
+    }
+  },
+  "permission-allow": {
+    "events": 92,
+    "types": {
+      "session.updated": 26,
+      "session.titleUpdated": 1,
+      "turn.started": 1,
+      "model.streaming": 53,
+      "tool.updated": 4,
+      "permission.requested": 2,
+      "permission.resolved": 2,
+      "streamRecovery.updated": 2,
+      "turn.completed": 1
+    }
+  },
+  "permission-deny": {
+    "events": 56,
+    "types": {
+      "session.updated": 20,
+      "session.titleUpdated": 1,
+      "turn.started": 1,
+      "model.streaming": 28,
+      "tool.updated": 2,
+      "permission.requested": 1,
+      "permission.resolved": 1,
+      "streamRecovery.updated": 1,
+      "turn.completed": 1
+    }
+  },
+  "cancel": {
+    "events": 11,
+    "types": {
+      "session.updated": 8,
+      "session.titleUpdated": 1,
+      "turn.started": 1,
+      "turn.completed": 1
+    }
+  },
+  "crash": {
+    "events": 10,
+    "types": {
+      "session.updated": 8,
+      "session.titleUpdated": 1,
+      "turn.started": 1
+    }
+  },
+  "resume-graceful": {
+    "events": 18,
+    "types": {
+      "session.updated": 14,
+      "session.titleUpdated": 1,
+      "turn.started": 1,
+      "model.streaming": 1,
+      "turn.completed": 1
+    }
+  }
+}
