@@ -7,7 +7,7 @@
     {
       "scenario": "normal",
       "trace": "traces/normal.sanitized.json",
-      "traceSha256": "e5f714daac4fd35a50cb77e5778a26825aed15a6417c0b953a240afc037e2d72",
+      "traceSha256": "b10a7f58348d6e7a31c1c138836ddd2d08fb14df257a392a6798cc04e301507c",
       "zcodeVersion": "0.17.1",
       "records": 282,
       "expectedTerminal": "success",
@@ -49,7 +49,7 @@
     {
       "scenario": "permission-allow",
       "trace": "traces/permission-allow.sanitized.json",
-      "traceSha256": "74ac7e243a0077b3ef090965f33ea5c09df2e60906af87f1f4bef4883adb31a3",
+      "traceSha256": "fbabe27d9ae8fb7eebc7c17271b6a9c40536480fe17c91953312f42175d27a7e",
       "zcodeVersion": "0.17.1",
       "records": 991,
       "expectedTerminal": "success",
@@ -103,7 +103,7 @@
     {
       "scenario": "permission-deny",
       "trace": "traces/permission-deny.sanitized.json",
-      "traceSha256": "c16cc3cd82d0b1f870d8cd3997c4e76b2d88a3fb2e5111252feb0b398d4038bc",
+      "traceSha256": "a0b94b484a7e81591fbdaecf74bbe0f2620bba153fdfa9d93cbc6db1c4b89dea",
       "zcodeVersion": "0.17.1",
       "records": 553,
       "expectedTerminal": "success",
@@ -157,7 +157,7 @@
     {
       "scenario": "cancel",
       "trace": "traces/cancel.sanitized.json",
-      "traceSha256": "6232a2f82261c754163ec8a3b0b9116d86aeb7202ddb3d096949caa32ea08795",
+      "traceSha256": "c764a2449f8ec20318645fa968616d25717cf6d4205ad1b2b4b231e10b79fa75",
       "zcodeVersion": "0.17.1",
       "records": 314,
       "expectedTerminal": "cancelled",
@@ -199,7 +199,7 @@
     {
       "scenario": "crash",
       "trace": "traces/crash.sanitized.json",
-      "traceSha256": "9a7921753765ce3be2cd6607ea3d15d756aaaedb140740f07885fe2ffd448d5a",
+      "traceSha256": "4c3efc2a57894e6a9288ea664807cbc6eea983fc16d4f267829915f207fcfced",
       "zcodeVersion": "0.17.1",
       "records": 114,
       "expectedTerminal": "none",
@@ -233,7 +233,7 @@
     {
       "scenario": "resume-graceful",
       "trace": "traces/resume-graceful.sanitized.json",
-      "traceSha256": "c25af8e760014e93e4049795c787f2cd5a37d240ffbc76b01ba31f0cc3f722ad",
+      "traceSha256": "172ec6a023e5d85892a3a421ffbe8e929347ad918d799709a66194fa45f6fb3e",
       "zcodeVersion": "0.17.1",
       "records": 324,
       "expectedTerminal": "success",
@@ -275,7 +275,7 @@
     {
       "scenario": "resume-force",
       "trace": "traces/resume-force.sanitized.json",
-      "traceSha256": "c7a48f50ce248e24a71dd48d4d803711f66f439f857e5e4754d60ff1011ce044",
+      "traceSha256": "e112c33aedf64bd60631d722a56df01ade2ad59e2cc043d355c87428fe855699",
       "zcodeVersion": "0.17.1",
       "records": 195,
       "expectedTerminal": "success",
@@ -317,7 +317,7 @@
     {
       "scenario": "disconnect",
       "trace": "traces/disconnect-probe.sanitized.json",
-      "traceSha256": "0d769dc1d19601e4dc05759aa568d6a67668f728a1906208930883ecae44ed10",
+      "traceSha256": "57be554632f1516839b2aacbf6513100a8ca2236a1ccbf23868d6e25d95dfce2",
       "zcodeVersion": "0.17.1",
       "records": 109,
       "expectedTerminal": "none",

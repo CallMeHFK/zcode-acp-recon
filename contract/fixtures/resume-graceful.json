@@ -3,14 +3,14 @@
   "scenario": "resume-graceful",
   "source": {
     "trace": "traces/resume-graceful.sanitized.json",
-    "sha256": "c25af8e760014e93e4049795c787f2cd5a37d240ffbc76b01ba31f0cc3f722ad",
+    "sha256": "172ec6a023e5d85892a3a421ffbe8e929347ad918d799709a66194fa45f6fb3e",
     "records": 324,
     "metadata": {
       "zcodeVersion": "0.17.1",
       "runtimeVersion": "v24.20.0",
       "os": "win32",
       "arch": "x64",
-      "captureTimestamp": "2026-11-08T15:43:40.659Z",
+      "captureTimestamp": "2026-11-10T15:14:50.824Z",
       "evidenceLevel": "observed",
       "redactionVersion": "1",
       "scenario": "resume-graceful"
@@ -35,7 +35,7 @@
         "sessionId": "unknown",
         "status": "idle",
         "target": null,
-        "totalTokenCount": "<redacted>",
+        "totalTokenCount": 0,
         "turnCount": 0
       },
       "protocol": {
@@ -82,7 +82,7 @@
               "label": "GLM-5.3-Flash",
               "providerLabel": "Start Plan",
               "contextWindow": 1000000,
-              "maxOutputTokens": "<redacted>",
+              "maxOutputTokens": 128000,
               "reasoning": {
                 "levels": [
                   {
@@ -255,7 +255,7 @@
           "sessionId": "unknown",
           "status": "idle",
           "target": null,
-          "totalTokenCount": "<redacted>",
+          "totalTokenCount": 0,
           "turnCount": 0
         },
         "protocol": {
@@ -303,7 +303,7 @@
                 "label": "GLM-5.3-Flash",
                 "providerLabel": "Start Plan",
                 "contextWindow": 200000,
-                "maxOutputTokens": "<redacted>",
+                "maxOutputTokens": 128000,
                 "reasoning": {
                   "levels": [
                     {
@@ -1717,11 +1717,11 @@
           "providerRequestId": "20261108154151ca3f92082eae49a0962d",
           "finishReason": "stop",
           "usage": {
-            "inputTokens": "<redacted>",
-            "outputTokens": "<redacted>",
-            "totalTokens": "<redacted>",
-            "cacheReadTokens": "<redacted>",
-            "cacheWriteTokens": "<redacted>"
+            "inputTokens": 94204,
+            "outputTokens": 3,
+            "totalTokens": 94207,
+            "cacheReadTokens": 0,
+            "cacheWriteTokens": 0
           },
           "timeToFirstProviderEventMs": 62,
           "timeToFirstContentMs": 10661,
@@ -1756,22 +1756,22 @@
           "querySource": "main_turn",
           "stopReason": "stop",
           "usage": {
-            "inputTokens": "<redacted>",
-            "outputTokens": "<redacted>",
-            "totalTokens": "<redacted>",
-            "cacheReadTokens": "<redacted>",
-            "cacheWriteTokens": "<redacted>"
+            "inputTokens": 94204,
+            "outputTokens": 3,
+            "totalTokens": 94207,
+            "cacheReadTokens": 0,
+            "cacheWriteTokens": 0
           },
           "cacheHit": {
-            "inputTokens": "<redacted>",
-            "cacheReadTokens": "<redacted>",
-            "cacheWriteTokens": "<redacted>",
+            "inputTokens": 94204,
+            "cacheReadTokens": 0,
+            "cacheWriteTokens": 0,
             "latestHitRate": 0,
             "hitRate": 0,
             "hitRateRequestCount": 1,
-            "totalInputTokens": "<redacted>",
-            "totalCacheReadTokens": "<redacted>",
-            "totalCacheWriteTokens": "<redacted>"
+            "totalInputTokens": 94204,
+            "totalCacheReadTokens": 0,
+            "totalCacheWriteTokens": 0
           },
           "contextUsageBreakdown": [
             {
@@ -1889,16 +1889,16 @@
         "eventId": "e1e4d3e9-17bd-4ec0-a29f-13d1a76c5967",
         "payload": {
           "response": "OK",
-          "tokenCount": "<redacted>",
+          "tokenCount": 94207,
           "usage": {
             "source": "provider",
             "modelRequestCount": 1,
-            "inputTokens": "<redacted>",
-            "outputTokens": "<redacted>",
-            "totalTokens": "<redacted>",
-            "cacheReadTokens": "<redacted>",
-            "cacheWriteTokens": "<redacted>",
-            "reasoningTokens": "<redacted>",
+            "inputTokens": 94204,
+            "outputTokens": 3,
+            "totalTokens": 94207,
+            "cacheReadTokens": 0,
+            "cacheWriteTokens": 0,
+            "reasoningTokens": 0,
             "webFetchRequests": 0,
             "webSearchRequests": 0
           },
@@ -1982,7 +1982,7 @@
           "sessionId": "unknown",
           "status": "idle",
           "target": null,
-          "totalTokenCount": "<redacted>",
+          "totalTokenCount": 0,
           "turnCount": 0
         },
         "protocol": {
@@ -2029,7 +2029,7 @@
                 "label": "GLM-5.3-Flash",
                 "providerLabel": "Start Plan",
                 "contextWindow": 1000000,
-                "maxOutputTokens": "<redacted>",
+                "maxOutputTokens": 128000,
                 "reasoning": {
                   "levels": [
                     {
@@ -2208,7 +2208,7 @@
             "sessionId": "unknown",
             "status": "idle",
             "target": null,
-            "totalTokenCount": "<redacted>",
+            "totalTokenCount": 0,
             "turnCount": 0
           },
           "protocol": {
@@ -2256,7 +2256,7 @@
                   "label": "GLM-5.3-Flash",
                   "providerLabel": "Start Plan",
                   "contextWindow": 200000,
-                  "maxOutputTokens": "<redacted>",
+                  "maxOutputTokens": 128000,
                   "reasoning": {
                     "levels": [
                       {
@@ -2984,11 +2984,11 @@
               "providerRequestId": "20261108154151ca3f92082eae49a0962d",
               "finishReason": "stop",
               "usage": {
-                "inputTokens": "<redacted>",
-                "outputTokens": "<redacted>",
-                "totalTokens": "<redacted>",
-                "cacheReadTokens": "<redacted>",
-                "cacheWriteTokens": "<redacted>"
+                "inputTokens": 94204,
+                "outputTokens": 3,
+                "totalTokens": 94207,
+                "cacheReadTokens": 0,
+                "cacheWriteTokens": 0
               },
               "timeToFirstProviderEventMs": 62,
               "timeToFirstContentMs": 10661,
@@ -3022,22 +3022,22 @@
               "querySource": "main_turn",
               "stopReason": "stop",
               "usage": {
-                "inputTokens": "<redacted>",
-                "outputTokens": "<redacted>",
-                "totalTokens": "<redacted>",
-                "cacheReadTokens": "<redacted>",
-                "cacheWriteTokens": "<redacted>"
+                "inputTokens": 94204,
+                "outputTokens": 3,
+                "totalTokens": 94207,
+                "cacheReadTokens": 0,
+                "cacheWriteTokens": 0
               },
               "cacheHit": {
-                "inputTokens": "<redacted>",
-                "cacheReadTokens": "<redacted>",
-                "cacheWriteTokens": "<redacted>",
+                "inputTokens": 94204,
+                "cacheReadTokens": 0,
+                "cacheWriteTokens": 0,
                 "latestHitRate": 0,
                 "hitRate": 0,
                 "hitRateRequestCount": 1,
-                "totalInputTokens": "<redacted>",
-                "totalCacheReadTokens": "<redacted>",
-                "totalCacheWriteTokens": "<redacted>"
+                "totalInputTokens": 94204,
+                "totalCacheReadTokens": 0,
+                "totalCacheWriteTokens": 0
               },
               "contextUsageBreakdown": [
                 {
@@ -3152,16 +3152,16 @@
             "eventId": "e1e4d3e9-17bd-4ec0-a29f-13d1a76c5967",
             "payload": {
               "response": "OK",
-              "tokenCount": "<redacted>",
+              "tokenCount": 94207,
               "usage": {
                 "source": "provider",
                 "modelRequestCount": 1,
-                "inputTokens": "<redacted>",
-                "outputTokens": "<redacted>",
-                "totalTokens": "<redacted>",
-                "cacheReadTokens": "<redacted>",
-                "cacheWriteTokens": "<redacted>",
-                "reasoningTokens": "<redacted>",
+                "inputTokens": 94204,
+                "outputTokens": 3,
+                "totalTokens": 94207,
+                "cacheReadTokens": 0,
+                "cacheWriteTokens": 0,
+                "reasoningTokens": 0,
                 "webFetchRequests": 0,
                 "webSearchRequests": 0
               },

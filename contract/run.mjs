@@ -34,15 +34,20 @@ const gitHead = (cwd) => {
 };
 
 const tapNumbers = (out) => {
-  const pick = (re) => {
-    const m = out.match(re);
-    return m ? Number(m[1]) : null;
+  const pick = (...res) => {
+    for (const re of res) {
+      const m = out.match(re);
+      if (m) return Number(m[1]);
+    }
+    return null;
   };
+  // Node's test runner emits TAP (`# pass 36`) when piped on some versions
+  // and the spec reporter (`ℹ pass 36`) on others — accept both.
   return {
-    tests: pick(/^# tests (\d+)/m),
-    pass: pick(/^# pass (\d+)/m),
-    fail: pick(/^# fail (\d+)/m),
-    durationMs: pick(/^# duration_ms ([\d.]+)/m),
+    tests: pick(/^# tests (\d+)/m, /^ℹ tests (\d+)/m),
+    pass: pick(/^# pass (\d+)/m, /^ℹ pass (\d+)/m),
+    fail: pick(/^# fail (\d+)/m, /^ℹ fail (\d+)/m),
+    durationMs: pick(/^# duration_ms ([\d.]+)/m, /^ℹ duration_ms ([\d.]+)/m),
   };
 };
 

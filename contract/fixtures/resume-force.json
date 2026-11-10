@@ -3,14 +3,14 @@
   "scenario": "resume-force",
   "source": {
     "trace": "traces/resume-force.sanitized.json",
-    "sha256": "c7a48f50ce248e24a71dd48d4d803711f66f439f857e5e4754d60ff1011ce044",
+    "sha256": "e112c33aedf64bd60631d722a56df01ade2ad59e2cc043d355c87428fe855699",
     "records": 195,
     "metadata": {
       "zcodeVersion": "0.17.1",
       "runtimeVersion": "v24.20.0",
       "os": "win32",
       "arch": "x64",
-      "captureTimestamp": "2026-11-08T15:43:40.659Z",
+      "captureTimestamp": "2026-11-10T15:14:50.824Z",
       "evidenceLevel": "observed",
       "redactionVersion": "1",
       "scenario": "resume-force"
@@ -35,7 +35,7 @@
         "sessionId": "unknown",
         "status": "idle",
         "target": null,
-        "totalTokenCount": "<redacted>",
+        "totalTokenCount": 0,
         "turnCount": 0
       },
       "protocol": {
@@ -82,7 +82,7 @@
               "label": "GLM-5.3-Flash",
               "providerLabel": "Start Plan",
               "contextWindow": 1000000,
-              "maxOutputTokens": "<redacted>",
+              "maxOutputTokens": 128000,
               "reasoning": {
                 "levels": [
                   {
@@ -255,7 +255,7 @@
           "sessionId": "unknown",
           "status": "idle",
           "target": null,
-          "totalTokenCount": "<redacted>",
+          "totalTokenCount": 0,
           "turnCount": 0
         },
         "protocol": {
@@ -303,7 +303,7 @@
                 "label": "GLM-5.3-Flash",
                 "providerLabel": "Start Plan",
                 "contextWindow": 200000,
-                "maxOutputTokens": "<redacted>",
+                "maxOutputTokens": 128000,
                 "reasoning": {
                   "levels": [
                     {
@@ -1773,11 +1773,11 @@
           "providerRequestId": "2026110815424987a73f4eff344cebd027",
           "finishReason": "stop",
           "usage": {
-            "inputTokens": "<redacted>",
-            "outputTokens": "<redacted>",
-            "totalTokens": "<redacted>",
-            "cacheReadTokens": "<redacted>",
-            "cacheWriteTokens": "<redacted>"
+            "inputTokens": 94204,
+            "outputTokens": 19,
+            "totalTokens": 94223,
+            "cacheReadTokens": 94144,
+            "cacheWriteTokens": 0
           },
           "timeToFirstProviderEventMs": 63,
           "timeToFirstContentMs": 5267,
@@ -1812,22 +1812,22 @@
           "querySource": "main_turn",
           "stopReason": "stop",
           "usage": {
-            "inputTokens": "<redacted>",
-            "outputTokens": "<redacted>",
-            "totalTokens": "<redacted>",
-            "cacheReadTokens": "<redacted>",
-            "cacheWriteTokens": "<redacted>"
+            "inputTokens": 94204,
+            "outputTokens": 19,
+            "totalTokens": 94223,
+            "cacheReadTokens": 94144,
+            "cacheWriteTokens": 0
           },
           "cacheHit": {
-            "inputTokens": "<redacted>",
-            "cacheReadTokens": "<redacted>",
-            "cacheWriteTokens": "<redacted>",
+            "inputTokens": 94204,
+            "cacheReadTokens": 94144,
+            "cacheWriteTokens": 0,
             "latestHitRate": 0.9993630843700905,
             "hitRate": 0.9993630843700905,
             "hitRateRequestCount": 1,
-            "totalInputTokens": "<redacted>",
-            "totalCacheReadTokens": "<redacted>",
-            "totalCacheWriteTokens": "<redacted>"
+            "totalInputTokens": 94204,
+            "totalCacheReadTokens": 94144,
+            "totalCacheWriteTokens": 0
           },
           "contextUsageBreakdown": [
             {
@@ -1945,16 +1945,16 @@
         "eventId": "732549e6-fb1b-475f-a75e-cd4b278b9ee2",
         "payload": {
           "response": "OK\n\n（已记住：47。后续需要时请随时提醒我核对。）",
-          "tokenCount": "<redacted>",
+          "tokenCount": 94223,
           "usage": {
             "source": "provider",
             "modelRequestCount": 1,
-            "inputTokens": "<redacted>",
-            "outputTokens": "<redacted>",
-            "totalTokens": "<redacted>",
-            "cacheReadTokens": "<redacted>",
-            "cacheWriteTokens": "<redacted>",
-            "reasoningTokens": "<redacted>",
+            "inputTokens": 94204,
+            "outputTokens": 19,
+            "totalTokens": 94223,
+            "cacheReadTokens": 94144,
+            "cacheWriteTokens": 0,
+            "reasoningTokens": 0,
             "webFetchRequests": 0,
             "webSearchRequests": 0
           },
@@ -1966,7 +1966,7 @@
             "totalMessages": 13,
             "cachedMessages": 12,
             "lastCacheHit": true,
-            "cacheReadTokens": "<redacted>"
+            "cacheReadTokens": 94144
           },
           "inputId": "468e24ac-e9a5-41c9-a027-701f0d6e005a"
         },
@@ -2039,7 +2039,7 @@
           "sessionId": "unknown",
           "status": "idle",
           "target": null,
-          "totalTokenCount": "<redacted>",
+          "totalTokenCount": 0,
           "turnCount": 0
         },
         "protocol": {
@@ -2086,7 +2086,7 @@
                 "label": "GLM-5.3-Flash",
                 "providerLabel": "Start Plan",
                 "contextWindow": 1000000,
-                "maxOutputTokens": "<redacted>",
+                "maxOutputTokens": 128000,
                 "reasoning": {
                   "levels": [
                     {
@@ -2265,7 +2265,7 @@
             "sessionId": "unknown",
             "status": "idle",
             "target": null,
-            "totalTokenCount": "<redacted>",
+            "totalTokenCount": 0,
             "turnCount": 0
           },
           "protocol": {
@@ -2313,7 +2313,7 @@
                   "label": "GLM-5.3-Flash",
                   "providerLabel": "Start Plan",
                   "contextWindow": 200000,
-                  "maxOutputTokens": "<redacted>",
+                  "maxOutputTokens": 128000,
                   "reasoning": {
                     "levels": [
                       {
@@ -3079,11 +3079,11 @@
               "providerRequestId": "2026110815424987a73f4eff344cebd027",
               "finishReason": "stop",
               "usage": {
-                "inputTokens": "<redacted>",
-                "outputTokens": "<redacted>",
-                "totalTokens": "<redacted>",
-                "cacheReadTokens": "<redacted>",
-                "cacheWriteTokens": "<redacted>"
+                "inputTokens": 94204,
+                "outputTokens": 19,
+                "totalTokens": 94223,
+                "cacheReadTokens": 94144,
+                "cacheWriteTokens": 0
               },
               "timeToFirstProviderEventMs": 63,
               "timeToFirstContentMs": 5267,
@@ -3117,22 +3117,22 @@
               "querySource": "main_turn",
               "stopReason": "stop",
               "usage": {
-                "inputTokens": "<redacted>",
-                "outputTokens": "<redacted>",
-                "totalTokens": "<redacted>",
-                "cacheReadTokens": "<redacted>",
-                "cacheWriteTokens": "<redacted>"
+                "inputTokens": 94204,
+                "outputTokens": 19,
+                "totalTokens": 94223,
+                "cacheReadTokens": 94144,
+                "cacheWriteTokens": 0
               },
               "cacheHit": {
-                "inputTokens": "<redacted>",
-                "cacheReadTokens": "<redacted>",
-                "cacheWriteTokens": "<redacted>",
+                "inputTokens": 94204,
+                "cacheReadTokens": 94144,
+                "cacheWriteTokens": 0,
                 "latestHitRate": 0.9993630843700905,
                 "hitRate": 0.9993630843700905,
                 "hitRateRequestCount": 1,
-                "totalInputTokens": "<redacted>",
-                "totalCacheReadTokens": "<redacted>",
-                "totalCacheWriteTokens": "<redacted>"
+                "totalInputTokens": 94204,
+                "totalCacheReadTokens": 94144,
+                "totalCacheWriteTokens": 0
               },
               "contextUsageBreakdown": [
                 {
@@ -3247,16 +3247,16 @@
             "eventId": "732549e6-fb1b-475f-a75e-cd4b278b9ee2",
             "payload": {
               "response": "OK\n\n（已记住：47。后续需要时请随时提醒我核对。）",
-              "tokenCount": "<redacted>",
+              "tokenCount": 94223,
               "usage": {
                 "source": "provider",
                 "modelRequestCount": 1,
-                "inputTokens": "<redacted>",
-                "outputTokens": "<redacted>",
-                "totalTokens": "<redacted>",
-                "cacheReadTokens": "<redacted>",
-                "cacheWriteTokens": "<redacted>",
-                "reasoningTokens": "<redacted>",
+                "inputTokens": 94204,
+                "outputTokens": 19,
+                "totalTokens": 94223,
+                "cacheReadTokens": 94144,
+                "cacheWriteTokens": 0,
+                "reasoningTokens": 0,
                 "webFetchRequests": 0,
                 "webSearchRequests": 0
               },
@@ -3268,7 +3268,7 @@
                 "totalMessages": 13,
                 "cachedMessages": 12,
                 "lastCacheHit": true,
-                "cacheReadTokens": "<redacted>"
+                "cacheReadTokens": 94144
               },
               "inputId": "468e24ac-e9a5-41c9-a027-701f0d6e005a"
             },

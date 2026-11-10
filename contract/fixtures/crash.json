@@ -3,14 +3,14 @@
   "scenario": "crash",
   "source": {
     "trace": "traces/crash.sanitized.json",
-    "sha256": "9a7921753765ce3be2cd6607ea3d15d756aaaedb140740f07885fe2ffd448d5a",
+    "sha256": "4c3efc2a57894e6a9288ea664807cbc6eea983fc16d4f267829915f207fcfced",
     "records": 114,
     "metadata": {
       "zcodeVersion": "0.17.1",
       "runtimeVersion": "v24.20.0",
       "os": "win32",
       "arch": "x64",
-      "captureTimestamp": "2026-11-08T15:43:40.659Z",
+      "captureTimestamp": "2026-11-10T15:14:50.824Z",
       "evidenceLevel": "observed",
       "redactionVersion": "1",
       "scenario": "crash"
@@ -35,7 +35,7 @@
         "sessionId": "unknown",
         "status": "idle",
         "target": null,
-        "totalTokenCount": "<redacted>",
+        "totalTokenCount": 0,
         "turnCount": 0
       },
       "protocol": {
@@ -82,7 +82,7 @@
               "label": "GLM-5.3-Flash",
               "providerLabel": "Start Plan",
               "contextWindow": 1000000,
-              "maxOutputTokens": "<redacted>",
+              "maxOutputTokens": 128000,
               "reasoning": {
                 "levels": [
                   {
@@ -255,7 +255,7 @@
           "sessionId": "unknown",
           "status": "idle",
           "target": null,
-          "totalTokenCount": "<redacted>",
+          "totalTokenCount": 0,
           "turnCount": 0
         },
         "protocol": {
@@ -303,7 +303,7 @@
                 "label": "GLM-5.3-Flash",
                 "providerLabel": "Start Plan",
                 "contextWindow": 200000,
-                "maxOutputTokens": "<redacted>",
+                "maxOutputTokens": 128000,
                 "reasoning": {
                   "levels": [
                     {
@@ -891,7 +891,7 @@
           "sessionId": "unknown",
           "status": "idle",
           "target": null,
-          "totalTokenCount": "<redacted>",
+          "totalTokenCount": 0,
           "turnCount": 0
         },
         "protocol": {
@@ -938,7 +938,7 @@
                 "label": "GLM-5.3-Flash",
                 "providerLabel": "Start Plan",
                 "contextWindow": 1000000,
-                "maxOutputTokens": "<redacted>",
+                "maxOutputTokens": 128000,
                 "reasoning": {
                   "levels": [
                     {
@@ -1117,7 +1117,7 @@
             "sessionId": "unknown",
             "status": "idle",
             "target": null,
-            "totalTokenCount": "<redacted>",
+            "totalTokenCount": 0,
             "turnCount": 0
           },
           "protocol": {
@@ -1165,7 +1165,7 @@
                   "label": "GLM-5.3-Flash",
                   "providerLabel": "Start Plan",
                   "contextWindow": 200000,
-                  "maxOutputTokens": "<redacted>",
+                  "maxOutputTokens": 128000,
                   "reasoning": {
                     "levels": [
                       {

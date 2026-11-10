@@ -229,9 +229,13 @@ test("L2 permission: the backend permission ask reaches the ACP client and is an
 });
 
 test("L2 cancel: session/stop reaches the backend as a request (not a notification)", async () => {
+  // Cancel must land MID-TURN: the recorded cancel-scenario stream carries
+  // turn.completed(cancelled) itself, and the fake backend replays it in
+  // well under 700ms — a late cancel lands after the turn finished and is
+  // (correctly) a no-op. 120ms puts the cancel inside the streamed turn.
   const { run, log } = await runScenario("cancel", {
     logSuffix: "-cancel-probe",
-    acp: { cancelAfterMs: 700 },
+    acp: { cancelAfterMs: 120 },
   });
   assert.equal(run.prompt?.stopReason, "cancelled", `stopReason=${run.prompt?.stopReason}`);
   const stops = log.filter((e) => e.dir === "in" && e.frame?.method === "session/stop");

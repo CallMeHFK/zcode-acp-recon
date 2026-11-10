@@ -55,6 +55,7 @@
 | turn 终态 | `turn.completed{resultType:"success"|"cancelled", usage?, response}`；**取消走 completed 而非 failed**；`turn.failed{error{code,message,attribution}}`；`turn.terminal` 在 0.17.1 **未观测到** | **Confirmed**（success/cancelled/failed 三形态）+ **Unknown**(terminal) | cancel/normal fixtures |
 | 回合外事件 | `permission.requested/resolved`、`streamRecovery.updated`、`session.updated`（后台/插件/usage）、`session.titleUpdated`（自动命名一次后冻结）——PROTOCOL.md 文档未载 | **Observed** | fixtures 类型清单 |
 | usage 字段类型 | `*Tokens` 等为 **number**；`tokenCount` 亦有 string 形态样本（红改器数值豁免后以 L1 为准） | **Observed** | finalize 后 fixtures |
+| 早期取消竞态 | cancel 落在懒物化窗口（resolveSid 未绑定）时被静默丢弃、回合继续耗额度——已修复：park 到会话绑定即触发（L2 cancel 120ms 用例转绿） | **Confirmed**（修复前后 L2 对比） | fork 71a62fe |
 | 断连语义 | 客户端断开（stdin 关闭不杀后端）→ 无鉴权头供给 → 回合挂起不执行、无外部副作用；重连 idle 可继续 | **Confirmed** | disconnect 场景 |
 
 ## 5. 权限与用户输入

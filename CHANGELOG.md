@@ -5,6 +5,12 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/).
 
+## [0.4.1] - 2026-11-10
+
+### Fixed
+
+- Early-cancel race (found by the L2 contract gate, fix in fork 71a62fe): a stop pressed during lazy session materialization was silently dropped; it is now parked and honored the moment the turn registers. Contract gate green end-to-end (L0 derivation, L1 36/36, L2 14/14).
+
 ## [0.4.0] - 2026-11-10
 
 ### Added
