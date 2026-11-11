@@ -1,0 +1,182 @@
+{
+ "scenario": "ask-user",
+ "prompt": "请调用 AskUserQuestion 工具问我一个问题：我更喜欢猫还是狗？提供选项：猫、狗。我回答后请复述我的选择。",
+ "updates": [
+  {
+   "kind": "available_commands_update",
+   "raw": 18038
+  },
+  {
+   "kind": "available_commands_update",
+   "raw": 18038
+  },
+  {
+   "kind": "available_commands_update",
+   "raw": 18038
+  },
+  {
+   "kind": "session_info_update",
+   "title": "请调用 AskUserQuestion 工具问我一个问题：我更喜欢猫还是狗？提供选项：猫、狗。我回答后请复述我的选择。",
+   "raw": 177
+  },
+  {
+   "kind": "available_commands_update",
+   "raw": 18038
+  },
+  {
+   "kind": "available_commands_update",
+   "raw": 18038
+  },
+  {
+   "kind": "available_commands_update",
+   "raw": 18038
+  },
+  {
+   "kind": "config_option_update",
+   "raw": 903
+  },
+  {
+   "kind": "agent_thought_chunk",
+   "raw": 173
+  },
+  {
+   "kind": "agent_thought_chunk",
+   "raw": 179
+  },
+  {
+   "kind": "agent_thought_chunk",
+   "raw": 243
+  },
+  {
+   "kind": "agent_thought_chunk",
+   "raw": 245
+  },
+  {
+   "kind": "agent_thought_chunk",
+   "raw": 238
+  },
+  {
+   "kind": "agent_thought_chunk",
+   "raw": 244
+  },
+  {
+   "kind": "usage_update",
+   "raw": 76
+  },
+  {
+   "kind": "other",
+   "status": "pending",
+   "title": "你更喜欢猫还是狗？",
+   "raw": 430
+  },
+  {
+   "kind": "usage_update",
+   "raw": 82
+  },
+  {
+   "kind": "other",
+   "status": "pending",
+   "title": "AskUserQuestion: {\"questions\":[{\"header\":\"宠物偏好\",\"multiSelect\":false,\"options\"",
+   "raw": 430
+  },
+  {
+   "kind": "tool_call_update",
+   "status": "failed",
+   "raw": 125
+  },
+  {
+   "kind": "agent_thought_chunk",
+   "raw": 179
+  },
+  {
+   "kind": "agent_thought_chunk",
+   "raw": 244
+  },
+  {
+   "kind": "agent_thought_chunk",
+   "raw": 267
+  },
+  {
+   "kind": "agent_message_chunk",
+   "raw": 170
+  },
+  {
+   "kind": "agent_message_chunk",
+   "raw": 183
+  },
+  {
+   "kind": "agent_message_chunk",
+   "raw": 196
+  },
+  {
+   "kind": "agent_message_chunk",
+   "raw": 181
+  },
+  {
+   "kind": "agent_message_chunk",
+   "raw": 192
+  },
+  {
+   "kind": "usage_update",
+   "raw": 76
+  },
+  {
+   "kind": "usage_update",
+   "raw": 82
+  },
+  {
+   "kind": "usage_update",
+   "raw": 81
+  },
+  {
+   "kind": "tool_call_update",
+   "status": "failed",
+   "raw": 311
+  },
+  {
+   "kind": "plan",
+   "raw": 51
+  },
+  {
+   "kind": "session_info_update",
+   "title": "AskUserQuestion 询问猫狗偏好",
+   "raw": 140
+  }
+ ],
+ "inbound": [
+  {
+   "method": "session/request_permission",
+   "paramKeys": [
+    "options",
+    "sessionId",
+    "toolCall"
+   ],
+   "options": [
+    "allow_once",
+    "allow_once",
+    "reject_once"
+   ]
+  }
+ ],
+ "ok": true,
+ "agentCapabilities": [
+  "loadSession",
+  "promptCapabilities",
+  "mcpCapabilities",
+  "sessionCapabilities",
+  "_meta"
+ ],
+ "sessionId": "afd6797d-b9dd-4147-9b43-61263e02816a",
+ "sendError": "timeout session/prompt",
+ "updateKinds": {
+  "available_commands_update": 6,
+  "session_info_update": 2,
+  "config_option_update": 1,
+  "agent_thought_chunk": 9,
+  "usage_update": 5,
+  "other": 2,
+  "tool_call_update": 2,
+  "agent_message_chunk": 5,
+  "plan": 1
+ }
+}

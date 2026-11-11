@@ -1,0 +1,206 @@
+{
+ "scenario": "background",
+ "prompt": "请使用后台任务方式（run_in_background: true）运行命令 echo bg-probe-ok，然后立即告诉我你已在后台启动了它。不要等待它完成。",
+ "updates": [
+  {
+   "kind": "available_commands_update",
+   "raw": 18038
+  },
+  {
+   "kind": "available_commands_update",
+   "raw": 18038
+  },
+  {
+   "kind": "available_commands_update",
+   "raw": 18038
+  },
+  {
+   "kind": "session_info_update",
+   "title": "请使用后台任务方式（run_in_background: true）运行命令 echo bg-probe-ok，然后立即告诉我你已在后台启动了它。不要等待它完成",
+   "raw": 198
+  },
+  {
+   "kind": "available_commands_update",
+   "raw": 18038
+  },
+  {
+   "kind": "available_commands_update",
+   "raw": 18038
+  },
+  {
+   "kind": "available_commands_update",
+   "raw": 18038
+  },
+  {
+   "kind": "config_option_update",
+   "raw": 903
+  },
+  {
+   "kind": "agent_thought_chunk",
+   "raw": 173
+  },
+  {
+   "kind": "agent_thought_chunk",
+   "raw": 179
+  },
+  {
+   "kind": "agent_thought_chunk",
+   "raw": 248
+  },
+  {
+   "kind": "agent_thought_chunk",
+   "raw": 279
+  },
+  {
+   "kind": "agent_thought_chunk",
+   "raw": 280
+  },
+  {
+   "kind": "agent_thought_chunk",
+   "raw": 194
+  },
+  {
+   "kind": "usage_update",
+   "raw": 76
+  },
+  {
+   "kind": "usage_update",
+   "raw": 82
+  },
+  {
+   "kind": "execute",
+   "status": "pending",
+   "title": "Bash: echo bg-probe-ok",
+   "raw": 306
+  },
+  {
+   "kind": "tool_call_update",
+   "status": "in_progress",
+   "raw": 130
+  },
+  {
+   "kind": "tool_call_update",
+   "status": "completed",
+   "raw": 529
+  },
+  {
+   "kind": "other",
+   "status": "in_progress",
+   "title": "[background] Run echo probe command in background",
+   "raw": 500
+  },
+  {
+   "kind": "tool_call_update",
+   "status": "completed",
+   "raw": 351
+  },
+  {
+   "kind": "plan",
+   "raw": 51
+  },
+  {
+   "kind": "agent_thought_chunk",
+   "raw": 179
+  },
+  {
+   "kind": "agent_thought_chunk",
+   "raw": 250
+  },
+  {
+   "kind": "agent_thought_chunk",
+   "raw": 245
+  },
+  {
+   "kind": "agent_thought_chunk",
+   "raw": 226
+  },
+  {
+   "kind": "agent_thought_chunk",
+   "raw": 233
+  },
+  {
+   "kind": "agent_thought_chunk",
+   "raw": 263
+  },
+  {
+   "kind": "agent_thought_chunk",
+   "raw": 222
+  },
+  {
+   "kind": "agent_thought_chunk",
+   "raw": 239
+  },
+  {
+   "kind": "agent_thought_chunk",
+   "raw": 215
+  },
+  {
+   "kind": "agent_thought_chunk",
+   "raw": 208
+  },
+  {
+   "kind": "agent_thought_chunk",
+   "raw": 190
+  },
+  {
+   "kind": "agent_message_chunk",
+   "raw": 170
+  },
+  {
+   "kind": "agent_message_chunk",
+   "raw": 212
+  },
+  {
+   "kind": "agent_message_chunk",
+   "raw": 189
+  },
+  {
+   "kind": "agent_message_chunk",
+   "raw": 196
+  },
+  {
+   "kind": "agent_message_chunk",
+   "raw": 169
+  },
+  {
+   "kind": "usage_update",
+   "raw": 76
+  },
+  {
+   "kind": "usage_update",
+   "raw": 82
+  },
+  {
+   "kind": "usage_update",
+   "raw": 81
+  },
+  {
+   "kind": "session_info_update",
+   "title": "后台任务运行 echo 命令测试",
+   "raw": 134
+  }
+ ],
+ "inbound": [],
+ "ok": true,
+ "agentCapabilities": [
+  "loadSession",
+  "promptCapabilities",
+  "mcpCapabilities",
+  "sessionCapabilities",
+  "_meta"
+ ],
+ "sessionId": "87a0b40b-d034-47c0-b138-cd25bd814997",
+ "sendError": "timeout session/prompt",
+ "updateKinds": {
+  "available_commands_update": 6,
+  "session_info_update": 2,
+  "config_option_update": 1,
+  "agent_thought_chunk": 17,
+  "usage_update": 5,
+  "execute": 1,
+  "tool_call_update": 3,
+  "other": 1,
+  "plan": 1,
+  "agent_message_chunk": 5
+ }
+}

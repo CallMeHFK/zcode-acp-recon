@@ -1,0 +1,308 @@
+{
+ "scenario": "multibyte",
+ "prompt": "请输出 30 句不同的中文格言，每句一行，编号 1 到 30，不要省略。",
+ "updates": [
+  {
+   "kind": "available_commands_update",
+   "raw": 18038
+  },
+  {
+   "kind": "available_commands_update",
+   "raw": 18038
+  },
+  {
+   "kind": "available_commands_update",
+   "raw": 18038
+  },
+  {
+   "kind": "session_info_update",
+   "title": "请输出 30 句不同的中文格言，每句一行，编号 1 到 30，不要省略。",
+   "raw": 154
+  },
+  {
+   "kind": "available_commands_update",
+   "raw": 18038
+  },
+  {
+   "kind": "available_commands_update",
+   "raw": 18038
+  },
+  {
+   "kind": "available_commands_update",
+   "raw": 18038
+  },
+  {
+   "kind": "config_option_update",
+   "raw": 903
+  },
+  {
+   "kind": "agent_thought_chunk",
+   "raw": 173
+  },
+  {
+   "kind": "agent_thought_chunk",
+   "raw": 179
+  },
+  {
+   "kind": "agent_thought_chunk",
+   "raw": 243
+  },
+  {
+   "kind": "agent_thought_chunk",
+   "raw": 282
+  },
+  {
+   "kind": "agent_thought_chunk",
+   "raw": 235
+  },
+  {
+   "kind": "agent_thought_chunk",
+   "raw": 229
+  },
+  {
+   "kind": "agent_thought_chunk",
+   "raw": 239
+  },
+  {
+   "kind": "agent_thought_chunk",
+   "raw": 226
+  },
+  {
+   "kind": "agent_thought_chunk",
+   "raw": 225
+  },
+  {
+   "kind": "agent_thought_chunk",
+   "raw": 221
+  },
+  {
+   "kind": "agent_thought_chunk",
+   "raw": 207
+  },
+  {
+   "kind": "agent_thought_chunk",
+   "raw": 202
+  },
+  {
+   "kind": "agent_thought_chunk",
+   "raw": 198
+  },
+  {
+   "kind": "agent_thought_chunk",
+   "raw": 199
+  },
+  {
+   "kind": "agent_thought_chunk",
+   "raw": 194
+  },
+  {
+   "kind": "agent_thought_chunk",
+   "raw": 197
+  },
+  {
+   "kind": "agent_thought_chunk",
+   "raw": 192
+  },
+  {
+   "kind": "agent_thought_chunk",
+   "raw": 194
+  },
+  {
+   "kind": "agent_thought_chunk",
+   "raw": 195
+  },
+  {
+   "kind": "agent_thought_chunk",
+   "raw": 209
+  },
+  {
+   "kind": "agent_thought_chunk",
+   "raw": 200
+  },
+  {
+   "kind": "agent_thought_chunk",
+   "raw": 196
+  },
+  {
+   "kind": "agent_thought_chunk",
+   "raw": 201
+  },
+  {
+   "kind": "agent_thought_chunk",
+   "raw": 197
+  },
+  {
+   "kind": "agent_thought_chunk",
+   "raw": 208
+  },
+  {
+   "kind": "agent_thought_chunk",
+   "raw": 196
+  },
+  {
+   "kind": "agent_thought_chunk",
+   "raw": 197
+  },
+  {
+   "kind": "agent_thought_chunk",
+   "raw": 200
+  },
+  {
+   "kind": "agent_thought_chunk",
+   "raw": 193
+  },
+  {
+   "kind": "agent_thought_chunk",
+   "raw": 189
+  },
+  {
+   "kind": "agent_thought_chunk",
+   "raw": 199
+  },
+  {
+   "kind": "agent_thought_chunk",
+   "raw": 204
+  },
+  {
+   "kind": "agent_thought_chunk",
+   "raw": 210
+  },
+  {
+   "kind": "agent_thought_chunk",
+   "raw": 198
+  },
+  {
+   "kind": "agent_thought_chunk",
+   "raw": 241
+  },
+  {
+   "kind": "agent_thought_chunk",
+   "raw": 232
+  },
+  {
+   "kind": "agent_thought_chunk",
+   "raw": 195
+  },
+  {
+   "kind": "agent_message_chunk",
+   "raw": 169
+  },
+  {
+   "kind": "agent_message_chunk",
+   "raw": 204
+  },
+  {
+   "kind": "agent_message_chunk",
+   "raw": 201
+  },
+  {
+   "kind": "agent_message_chunk",
+   "raw": 200
+  },
+  {
+   "kind": "agent_message_chunk",
+   "raw": 199
+  },
+  {
+   "kind": "agent_message_chunk",
+   "raw": 204
+  },
+  {
+   "kind": "agent_message_chunk",
+   "raw": 197
+  },
+  {
+   "kind": "agent_message_chunk",
+   "raw": 196
+  },
+  {
+   "kind": "agent_message_chunk",
+   "raw": 203
+  },
+  {
+   "kind": "agent_message_chunk",
+   "raw": 193
+  },
+  {
+   "kind": "agent_message_chunk",
+   "raw": 200
+  },
+  {
+   "kind": "agent_message_chunk",
+   "raw": 199
+  },
+  {
+   "kind": "agent_message_chunk",
+   "raw": 198
+  },
+  {
+   "kind": "agent_message_chunk",
+   "raw": 201
+  },
+  {
+   "kind": "agent_message_chunk",
+   "raw": 199
+  },
+  {
+   "kind": "agent_message_chunk",
+   "raw": 200
+  },
+  {
+   "kind": "agent_message_chunk",
+   "raw": 199
+  },
+  {
+   "kind": "agent_message_chunk",
+   "raw": 199
+  },
+  {
+   "kind": "agent_message_chunk",
+   "raw": 199
+  },
+  {
+   "kind": "agent_message_chunk",
+   "raw": 174
+  },
+  {
+   "kind": "usage_update",
+   "raw": 76
+  },
+  {
+   "kind": "usage_update",
+   "raw": 82
+  },
+  {
+   "kind": "usage_update",
+   "raw": 81
+  },
+  {
+   "kind": "plan",
+   "raw": 51
+  },
+  {
+   "kind": "session_info_update",
+   "title": "生成30句中文格言列表",
+   "raw": 129
+  }
+ ],
+ "inbound": [],
+ "ok": true,
+ "agentCapabilities": [
+  "loadSession",
+  "promptCapabilities",
+  "mcpCapabilities",
+  "sessionCapabilities",
+  "_meta"
+ ],
+ "sessionId": "957fd74b-47a5-4555-ad6a-22271850696e",
+ "sendError": "timeout session/prompt",
+ "updateKinds": {
+  "available_commands_update": 6,
+  "session_info_update": 2,
+  "config_option_update": 1,
+  "agent_thought_chunk": 37,
+  "agent_message_chunk": 20,
+  "usage_update": 3,
+  "plan": 1
+ }
+}

@@ -78,9 +78,18 @@
 | stopReason 映射未观测 | refusal / max_tokens / max_turn_requests | **Unknown**（上游代码存在对应分支） | — |
 | stdout 纪律 | 协议独占 stdout：全量 trace 4989 行 0 非 JSON | **Confirmed** | reader.stats |
 
+## 6.5 2026-11-10 实时补采（新计划窗口，ZCODE GLOBAL BUILD）
+
+| 协议面 | 行为契约 | 证据级 | 引用 |
+|---|---|---|---|
+| 后台任务卡片（T10） | 后台 Bash 以 execute 卡片呈现：pending → in_progress → completed 全生命周期经适配器透传 | **Confirmed** | live-background.json |
+| AskUserQuestion 映射 | 本构建经 **session/request_permission** 呈现（paramKeys: options/sessionId/toolCall；allow_once×2+reject_once），非 elicitation 表单；optionId 应答后继续 | **Observed**（上游 parseAskUserResponse 的表单路径在声明 elicitation 能力的客户端才走） | live-ask-user.json |
+| 大输出多字节（T14） | 20 段中文增量流经适配器，0 个 U+FFFD（UTF-8 端到端无乱码） | **Confirmed** | live-multibyte.json |
+| 活体复验 | 计划切换（WEEKEND→GLOBAL BUILD）后 e2e 仍 end_turn/OK | **Confirmed** | reports/acp-e2e.json |
+
 ## 7. 覆盖缺口（下一步证据采集清单）
 
-1. T10 后台任务 / T12 Plan·Elicitation 表单 / T13 乱序重复 / T14 超大输出多字节 —— 需要有效计划窗口实时采集
+1. T10/T14 已于 2026-11-10 补采（见 6.5）；T12 的 elicitation 表单路径（声明 form 能力的客户端）仍待采；T13 乱序重复待构造
 2. `turn.terminal` 事件（0.15.2+ 文档载明，0.17.1 未观测）
 3. `session/goal|fork|compact|subagents`、remote hub —— 上游代码在，行为未验证
 4. 多客户端（`ZCODE_ACP_REMOTE=1`）first-response-wins —— 未验证

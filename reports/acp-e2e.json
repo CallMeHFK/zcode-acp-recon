@@ -7,15 +7,15 @@
     "hasAgentCapabilities": true
   },
   "sessionNew": {
-    "sessionId": "6061d806-abf…"
+    "sessionId": "f75b91b3-1c8…"
   },
   "prompt": {
     "stopReason": "end_turn",
     "replyText": "OK",
     "streamedChunkEvents": 1,
-    "durationMs": 33843
+    "durationMs": 33289
   },
   "ok": true,
-  "stderrTail": "stOfficialMcpAuthHeaders (id=server-6)\n[zcode-acp]   ⚠ unhandled server→client request: interaction/requestOfficialMcpAuthHeaders (id=server-7)\n[zcode-acp]   ⚠ unhandled server→client request: interaction/requestOfficialMcpAuthHeaders (id=server-8)\n[zcode-acp] backend: reader exited (stdout closed)\n",
+  "stderrTail": "[zcode-acp] provider-registry: sync threw (Cannot read Desktop credential configuration)\n[zcode-acp] backend: reader exited (stdout closed)\n",
   "nonJsonStdout": 0
 }
