@@ -5,6 +5,12 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/).
 
+## [0.5.0] - 2026-11-10
+
+### Added
+
+- Phase 4 Production Candidate report (reports/phase4/production-candidate.md): hardening audit (backpressure, workspace safety, elicitation dual-path, error recovery), nine Windows discovery unit tests in the fork, production readiness checklist with explicit known limitations, and the phase-5 preview (upstream PR split, issue #363 root-cause, Windows CI matrix).
+
 ## [0.4.1] - 2026-11-10
 
 ### Fixed

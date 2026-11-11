@@ -51,6 +51,8 @@
 
 ## Phase 1（2026-11-09 已执行，产出见 reports/phase1/）
 
+> **Phase 4 亦已执行**（2026-11-10）：Production Candidate——加固审计 + Windows 发现链单测 9/9 + 就绪清单，见 [reports/phase4/production-candidate.md](reports/phase4/production-candidate.md)。
+>
 > **Phase 3 亦已执行**（2026-11-10）：L1/L2/L3 契约层 + 兼容性矩阵落库，证据分级成文，见 [reports/phase3/protocol-compatibility-matrix.md](reports/phase3/protocol-compatibility-matrix.md)。
 >
 > **Phase 2 亦已执行**（用户批准继续）：Windows MVP 达成——分支 phase2-windows @ e24e95e，四组修复 + ACP e2e 真实推理成功，见 [reports/phase2/windows-mvp.md](reports/phase2/windows-mvp.md)。
