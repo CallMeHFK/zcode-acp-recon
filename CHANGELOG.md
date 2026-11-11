@@ -5,6 +5,12 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/).
 
+## [0.7.0] - 2026-11-11
+
+### Added
+
+- enc:v2:os OS-keyring credential support in the fork (the desktop migrated the shared store on 2026-11-10/11): keyring resolution mirrors the CLI bundle (service + path-hash account), the v2 wire format (source + key fingerprint + GCM segments) is decoded, and interaction/requestCredentialCipher asks are answered with encrypt/decrypt ops. Live end-to-end inference restored on the migrated store; contract gate green (L0 + L1 36/36 + L2 14/14).
+
 ## [0.5.0] - 2026-11-10
 
 ### Added

@@ -87,6 +87,15 @@
 | 大输出多字节（T14） | 20 段中文增量流经适配器，0 个 U+FFFD（UTF-8 端到端无乱码） | **Confirmed** | live-multibyte.json |
 | 活体复验 | 计划切换（WEEKEND→GLOBAL BUILD）后 e2e 仍 end_turn/OK | **Confirmed** | reports/acp-e2e.json |
 
+## 6.7 凭证库 v2:os 迁移适配（2026-11-11，当日发现当日修复）
+
+| 协议面 | 行为契约 | 证据级 | 引用 |
+|---|---|---|---|
+| 凭证库 v2 迁移 | 桌面 App 将 credentials.json 全量迁移到 enc:v2:os（OS 钥匙串）；CLI 0.17.1 同步支持（v1 机器派生密钥失效） | **Confirmed** | credential-source="os" + 全键 enc:v2:os: 前缀实测 |
+| v2:os 解密链 | 密钥=OS 钥匙串 @napi-rs/keyring（service 'ZCode Credential Encryption', account=hex(sha256(解析路径))）的 32B base64url 值；封包 enc:v2:os:<source>:<fp24>:<iv>.<tag>.<data>，fp24=hex(sha256(key)).slice(0,24) | **Confirmed**（11/11 真实条目解密） | fork 3f29791 |
+| requestCredentialCipher（入站） | CLI 把加解密委托给宿主（operation: encrypt/decrypt + value）→ 桥以 v2 密钥应答 {ok:true, value} | **Confirmed** | fork server-requests.ts + e2e |
+| 恢复验证 | v2 适配后 ACP e2e 真实推理 end_turn/OK；L0+L1 36 + L2 14 门禁全绿 | **Confirmed** | contract-results.json ok=true |
+
 ## 7. 覆盖缺口（下一步证据采集清单）
 
 1. T10/T14 已于 2026-11-10 补采（见 6.5）；T12 的 elicitation 表单路径（声明 form 能力的客户端）仍待采；T13 乱序重复待构造
