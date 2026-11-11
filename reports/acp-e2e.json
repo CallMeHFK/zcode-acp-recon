@@ -7,15 +7,15 @@
     "hasAgentCapabilities": true
   },
   "sessionNew": {
-    "sessionId": "f75b91b3-1c8…"
+    "sessionId": "5d97d239-e17…"
   },
   "prompt": {
     "stopReason": "end_turn",
-    "replyText": "OK",
-    "streamedChunkEvents": 1,
-    "durationMs": 33289
+    "replyText": "[Network error, retrying (1/5)…][Network error, retrying (2/5)…][Network error, retrying (3/5)…][Network error, retrying",
+    "streamedChunkEvents": 6,
+    "durationMs": 45003
   },
-  "ok": true,
-  "stderrTail": "[zcode-acp] provider-registry: sync threw (Cannot read Desktop credential configuration)\n[zcode-acp] backend: reader exited (stdout closed)\n",
+  "ok": false,
+  "stderrTail": "n_invalid_response)\n[zcode-acp]   [event] turn.failed (code=model_request_failed)\n[zcode-acp]   ⚠ provider runtime headers: project token exchange failed (project_token_invalid_response)\n[zcode-acp]   [event] turn.failed (code=model_request_failed)\n[zcode-acp] backend: reader exited (stdout closed)\n",
   "nonJsonStdout": 0
 }

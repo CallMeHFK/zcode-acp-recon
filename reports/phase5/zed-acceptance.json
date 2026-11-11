@@ -1,0 +1,23 @@
+{
+  "handshake": {
+    "protocolVersion": 1,
+    "authMethods": [
+      "ZCode built-in credentials"
+    ]
+  },
+  "sessionId": "ee0f8bd3-80f…",
+  "toolUse": {
+    "stopReason": "end_turn",
+    "permissionAsked": false,
+    "fileCreated": false,
+    "fileContent": null
+  },
+  "multiTurn": {
+    "stopReason": "end_turn",
+    "reply": "[Network error, retrying (1/5)…][Network error, retrying (2/",
+    "correct": false
+  },
+  "ok": false,
+  "fatal": "timeout: session/prompt",
+  "stderrTail": ""
+}

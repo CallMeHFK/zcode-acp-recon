@@ -11,6 +11,17 @@ and this project adheres to [Conventional Commits](https://www.conventionalcommi
 
 - Phase 4 Production Candidate report (reports/phase4/production-candidate.md): hardening audit (backpressure, workspace safety, elicitation dual-path, error recovery), nine Windows discovery unit tests in the fork, production readiness checklist with explicit known limitations, and the phase-5 preview (upstream PR split, issue #363 root-cause, Windows CI matrix).
 
+## [0.6.0] - 2026-11-11
+
+### Added
+
+- Repository published (class B → A transition per the operating rules): Apache-2.0, Contributor Covenant 3.0, contributing guide, security policy, bug/PR templates, CODEOWNERS, and an offline CI workflow (syntax + L0 + L1 on ubuntu/windows × node 22/24) with branch protection on main.
+- Phase 5 acceptance report (reports/phase5/acceptance-report.md): stranger-clone acceptance PASS (L0 + L1 36/36 from the public repo), and the adapter live-acceptance blocker documented with evidence — the desktop migrated the shared credential store to enc:v2:os (OS keyring) on 2026-11-10/11, breaking every bridge-side credential read; remediation paths listed.
+
+### Fixed
+
+- L0 fixture derivation made checkout-flavor independent (LF-normalized hashing/comparison) after autocrlf drift failed CI on the public repo.
+
 ## [0.4.1] - 2026-11-10
 
 ### Fixed
