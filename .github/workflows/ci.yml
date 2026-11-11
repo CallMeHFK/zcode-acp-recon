@@ -1,0 +1,36 @@
+name: ci
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  offline:
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+        node: [22, 24]
+        exclude:
+          - os: windows-latest
+            node: 22
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node }}
+      - name: Syntax check every probe/contract script
+        shell: bash
+        run: |
+          fail=0
+          for f in $(git ls-files '*.mjs'); do
+            node --check "$f" || fail=1
+          done
+          exit $fail
+      - name: L0 fixture derivation integrity
+        run: node contract/build-fixtures.mjs --check
+      - name: L1 golden-trace protocol contracts (offline, 36 cases)
+        run: node --test --test-timeout=180000 contract/trace-contract.test.mjs

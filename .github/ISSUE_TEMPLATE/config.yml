@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Question or protocol behavior observation
+    url: https://github.com/CallMeHFK/zcode-acp-recon/discussions
+    about: Observations about ZCode protocol behavior are welcome, with sanitized traces only.

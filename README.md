@@ -58,3 +58,7 @@ node contract/run.mjs              # L1 + L2 两层测试 → reports/phase3/con
 ```
 
 `contract/` 以 `ZCODE_BIN` 注入假 app-server，驱动**真实适配器进程**复放八场景；不依赖网络、账户计划包、桌面登录态或 ZCode CLI 二进制。详见 [contract/README.md](contract/README.md)。
+
+## License
+
+Apache-2.0 — see [LICENSE](LICENSE). Evidence traces contain this machine's own protocol captures (paths, plan metadata); they are published as-is as research material.

@@ -1,0 +1,25 @@
+name: Bug report
+description: Something in the probe tooling, contract layer or reports is wrong.
+labels: [bug]
+body:
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: Include the command you ran and the exact output.
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      description: OS, Node version, ZCode desktop/CLI versions (`zcode.cjs --version`).
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence
+      description: Link the sanitized trace or report section that shows the problem. Do NOT paste raw traces or credential material — raw traces are local-only by policy.
+    validations:
+      required: true
