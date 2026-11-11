@@ -288,11 +288,17 @@ function buildSteps(records, fixture, sid, tokens, scenario) {
   return steps;
 }
 
-/** Derive one fixture (pure: no writes) so --check can compare deterministically. */
+/** Derive one fixture (pure: no writes) so --check can compare deterministically.
+ *
+ * The trace file is hashed and parsed over LF-normalized bytes: git may check
+ * the file out as CRLF on Windows (autocrlf), and a checkout-flavored hash
+ * would make --check drift on every fresh clone.
+ */
 function derive(s) {
   const tracePath = path.join(TRACES, s.trace);
   const raw = fs.readFileSync(tracePath);
-  const trace = JSON.parse(raw.toString("utf8"));
+  const normalized = Buffer.from(raw.toString("utf8").replace(/\r\n/g, "\n"), "utf8");
+  const trace = JSON.parse(normalized.toString("utf8"));
   const records = trace.records ?? [];
   const sid = `sess_contract_${s.name.replace(/-/g, "_")}`;
   const tokens = workspaceTokens(records);
@@ -302,7 +308,7 @@ function derive(s) {
     scenario: s.name,
     source: {
       trace: `traces/${s.trace}`,
-      sha256: crypto.createHash("sha256").update(raw).digest("hex"),
+      sha256: crypto.createHash("sha256").update(normalized).digest("hex"),
       records: records.length,
       metadata: trace.metadata ?? {},
     },
@@ -333,7 +339,9 @@ function main() {
     const text = JSON.stringify(fixture, null, 2) + "\n";
     const file = path.join(OUT, `${s.name}.json`);
     if (check) {
-      const committed = fs.existsSync(file) ? fs.readFileSync(file, "utf8") : "";
+      const committed = fs.existsSync(file)
+        ? fs.readFileSync(file, "utf8").replace(/\r\n/g, "\n")
+        : "";
       const same = committed === text;
       if (!same) drift++;
       console.log(`${same ? "OK  " : "DRIFT"} ${s.name}`);
