@@ -15,6 +15,12 @@ and this project adheres to [Conventional Commits](https://www.conventionalcommi
 
 - Plan-instance gateway semantics: JWT-direct request auth worked on the WEEKEND BUILD plan instance but deterministically returns 1113 on the GLOBAL BUILD instance (billing confirms the plan active with balance; the concurrent desktop path via project tokens works). Start-plan accounts hold no refresh token in the store, so the bridge cannot mint project tokens itself — needs upstream/vendor engagement. Documented in the compatibility matrix §6.8.
 
+## [0.8.1] - 2026-11-12
+
+### Added
+
+- Account-wide security audit (reports/phase5/all-repos-audit.md): all 28 repositories (16 public + 12 private incl. forks) scanned across full git histories with 15 credential patterns plus sensitive-filename hints — zero real credentials; all 25 pattern hits triaged benign (example keys, test fixtures, CSS class names, env-var name maps). Scanner self-test and the triage tool committed under probe/.
+
 ## [0.7.0] - 2026-11-11
 
 ### Added
