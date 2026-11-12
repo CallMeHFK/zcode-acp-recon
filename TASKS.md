@@ -51,7 +51,7 @@
 
 ## Phase 1（2026-11-09 已执行，产出见 reports/phase1/）
 
-> **Phase 5 亦已执行**（2026-11-11）：仓库公开（Class A 检查单全落 + 分支保护 + 漏洞报告启用）+ 公开性验收 PASS；适配器活体验收受阻于桌面凭证 v2:os 迁移（外部变更，见 [reports/phase5/acceptance-report.md](reports/phase5/acceptance-report.md)）。
+> **Phase 5 亦已执行**（2026-11-11）：仓库公开（Class A 检查单全落 + 分支保护 + 漏洞报告启用）+ 公开性验收 PASS；适配器活体验收受阻于桌面凭证 v2:os 迁移——**已当日适配修复**（fork 3f29791 + 71a62fe），e2e 复通。**上游回供完成**：PR #372（file URI）/ #373（Windows 支持）/ #374（v2 凭证库）+ issue #363 根因评论，见 [reports/phase5/acceptance-report.md](reports/phase5/acceptance-report.md)。
 >
 > **Phase 4 亦已执行**（2026-11-10）：Production Candidate——加固审计 + Windows 发现链单测 9/9 + 就绪清单，见 [reports/phase4/production-candidate.md](reports/phase4/production-candidate.md)。
 >
