@@ -7,15 +7,10 @@
     "hasAgentCapabilities": true
   },
   "sessionNew": {
-    "sessionId": "1dc3038a-cfc…"
+    "sessionId": "f3ec9990-aa2…"
   },
-  "prompt": {
-    "stopReason": "end_turn",
-    "replyText": "OKOK",
-    "streamedChunkEvents": 2,
-    "durationMs": 27507
-  },
-  "ok": true,
-  "stderrTail": "[zcode-acp] provider-registry: sync threw (Cannot read Desktop credential configuration)\n[zcode-acp] backend: reader exited (stdout closed)\n",
+  "ok": false,
+  "fatal": "{\"code\":-32603,\"message\":\"ZCode turn failed: 1113 [1113][余额不足或无可用资源包,请充值。][202611120824030d0c297428e1499e] (Turn execution failed)\",\"data\":{\"type\":\"zcode_turn_failed\",\"code\":\"1113\"}}",
+  "stderrTail": "p]   ⚠ unhandled server→client request: interaction/requestOfficialMcpAuthHeaders (id=server-11)\n[zcode-acp]   ⚠ unhandled server→client request: interaction/requestOfficialMcpAuthHeaders (id=server-12)\n[zcode-acp]   [event] turn.failed (code=1113)\n[zcode-acp] backend: reader exited (stdout closed)\n",
   "nonJsonStdout": 0
 }

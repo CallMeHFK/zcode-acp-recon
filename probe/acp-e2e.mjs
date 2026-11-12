@@ -70,7 +70,7 @@ try {
   console.log("[initialize]", JSON.stringify(report.initialize));
 
   // 2) session/new
-  const sn = await request("session/new", { cwd, mcpServers: [] }, 60000);
+  const sn = await request("session/new", { cwd, mcpServers: [], ...(process.env.E2E_MODEL ? { model: JSON.parse(process.env.E2E_MODEL) } : {}) }, 60000);
   const sessionId = sn?.sessionId;
   report.sessionNew = { sessionId: sessionId ? sessionId.slice(0, 12) + "…" : null };
   console.log("[session/new]", sessionId);

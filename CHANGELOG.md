@@ -5,6 +5,16 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/).
 
+## [0.8.0] - 2026-11-11
+
+### Changed
+
+- acp-e2e accepts an explicit model via E2E_MODEL (default-model preference across plan instances is now a documented open question).
+
+### Discovered (external, unresolved)
+
+- Plan-instance gateway semantics: JWT-direct request auth worked on the WEEKEND BUILD plan instance but deterministically returns 1113 on the GLOBAL BUILD instance (billing confirms the plan active with balance; the concurrent desktop path via project tokens works). Start-plan accounts hold no refresh token in the store, so the bridge cannot mint project tokens itself — needs upstream/vendor engagement. Documented in the compatibility matrix §6.8.
+
 ## [0.7.0] - 2026-11-11
 
 ### Added

@@ -96,6 +96,15 @@
 | requestCredentialCipher（入站） | CLI 把加解密委托给宿主（operation: encrypt/decrypt + value）→ 桥以 v2 密钥应答 {ok:true, value} | **Confirmed** | fork server-requests.ts + e2e |
 | 恢复验证 | v2 适配后 ACP e2e 真实推理 end_turn/OK；L0+L1 36 + L2 14 门禁全绿 | **Confirmed** | contract-results.json ok=true |
 
+## 6.8 计划实例级网关语义差异（2026-11-11 发现，未解决）
+
+| 协议面 | 行为契约 | 证据级 | 引用 |
+|---|---|---|---|
+| JWT 直供 × 计划实例 | WEEKEND BUILD（zcode-v3-start-plan-1106-wk）接受 JWT 直供推理（end_turn 实证）；GLOBAL BUILD（zcode-v3-start-plan-1111）对同样的 JWT 直供请求返回 **1113 余额不足/无可用资源包**（确定性复现，billing 确认计划 active 且有 3 亿 token 权益）——网关对计划实例级的请求鉴权类别有差异 | **Confirmed**（同代码/同账户/不同计划实例的对照实验） | reports/phase3/live-capture-results.json 同期；桌面并发请求正常（其走 project-token 路径） |
+| project-token 兑换可用性 | start-plan 账户凭证库**无 refresh_token 键** → 桥接侧无法自行兑换 project token（桌面内部持有刷新态） | **Confirmed** | 凭证库键清单 |
+
+解除路径（需上游/智谱确认）：①桌面向桥开放 project-token 兑换的宿主委托；②网关对 JWT 直供的 GLOBAL BUILD 放行；③账户重登刷新凭证结构后实测。
+
 ## 7. 覆盖缺口（下一步证据采集清单）
 
 1. T10/T14 已于 2026-11-10 补采（见 6.5）；T12 的 elicitation 表单路径（声明 form 能力的客户端）仍待采；T13 乱序重复待构造
