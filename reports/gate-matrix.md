@@ -1,6 +1,6 @@
 # Gate Matrix 验收报告 — ZCode ACP Phase 0 预研
 
-生成：2026-11-08 · 执行：probe/（suite.mjs + finalize.mjs + runtime-diagnostic.mjs）· 模板：docs/report-template.md
+生成：2026-11-08 · 执行：probe/（suite.mjs + finalize.mjs + runtime-diagnostic.mjs）
 
 ## 元信息
 

@@ -24,9 +24,7 @@ ZCode（智谱官方编码 agent，桌面版）私有 `app-server --stdio` 协�
 ## 仓库结构
 
 ```
-AGENTS.md            执行约束（环境保护/数据安全/门禁状态机）
-TASKS.md             逐项任务与 Gate 绑定（Phase 0-4 全部执行）
-docs/report-template.md   验收报告模板
+reports/ 与本目录的探测工具即全部产出（内部任务书与执行约束已在公开化时移除）
 probe/               探测工具（launcher/jsonl-reader/rpc-client/suite/finalize/
                      acp-e2e/zed-acceptance/v2-decrypt-test/redact）
 contract/            离线协议契约门禁（L0 派生校验 + L1 36 用例 + L2 适配器契约）
@@ -76,8 +74,7 @@ node probe/finalize.mjs                    # billing 取证 + 并存观察 + 脱
 - [reports/phase3/protocol-compatibility-matrix.md](reports/phase3/protocol-compatibility-matrix.md) — 协议兼容性矩阵（四级证据分级）
 - [reports/phase4/production-candidate.md](reports/phase4/production-candidate.md) — 加固审计与就绪清单
 - [reports/phase5/acceptance-report.md](reports/phase5/acceptance-report.md) — 公开化与验收报告（含 v2:os 阻塞与解法）
-- [TASKS.md](TASKS.md) — 任务书（三轮评审冻结的 v4.1）+ 各阶段执行记录
-- 原始 trace（`traces/raw/`）含凭据材料，**仅保留在本地、已 gitignore、不入库**（见 AGENTS.md G11）。
+- 原始 trace（`traces/raw/`）含凭据材料，**仅保留在本地、已 gitignore、不入库**（政策见 SECURITY.md）。
 
 ## License
 
