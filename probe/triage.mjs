@@ -1,10 +1,13 @@
 // triage.mjs — 对审计命中逐条分诊：打印位置 + 掩码预览 + 分类判断线索
+// 用法：node probe/triage.mjs <workspace 目录>（与 gh-audit-scan.mjs 的 workspace 一致）
 import { execFileSync } from "node:child_process";
 import fs from "node:fs";
 import path from "node:path";
+import { fileURLToPath } from "node:url";
 
-const ROOT = "C:/Users/Rt/AppData/Local/Temp/gh-audit";
-const report = JSON.parse(fs.readFileSync(path.join(ROOT, "audit-results.json"), "utf8"));
+const REPO_ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
+const ROOT = path.resolve(process.argv[2] || path.join(REPO_ROOT, ".audit-workspace"));
+const report = JSON.parse(fs.readFileSync(path.join(REPO_ROOT, "reports", "phase5", "all-repos-audit-results.json"), "utf8"));
 
 const PATTERNS = {
   jwt: /eyJ[A-Za-z0-9_-]{20,}\.eyJ[A-Za-z0-9_-]{10,}/,

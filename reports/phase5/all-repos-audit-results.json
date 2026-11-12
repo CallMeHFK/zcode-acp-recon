@@ -1,0 +1,96 @@
+{
+  "agent-chatroom": {
+    "assign": [
+      "test/auth.test.ts"
+    ]
+  },
+  "agent-shepherd": {
+    "assign": [
+      "agent_shepherd/core/config.py"
+    ]
+  },
+  "agent-task-callback": {
+    "sk-key": [
+      ".github/workflows/release.yml",
+      "CONTRIBUTING.md",
+      "README.md"
+    ]
+  },
+  "ai-photo-restorer": {
+    "sensitive-filenames": [
+      ".example.env"
+    ]
+  },
+  "awsys-i": {},
+  "CallMeHFK": {},
+  "CallMeHFK.github.io": {
+    "sk-key": [
+      "projects/agent-task-callback/index.html"
+    ],
+    "sensitive-filenames": [
+      "projects/qwenpaw-secret-input/index.html"
+    ]
+  },
+  "CPUTracking": {
+    "assign": [
+      "graph.py",
+      "src/outlook_mcp_server.py",
+      "src/common/graph_auth.py",
+      "outlook_to_markdown.py"
+    ]
+  },
+  "dispatch-guard": {
+    "aws-ak": [
+      "tests/test_review_regressions.py"
+    ]
+  },
+  "driveos-atlas": {},
+  "jev-kernel": {},
+  "kas-gateway": {},
+  "lte_a_tws": {},
+  "magpie-loomy-provider": {
+    "assign": [
+      "test/loomy.test.mjs",
+      "test/provider.test.mjs"
+    ]
+  },
+  "modular-ai-secure": {},
+  "niclane": {},
+  "notescientist": {
+    "sk-key": [
+      "agent.md",
+      "tests/test_product.py"
+    ]
+  },
+  "quartz-trail-charm-royal": {
+    "sk-key": [
+      ".vercel/output/functions/__server.func/_libs/tailwind-merge.mjs",
+      ".vercel/output/static/assets/routes-DlFMjr8W.js"
+    ]
+  },
+  "qwenpaw-consensus-rank": {},
+  "qwenpaw-openviking": {},
+  "qwenpaw-secret-input": {
+    "assign": [
+      "docs/superpowers/specs/2026-10-19-secret-input-plugin-design.md"
+    ],
+    "sensitive-filenames": [
+      "docs/superpowers/specs/2026-10-19-secret-input-plugin-design.md",
+      "docs/superpowers/plans/2026-10-19-secret-input-plugin.md",
+      "tests/test_secret_store_gate.py"
+    ]
+  },
+  "qwenwork-magpie-export": {
+    "assign": [
+      "tests/test_qwenwork_sync.py"
+    ]
+  },
+  "router-mcp": {},
+  "sacred-timeline": {},
+  "site-kg": {
+    "sensitive-filenames": [
+      ".env.example"
+    ]
+  },
+  "sovereign-echo": {}
+}

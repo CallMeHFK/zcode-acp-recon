@@ -1,9 +1,15 @@
 // gh-audit-scan.mjs — 全历史凭据扫描（无 shell：execFileSync + 参数数组）
+//
+// 用法：node probe/gh-audit-scan.mjs [workspace 目录]
+// workspace 内须有按仓库名克隆的 git 仓库（含 .git）。结果 JSON 写入
+// reports/phase5/all-repos-audit-results.json（只含文件路径与命中数，无密钥值）。
 import { execFileSync } from "node:child_process";
 import fs from "node:fs";
 import path from "node:path";
+import { fileURLToPath } from "node:url";
 
-const ROOT = "C:/Users/Rt/AppData/Local/Temp/gh-audit";
+const REPO_ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
+const ROOT = path.resolve(process.argv[2] || path.join(REPO_ROOT, ".audit-workspace"));
 const PATTERNS = [
   ["jwt", "eyJ[A-Za-z0-9_-]{20,}\\.eyJ[A-Za-z0-9_-]{10,}"],
   ["sk-key", "sk-[A-Za-z0-9_-]{20,}"],
@@ -54,5 +60,5 @@ for (const repo of repos) {
   const total = Object.values(report[repo]).reduce((a, b) => a + (Array.isArray(b) ? b.length : 0), 0);
   console.log(`${repo}: ${total === 0 ? "CLEAN" : total + " 命中"}`);
 }
-fs.writeFileSync(path.join(ROOT, "audit-results.json"), JSON.stringify(report, null, 2));
-console.log("\nwritten: audit-results.json");
+fs.writeFileSync(path.join(REPO_ROOT, "reports", "phase5", "all-repos-audit-results.json"), JSON.stringify(report, null, 2));
+console.log("\nwritten: reports/phase5/all-repos-audit-results.json");

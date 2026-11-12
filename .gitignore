@@ -20,3 +20,6 @@ traces/workspace/
 
 # Phase 3 契约测试的逐帧运行日志（本地证据，不入库；报告已聚合）
 contract/logs/
+
+# 审计工作区（克隆的仓库，不入库）
+.audit-workspace/
